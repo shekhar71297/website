@@ -1,0 +1,172 @@
+.backgroundimg {
+  background-color: rgb(62, 137, 186);
+  height: 230px;
+  width: 100%;
+}
+
+.main-image img {
+  width: 100%;
+  height: 570px;
+  margin-top: 50px;
+}
+
+.eduvibe-widget-details {
+  padding: 0 20px 20px;
+}
+
+.mt--35 {
+  margin-top: 35px !important;
+}
+
+.course-detail-content {
+  margin-right: 30px;
+}
+
+#sticky-position {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100px;
+  color: #fff;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.textlayout {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.eduvibe-widget {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  padding: 30px 40px;
+}
+
+.eduvibe-sidebar.course-details-sidebar .eduvibe-widget {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.eduvibe-sidebar.course-details-sidebar
+  .eduvibe-widget
+  .eduvibe-widget-details {
+  padding: 0 20px 20px;
+}
+
+.widget-content ul li {
+  color: black;
+  list-style: none;
+}
+.widget-content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.eduvibe-widget-details .widget-content ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eduvibe-widget-details .widget-content ul li span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.buttonlayout {
+  margin: 0px 0px;
+  padding: 13px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.buttonlayout:hover {
+  background-color: rgb(76, 120, 192);
+  color: white;
+}
+
+/* .listadjustment ul li {
+  padding: 7px;
+}
+
+.listadjustment ul {
+  padding-left: 50px;
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .eduvibe-widget {
+    padding: 30px 20px;
+  }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 415px) {
+  .course-detail-content {
+    width: 100%;
+    margin: auto;
+  }
+
+  #sticky-position {
+    width: 100%;
+  }
+
+  .main-image img {
+    height: 100%;
+  }
+}
+
+.course-intro-heading{
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.detail-content-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.detail-content-subheading {
+  font-size: 15px;
+  margin-top: 10px;
+  justify-items: center;
+}
+
+.course-content-space {
+  margin: 20px;
+}
+
+/* breadcrumb css */
+.coursedetail-heading {
+  border: none;
+  color: white;
+  max-width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+  text-align: left;
+  background-color: #218bbb;
+}
+
+/* Remove underline from breadcrumb links */
+.breadcrumb-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change active color to orange and remove underline */
+.custom-breadcrumb .breadcrumb-item.active,
+.custom-breadcrumb .breadcrumb-item.active > LInk {
+  color: #62d2ff;
+  /* Change to the color you want */
+  text-decoration: none;
+  font-size: 18px;
+}
