@@ -1,0 +1,214 @@
+.footer-title {
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 20px;
+    position: relative;
+    margin: 0 0 30px;
+    color: #fbfbfc;
+}
+
+.footer-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    background: #218bbb;
+    height: 90%
+}
+
+.footer-body {
+    background-color: #153441;
+    padding: 50px 50px;
+    max-width: 100%;
+}
+
+.footer-content {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.site-map-body {
+    padding-left: 110px;
+}
+
+.site-map-links {
+    min-width: 100px;
+    display: block;
+    max-width: 100px;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.site-map-links:hover {
+    color: #218bbb;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.footer-icon {
+    font-size: 18px;
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.footer-contact {
+    color: #fff;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-email {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px 5px 0px;
+}
+
+.footer-email a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-phone {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-phone a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.address-body {
+    margin-top: 20px;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+
+}
+
+.copyright-body {
+    padding: 10px;
+    background-color: #218bbb;
+}
+
+@media ((min-width: 320px) and (max-width: 414px)) {
+    .site-map-body {
+        padding-left: 0px !important;
+    }
+
+    .footer-copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #ffffff;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media ((min-width: 667px) and (max-width: 736px)) {
+    .site-map-body {
+        padding-left: 0px !important;
+    }
+
+    .footer-copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #ffffff;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media ((min-width: 740px) and (max-width: 768px)) {
+    .site-map-body {
+        padding-left: 40px !important;
+    }
+    .footer-copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #ffffff;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media ((min-width: 770px) and (max-width: 1025px)) {
+    .site-map-body {
+        padding-left: 80px !important;
+    }
+}
+
+/*--------------------------------------------social media bar---------------------------------------------------*/
+/* social media sticky bar */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 15px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #218bbb;
+    color: white;
+  }
+  
+  .instagram {
+    background: #f9522d;
+    color: white;
+  }
+  
+  .whatsapp {
+    background: #39dd4c;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  @media ((min-width: 320px) and (max-width: 414px)) {
+    .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 8px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 15px;
+      }
+  }
+  
