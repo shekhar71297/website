@@ -1,0 +1,2330 @@
+{
+  "logo": [
+    {
+      "id": 1,
+      "logoImgurl": "/images/home/hematitelogohorizontal.png"
+    }
+  ],
+  "HomePage": [
+    {
+      "id": 1,
+      "bannerImgurl": "/images/home/homepage.png",
+      "title": "Best Online & Offline Institute",
+      "tagline1": "Master IT Skills",
+      "tagline2": "Transform Your Future in",
+      "tagline3": "IT with Our Expertise"
+    }
+  ],
+  "homepageabout": [
+    {
+      "id": 1,
+      "aboutImageurl": "images/home/About-us.webp",
+      "title": "Hematite Infotech",
+      "description1": "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.The center has modern infrastructure, including corporate-standard laboratories equipped with the latest state-of-the-art technologies. We are proud to remain associated with the best faculty in the industry etc.",
+      "description2": " We also have a well-equipped library with a wide array of manuals. We also provide placement assistance to our students. Hematite Infotech has had an enviable placement record since its inception."
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "icon": "MdComputer",
+      "title": "Application Development",
+      "description": "Our IT training programs are designed to equip individuals with the necessary skills and knowledge to excel in these specialized areas of programming. With a focus on hands-on learning and practical application, our courses cover the latest industry trends and technologies, allowing participants to stay ahead in this rapidly evolving field. Whether you are a beginner or an experienced professional, our comprehensive training programs can help you enhance your proficiency and achieve your career goals in IT development.",
+      "iconUrl": "images/services/html.png"
+    },
+    {
+      "title": "IT Training",
+      "description": "Our comprehensive IT training programs cover a wide range of in-demand skills and technologies. Whether you're interested in mastering DevOps methodologies, becoming a proficient web developer, or delving into the world of Artificial Intelligence with Python and Machine Learning, we have the courses to suit your needs. Additionally, we offer training in Mobile App Development for both Android and iOS platforms, as well as expertise in ASP.NET, Java (Core + Advanced), software testing, cloud computing, CCNA networking, and effective business communication strategies ",
+      "iconUrl": "images/services/training.png"
+    },
+    {
+      "title": "IT Consulting",
+      "description": "Hematite Consultants advises on the technology enablement, Application security and process enablement for Organizations. Our specialized consultants help minimize the cost and time associated transformative changes in the business of IT. Primary client offerings include Management Consulting, IT Strategic Services, Project Leadership, Data Analytics, and Information Management, Application security consultants, Network engineers, Software Technology consultants.",
+      "iconUrl": "images/services/strategic-consulting.png"
+    }
+  ],
+  "contact": [
+    {
+      "id": "1",
+      "img":"images/Contact/contact_img.jpg",
+      "address": "Pune : 2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.",
+      "mobile": "8263926309 / 8208683698 / 8999639478",
+      "email": "contact@hematitecorp.com"
+    }
+  ],
+  "placementcontent": [
+    {
+      "id": "1",
+      "img": "images/placement/plcement-1img.webp",
+      "placementDescription": [
+        "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow's IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.",
+        "The center has modern infrastructure, including corporate-standard laboratories equipped with the latest state-of-the-art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from experts and visiting faculty, we also organize video-based sessions, seminars, assignments, internships, projects, faculty-student discussions, expert talks and profiling of the students, guidance in hackathons, Start-ups, etc. We also have a well-equipped library with a wide array of manuals. We also provide placement assistance to our students. Hematite Infotech has had an enviable placement record since its inception."
+      ]
+    },
+    {
+      "id": "2",
+      "img": "images/placement/plcement-1img.webp",
+      "placementDescription": [
+        "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow's IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.",
+        "The center has modern infrastructure, including corporate-standard laboratories equipped with the latest state-of-the-art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from experts and visiting faculty, we also organize video-based sessions, seminars, assignments, internships, projects, faculty-student discussions, expert talks and profiling of the students, guidance in hackathons, Start-ups, etc. We also have a well-equipped library with a wide array of manuals. We also provide placement assistance to our students. Hematite Infotech has had an enviable placement record since its inception."
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "2",
+      "cardimg": "images/courseimg/images/Python.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "3 Months Minimum",
+      "title": " Python with Django",
+      "upcomingbatch": true,
+      "price": {
+        "originalprice": "30000",
+        "offerprice": "25499",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is Python?",
+            "description": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built-in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application development as well as for use as a scripting language to connect existing components together. Python's simple, easy-to-learn syntax emphasizes readability and therefore reduces the cost of program maintenance."
+          },
+          {
+            "title": "Pre-requisites for Python",
+            "description": "There are no hard prerequisites. Students should be comfortable using the operating system (Linux, Unix, Windows, Solaris, macOS, etc.) on which they will be running Python."
+          },
+          {
+            "title": "What is Django?",
+            "description": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source."
+          },
+          {
+            "title": "Pre-requisites for Django",
+            "description": "To understand Django, you must be familiar with the fundamentals of Python. You should be able to use pip to install packages. Having a strong grasp of Python's basics, especially classes, and Object-Oriented Programming, is required. You Should have Knowledge of HTML and CSS fundamentals."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "To understand the concepts and constructs of Python",
+              "Design a program to solve the problem",
+              "Write Python functions to facilitate code reuse",
+              "To create own Python programs and work on a real-time project running on Python",
+              "Understanding Automation in python",
+              "To create routes (or views) with Django",
+              "To serve static content and files using Django",
+              "To work with databases",
+              "To build a Django application, hands-on."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Core Python",
+            "contents": [
+              "Introduction to Python",
+              "Installation",
+              "Python IDLE & Shell/REPL",
+              "Python Editors",
+              "Input/output mechanisms",
+              "Variable and Keywords",
+              "Python data types",
+              "Operators and their types",
+              "Conditional Statement",
+              "Loops in Python",
+              "Functions"
+            ]
+          },
+          {
+            "title": "Advance Python",
+            "contents": [
+              "Functions and its calling techniques",
+              "Filter map reduce in python",
+              "Lambda function",
+              "Recursion function",
+              "Object-oriented programming",
+              "Recursion function",
+              "Multiprocessing in python",
+              "Multithreading in python",
+              "Methods in python",
+              "File handling"
+            ]
+          },
+          {
+            "title": "Database",
+            "contents": [
+              "MongoDB/MySQL"
+            ]
+          },
+          {
+            "title": "Django Framework",
+            "contents": [
+              "Introduction Django",
+              "Installation of Django",
+              "URLs & Views",
+              "Template & Static Files",
+              "Data & Models",
+              "Admin",
+              "Relationships",
+              "Forms",
+              "Class Views",
+              "File Uploads",
+              "Django Rest Framework",
+              "Git & Github"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "cardimg": "images/courseimg/images/DataVisualization.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "3 Months Minimum",
+      "title": "Data Visualization",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "21000",
+        "offerprice": "18499",
+        "discount": false
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "Data Visualization",
+            "description": "Data visualization is the graphical representation of information and data in a pictorial or graphical format. Data Visualization Tools are software platforms that provide information in a visual format, such as a graph, chart, etc., to make it easily understandable and usable. Each tool's capabilities vary, but, at their most basic, they allow you to input a dataset and visually manipulate it. Some Data visualization tools for businesses are Microsoft Excel (and Power BI), Tableau, Google Charts, Zoho Analytics, and so on."
+          },
+          {
+            "title": "About Power BI",
+            "description": "Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights."
+          },
+          {
+            "title": "About Tableau",
+            "description": "Tableau is a visual analytics platform that transforms the way we use data to solve problems, empowering people and organizations to make the most of their data."
+          },
+          {
+            "title": "Prerequisite",
+            "description": "There is no prerequisite to learning Tableau and Power BI."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Build interactive dashboards and stories to reveal data insights.",
+              "Build a range of essential chart types for analysis.",
+              "View filters that are used in a report.",
+              "Create parameters to help users dynamically modify values.",
+              "Create groups and hierarchies in field data.",
+              "Export content, publish workbooks, and download published content."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Power BI",
+            "contents": [
+              "What is Data Visualization?",
+              "Data Visualization Tool",
+              "Power BI Introduction",
+              "Getting data (Excel and RDBMS, Web, SharePoint)",
+              "Power BI Desktop Visualizations",
+              "Modelling With Power BI",
+              "DAX Expressions",
+              "Publishing And Sharing"
+            ]
+          },
+          {
+            "title": "Tableau",
+            "contents": [
+              "Introduction to tableau",
+              "Tableau Products",
+              "Data connection",
+              "Basic and Advanced Charts",
+              "Maps in Tableau",
+              "Adding background images",
+              "Creating Calculated Fields",
+              "Creating Dashboards & Stories",
+              "Distributing & Publishing Your Visualization"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "cardimg": "images/courseimg/images/ReactJS.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "3 Months Minimum",
+      "title": "React JS",
+      "upcomingbatch": true,
+      "price": {
+        "originalprice": "30000",
+        "offerprice": "24999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is ReactJS?",
+            "description": "React is a JavaScript library created by Facebook. React is a User Interface (UI) library. React is a tool for building UI components."
+          },
+          {
+            "title": "What is ReactJS Library?",
+            "description": "ReactJS is a declarative, efficient, and flexible JavaScript library for building reusable UI components. It is an open-source, component-based front end library which is responsible only for the view layer of the application. It was initially developed and maintained by Facebook and later used in its products like WhatsApp & Instagram."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Get familiar with ReactJS library and how ReactJS works.",
+              "Get up to speed with JavaScript.",
+              "Use various ReactJS features like Hooks, Virtual DOM, faster and Light waighted.",
+              "Implement one-way as well as Two-Way Data Binding.",
+              "Learn about Authentication & how it works in SPAs."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "React",
+            "contents": [
+              "HTML",
+              "CSS",
+              "SASS",
+              "Bootstrap",
+              "JavaScript",
+              "ReactJs",
+              "What is ReactJs",
+              "React Js Application Development",
+              "ES6 Features",
+              "React Js Features",
+              "Component",
+              "Render Method",
+              "Components Properties",
+              "Understanding JSX",
+              "React Events",
+              "Synthetic Events",
+              "Routing in React",
+              "React Hooks",
+              "Material UI",
+              "Redux"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "cardimg": "images/courseimg/images/SoftwareTesting.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "3 Months Minimum",
+      "title": "Software Testing",
+      "upcomingbatch": true,
+      "price": {
+        "originalprice": "35000",
+        "offerprice": "24999",
+        "discount": false
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is Software Testing?",
+            "description": "Software Testing is Important because if there are any bugs or errors in the software, it can be identified early and can be solved before delivery of the software product. Properly tested software product ensures reliability, security and high performance which further results in time saving, cost effectiveness and customer satisfaction."
+          },
+          {
+            "title": "What is the need of Testing?",
+            "description": "Testing is important because software bugs could be expensive or even dangerous. Software bugs can potentially cause monetary and human loss."
+          }
+        ],
+        "benefitsOfSoftwaretesting": [
+          {
+            "title": "Cost-Effectiveness",
+            "description": "One of the most important advantages of software testing is its cost-effectiveness. Testing any IT project on time helps save money in the long term. If bugs are caught at an earlier stage, it costs less to fix them."
+          },
+          {
+            "title": "Security",
+            "description": "Security is a critical benefit of software testing. People seek trusted products, and software testing helps in identifying and mitigating risks and problems early on."
+          },
+          {
+            "title": "Product Quality",
+            "description": "Quality is an essential requirement for any software product. Testing ensures that a high-quality product is delivered to customers."
+          },
+          {
+            "title": "Customer Satisfaction",
+            "description": "The primary aim of any product is to satisfy its customers. UI/UX testing ensures the best user experience, leading to higher customer satisfaction."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "To become a Professional Software Tester.",
+              "To enable the students to become Employable.",
+              "Apply various testing techniques, including domain, code, fault, usage and model-based.",
+              "Execute program and test evaluations.",
+              "Perform a complete testing process, taking into account practical considerations."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Software Testing (Manual and Automated Tesing)",
+            "contents": [
+              "Manual, Automation Testing",
+              "Functional and Non-Functional Testing",
+              "Defect Management - Defect Report Sheet",
+              "Mobile Testing using Appium",
+              "API Testing postman",
+              "SQL for Database Testing"
+            ]
+          },
+          {
+            "title": "Core Selenium",
+            "contents": [
+              "Selenium IDE, Grid, WebDriver",
+              "Basics of Java",
+              "TestNG, Maven, Extent Reports"
+            ]
+          },
+          {
+            "title": "JIRA Tool Architecture",
+            "contents": [
+              "Install JIRA",
+              "Creating Projects",
+              "Adding Users in JIRA",
+              "Managing JIRA dashboard and Gadgets",
+              "Atlassian Marketplace for JIRA"
+            ]
+          },
+          {
+            "title": "JMeter Syllabus",
+            "contents": [
+              "Introduction to JMeter Elements",
+              "Building a JMeter Test Plan",
+              "Recording Tests Using JMeter",
+              "Running Multiple Scripts with JMeter",
+              "JMeter Functions, Variables and Regular Expressions"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "7",
+      "cardimg": "images/courseimg/images/Angular13+.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "3 Months Minimum",
+      "title": "Angular 12 +",
+      "upcomingbatch": true,
+      "price": {
+        "originalprice": "30000",
+        "offerprice": "24999",
+        "discount": false
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is Angular 12+",
+            "description": "Angular 12+ is a JavaScript framework for building web applications and apps in JavaScript, HTML, and TypeScript, which is a superset of JavaScript. Angular provides built-in features for animation, http service, and materials, which in turn have features such as auto-complete, navigation, toolbars, menus, etc. The code is written in TypeScript, which compiles to JavaScript and displays the same in the browser."
+          },
+          {
+            "title": "What is Angular Framework?",
+            "description": "Angular 12+ has just been released, and along with it comes this brand new course that will provide you with all of the necessary fundamentals to help you get started developing Angular 12+ apps. This powerful frontend Javascript framework is actively developed by Google, and it's quite possibly the most popular framework among developers. It allows you to build beautiful and flexible user interfaces with the familiarity of Javascript."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Get familiar with Angular framework and how Angular works.",
+              "Learn about the changes in Angular 2, 3,4,5,6,7,8,9,10,11,12,13,14,15 and the new updates in Angular 15,16.",
+              "Get up to speed with TypeScript.",
+              "Use various Angular features like directives, components and services.",
+              "Implement one-way as well as Two-Way Data Binding.",
+              "Learn about Authentication & how it works in SPAs."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Angular 16 ",
+            "contents": [
+              "HTML",
+              "CSS",
+              "SASS",
+              "Bootstrap",
+              "JavaScript",
+              "TypeScript",
+              "Componants Overview",
+              "Components and Databinding",
+              "Directives",
+              "Services and Dependency",
+              "Changing Pages with Routng",
+              "Template Driven Form",
+              "Pipes",
+              "Reactive Form",
+              "HTTP Request",
+              "Unit Testing in Angular apps"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "8",
+      "cardimg": "images/courseimg/images/AdvanceExcel.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "45 Days",
+      "title": "MS Excel",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "8000",
+        "offerprice": "5499",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is Excel?",
+            "description": "Advance Excel is a set of day-to-day activities that are related to financial planning, record keeping & billing, personal, physical distribution and logistics, within an organization. These activities can range from being responsible for the management of human resources, budgets and records, to undertaking the role of supervising other employees."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "The task of inputting, filing and managing the data that is stored within the organization's office system.",
+              "Developing student interest through coaching and counseling",
+              "Assigning tasks and following up on its progress."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Basic Excel",
+            "contents": [
+              "Basic Function of Excel ",
+              "Creating a new spreadsheet from scratch.",
+              "Formating Workbook Sheet",
+              "Basic Formulas in Excel",
+              "Writing and formatting column text and titles.",
+              "Using Excel's auto-fill features.",
+              "Create, modify and format tables"
+            ]
+          },
+          {
+            "title": "Advance Excel",
+            "contents": [
+              "Format and Manage Worksheets and workbooks",
+              "Customize options and views",
+              "Sorting and Filtering the Data",
+              "Create and Modify Charts, Pivot Chart",
+              "Look up data (H,V,X Lookup)",
+              "Pivot Table"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "9",
+      "cardimg": "images/courseimg/images/DataScience.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "5 Months Minimum",
+      "title": "Data Science",
+      "upcomingbatch": true,
+      "price": {
+        "originalprice": "50000",
+        "offerprice": "46999",
+        "discount": false
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "Data Science",
+            "description": "Data science is a concept to unify statistics, data analysis, informatics, and their related methods in order to 'understand and analyze actual phenomena' with data. It uses techniques and theories drawn from many fields within the context of mathematics, statistics, computer science, information science, and domain knowledge."
+          },
+          {
+            "title": "What Data Science Course",
+            "description": "This Data Science course accelerates your career in Data Science and provides you with world-class training and the skills required to become successful in this field. The Data Science course offers extensive training on the most in-demand Data Science and Machine Learning skills with hands-on exposure to key tools and technologies, including Python, R, Tableau, and concepts of Machine Learning."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Get familiar with Data Science and how Data Science works.",
+              "Learn about the changes in Data Science and the new updates in Data Science.",
+              "Get up to speed from basic to advanced.",
+              "Use various Data Science features and services.",
+              "Learn about Data Science with Python"
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Data Science",
+            "contents": [
+              "Data Science Overview",
+              "Data Analytics Overview",
+              "Statistical Analysis and Business Applications",
+              "Python Environment Setup and Essentials",
+              "Mathematical Computing with Python (NumPy)",
+              "Scientific computing with Python (Scipy)",
+              "Data Manipulation with Pandas",
+              "Machine Learning with Scikit-Learn",
+              "Natural Language Processing with Scikit Learn",
+              "Data Visualization in Python using matplotlib",
+              "Web Scraping with BeautifulSoup",
+              "Python integration with Hadoop MapReduce and Spark"
+            ]
+          },
+          {
+            "title": "Advance Python",
+            "contents": [
+              "Functions and its calling techniques",
+              "Filter map reduce in python",
+              "Lambda function",
+              "Recursion function",
+              "Object-oriented programming",
+              "Recursion function",
+              "Multiprocessing in python",
+              "Multithreading in python",
+              "Methods in python",
+              "File handling"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "10",
+      "cardimg": "images/courseimg/images/DigitalMarketing.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "3 Months Minimum",
+      "title": "Digital Marketing",
+      "upcomingbatch": true,
+      "price": {
+        "originalprice": "25000",
+        "offerprice": "22499",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is Digital Marketing?",
+            "description": "Digital marketing encompasses all marketing efforts that use an electronic device or the internet. In simple terms, any form of marketing that exists online is called as Digital Marketing. Digital Marketing process broadly involves the following steps:",
+            "steps": [
+              "Research",
+              "Plan and Strategize",
+              "Implement",
+              "Measure and Audit",
+              "Optimize"
+            ]
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "An improved conversion rate.",
+              "Greater Brand Awareness.",
+              "An increase in visits to your website.",
+              "A greater market share."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Digital Marketing",
+            "contents": [
+              "Market Research",
+              "Email marketing",
+              "Copywriting",
+              "Search Engine Optimization (SEO)",
+              "Youtube Marketing",
+              "Facebook Marketing",
+              "Twitter Marketing",
+              "Quara Marketing",
+              "Google Ads",
+              "Instagram Marketing",
+              "Pinterest Marketing",
+              "Linkdin Marketing",
+              "Google Analytics",
+              "Facebook Ads",
+              "App Marketing"
+            ]
+          },
+          {
+            "title": "Website Development",
+            "contents": [
+              "HTML",
+              "CSS",
+              "JAVA Script",
+              "Wordpress"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "11",
+      "cardimg": "images/courseimg/images/MEANstack.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "5 Months Minimum",
+      "title": "MEAN Stack",
+      "upcomingbatch": true,
+      "price": {
+        "originalprice": "45000",
+        "offerprice": "39999",
+        "discount": false
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "MEAN Stack",
+            "description": "The term MEAN stack refers to a collection of JavaScript-based technologies used to develop web applications. MEAN is an acronym for MongoDB, ExpressJS, AngularJS, and Node.js. Among these technologies, MongoDB is a database system; Node JS is a back-end runtime environment; Express JS is a back-end web framework; and Angular is a front-end framework."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Understand the different Angular versions.",
+              "Write correct template syntax.",
+              "Incorporate components.",
+              "Understand dependency injection.",
+              "Create reactive Forms.",
+              "Use the HttpClient Service to communicate with the server.",
+              "Route requests within Angular applications.",
+              "Perform unit testing.",
+              "Secure Angular applications.",
+              "Build backend processing applications using Node.",
+              "Build an HTTP server.",
+              "Store, retrieve, and modify data in the MongoDB No SQL database."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Angular 16 ",
+            "contents": [
+              "HTML",
+              "CSS",
+              "SASS",
+              "Bootstrap",
+              "JavaScript",
+              "TypeScript",
+              "Componants Overview",
+              "Components and Databinding",
+              "Directives",
+              "Services and Dependency",
+              "Changing Pages with Routng",
+              "Template Driven Form",
+              "Pipes",
+              "Reactive Form",
+              "HTTP Request",
+              "Unit Testing in Angular apps"
+            ]
+          },
+          {
+            "title": "Back-End",
+            "contents": [
+              "Node and Express"
+            ]
+          },
+          {
+            "title": "Database",
+            "contents": [
+              "MongoDB"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "12",
+      "cardimg": "images/courseimg/images/MERNstack.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "5 Months Minimum",
+      "title": "MERN Stack",
+      "upcomingbatch": true,
+      "price": {
+        "originalprice": "45000",
+        "offerprice": "39999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "MERN Stack",
+            "description": "The MERN stack is a JavaScript stack that’s designed to make the development process smoother. MERN is the acronym given to the set of technologies including Mongo DB, Express JS, React JS/Redux, and Node JS. Among these technologies, MongoDB is a database system; Node JS is a back-end runtime environment; Express JS is a back-end web framework; and React is a front-end framework."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Learn why the MERN stack is right for your next project.",
+              "Learn what alternatives exist for each of these technologies.",
+              "Learn how to stay nimble with your choices of technology.",
+              "Customize the training with technologies as per your needs.",
+              "Also learn about another popular alternative to MERN - the MEAN stack."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "React JS",
+            "contents": [
+              "HTML",
+              "CSS",
+              "SASS",
+              "Bootstrap",
+              "JavaScript",
+              "ReactJs",
+              "What is ReactJs",
+              "React Js Application Development",
+              "ES6 Features",
+              "React Js Features",
+              "Component",
+              "Render Method",
+              "Components Properties",
+              "Understanding JSX",
+              "React Events",
+              "Synthetic Events",
+              "Routing in React",
+              "React Hooks",
+              "Material UI",
+              "Redux"
+            ]
+          },
+          {
+            "title": "Back-End",
+            "contents": [
+              "Node and Express"
+            ]
+          },
+          {
+            "title": "Database",
+            "contents": [
+              "MongoDB"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "13",
+      "cardimg": "images/courseimg/images/DefaultCoursesCoverPage.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "45 Days",
+      "title": "MS Office",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "15000",
+        "offerprice": "12000",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is Python?",
+            "description": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built-in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application development as well as for use as a scripting language to connect existing components together. Python's simple, easy-to-learn syntax emphasizes readability and therefore reduces the cost of program maintenance."
+          },
+          {
+            "title": "Pre-requisites for Python",
+            "description": "There are no hard prerequisites. Students should be comfortable using the operating system (Linux, Unix, Windows, Solaris, macOS, etc.) on which they will be running Python."
+          },
+          {
+            "title": "What is Django?",
+            "description": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source."
+          },
+          {
+            "title": "Pre-requisites for Django",
+            "description": "To understand Django, you must be familiar with the fundamentals of Python. You should be able to use pip to install packages. Having a strong grasp of Python's basics, especially classes, and Object-Oriented Programming, is required. You Should have Knowledge of HTML and CSS fundamentals."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "To understand the concepts and constructs of Python",
+              "Design a program to solve the problem",
+              "Write Python functions to facilitate code reuse",
+              "To create own Python programs and work on a real-time project running on Python",
+              "Understanding Automation in python",
+              "To create routes (or views) with Django",
+              "To serve static content and files using Django",
+              "To work with databases",
+              "To build a Django application, hands-on."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Microsoft Word",
+            "contents": [
+              "Create and Manage Documents",
+              "Format Text, Paragraphs, and Sections",
+              "Create Tables and Lists",
+              "Create and Manage References",
+              "Insert and Format Graphic Element",
+              "Manage document options and settings",
+              "Design advanced documents"
+            ]
+          },
+          {
+            "title": "Microsoft Excel",
+            "contents": [
+              "Basic Function of Excel ",
+              "Creating a new spreadsheet from scratch.",
+              "Formating Workbook Sheet",
+              "Basic Formulas in Excel",
+              "Writing and formatting column text and titles.",
+              "Using Excel's auto-fill features.",
+              "Create, modify and format tables",
+              "Format and Manage Worksheets and workbooks",
+              "Customize options and views",
+              "Sorting and Filtering the Data",
+              "Create and Modify Charts, Pivot Chart",
+              "Look up data (H,V,X Lookup)",
+              "Pivot Table"
+            ]
+          },
+          {
+            "title": "Microsoft Power Point",
+            "contents": [
+              "Create and Manage Presentations",
+              "Insert and Format Text, Shapes, and Images",
+              "Insert Tables, Charts, SmartArt, and Media",
+              "Apply Transitions and Animations"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "14",
+      "cardimg": "images/courseimg/images/CloudComputing.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "3 Months Minimum",
+      "title": "Cloud Computing",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "40000",
+        "offerprice": "29999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is Cloud Cumputing?",
+            "description": "Cloud Computing is a great innovation in the digital landscape that has changed the way IT solutions are delivered. In India, Cloud Computing has arrived in such a big way that not just the larger companies but many small and medium-sized businesses have started using it extensively. Cloud Computing platforms are being used across the world to leverage their benefits of scalability and security."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "To get good knowledge of cloud computing.",
+              "You can learn to create virtual servers in the cloud.",
+              "You can learn to configure monitoring services.",
+              "Also, you can learn to configure storage services in the cloud."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Salesforce",
+            "contents": [
+              "Basics of Cloud Computing",
+              "Salesforce Architecture",
+              "Database Concepts",
+              "Sales Cloud/Service Cloud",
+              "Objects and Fields",
+              "Relationships",
+              "Validation, Workflow Rules and Lighting",
+              "Process Builder",
+              "Data Management",
+              "Security and Sharing",
+              "Report and Dashboards",
+              "Approval Process",
+              "Query Languages in Salesforce",
+              "Apex & Trigger",
+              "Visual Force Pages",
+              "Lightning Development",
+              "Sites, Debug Logs",
+              "Test Class",
+              "Salesforce Einstein Analytics",
+              "Deployment"
+            ]
+          },
+          {
+            "title": "AWS Solutions Architect",
+            "contents": [
+              "Getting Started With Amazon Cloud",
+              "Identity Access Management(IAM)",
+              "Amazon EC2",
+              "Amazon Simple Storage Service(S3)",
+              "Elastic Beanstalk & Lambda",
+              "Elastic Load Balancing & Auto Scaling",
+              "Database Services",
+              "Route53",
+              "Amazon Application Services Overview",
+              "Virtual Private Cloud (VPC) & Direct Connect",
+              "AWS Troubleshooting"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "15",
+      "cardimg": "images/courseimg/images/FullStack.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "5 Months Minimum",
+      "title": "Full Stack",
+      "upcomingbatch": true,
+      "price": {
+        "originalprice": "45000",
+        "offerprice": "41999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "Full-Stack Developement",
+            "description": "A full-stack developer is an engineer who can handle all the work of databases, servers, systems engineering, and clients. Depending on the project, what customers need may be a mobile stack, a Web stack, or a native application stack. In fact, 'full stack' refers to the collection of a series of technologies needed to complete a project. 'Stack' refers to a collection of sub-modules. These software sub-modules or components combine together to achieve the established function without the need for other modules."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Use technologies to access and interpret information effectively.",
+              "Apply their analytical skills to investigate unfamiliar problems. Web technologies like HTML5, CSS3, Java Script, Bootstrap 5, and Angular 12+",
+              "Use quantitative data confidently and competently.",
+              "Use communication technologies competently."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Front-End",
+            "contents": [
+              "HTML",
+              "CSS",
+              "SASS",
+              "Bootstrap",
+              "JavaScript",
+              "Angular / React"
+            ]
+          },
+          {
+            "title": "Back-End",
+            "contents": [
+              "Python / Java"
+            ]
+          },
+          {
+            "title": "Database",
+            "contents": [
+              "MongoDB/MySQL"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "16",
+      "cardimg": "images/courseimg/images/C++.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "45 Days",
+      "title": "C++",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "15000",
+        "offerprice": "11999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is C++?  ",
+            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
+              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
+              "Memory Management: Understand and implement dynamic memory management techniques.",
+              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
+              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Language Features",
+            "contents": [
+              "How C++ differs from C",
+              "Variables Declaration ",
+              "Function overloading",
+              "Optional Parameters",
+              "Reference Variables ",
+              "Operator overloading",
+              "Basics of Console Input and Output",
+              "Constant Pointers",
+              "Dynamic Memory Allocation"
+            ]
+          },
+          {
+            "title": "OOPs Concepts ",
+            "contents": [
+              "Overview of OOPs Principles",
+              "Introduction to classes & objects",
+              "Creation & destruction of objects ",
+              "Data Members & Member Functions",
+              "this Pointer",
+              "Constructor & Destructor",
+              "Static class member",
+              "Friend class and functions",
+              "Namespace"
+            ]
+          },
+          {
+            "title": "Inheritance",
+            "contents": [
+              "Introduction and benefits.",
+              "Access Specifier.",
+              "Base and Derived class Constructors",
+              "Types of Inheritance.",
+              "Down casting and up casting.",
+              "Function overriding."
+            ]
+          },
+          {
+            "title": "Polymorphism",
+            "contents": [
+              "What is Polymorphism",
+              "Pure virtual functions",
+              "Virtual Base Class "
+            ]
+          },
+          {
+            "title": "Exception Handling ",
+            "contents": [
+              "Introduction to Exception.",
+              "Benefits of Exception handling.",
+              "Try and catch block.",
+              "Throw statement.",
+              "Pre-defined exceptions in C++.",
+              "Writing custom Exception class."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "17",
+      "cardimg": "images/courseimg/images/C.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "45 Days",
+      "title": "C",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "15000",
+        "offerprice": "11999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is C++?  ",
+            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
+              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
+              "Memory Management: Understand and implement dynamic memory management techniques.",
+              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
+              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Language Features",
+            "contents": [
+              "How C++ differs from C",
+              "Variables Declaration ",
+              "Function overloading",
+              "Optional Parameters",
+              "Reference Variables ",
+              "Operator overloading",
+              "Basics of Console Input and Output",
+              "Constant Pointers",
+              "Dynamic Memory Allocation"
+            ]
+          },
+          {
+            "title": "OOPs Concepts ",
+            "contents": [
+              "Overview of OOPs Principles",
+              "Introduction to classes & objects",
+              "Creation & destruction of objects ",
+              "Data Members & Member Functions",
+              "this Pointer",
+              "Constructor & Destructor",
+              "Static class member",
+              "Friend class and functions",
+              "Namespace"
+            ]
+          },
+          {
+            "title": "Inheritance",
+            "contents": [
+              "Introduction and benefits.",
+              "Access Specifier.",
+              "Base and Derived class Constructors",
+              "Types of Inheritance.",
+              "Down casting and up casting.",
+              "Function overriding."
+            ]
+          },
+          {
+            "title": "Polymorphism",
+            "contents": [
+              "What is Polymorphism",
+              "Pure virtual functions",
+              "Virtual Base Class "
+            ]
+          },
+          {
+            "title": "Exception Handling ",
+            "contents": [
+              "Introduction to Exception.",
+              "Benefits of Exception handling.",
+              "Try and catch block.",
+              "Throw statement.",
+              "Pre-defined exceptions in C++.",
+              "Writing custom Exception class."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "18",
+      "cardimg": "images/courseimg/images/AdvancedSelenium.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "45 Days",
+      "title": "Advance Selenium",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "15000",
+        "offerprice": "11999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is C++?  ",
+            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
+              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
+              "Memory Management: Understand and implement dynamic memory management techniques.",
+              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
+              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Language Features",
+            "contents": [
+              "How C++ differs from C",
+              "Variables Declaration ",
+              "Function overloading",
+              "Optional Parameters",
+              "Reference Variables ",
+              "Operator overloading",
+              "Basics of Console Input and Output",
+              "Constant Pointers",
+              "Dynamic Memory Allocation"
+            ]
+          },
+          {
+            "title": "OOPs Concepts ",
+            "contents": [
+              "Overview of OOPs Principles",
+              "Introduction to classes & objects",
+              "Creation & destruction of objects ",
+              "Data Members & Member Functions",
+              "this Pointer",
+              "Constructor & Destructor",
+              "Static class member",
+              "Friend class and functions",
+              "Namespace"
+            ]
+          },
+          {
+            "title": "Inheritance",
+            "contents": [
+              "Introduction and benefits.",
+              "Access Specifier.",
+              "Base and Derived class Constructors",
+              "Types of Inheritance.",
+              "Down casting and up casting.",
+              "Function overriding."
+            ]
+          },
+          {
+            "title": "Polymorphism",
+            "contents": [
+              "What is Polymorphism",
+              "Pure virtual functions",
+              "Virtual Base Class "
+            ]
+          },
+          {
+            "title": "Exception Handling ",
+            "contents": [
+              "Introduction to Exception.",
+              "Benefits of Exception handling.",
+              "Try and catch block.",
+              "Throw statement.",
+              "Pre-defined exceptions in C++.",
+              "Writing custom Exception class."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "19",
+      "cardimg": "images/courseimg/images/DataAnalytics.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "45 Days",
+      "title": "Data Analytics",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "15000",
+        "offerprice": "11999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is C++?  ",
+            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
+              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
+              "Memory Management: Understand and implement dynamic memory management techniques.",
+              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
+              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Language Features",
+            "contents": [
+              "How C++ differs from C",
+              "Variables Declaration ",
+              "Function overloading",
+              "Optional Parameters",
+              "Reference Variables ",
+              "Operator overloading",
+              "Basics of Console Input and Output",
+              "Constant Pointers",
+              "Dynamic Memory Allocation"
+            ]
+          },
+          {
+            "title": "OOPs Concepts ",
+            "contents": [
+              "Overview of OOPs Principles",
+              "Introduction to classes & objects",
+              "Creation & destruction of objects ",
+              "Data Members & Member Functions",
+              "this Pointer",
+              "Constructor & Destructor",
+              "Static class member",
+              "Friend class and functions",
+              "Namespace"
+            ]
+          },
+          {
+            "title": "Inheritance",
+            "contents": [
+              "Introduction and benefits.",
+              "Access Specifier.",
+              "Base and Derived class Constructors",
+              "Types of Inheritance.",
+              "Down casting and up casting.",
+              "Function overriding."
+            ]
+          },
+          {
+            "title": "Polymorphism",
+            "contents": [
+              "What is Polymorphism",
+              "Pure virtual functions",
+              "Virtual Base Class "
+            ]
+          },
+          {
+            "title": "Exception Handling ",
+            "contents": [
+              "Introduction to Exception.",
+              "Benefits of Exception handling.",
+              "Try and catch block.",
+              "Throw statement.",
+              "Pre-defined exceptions in C++.",
+              "Writing custom Exception class."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "20",
+      "cardimg": "images/courseimg/images/JAVA.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "45 Days",
+      "title": "java",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "15000",
+        "offerprice": "11999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is C++?  ",
+            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
+              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
+              "Memory Management: Understand and implement dynamic memory management techniques.",
+              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
+              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Language Features",
+            "contents": [
+              "How C++ differs from C",
+              "Variables Declaration ",
+              "Function overloading",
+              "Optional Parameters",
+              "Reference Variables ",
+              "Operator overloading",
+              "Basics of Console Input and Output",
+              "Constant Pointers",
+              "Dynamic Memory Allocation"
+            ]
+          },
+          {
+            "title": "OOPs Concepts ",
+            "contents": [
+              "Overview of OOPs Principles",
+              "Introduction to classes & objects",
+              "Creation & destruction of objects ",
+              "Data Members & Member Functions",
+              "this Pointer",
+              "Constructor & Destructor",
+              "Static class member",
+              "Friend class and functions",
+              "Namespace"
+            ]
+          },
+          {
+            "title": "Inheritance",
+            "contents": [
+              "Introduction and benefits.",
+              "Access Specifier.",
+              "Base and Derived class Constructors",
+              "Types of Inheritance.",
+              "Down casting and up casting.",
+              "Function overriding."
+            ]
+          },
+          {
+            "title": "Polymorphism",
+            "contents": [
+              "What is Polymorphism",
+              "Pure virtual functions",
+              "Virtual Base Class "
+            ]
+          },
+          {
+            "title": "Exception Handling ",
+            "contents": [
+              "Introduction to Exception.",
+              "Benefits of Exception handling.",
+              "Try and catch block.",
+              "Throw statement.",
+              "Pre-defined exceptions in C++.",
+              "Writing custom Exception class."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "21",
+      "cardimg": "images/courseimg/images/TallyPrime.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "45 Days",
+      "title": "Tally Prime",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "15000",
+        "offerprice": "11999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is C++?  ",
+            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
+              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
+              "Memory Management: Understand and implement dynamic memory management techniques.",
+              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
+              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Language Features",
+            "contents": [
+              "How C++ differs from C",
+              "Variables Declaration ",
+              "Function overloading",
+              "Optional Parameters",
+              "Reference Variables ",
+              "Operator overloading",
+              "Basics of Console Input and Output",
+              "Constant Pointers",
+              "Dynamic Memory Allocation"
+            ]
+          },
+          {
+            "title": "OOPs Concepts ",
+            "contents": [
+              "Overview of OOPs Principles",
+              "Introduction to classes & objects",
+              "Creation & destruction of objects ",
+              "Data Members & Member Functions",
+              "this Pointer",
+              "Constructor & Destructor",
+              "Static class member",
+              "Friend class and functions",
+              "Namespace"
+            ]
+          },
+          {
+            "title": "Inheritance",
+            "contents": [
+              "Introduction and benefits.",
+              "Access Specifier.",
+              "Base and Derived class Constructors",
+              "Types of Inheritance.",
+              "Down casting and up casting.",
+              "Function overriding."
+            ]
+          },
+          {
+            "title": "Polymorphism",
+            "contents": [
+              "What is Polymorphism",
+              "Pure virtual functions",
+              "Virtual Base Class "
+            ]
+          },
+          {
+            "title": "Exception Handling ",
+            "contents": [
+              "Introduction to Exception.",
+              "Benefits of Exception handling.",
+              "Try and catch block.",
+              "Throw statement.",
+              "Pre-defined exceptions in C++.",
+              "Writing custom Exception class."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "22",
+      "cardimg": "images/courseimg/images/UIDevelopment.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "45 Days",
+      "title": "UI Development",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "15000",
+        "offerprice": "11999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is C++?  ",
+            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
+              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
+              "Memory Management: Understand and implement dynamic memory management techniques.",
+              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
+              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Language Features",
+            "contents": [
+              "How C++ differs from C",
+              "Variables Declaration ",
+              "Function overloading",
+              "Optional Parameters",
+              "Reference Variables ",
+              "Operator overloading",
+              "Basics of Console Input and Output",
+              "Constant Pointers",
+              "Dynamic Memory Allocation"
+            ]
+          },
+          {
+            "title": "OOPs Concepts ",
+            "contents": [
+              "Overview of OOPs Principles",
+              "Introduction to classes & objects",
+              "Creation & destruction of objects ",
+              "Data Members & Member Functions",
+              "this Pointer",
+              "Constructor & Destructor",
+              "Static class member",
+              "Friend class and functions",
+              "Namespace"
+            ]
+          },
+          {
+            "title": "Inheritance",
+            "contents": [
+              "Introduction and benefits.",
+              "Access Specifier.",
+              "Base and Derived class Constructors",
+              "Types of Inheritance.",
+              "Down casting and up casting.",
+              "Function overriding."
+            ]
+          },
+          {
+            "title": "Polymorphism",
+            "contents": [
+              "What is Polymorphism",
+              "Pure virtual functions",
+              "Virtual Base Class "
+            ]
+          },
+          {
+            "title": "Exception Handling ",
+            "contents": [
+              "Introduction to Exception.",
+              "Benefits of Exception handling.",
+              "Try and catch block.",
+              "Throw statement.",
+              "Pre-defined exceptions in C++.",
+              "Writing custom Exception class."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "23",
+      "cardimg": "images/courseimg/images/Wordpress.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "45 Days",
+      "title": "Wordpress",
+      "upcomingbatch": false,
+      "price": {
+        "originalprice": "15000",
+        "offerprice": "11999",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is C++?  ",
+            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
+              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
+              "Memory Management: Understand and implement dynamic memory management techniques.",
+              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
+              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Language Features",
+            "contents": [
+              "How C++ differs from C",
+              "Variables Declaration ",
+              "Function overloading",
+              "Optional Parameters",
+              "Reference Variables ",
+              "Operator overloading",
+              "Basics of Console Input and Output",
+              "Constant Pointers",
+              "Dynamic Memory Allocation"
+            ]
+          },
+          {
+            "title": "OOPs Concepts ",
+            "contents": [
+              "Overview of OOPs Principles",
+              "Introduction to classes & objects",
+              "Creation & destruction of objects ",
+              "Data Members & Member Functions",
+              "this Pointer",
+              "Constructor & Destructor",
+              "Static class member",
+              "Friend class and functions",
+              "Namespace"
+            ]
+          },
+          {
+            "title": "Inheritance",
+            "contents": [
+              "Introduction and benefits.",
+              "Access Specifier.",
+              "Base and Derived class Constructors",
+              "Types of Inheritance.",
+              "Down casting and up casting.",
+              "Function overriding."
+            ]
+          },
+          {
+            "title": "Polymorphism",
+            "contents": [
+              "What is Polymorphism",
+              "Pure virtual functions",
+              "Virtual Base Class "
+            ]
+          },
+          {
+            "title": "Exception Handling ",
+            "contents": [
+              "Introduction to Exception.",
+              "Benefits of Exception handling.",
+              "Try and catch block.",
+              "Throw statement.",
+              "Pre-defined exceptions in C++.",
+              "Writing custom Exception class."
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "about": [
+    {
+      "img": "images/google-image.png",
+      "name": "Kajol Kaware",
+      "color": "blue",
+      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
+      "googleLink": "https://g.co/kgs/LKYbdjn"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": " Nilam Pallavi",
+      "color": "blue",
+      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
+      "googleLink": "http://www.hematitecorp.com/#/studentfeedback"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Sai Mane",
+      "color": "blue",
+      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
+      "googleLink": "http://www.hematitecorp.com/#/studentfeedback"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Vishaka Mankar",
+      "color": "blue",
+      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
+      "googleLink": "http://www.hematitecorp.com/#/studentfeedback"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Komal Thamne",
+      "color": "blue",
+      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
+      "googleLink": "http://www.hematitecorp.com/#/studentfeedback"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": " Mankar",
+      "color": "blue",
+      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
+      "googleLink": "http://www.hematitecorp.com/#/studentfeedback"
+    }
+  ],
+  "aboutUsHeadings": [
+    {
+      "heading1": "Knowledge is power, Information is liberating",
+      "heading2": "Our Mission, Core Purpose and Values",
+      "heading3": "Upcoming Events",
+      "heading5": "Our Infrastructure"
+    }
+  ],
+  "aboutPage": [
+    {
+      "description": [
+        "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.",
+        "The center has modern infrastructure, including corporate-standard laboratories equipped with the latest state-of-the-art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from experts and visiting faculty, we also organize video-based sessions, seminars, assignments, internships, projects, faculty-student discussions, expert talks and profiling of the students, guidance in hackathons, Start-ups, etc. We also have a well-equipped library with a wide array of manuals. We also provide placement assistance to our students. Hematite Infotech has had an enviable placement record since its inception."
+      ],
+      "description1": "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.",
+      "heading4": "You Want Courses That Get You a Job?"
+    }
+  ],
+  "aboutUsImages": [
+    {
+      "imageUrl": "images/aboutus/aboutus-1.png",
+      "eventImgUrl": "images/aboutus/Frame 2.png",
+      "image_Url": "images/aboutus/aboutus-3 (1).webp"
+    }
+  ],
+  "benchmarkIcons": [
+    {
+      "imgIconUrl1": "images/aboutus/btrainedstudents.png",
+      "imgIconUrl2": "images/aboutus/bdiploma.png",
+      "imgIconUrl3": "images/aboutus/bexperience.png",
+      "imgIconUrl4": "images/aboutus/bexperts.png"
+    }
+  ],
+  "infrastructure": [
+    {
+      "imageUrl": "images/aboutus/infra1.webp"
+    },
+    {
+      "imageUrl": "images/aboutus/infra2.webp"
+    },
+    {
+      "imageUrl": "images/aboutus/infra3.webp"
+    },
+    {
+      "imageUrl": "images/aboutus/infra4.webp"
+    },
+    {
+      "imageUrl": "images/aboutus/infra5.webp"
+    }
+  ],
+  "aboutAimDetails": [
+    {
+      "bgcolour": "#eaf8f6",
+      "iconImg": "images/aboutus/mission.png",
+      "title": "Mission",
+      "description": "To Provide the Quality of Apple Products in Price of Android in our Trainings"
+    },
+    {
+      "bgcolour": "#fff3ee",
+      "iconImg": "images/aboutus/purpose.png",
+      "title": "Core purpose",
+      "description": "Student's Delight Through Teacher's Insight"
+    },
+    {
+      "bgcolour": "#fff1f1",
+      "iconImg": "images/aboutus/values.png",
+      "title": "Values",
+      "description": "Hardwork, Honour, Humility, Honesty, Humanity"
+    }
+  ],
+  "Counters": [
+    {
+      "icon": "images/home/lecture-room.png",
+      "title": "Student Trained",
+      "value": 10000
+    },
+    {
+      "icon": "images/home/colleges.png",
+      "title": "Colleges",
+      "value": 15
+    },
+    {
+      "icon": "images/home/trainer.png",
+      "title": "Expert Instructors",
+      "value": 25
+    },
+    {
+      "icon": "images/home/placement.png",
+      "title": "Placement",
+      "value": 1000
+    }
+  ],
+  "placementHighlightCounter": [
+    {
+      "companyVisited": "420+",
+      "noCriteriaCompanies": "110+",
+      "calls": "50+"
+    }
+  ],
+  "placedstudents": [
+    {
+      "id": "1",
+      "img": "images/placement/Aakash.png",
+      "name": "Aakash Jagade"
+    },
+    {
+      "id": "2",
+      "img": "images/placement/Aditya.png",
+      "name": "Aditya"
+    },
+    {
+      "id": "3",
+      "img": "images/placement/Akshay_K.png",
+      "name": "Akshay K"
+    },
+    {
+      "id": "4",
+      "img": "images/placement/Akshay_limkar.png",
+      "name": "Akshay_limkar"
+    },
+    {
+      "id": "5",
+      "img": "images/placement/Amit_Bhanwase.png",
+      "name": "Amit_Bhanwase"
+    },
+    {
+      "id": "6",
+      "img": "images/placement/Amruta_S.png",
+      "name": "Amruta_S"
+    },
+    {
+      "id": "7",
+      "img": "images/placement/Aniket_Waghole.png",
+      "name": "Aniket_Waghole"
+    },
+    {
+      "id": "8",
+      "img": "images/placement/Anmol_Chawre.png",
+      "name": "Anmol_Chawre"
+    },
+    {
+      "id": "9",
+      "img": "images/placement/Chetan.jpeg",
+      "name": "Chetan"
+    },
+    {
+      "id": "10",
+      "img": "images/placement/Darshan.jpeg",
+      "name": "Vishal Galphade"
+    },
+    {
+      "id": "11",
+      "img": "images/placement/Devendra.jpeg",
+      "name": "Devendra"
+    },
+    {
+      "id": "12",
+      "img": "images/placement/Dhanshree.jpeg",
+      "name": "Dhanshree"
+    },
+    {
+      "id": "12",
+      "img": "images/placement/Eshwari_Bihade.png",
+      "name": "Eshwari_Bihade"
+    },
+    {
+      "id": "13",
+      "img": "images/placement/Gaurav_Alhat.png",
+      "name": "Gaurav_Alhat"
+    },
+    {
+      "id": "14",
+      "img": "images/placement/Gaurav_Gadilohar.png",
+      "name": "Gaurav_Gadilohar"
+    },
+    {
+      "id": "15",
+      "img": "images/placement/Gauri_D.jpeg",
+      "name": "Gauri_D"
+    },
+    {
+      "id": "16",
+      "img": "images/placement/Kailas.jpeg",
+      "name": "Kailas"
+    },
+    {
+      "id": "17",
+      "img": "images/placement/Kartiki.png",
+      "name": "Kartiki"
+    },
+    {
+      "id": "18",
+      "img": "images/placement/Khushali.png",
+      "name": "Khushali"
+    },
+    {
+      "id": "19",
+      "img": "images/placement/Komal_G.jpeg",
+      "name": "Komal_G"
+    },
+    {
+      "id": "20",
+      "img": "images/placement/Kushal.png",
+      "name": "Kushal"
+    },
+    {
+      "id": "21",
+      "img": "images/placement/Manisha.png",
+      "name": "Manisha"
+    },
+    {
+      "id": "22",
+      "img": "images/placement/Mobin_Syed.png",
+      "name": "Mobin_Syed"
+    },
+    {
+      "id": "23",
+      "img": "images/placement/Neha_Sonawane.png",
+      "name": "Neha_Sonawane"
+    },
+    {
+      "id": "24",
+      "img": "images/placement/Nikhil_G.png",
+      "name": "Nikhil_G"
+    },
+    {
+      "id": "25",
+      "img": "images/placement//Nikhil_Pawar.png",
+      "name": "Nikhil_Pawar"
+    },
+    {
+      "id": "26",
+      "img": "images/placement/Nikita_W.jpeg",
+      "name": "Nikita_W"
+    },
+    {
+      "id": "27",
+      "img": "images/placement/Omkar_Abhang.png",
+      "name": "Omkar_Abhang"
+    },
+    {
+      "id": "28",
+      "img": "images/placement/Pallavi_Dandage.png",
+      "name": "Pallavi_Dandage"
+    },
+    {
+      "id": "29",
+      "img": "images/placement/Pooja_D.png",
+      "name": "Pooja_D"
+    },
+    {
+      "id": "30",
+      "img": "images/placement/Pooja_Fulsundar.png",
+      "name": "Pooja_Fulsundar"
+    },
+    {
+      "id": "31",
+      "img": "images/placement/Poonam.jpeg",
+      "name": "Poonam"
+    },
+    {
+      "id": "32",
+      "img": "images/placement/Pornima_Divekar.png",
+      "name": "Pornima_Divekar"
+    },
+    {
+      "id": "33",
+      "img": "images/placement/Pragati_Bhande.png",
+      "name": "Pragati_Bhande"
+    },
+    {
+      "id": "34",
+      "img": "images/placement/Pragati_Kakade.png",
+      "name": "Pragati_Kakade"
+    },
+    {
+      "id": "35",
+      "img": "images/placement/Pranav_P.png",
+      "name": "Pranav_P"
+    },
+    {
+      "id": "36",
+      "img": "images/placement/Priyanka_k.jpeg",
+      "name": "Priyanka_k"
+    },
+    {
+      "id": "37",
+      "img": "images/placement/Priyanka.png",
+      "name": "Priyanka"
+    },
+    {
+      "id": "38",
+      "img": "images/placement/Pushpak_K.jpeg",
+      "name": "Pushpak_K"
+    },
+    {
+      "id": "39",
+      "img": "images/placement/Ravi_D.png",
+      "name": "Ravi_D"
+    },
+    {
+      "id": "40",
+      "img": "images/placement/Ravi_M.png",
+      "name": "Ravi_M"
+    },
+    {
+      "id": "41",
+      "img": "images/placement/Rupesh_B.png",
+      "name": "Rupesh_B"
+    },
+    {
+      "id": "42",
+      "img": "images/placement/Rutuja_M.jpeg",
+      "name": "Rutuja_M"
+    },
+    {
+      "id": "43",
+      "img": "images/placement/Sagar_S.png",
+      "name": "Sagar_S"
+    },
+    {
+      "id": "44",
+      "img": "images/placement/Sanket.png",
+      "name": "Sanket"
+    },
+    {
+      "id": "45",
+      "img": "images/placement/Shivani_mane.jpeg",
+      "name": "Shivani_mane"
+    },
+    {
+      "id": "46",
+      "img": "images/placement/Amruta_S.png",
+      "name": "Amruta_S"
+    },
+    {
+      "id": "47",
+      "img": "images/placement/Aniket_Waghole.png",
+      "name": "Aniket_Waghole"
+    },
+    {
+      "id": "48",
+      "img": "images/placement/Shivani.jpeg",
+      "name": "Shivani"
+    },
+    {
+      "id": "49",
+      "img": "images/placement/Shrutika_Davari.png",
+      "name": "Shrutika_Davari"
+    },
+    {
+      "id": "50",
+      "img": "images/placement/Shubham_Kaddi.png",
+      "name": "Shubham_Kaddi"
+    },
+    {
+      "id": "1",
+      "img": "images/placement/Siddhant.jpeg",
+      "name": "Siddhant"
+    },
+    {
+      "id": "52",
+      "img": "images/placement/Smita.png",
+      "name": "Smita"
+    },
+    {
+      "id": "53",
+      "img": "images/placement/Santoshi.jpeg",
+      "name": "Santoshi"
+    },
+    {
+      "id": "54",
+      "img": "images/placement/Snehal_Kasare.png",
+      "name": "Snehal_Kasare"
+    },
+    {
+      "id": "55",
+      "img": "images/placement/Sonal.jpeg",
+      "name": "Sonal"
+    },
+    {
+      "id": "56",
+      "img": "images/placement/Sonali.png",
+      "name": "Sonali"
+    },
+    {
+      "id": "57",
+      "img": "images/placement/Sunil.jpeg",
+      "name": "Sunil"
+    },
+    {
+      "id": "58",
+      "img": "images/placement/Tejaswini.png",
+      "name": "Tejaswini"
+    },
+    {
+      "id": "59",
+      "img": "images/placement/Vaibhav.png",
+      "name": "Vaibhav"
+    },
+    {
+      "id": "60",
+      "img": "images/placement/Vaibhavi_Mhetre.png",
+      "name": "Vaibhavi_Mhetre"
+    },
+    {
+      "id": "61",
+      "img": "images/placement/Yashwini.jpeg",
+      "name": "Yashwini"
+    }
+  ],
+  "benchmarkData": [
+    {
+      "iconUrl": "/images/aboutus/training.png",
+      "title": "10000+",
+      "subtitle": "Training Delivered"
+    },
+    {
+      "iconUrl": "/images/aboutus/fullstack.png",
+      "title": "20+",
+      "subtitle": "Full Stack Batches"
+    },
+    {
+      "iconUrl": "/images/aboutus/experience.png",
+      "title": "8+",
+      "subtitle": "Years of Accumulative Experience"
+    },
+    {
+      "iconUrl": "/images/aboutus/expert.png",
+      "title": "30+",
+      "subtitle": "Dedicated Experts"
+    }
+  ],
+  "footer": {
+    "sloganheading": {
+      "title": "ABOUT US"
+    },
+    "slogan": "Hematite Infotech Pvt. Ltd, represents the highest level of competence and expertise in delivering technology training along with application development through multiple learning methodologies worldwide.",
+    "social": [
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/hematite_infotech?igsh=ZDE3OTNnNzdjNnl4",
+        "icon": "FaInstagram"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/company/hematite-infotech-pvt-ltd/mycompany/",
+        "icon": "FaLinkedinIn"
+      },
+      {
+        "name": "Facebook",
+        "link": "https://www.facebook.com/hematiteinfotech/",
+        "icon": "FaFacebookF"
+      },
+      {
+        "name": "WhatsApp",
+        "link": "https://wa.link/he878r",
+        "icon": "IoLogoWhatsapp"
+      },
+      {
+        "name": "YouTube",
+        "link": "http://www.youtube.com/@hematiteinfotech1569",
+        "icon": "FaYoutube"
+      }
+    ],
+    "siteMap": {
+      "title": "SITE MAP",
+      "items": [
+        {
+          "name": "Home",
+          "link": "/"
+        },
+        {
+          "name": "Courses",
+          "link": "/allcourse"
+        },
+        {
+          "name": "Contact",
+          "link": "/contact"
+        },
+        {
+          "name": "About",
+          "link": "/about"
+        },
+        {
+          "name": "Services",
+          "link": "/service"
+        }
+      ]
+    },
+   
+    "headOffice": {
+      "title": "HEAD OFFICE",
+      "address": "2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.",
+      "email": "contact@hematitecorp.com",
+      "phone": "+91 - 8263926309 / 8208683698 / 8999639478"
+    },
+    "copyright": "© 2017 - 2024, Hematite Infotech, All rights reserved",
+    "subheading":"Web Design & Development by Hematite Infotech Pvt. Ltd."
+  }
+}

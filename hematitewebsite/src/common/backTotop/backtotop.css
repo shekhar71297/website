@@ -1,0 +1,35 @@
+ 
+.top-btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #5cccf9;
+    /* box-shadow: 0 0 2px 1px #7ea9ea; */
+    color: #fcfcfc;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    max-width: 100%;
+  }
+  &-- icon {
+    animation: backtotop 1.2s linear infinite alternate-reverse;
+  
+  }
+  @keyframes backtotop{
+    0%{
+      transform: translateY(-0.5%);
+  }
+  100%{
+    transform: translateY(1%);
+  }
+  }
+  
+  .top-btn--icon{
+    height: 50%;
+    width: 50%;
+  }

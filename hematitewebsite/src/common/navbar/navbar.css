@@ -1,0 +1,52 @@
+/*--------------------------------------- navbar css--------------------------------------- */
+.nav-link {
+    font-size: 16px;
+    font-weight: 450;
+    margin-left: 10px;
+  }
+  .navbar{
+    text-align: center;
+  }
+  
+  .nav-link:hover {
+    color:#218dbb !important;
+  }
+  .dropdown-toggle::after {
+    display:none !important;
+  }
+  .scrolled {
+    background-color: #ffffff; /* Add your desired background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add your desired box shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add smooth transition */
+  }
+  .dropdown-item:hover{
+    background-color: #218dbb38 !important;
+  }
+  
+  
+  .custom-dropdown.show .dropdown-menu {
+    display: block;
+  }
+  
+  .custom-dropdown .dropdown-menu {
+    display: none;
+    border: none; /* Remove upper border */
+  }
+  
+  .custom-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  
+  /* For medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {
+    .nav-dropdown-item {
+     text-align: center !important;
+    }
+    .nav-dropdown-item:hover{
+      color:#218dbb !important;
+    }
+    
+  }
+  
+  
