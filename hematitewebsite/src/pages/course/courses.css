@@ -203,4 +203,18 @@
   .courseimg-width{
     max-width: 100%;
   }
+
+  .upcomingcourse-padding{
+    padding: 20px;
+  }
+  
+  .slick-prev {
+    left: -20px !important;
+    z-index: 1;
+  }
+  
+  .slick-next {
+    right: -13px !important;
+    z-index: 1;
+  }
 }

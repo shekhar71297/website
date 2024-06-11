@@ -37,8 +37,7 @@ function OurCourses() {
     slidesToScroll: 1,
     // autoplay: true,
     // autoplaySpeed: 2000,
-    // prevArrow: <FaArrowLeft className="slick-prev" />,
-    // nextArrow: <FaArrowRight className="slick-next" />,
+    
     
     responsive: [
       {
@@ -177,9 +176,10 @@ function OurCourses() {
         </Container>
       </div>
       {/* Upcoming Courses in Home Page */}
+      <div className="upcomingcourse-padding">
       <Container>
         <Row>
-          <Col>
+          <Col lg='12'>
             <h1 className="upcomingcourseheading coursetopmargin">
               UPCOMING BATCHES
             </h1>
@@ -294,6 +294,9 @@ function OurCourses() {
           </Col>
         </Row>
       </Container>
+
+        </div>
+     
     </div>
   );
 }
