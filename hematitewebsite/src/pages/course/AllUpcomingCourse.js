@@ -3,7 +3,7 @@ import { Row, Card, Container, Col, Button } from "react-bootstrap";
 import { MdLibraryBooks } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaRupeeSign } from "react-icons/fa";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link} from "react-router-dom";
 import NavigationBar from "../../common/navbar/NavigationBar";
 import BackToTop from "../../common/backTotop/BackToTop";
 import { WebContext } from "../../App";
@@ -97,7 +97,7 @@ function AllUpcomingCourse() {
                   <br />
                   <Link
                     to={`/coursedetail/${data?.id}`}
-                    style={{ textDecoration: "none", textAlign: "left" }}
+                    
                   >
                     <Button type="button" variant="">
                       Know More <FaArrowRightLong />

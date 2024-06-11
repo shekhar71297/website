@@ -14,9 +14,6 @@
   padding: 0 20px 20px;
 }
 
-.mt--35 {
-  margin-top: 35px !important;
-}
 
 .course-detail-content {
   margin-right: 30px;
@@ -60,6 +57,13 @@
   color: black;
   list-style: none;
 }
+
+.widget-content ul hr{
+font-size: 5px;
+color: black;
+}
+
+
 .widget-content ul {
   padding: 0;
   margin: 0;
@@ -82,13 +86,13 @@
 .buttonlayout {
   margin: 0px 0px;
   padding: 13px 20px;
-  background-color: black;
+  background-color:#218BBB ;
   color: white;
   border: none;
 }
 
 .buttonlayout:hover {
-  background-color: rgb(76, 120, 192);
+  background-color:  #0E4D63;
   color: white;
 }
 
