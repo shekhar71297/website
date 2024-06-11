@@ -1,0 +1,222 @@
+.slick-prev:before,
+.slick-next:before {
+  font-size: 25px !important;
+  color: black !important;
+}
+
+.card-adjustment {
+  position: relative;
+  cursor: pointer;
+  border-radius: 90px;
+  border: none;
+  box-shadow: 0px 0px 2px 0px gray
+}
+
+.btncardadjustment {
+  background-color: #62d2ff;
+  color: #fff;
+  padding: 0px 30px;
+  margin: -18px 22px;
+  position: relative;
+  top: -40px;
+  border: none;
+}
+
+.backgroundImgUrl {
+  background-image: url("../../../public/images/home/Section\ Devider.png");
+  background-size: 100% 100%;
+  padding: 20px;
+}
+
+.card-adjustment:hover .promo {
+  opacity: 0;
+}
+
+.text-alignment {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0px;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.applyinghover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  background-color: #153441;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+}
+
+.card-adjustment:hover .applyinghover {
+  opacity: 1;
+}
+
+.applyinghover h6,
+.applyinghover p {
+  margin: 0;
+}
+
+.courseheadingfontsize {
+  font-size: 15px;
+}
+
+.coursetextfontsize {
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+.coursePriceHeading {
+  margin-left: 20px;
+  color: #565959;
+}
+
+.courseOfferPrice {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.courseOriginalPrice {
+  text-decoration: line-through;
+  color: #565959;
+  margin-left: 5px;
+}
+
+.hovercoursePriceHeading {
+  margin-left: 20px;
+  color: white;
+}
+
+.hovercourseOfferPrice {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.hovercourseOriginalPrice {
+  text-decoration: line-through;
+  color: white;
+  margin-left: 5px;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.registration-text {
+  animation: fadeInOut 3s infinite;
+}
+
+.course-heading {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+}
+
+.upcomingcourseheading {
+  font-size: 36px;
+  text-align: center;
+  color: #0e4d63;
+}
+
+.applyinghover Button {
+  background-color: white;
+  color: rgb(3, 3, 49);
+  cursor: pointer;
+}
+
+.applyinghover Button:hover {
+  background-color: rgb(3, 3, 49);
+  color: white;
+}
+
+
+.viewmorebtn {
+  background-color: #153441 !important;
+  border: none !important;
+  padding: 13px 43px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  margin-top: 40px;
+}
+
+.coursetopmargin {
+  margin-top: 40px;
+}
+
+.allcoursemargintop {
+  margin-top: 90px;
+}
+
+
+@media only screen and (min-width: 319px) and (max-width: 768px) {
+  .courseOfferPrice {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .applyinghover Button {
+    margin-top: -30px;
+  }
+
+  .courseOriginalPrice {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .coursePriceHeading {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .hovercourseOfferPrice {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .hovercourseOriginalPrice {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .hovercoursePriceHeading {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .courseimg-width{
+    max-width: 100%;
+  }
+
+  .upcomingcourse-padding{
+    padding: 20px;
+  }
+  
+  .slick-prev {
+    left: -20px !important;
+    z-index: 1;
+  }
+  
+  .slick-next {
+    right: -13px !important;
+    z-index: 1;
+  }
+}
