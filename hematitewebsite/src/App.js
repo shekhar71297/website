@@ -3,10 +3,6 @@ import React, { useState, useEffect, createContext } from 'react';
 import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from './pages/home/HomePage';
-import OurCourses from './pages/course/OurCourses';
-import AllCourses from './pages/course/AllCourses';
-import AllUpcomingCourse from './pages/course/AllUpcomingCourse';
-import CourseDetails from './pages/course/CourseDetails';
 
 
 
@@ -28,12 +24,7 @@ function App() {
 
   const router = createBrowserRouter([
 
-    { path:"", element: <HomePage /> },
-    { path: "/courses", element: <OurCourses /> },
-    { path: "/allcourse", element: <AllCourses /> },
-    { path: "/upcomingcourse", element: <AllUpcomingCourse /> },
-    { path: "/coursedetail/:id", element: <CourseDetails /> },
-
+    { path:"", element: <HomePage /> }
   ]);
 
   return (
