@@ -284,6 +284,7 @@ a.btn-about:hover {
         margin: 0 0 30px;
         color: #6f6b80;
     }
+
     .description::before {
         content: "";
         position: absolute;
@@ -308,7 +309,8 @@ a.btn-about:hover {
         border-radius: 5px;
         margin-left: 20px;
     }
-    .aboutus-image{
+
+    .aboutus-image {
         margin-top: 60px;
     }
 
@@ -339,16 +341,18 @@ a.btn-about:hover {
 
 /*----------------------------------------------Slider-css----------------------------------------------------*/
 
-.slider-section{
+.slider-section {
     background-size: 100% 100%;
     background-image: url(../../../public/images/home/Section\ Devider.png);
     padding-bottom: 60px;
     padding-top: 80px;
 }
-.slider-section{
-   margin-top: 40px;
-   margin-bottom: 40px;
+
+.slider-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+
 .slider-image {
     height: 300px;
     width: 300px;
@@ -356,100 +360,128 @@ a.btn-about:hover {
     align-items: center;
     padding: 15px;
     perspective: 100px;
-  }
-  .image {
+}
+
+.image {
     max-width: 100%;
     max-height: 100%;
     transition: transform 1s;
     border-radius: 5px;
     /* padding: 15px; */
-  }
-  .slider-container-main-heading {
+}
+
+.slider-container-main-heading {
     font-weight: bolder;
     font-size: 30px;
     color: white;
     font-family: sans-serif;
     text-align: center;
-  }
-  @media ((min-width: 410px) and (max-width: 414px)) {
+}
+@media ((min-width: 667px) and (max-width: 736px)) {
+    .slick-prev, .slick-next{
+        /* top: 37% !important; */
+    }
+}
+
+@media ((min-width: 410px) and (max-width: 425px)) {
     .slider-container {
         max-width: 300px;
         margin-left: 40px;
-      }
-      .slider-container-main-heading {
+    }
+
+    .slider-container-main-heading {
         font-weight: bolder;
         font-size: 20px;
         color: white;
         font-family: sans-serif;
         padding: 20px;
         text-align: center;
-      }
+    }
 
-  }
+}
 
 
-  @media ((min-width: 320px) and (max-width: 400px)) {
+@media ((min-width: 320px) and (max-width: 400px)) {
     .slider-container {
         max-width: 300px;
         margin-left: 20px;
-      }
-      .slider-container-main-heading {
+        margin-right: 20px;
+    }
+
+    .slider-container-main-heading {
         font-weight: bolder;
         font-size: 20px;
         color: white;
         font-family: sans-serif;
         padding: 20px;
         text-align: center;
-      }
-    
-  }
-  @media ((min-width: 740px) and (max-width: 768px)) {
-    .slider-container {
-        max-width: 1000px;
-        margin-left: 20px;
-      }
-      
-  }
+    }
 
-  /*-----------------------------------------------Couter bar css------------------------------------------------*/
-  .counter-section{
+}
+
+@media ((min-width: 740px) and (max-width: 770px)) {
+    .slider-container {
+        max-width: 900px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .slick-prev, .slick-next{
+        /* top: 37% !important; */
+    }
+
+}
+
+/*-----------------------------------------------Couter bar css------------------------------------------------*/
+.counter-section {
     margin-top: 40px;
     margin-bottom: 40px;
-  }
+}
 
-  .counter-card {
+.counter-card {
     border: none;
     box-shadow: 1px 2px 9px -3px;
     text-align: center;
     border-radius: 10px !important;
-  }
-  .counter-logo{
-  max-width: 30%;
-  margin: 10px;
-  background-color: #fff;
-  padding: 5px;
 }
+
+.counter-logo {
+    max-width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    padding: 5px;
+}
+
 .counter-title {
     color: #0e4d63 !important;
 }
-.counter-cardtext{
+
+.counter-cardtext {
     color: #0e4d63 !important;
     font-size: 18px;
 }
-@media ((min-width: 320px) and (max-width: 414px)) {
-    .counter-card{
-        margin-bottom: 20px;
+
+@media ((min-width: 320px) and (max-width: 425px)) {
+    .counter-main-body{
+       margin-left: 20%;
     }
-    .counter-logo{
-        max-width: 10%;
+    .counter-card {
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+   
+
+    .counter-logo {
+        max-width: 30%;
         margin: 10px;
         background-color: #fff;
         padding: 5px;
-      }
-      .counter-cardtext{
+    }
+
+    .counter-cardtext {
         color: #0e4d63 !important;
         font-size: 12px;
     }
+
     .counter-title {
         font-size: 14px !important;
         color: #0e4d63 !important;
@@ -458,23 +490,143 @@ a.btn-about:hover {
 
 @media ((min-width: 667px) and (max-width: 736px)) {
     .counter-card {
-     margin-bottom: 25px;
-      }   
+        margin-bottom: 25px;
+    }
 }
 
 @media ((min-width: 740px) and (max-width: 768px)) {
-    .counter-cardtext{
+    .counter-cardtext {
         color: #0e4d63 !important;
         font-size: 14px;
     }
-    .counter-logo{
+
+    .counter-logo {
         max-width: 30%;
         margin: 10px;
         background-color: #fff;
         padding: 5px;
-      }
-      .counter-title {
+    }
+
+    .counter-title {
         font-size: 14px !important;
         color: #0e4d63 !important;
+    }
+}
+
+/*---------------------------------------------------service css-------------------------------------------------*/
+.logo {
+    max-width: 20%;
+}
+
+.main-card {
+    /* padding: 20px; */
+    margin-bottom: 20px;
+    /* border: none; */
+    height: 450px !important;
+}
+
+.main-card:hover {
+    transition: 0.7s;
+    background-color: #218bbb;
+    color: #ffffff;
+    /* border: none; */
+}
+
+/* .card-container {
+    text-align: center;
+} */
+
+.serviceicon {
+    text-align: center;
+}
+
+.cardtext {
+    text-align: justify;
+    font-size: 15px !important;
+    /* word-spacing: 1px !important; */
+}
+
+.service-title {
+    text-align: center;
+}
+
+.service-container {
+    margin-top: 20px;
+}
+
+.service-heading-title {
+    font-size: 36px;
+    color: #218bbb;
+    font-weight: 550;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.heading2 {
+    text-align: center;
+}
+
+
+@media ((min-width: 312px) and (max-width: 414px)) {
+
+    .cardtext {
+        text-align: justify;
+        font-size: 12px !important;
+        /* word-spacing: 1px !important; */
+    }
+    .main-card {
+        height: 300px !important;
+    }
+    
+
+    .logo {
+        max-width: 20%;
+    }
+
+    .service-heading-title {
+        font-size: 24px;
+    }
+}
+
+@media ((min-width: 415px) and (max-width: 600px)) {
+
+    .cardtext {
+        text-align: justify;
+        font-size: 14px !important;
+        /* word-spacing: 1px !important; */
+    }
+    
+
+    .logo {
+        max-width: 20%;
+    }
+
+    .service-heading-title {
+        font-size: 24px;
+    }
+}
+
+@media ((min-width: 737px) and (max-width: 770px)) {
+    .logo {
+        max-width: 10%;
+    }
+    .main-card {
+        /* padding: 20px; */
+        margin-bottom: 20px;
+        /* border: none; */
+        height: 300px !important;
+    }
+}
+@media ((min-width: 771px) and (max-width: 1030px)) {
+    .cardtext {
+        text-align: justify;
+        font-size: 12px !important;
+        /* word-spacing: 1px !important; */
+    }
+    .main-card {
+        /* padding: 10px !important; */
+        margin-bottom: 20px;
+        /* border: none; */
+        height: 400px !important;
     }
 }

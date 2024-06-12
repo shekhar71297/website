@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #218bbb;
+  /* Define your primary color here */
+  --secondary-color: #0e4d63;
+  /* Define your secondary color here */
+}
 /* breadcrumbs css */
 .header {
     border: none;
@@ -6,7 +12,7 @@
     padding: 25px;
     display: flex;
     flex-direction: column;
-    margin-top: 78px;
+    margin-top: 76px;
     text-align: left;
     background-color: var(--primary-color);
   }

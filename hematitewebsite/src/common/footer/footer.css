@@ -16,6 +16,12 @@
     background: #218bbb;
     height: 90%
 }
+ul li {
+list-style-type: none;
+}
+ul{
+    padding-inline-start: 0px !important;
+}
 
 .footer-body {
     background-color: #153441;
@@ -101,7 +107,7 @@
     background-color: #218bbb;
 }
 
-@media ((min-width: 320px) and (max-width: 414px)) {
+@media ((min-width: 320px) and (max-width: 425px)) {
     .site-map-body {
         padding-left: 0px !important;
     }

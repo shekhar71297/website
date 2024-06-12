@@ -146,31 +146,3 @@ color: black;
   margin: 20px;
 }
 
-/* breadcrumb css */
-.coursedetail-heading {
-  border: none;
-  color: white;
-  max-width: 100%;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 52px;
-  text-align: left;
-  background-color: #218bbb;
-}
-
-/* Remove underline from breadcrumb links */
-.breadcrumb-link {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Change active color to orange and remove underline */
-.custom-breadcrumb .breadcrumb-item.active,
-.custom-breadcrumb .breadcrumb-item.active > LInk {
-  color: #62d2ff;
-  /* Change to the color you want */
-  text-decoration: none;
-  font-size: 18px;
-}

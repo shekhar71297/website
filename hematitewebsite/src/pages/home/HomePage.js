@@ -9,10 +9,18 @@ import { Link } from 'react-router-dom';
 import CountUp from "react-countup";
 import FooterPage from '../../common/footer/FooterPage';
 import BackToTop from '../../common/backTotop/BackToTop';
+import OurCourses from '../course/OurCourses';
 
 function HomePage() {
   const data = useContext(WebContext);
   const [counterOn, setCounterOn] = useState(false);
+  const getServiceIcon = (iconUrl) => {
+    // If an icon URL is provided, return an img element with the icon
+    if (iconUrl) {
+      return <img src={iconUrl} alt="service icon" className="logo" />;
+    }
+    return null;
+  };
   let settings = {
     dots: false,
     infinite: true,
@@ -23,7 +31,7 @@ function HomePage() {
     autoplaySpeed: 2000,
     cssEase: "linear",
   };
-  if (document.body.clientWidth < 500) {
+  if (document.body.clientWidth > 315 && document.body.clientWidth < 500) {
     settings = {
       dots: false,
       infinite: true,
@@ -36,7 +44,7 @@ function HomePage() {
     };
   }
 
-  if (document.body.clientWidth > 665 && document.body.clientWidth < 750) {
+  if (document.body.clientWidth > 501 && document.body.clientWidth < 750) {
     settings = {
       dots: false,
       infinite: true,
@@ -48,7 +56,20 @@ function HomePage() {
       cssEase: "linear",
     };
   }
-  if (document.body.clientWidth >751 && document.body.clientWidth < 1026) {
+  if (document.body.clientWidth > 751 && document.body.clientWidth <780) {
+    settings = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 1000,
+      autoplaySpeed: 2000,
+      cssEase: "linear",
+    };
+  }
+
+  if (document.body.clientWidth > 781 && document.body.clientWidth <1030) {
     settings = {
       dots: false,
       infinite: true,
@@ -96,9 +117,9 @@ function HomePage() {
             </Row>
           ))}
         </Container>
-        </div>
-        {/*---------------------------------------------------about us section----------------------------------------*/}
-        <Container>
+      </div>
+      {/*---------------------------------------------------about us section----------------------------------------*/}
+      <Container>
         <div className='about-body'>
           {data?.homepageabout?.map((val, index) => (
             <Row>
@@ -130,80 +151,119 @@ function HomePage() {
               </Col>
             </Row>
           ))}
-          </div>
-        </Container>
-    {/* -----------------------------------------------Slider-section-------------------------------------------- */}
-    <div className='slider-section' >
-      <Container>
-        <Row>
-          <Col>
-          <div className="slider-container">
-              <p className="slider-container-main-heading">OUR PLACED STUDENTS</p>
-              <Slider {...settings}>
-                {/* This is the Slider component, which takes settings as props */}
-                {data?.placedstudents?.map((src) => (
-                  <div className="slider-image" key={src.id}>
-                    <img
-                      className="image"
-                      src={`${src.img}`}
-                      alt={`Slide ${src.id}`}
-                    />
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          </Col>
-        </Row>
+        </div>
       </Container>
-    </div>
-    {/*----------------------------------------------------couter bar---------------------------------------------*/}
-    <div className='counter-section' >
+      {/*----------------------------------------------course section----------------------------------------------*/}
+      <OurCourses />
+      {/* -----------------------------------------------Slider-section-------------------------------------------- */}
+      <div className='slider-section' >
         <Container>
           <Row>
-          {data?.Counters?.map((counter, index) => (
-            <Col sm={6} md={3} >
-              <Card className="counter-card" key={index}>
-              <Card.Body className="counter-card-body">
-                {counter.icon && (
-                  <img
-                    src={counter.icon}
-                    className="counter-logo"
-                    alt="icon"
-                  />
-                )}
-                <Card.Title className="counter-title" >{counter.title}</Card.Title>
-                <Card.Text
-                  className="counter-cardtext"
-                  style={{ textAlign: "center" }}
-                >
-                  <ScrollTrigger
-                    onEnter={() => setCounterOn(true)}
-                    onExit={() => setCounterOn(false)}
-                  >
-                    <div>
-                      <p>
-                        {counterOn && (
-                          <CountUp
-                            start={0}
-                            end={counter.value}
-                            duration={2}
-                            delay={0}
-                          />
-                        )}
-                        +
-                      </p>
+            <Col>
+              <div className="slider-container">
+                <p className="slider-container-main-heading">OUR PLACED STUDENTS</p>
+                <Slider {...settings}>
+                  {data?.placedstudents?.map((src) => (
+                    <div className="slider-image" key={src.id}>
+                      <img
+                        className="image"
+                        src={`${src.img}`}
+                        alt={`Slide ${src.id}`}
+                      />
                     </div>
-                  </ScrollTrigger>
+                  ))}
+                </Slider>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      {/*-----------------------------------------------service section--------------------------------------------*/}
+      <div>
+        <Container>
+        <div className="service-container">
+            <div className="heading2">
+              <span className="service-heading-title">What We Provide</span>
+            </div>
+            <Row>
+            {data?.services?.map((service, index) => (
+              <Col lg={4} md={12} sm={12}>
+              <div className="card-container">
+          
+          
+            <Card className="main-card" key={index}>
+              <Card.Body>
+                
+                <div className='serviceicon'>
+                  {getServiceIcon(service.iconUrl)}
+                </div>
+                <Card.Title className="service-title">
+                  {service.title}
+                </Card.Title>
+                <Card.Text className="cardtext">
+                  {service.description}
                 </Card.Text>
               </Card.Body>
             </Card>
-            </Col>
-          ))}
+          
+        </div>
+              </Col>
+              ))}
+            </Row>
+            </div>
+        </Container>
+        
+      </div>
+      {/*----------------------------------------------------couter bar---------------------------------------------*/}
+      <div className='counter-section' >
+        <Container>
+          <Row>
+            {data?.Counters?.map((counter, index) => (
+              <Col sm={6} md={3} >
+                <div className='counter-main-body'>
+                <Card className="counter-card" key={index}>
+                  <Card.Body className="counter-card-body">
+                    {counter.icon && (
+                      <img
+                        src={counter.icon}
+                        className="counter-logo"
+                        alt="icon"
+                      />
+                    )}
+                    <Card.Title className="counter-title" >{counter.title}</Card.Title>
+                    <Card.Text
+                      className="counter-cardtext"
+                      style={{ textAlign: "center" }}
+                    >
+                      <ScrollTrigger
+                        onEnter={() => setCounterOn(true)}
+                        onExit={() => setCounterOn(false)}
+                      >
+                        <div>
+                          <p>
+                            {counterOn && (
+                              <CountUp
+                                start={0}
+                                end={counter.value}
+                                duration={2}
+                                delay={0}
+                              />
+                            )}
+                            +
+                          </p>
+                        </div>
+                      </ScrollTrigger>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                </div>
+              </Col>
+            ))}
           </Row>
         </Container>
-    </div>
-    <BackToTop/>
-    <FooterPage/>
+      </div>
+      <BackToTop />
+      <FooterPage />
     </div>
   )
 }
