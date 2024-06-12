@@ -121,6 +121,11 @@
     background-color: #ffffff;
 }
 
+.btn.about_eventBtn:hover {
+    background-color: #218bbb;
+    color: #ffffff;
+}
+
 /* css for infrastructurestructure Container */
 
 .infrastructure_Container {
@@ -141,7 +146,8 @@
 /*-----------------------css for feedback container----------------------------*/
 
 .about_feedback {
-    margin: 100px 0px;
+    /* margin: 100px 0px; */
+    margin: 100px 0px 50px 0px;
     text-align: center;
     /* background-color: #62D2FF; */
     background-size: 100% 100%;
@@ -319,6 +325,10 @@
         text-align: center;
     }
 
+    .aboutUspara {
+        font-size: 14px;
+    }
+
     .mission_heading {
         font-size: 32px;
     }
@@ -344,6 +354,83 @@
     }
 
     .infrastructure_heading {
+        font-size: 32px;
+    }
+
+    .feedback_heading {
+        font-size: 32px;
+    }
+
+
+    /* .infrastructure_Images {
+        margin-left: 40px;
+    } */
+
+    .image_Carousel {
+        /* padding: 0px 23px; */
+        max-width: 76%;
+        margin: auto;
+    }
+
+    .slick-prev {
+        left: -15px !important;
+        z-index: 1;
+    }
+
+    .slick-next {
+        right: -5px !important;
+        z-index: 1;
+    }
+
+    .slick-slide>div {
+        margin: 0px 15px;
+    }
+}
+
+
+@media ((min-width: 769px) and (max-width: 991px)) {
+
+    .aboutUsHeading {
+        font-size: 32px;
+    }
+
+    .aboutUsImage {
+        text-align: center;
+    }
+
+    .aboutUspara {
+        font-size: 14px;
+    }
+
+    .mission_heading {
+        font-size: 32px;
+    }
+
+    .mission_card {
+        margin: 10px 0px;
+    }
+
+    .bgImage {
+        padding: 0px;
+    }
+
+    .about_event {
+        margin: 30px 0px;
+    }
+
+    .event_subheading {
+        font-size: 32px;
+    }
+
+    .eventImage {
+        margin-bottom: 20px;
+    }
+
+    .infrastructure_heading {
+        font-size: 32px;
+    }
+
+    .feedback_heading {
         font-size: 32px;
     }
 
@@ -383,6 +470,10 @@
         text-align: center;
     }
 
+    .aboutUspara {
+        font-size: 14px;
+    }
+
     .mission_heading {
         font-size: 32px;
     }
@@ -414,6 +505,10 @@
 
     .infrastructure_Images {
         margin-left: 0px !important;
+    }
+
+    .feedback_heading {
+        font-size: 32px;
     }
 
     .image_Carousel {
@@ -447,6 +542,10 @@
         text-align: center;
     }
 
+    .aboutUspara {
+        font-size: 14px;
+    }
+
     .mission_heading {
         font-size: 32px;
     }
@@ -475,6 +574,9 @@
         font-size: 32px;
     }
 
+    .feedback_heading {
+        font-size: 32px;
+    }
 
     .infrastructure_Images {
         margin-left: 0px !important;
@@ -501,8 +603,16 @@
 
 @media ((min-width: 992px) and (max-width: 1200px)) {
 
+    .aboutUspara {
+        font-size: 14px;
+    }
+
     .mission_card {
         margin: 10px 0px;
+    }
+
+    .feedback_heading {
+        font-size: 32px;
     }
 
     .eventImage {
