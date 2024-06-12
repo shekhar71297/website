@@ -7,6 +7,8 @@ import OurCourses from './pages/course/OurCourses';
 import AllCourses from './pages/course/AllCourses';
 import AllUpcomingCourse from './pages/course/AllUpcomingCourse';
 import CourseDetails from './pages/course/CourseDetails';
+import AboutPage from './pages/about/AboutPage';
+import PlacementPage from './pages/placement/PlacementPage';
 import ContactPage from './pages/contact/ContactPage';
 
 
@@ -29,7 +31,7 @@ function App() {
 
   const router = createBrowserRouter([
 
-    { path:"", element: <HomePage /> },
+    { path: "", element: <HomePage /> },
     { path: "/courses", element: <OurCourses /> },
     { path: "/allcourse", element: <AllCourses /> },
     { path: "/upcomingcourse", element: <AllUpcomingCourse /> },
@@ -37,6 +39,9 @@ function App() {
     { path: "/contact", element: <ContactPage /> },
 
 
+    // { path: "", element: <HomePage /> },
+    { path: "about", element: <AboutPage /> },
+    { path: "placement", element: <PlacementPage /> }
   ]);
 
   return (
