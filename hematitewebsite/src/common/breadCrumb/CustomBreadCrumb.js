@@ -3,7 +3,7 @@ import { Breadcrumb } from "react-bootstrap";
 // import './BreadCrumb.css'
 import './breadCrumb.css'
 import { Link } from 'react-router-dom';
-function CustomBreadcrumb({ pageTitle }) {
+function CustomBreadCrumb({ pageTitle }) {
   return (
 
     <div className="header">
@@ -22,4 +22,4 @@ function CustomBreadcrumb({ pageTitle }) {
   );
 }
 
-export default CustomBreadcrumb;
+export default CustomBreadCrumb;

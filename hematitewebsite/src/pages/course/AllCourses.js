@@ -19,7 +19,7 @@ function AllCourses() {
       <BackToTop />
       <NavigationBar />
       <CustomBreadcrumb pageTitle='All Courses' />
-
+<div className="allcourse-section">
       <Container>
       <Row>
           {data?.courses?.map((data, index) => (
@@ -107,6 +107,7 @@ function AllCourses() {
           ))}
         </Row>
       </Container>
+      </div>
     </div>
   );
 }

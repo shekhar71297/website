@@ -11,6 +11,7 @@ import BackToTop from "../../common/backTotop/BackToTop";
 import { WebContext } from "../../App";
 import { FaRupeeSign } from "react-icons/fa6";
 import NavigationBar from "../../common/navbar/NavigationBar";
+import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
 
 function CourseDetails() {
   const data = useContext(WebContext);
@@ -27,23 +28,7 @@ function CourseDetails() {
     <div>
       <NavigationBar />
       <BackToTop />
-
-      <div className="coursedetail-heading">
-        <Container>
-          <h3> {filterBatch?.title}</h3>
-          <Breadcrumb className="custom-breadcrumb">
-            <Breadcrumb.Item>
-              <Link className="breadcrumb-link" to="/">
-                Home
-              </Link>
-            </Breadcrumb.Item>
-            <Breadcrumb.Item className="active-item" active>
-              Course
-            </Breadcrumb.Item>
-          </Breadcrumb>
-        </Container>
-      </div>
-
+      <CustomBreadcrumb pageTitle= {filterBatch?.title} />
       {/* Banner Image code */}
       {/* <Container>
             <Row>

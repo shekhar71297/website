@@ -76,7 +76,8 @@ function FooterPage() {
 								</div>
 								<div className="footer-site-map" >
 									{data?.footer?.siteMap?.items?.map((item, index) => (
-										<p key={index}>
+										<ul key={index}>
+											<li>
 											<Link
 												className="site-map-links"
 												to={item.link}
@@ -85,7 +86,8 @@ function FooterPage() {
 												{/* Display the arrow icon and link text */}
 												<MdOutlineKeyboardDoubleArrowRight /> {item.name}
 											</Link>
-										</p>
+											</li>
+										</ul>
 									))}
 								</div>
 							</div>

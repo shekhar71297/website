@@ -20,7 +20,7 @@ function AllUpcomingCourse() {
     <div>
       <NavigationBar />
       <BackToTop />
-
+      <CustomBreadcrumb pageTitle='Upcoming Courses' />
       <Container className="allcoursemargintop">
       <Row>
           {filterBatch?.map((data, index) => (
