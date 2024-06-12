@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import "./coursedetail.css";
-import { Row, Col, Button, Card, Container } from "react-bootstrap";
+import { Row, Col, Card, Container } from "react-bootstrap";
 import { IoMdTime } from "react-icons/io";
 import { TbMessageLanguage } from "react-icons/tb";
 import { HiComputerDesktop } from "react-icons/hi2";
@@ -16,6 +16,10 @@ function CourseDetails() {
   const data = useContext(WebContext);
   const { id } = useParams();
   const filterBatch = data?.courses?.filter((course) => course.id === id)[0];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   console.log("anmol", filterBatch, id);
 
@@ -62,15 +66,17 @@ function CourseDetails() {
               <div className="tab-content" id="myTabContent">
                 <Card className="course-content-space">
                   <div className="course-content-space">
-                    <div className="course-intro-heading">
-                      Introduction
-                    </div>
-                    <div >
+                    <div className="course-intro-heading">Introduction</div>
+                    <div>
                       {filterBatch?.courseDetail?.introduction.map(
                         (intro, index) => (
                           <div key={index}>
-                            <div className="detail-content-heading">{intro?.title}</div>
-                            <div className="detail-content-subheading">{intro?.description}</div>
+                            <div className="detail-content-heading">
+                              {intro?.title}
+                            </div>
+                            <div className="detail-content-subheading">
+                              {intro?.description}
+                            </div>
                           </div>
                         )
                       )}
@@ -82,7 +88,9 @@ function CourseDetails() {
                         (obj, index) => (
                           <ul key={index}>
                             {obj.contents.map((content, i) => (
-                              <li className="detail-content-subheading" key={i}>{content}</li>
+                              <li className="detail-content-subheading" key={i}>
+                                {content}
+                              </li>
                             ))}
                           </ul>
                         )
@@ -94,10 +102,17 @@ function CourseDetails() {
                       {filterBatch?.courseDetail?.syllabus.map(
                         (syllabus, index) => (
                           <div key={index}>
-                            <div className="detail-content-heading">{syllabus.title}</div>
+                            <div className="detail-content-heading">
+                              {syllabus.title}
+                            </div>
                             <ul>
                               {syllabus.contents.map((content, i) => (
-                                <li className="detail-content-subheading"  key={i}>{content}</li>
+                                <li
+                                  className="detail-content-subheading"
+                                  key={i}
+                                >
+                                  {content}
+                                </li>
                               ))}
                             </ul>
                           </div>
@@ -105,8 +120,10 @@ function CourseDetails() {
                       )}
                     </Card.Text>
 
-                    <Card.Title className="detail-content-heading">Certificate</Card.Title>
-                    <p className="detail-content-subheading" >Yes.</p>
+                    <div className="detail-content-heading">
+                      Certificate
+                    </div>
+                    <p className="detail-content-subheading">Yes.</p>
                   </div>
                 </Card>
               </div>
@@ -125,7 +142,7 @@ function CourseDetails() {
                     alt="programming"
                   />
 
-                  <div className="eduvibe-widget-details mt--35">
+                  <div className="eduvibe-widget-details coursetopmargin">
                     <div className="widget-content">
                       <ul>
                         <li>
@@ -135,9 +152,7 @@ function CourseDetails() {
                           </span>
                           <span>{filterBatch?.month}</span>
                         </li>
-
                         <hr />
-
                         <li>
                           <span>
                             <TbMessageLanguage /> Language
@@ -172,20 +187,22 @@ function CourseDetails() {
                     <button className="buttonlayout" type="button">
                       {filterBatch?.price?.discount && (
                         <div>
-                          <span className="courseOfferPrice">
+                          <span className="hovercourseOfferPrice">
                             <FaRupeeSign />
                             {filterBatch?.price?.offerprice}
                           </span>
 
-                          <b className="coursePriceHeading">Original Price</b>
-                          <span className="courseOriginalPrice">
+                          <b className="hovercoursePriceHeading">
+                            Original Price
+                          </b>
+                          <span className="hovercourseOriginalPrice">
                             {" "}
                             {filterBatch?.price?.originalprice}
                           </span>
                         </div>
                       )}
                       {!filterBatch?.price?.discount && (
-                        <span className="courseOfferPrice">
+                        <span className="hovercourseOfferPrice">
                           {filterBatch?.price?.originalprice}
                         </span>
                       )}

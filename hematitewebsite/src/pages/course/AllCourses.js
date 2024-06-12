@@ -95,9 +95,7 @@ function AllCourses() {
                   </Button> */}
                   <br />
                   <Link
-                    to={`/coursedetail/${data?.id}`}
-                    style={{ textDecoration: "none", textAlign: "left" }}
-                  >
+                    to={`/coursedetail/${data?.id}`}>
                     <Button type="button" variant="">
                       Know More <FaArrowRightLong />
                     </Button>

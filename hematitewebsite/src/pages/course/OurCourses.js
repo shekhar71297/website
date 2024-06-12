@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Slider from "react-slick";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { MdLibraryBooks } from "react-icons/md";
-import { FaArrowRightLong } from "react-icons/fa6";
+import {FaArrowRightLong } from "react-icons/fa6";
 import { FaRupeeSign } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import NavigationBar from "../../common/navbar/NavigationBar";
@@ -35,8 +35,10 @@ function OurCourses() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    
+    
     responsive: [
       {
         breakpoint: 992,
@@ -68,7 +70,7 @@ function OurCourses() {
           <Row>
             <Col>
               <h2 className="course-heading coursetopmargin">OUR COURSES</h2>
-              <div className="adjustCourseCarosal coursetopmargin">
+              <div className="coursetopmargin">
                 <Slider {...settings}>
                   {slicedata &&
                     slicedata.length > 0 &&
@@ -82,7 +84,7 @@ function OurCourses() {
                           <hr />
                           <div>
                             {course.price.discount ? (
-                              <div>
+                              <div className="price-wrapper">
                                 <span className="courseOfferPrice">
                                   <FaRupeeSign /> {course.price.offerprice}
                                 </span>
@@ -102,12 +104,12 @@ function OurCourses() {
                         </Card.Body>
                         <div className="applyinghover">
                           <Card.Title className="text-alignment">
-                            {" "}
+                           
                             {course.title}
                           </Card.Title>
                           <br />
                           <h6 className="coursetextfontsize">
-                            {" "}
+                          
                             <MdLibraryBooks /> {course.month}
                           </h6>
                           <br />
@@ -129,7 +131,7 @@ function OurCourses() {
                                   className="hovercourseOriginalPrice"
                                   
                                 >
-                                  {" "}
+                                  
                                   <FaRupeeSign />
                                   {course?.price?.originalprice}
                                 </span>
@@ -154,10 +156,6 @@ function OurCourses() {
                           <br />
                           <Link
                             to={`/coursedetail/${course?.id}`}
-                            style={{
-                              textDecoration: "none",
-                              textAlign: "left",
-                            }}
                           >
                             <Button type="button" variant="">
                               Know More <FaArrowRightLong />
@@ -178,22 +176,23 @@ function OurCourses() {
         </Container>
       </div>
       {/* Upcoming Courses in Home Page */}
+      <div className="upcomingcourse-padding">
       <Container>
         <Row>
-          <Col>
+          <Col lg='12'>
             <h1 className="upcomingcourseheading coursetopmargin">
               UPCOMING BATCHES
             </h1>
-            <div className="adjustCourseCarosal coursetopmargin">
+            <div className="coursetopmargin">
               <Slider {...settings}>
                 {sliceupcomingbatch &&
                   sliceupcomingbatch.length > 0 &&
                   sliceupcomingbatch.map((course, index) => (
                     <Card className="card-adjustment" key={index}>
                       <Card.Body>
-                        <Card.Subtitle className="registration-text">
+                        <div className="registration-text">
                           Registration Start From 01-05-2024 to 15-05-2024
-                        </Card.Subtitle>
+                        </div>
                         <hr />
                         <Card.Img src={course.cardimg} fluid />
                         <h6 className="coursetextfontsize">
@@ -273,10 +272,7 @@ function OurCourses() {
                         <br />
                         <Link
                           to={`/coursedetail/${course?.id}`}
-                          style={{
-                            textDecoration: "none",
-                            textAlign: "left",
-                          }}
+                          
                         >
                           <Button type="button" variant="">
                             Know More <FaArrowRightLong />
@@ -298,6 +294,9 @@ function OurCourses() {
           </Col>
         </Row>
       </Container>
+
+        </div>
+     
     </div>
   );
 }
