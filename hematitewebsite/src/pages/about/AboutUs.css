@@ -1,0 +1,511 @@
+.slick-prev:before,
+.slick-next:before {
+    font-family: "slick";
+    font-size: 30px !important;
+    line-height: 1;
+    opacity: 0.75;
+    color: black !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+    left: -28px !important;
+    z-index: 1;
+}
+
+.slick-next {
+    right: -18px !important;
+    z-index: 1;
+}
+
+.aboutUsContainer {
+    margin-top: 50px;
+}
+
+.aboutUsColumn {
+    margin: auto;
+}
+
+
+.aboutUsHeading {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    color: #218bbb;
+}
+
+.aboutUspara {
+    text-align: justify;
+}
+
+.aboutUsSubheading {
+    font-size: 18px;
+}
+
+.btn.aboutUsBtn {
+    background-color: #218bbb;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.aboutUsBtnDiv {
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.btn.aboutUsBtn:hover {
+    background-color: rgb(6, 79, 106);
+    color: #ffffff;
+}
+
+
+/* css for Mission, Purpose, Vision Container */
+
+.mission_Container {
+    margin-top: 100px;
+}
+
+.mission_heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #218bbb;
+}
+
+.mission_card {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 5px;
+    height: 270px;
+}
+
+.mission_subheading {
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 15px 0px;
+}
+
+/* css for Event Container */
+
+.bgImage {
+    background-color: #1b1b2f;
+    padding: 100px;
+    margin-top: 100px;
+}
+
+/* .col.event_Column {
+    margin: auto;
+} */
+
+.about_event {
+    margin-top: 100px;
+}
+
+.event_heading {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.event_subheading {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.btn.about_eventBtn {
+    color: #218bbb;
+    background-color: #ffffff;
+}
+
+/* css for infrastructurestructure Container */
+
+.infrastructure_Container {
+    margin-top: 100px;
+}
+
+.infrastructure_heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #218bbb;
+}
+
+.infrastructure_Images {
+    width: fit-content;
+}
+
+/*-----------------------css for feedback container----------------------------*/
+
+.about_feedback {
+    margin: 100px 0px;
+    text-align: center;
+    /* background-color: #62D2FF; */
+    background-size: 100% 100%;
+    background-image: url(../../../public/images/home/Section\ Devider.png);
+    padding: 40px 0px;
+}
+
+.feedback_heading {
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-container {
+    border: none;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+    border: none;
+    /* margin-left: 10px; */
+}
+
+.sk-review-image {
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#name-content {
+    overflow-wrap: break-word;
+    color: #62d2ff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Century Gothic", sans-serif;
+}
+
+/* .star-icons i {
+    color: gold;
+    font-size: 16px;
+} */
+
+.sk-separator {
+    border: 1px solid #f1f1f1 !important;
+    transform: scaleY(0.5);
+    margin: 15px 0px !important;
+}
+
+.feedback-content {
+    color: rgb(33, 37, 41);
+    font-family: "Century Gothic", sans-serif;
+    text-align: justify;
+    line-height: 20px;
+    white-space: pre-line;
+    font-size: 16px;
+}
+
+.feedback-content-container {
+    position: relative;
+}
+
+.feedback-content {
+    max-height: 300px;
+    overflow-y: hidden;
+    transition: max-height 0.5s;
+}
+
+.feedback-content:hover {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.feedback-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.feedback-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.feedback-content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.feedback-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.feedback-content-scrollbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    opacity: 0;
+    /* Initially hide the scrollbar */
+    transition: opacity 0.3s;
+    /* Add smooth transition for opacity */
+}
+
+.feedback-content-container:hover .feedback-content-scrollbar {
+    opacity: 1;
+}
+
+.feedback-content-scrollbar-thumb {
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.feedback-content-scrollbar:hover .feedback-content-scrollbar-thumb {
+    height: 100%;
+    /* Show thumb on hover */
+}
+
+.sk-google-review-button-container {
+    display: block;
+    overflow: hidden;
+}
+
+.sk-google-review-button-more {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.google-icon {
+    color: #4285f4;
+    margin-right: 10px;
+}
+
+/* Devices with width 375px */
+@media (max-width: 375px) {
+    .slider-container {
+        width: 100%;
+        padding: 0px 23px;
+    }
+
+    .feedback-content {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .about-feedback h3 {
+        font-size: 1rem;
+    }
+
+    .star-icons i {
+        font-size: 0.7em;
+    }
+}
+
+/* media query for width 320px to 991px */
+
+@media ((min-width: 576px) and (max-width: 768px)) {
+
+    .aboutUsHeading {
+        font-size: 32px;
+    }
+
+    .aboutUsImage {
+        text-align: center;
+    }
+
+    .mission_heading {
+        font-size: 32px;
+    }
+
+    .mission_card {
+        margin: 10px 0px;
+    }
+
+    .bgImage {
+        padding: 0px;
+    }
+
+    .about_event {
+        margin: 30px 0px;
+    }
+
+    .event_subheading {
+        font-size: 32px;
+    }
+
+    .eventImage {
+        margin-bottom: 20px;
+    }
+
+    .infrastructure_heading {
+        font-size: 32px;
+    }
+
+
+    /* .infrastructure_Images {
+        margin-left: 40px;
+    } */
+
+    .image_Carousel {
+        /* padding: 0px 23px; */
+        max-width: 76%;
+        margin: auto;
+    }
+
+    .slick-prev {
+        left: -15px !important;
+        z-index: 1;
+    }
+
+    .slick-next {
+        right: -5px !important;
+        z-index: 1;
+    }
+
+    .slick-slide>div {
+        margin: 0px 15px;
+    }
+}
+
+@media ((min-width: 426px) and (max-width: 575px)) {
+
+    .aboutUsHeading {
+        font-size: 32px;
+    }
+
+    .aboutUsImage {
+        text-align: center;
+    }
+
+    .mission_heading {
+        font-size: 32px;
+    }
+
+    .mission_card {
+        margin: 10px 0px;
+    }
+
+    .bgImage {
+        padding: 0px;
+    }
+
+    .about_event {
+        margin: 30px 0px;
+    }
+
+    .event_subheading {
+        font-size: 32px;
+    }
+
+    .eventImage {
+        margin-bottom: 20px;
+    }
+
+    .infrastructure_heading {
+        font-size: 32px;
+    }
+
+
+    .infrastructure_Images {
+        margin-left: 0px !important;
+    }
+
+    .image_Carousel {
+        /* padding: 0px 23px; */
+        max-width: 76% !important;
+        margin: auto;
+    }
+
+    .slick-prev {
+        left: -15px !important;
+        z-index: 1;
+    }
+
+    .slick-next {
+        right: -5px !important;
+        z-index: 1;
+    }
+
+    .slick-slide>div {
+        margin: 0px 15px;
+    }
+}
+
+@media ((min-width: 320px) and (max-width: 425px)) {
+
+    .aboutUsHeading {
+        font-size: 32px;
+    }
+
+    .aboutUsImage {
+        text-align: center;
+    }
+
+    .mission_heading {
+        font-size: 32px;
+    }
+
+    .mission_card {
+        margin: 10px 0px;
+    }
+
+    .bgImage {
+        padding: 0px;
+    }
+
+    .about_event {
+        margin: 30px 0px;
+    }
+
+    .event_subheading {
+        font-size: 32px;
+    }
+
+    .eventImage {
+        margin-bottom: 20px;
+    }
+
+    .infrastructure_heading {
+        font-size: 32px;
+    }
+
+
+    .infrastructure_Images {
+        margin-left: 0px !important;
+    }
+
+    .image_Carousel {
+        padding: 0px 23px;
+    }
+
+    .slick-prev {
+        left: -15px !important;
+        z-index: 1;
+    }
+
+    .slick-next {
+        right: -5px !important;
+        z-index: 1;
+    }
+
+    .slick-slide>div {
+        margin: 0px 15px;
+    }
+}
+
+@media ((min-width: 992px) and (max-width: 1200px)) {
+
+    .mission_card {
+        margin: 10px 0px;
+    }
+
+    .eventImage {
+        width: 460px;
+    }
+}

@@ -9,12 +9,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev {
+.bgimg.placementcard.placement_Cards.slick-prev {
     left: -35px !important;
     z-index: 1;
 }
 
-.slick-next {
+.bgimg.placementcard.placement_Cards.slick-next {
     right: -25px !important;
     z-index: 1;
 }
@@ -26,6 +26,7 @@
 .placement_Row {
     margin-bottom: 40px;
 }
+
 
 /* css for placement highlights container */
 
@@ -153,5 +154,15 @@
     .content {
         margin-left: -119px;
         margin-top: -44px;
+    }
+}
+
+@media (max-width: 768px) {
+    .placement_Row:nth-child(2) .firstColumn {
+        order: 1;
+    }
+
+    .placement_Row:nth-child(2) .secondColumn {
+        order: 2;
     }
 }

@@ -30,101 +30,125 @@ function PlacementPage() {
       <NavigationBar />
       <CustomBreadcrumb pageTitle='Placements' />
 
-      <Container className='placement_Description_Container'>
-        {data?.placementcontent?.map((val, index) =>
-          <Row className='placement_Row'>
-            {index === 1 ? (
-              // When index is 1, render the image on the left side
-              <>
-                <Col lg={6}>
-                  <div className='images'>
-                    <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
-                  </div>
-                </Col>
-                <Col lg={6} className='placementDescripCol'>
-                  <p className='paragraph'>{val.placementDescription[0]}</p>
-                  <p className='paragraph'>{val.placementDescription[1]}</p>
-                </Col>
-              </>
-            ) : (
-              // When index is 0 or any other number, render the image on the right side
-              <>
-                <Col lg={6} className='placementDescripCol'>
-                  <p className='paragraph'>{val.placementDescription[0]}</p>
-                  <p className='paragraph'>{val.placementDescription[1]}</p>
-                </Col>
-                <Col lg={6} >
-                  <div className='images'>
-                    <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
-                  </div>
-                </Col>
-              </>
-            )}
-          </Row>
-        )}
-
-      </Container>
-
-      <Container className="bgcontainer1">
-        <h2 className='highlightHeading'>Placement Highlights</h2>
-        <Container className="bgcontainer2">
-          <Row style={{ margin: 'auto' }}>
-            {data?.placementHighlightCounter?.map((data, index) => (
-              <>
-                <Col lg={4} sm={6}>
-                  <div className='align_center_div'>
-                    <img src='https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-business-building-50.png' alt='img1' />
-                    <h2 className='placementCounter'>{data.companyVisited}</h2>
-                    <span className='counterDescription'>COMPANIES VISITED</span>
-                  </div>
-                </Col>
-                <Col lg={4} sm={6}>
-                  <div className='align_center_div'>
-                    <img src='	https://firstbitsolutions.com/public/assets/frontend/images/bg/icons8-group-of-companies-50.png' alt='img1' />
-                    <h2 className='placementCounter'>{data.noCriteriaCompanies}</h2>
-                    <span className='counterDescription'>NO CRITERIA COMPANIES</span>
-                  </div>
-                </Col>
-                <Col lg={4} sm={6}>
-                  <div className='align__center_div'>
-                    <img src='	https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-calling-50.png' alt='img1' />
-                    <h2 className='placementCounter'>{data.calls}</h2>
-                    <span className='counterDescription'>MAXIMUM CALLS WERE GIVEN</span>
-                  </div>
-                </Col>
-              </>
-            ))}
-          </Row>
-        </Container>
-      </Container>
-
-      <Container className="bgimg">
-        <Row >
-          <Col md={6}>
-            <div className="placementcard"  >
-              <Card className='placement_Cards' >
-                <Slider {...settings}>
-                  {data?.placedstudents?.map((val, index) =>
-                    <div className='studimg'>
-                      <img src={val.img} alt={val.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
-                      <div className='stdnames'>
-                        <strong className='studentName'>{val.name}</strong>
+      <div className='placement_Description_Container'>
+        <Container>
+          {data?.placementcontent?.map((val, index) =>
+            <div className='placement_Row'>
+              <Row>
+                {index % 2 === 0 ? (
+                  // When index is 1, render the image on the left side
+                  <>
+                    {/* <div className='image_Col'> */}
+                    <Col lg={6} className='firstColumn'>
+                      <div className='images'>
+                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                       </div>
-                    </div>
-                  )}
-                </Slider>
-              </Card>
+                    </Col>
+                    {/* </div> */}
+                    {/* <div className='placementDescripCol'> */}
+                    <Col lg={6} className='secondColumn'>
+                      <div className='placementDescripCol'>
+                        <p className='paragraph'>{val.placementDescription[0]}</p>
+                        <p className='paragraph'>{val.placementDescription[1]}</p>
+                      </div>
+                    </Col>
+                    {/* </div> */}
+                  </>
+                ) : (
+                  // When index is 0 or any other number, render the image on the right side
+                  <>
+                    {/* <div className='placementDescripCol'> */}
+                    <Col lg={6} className='secondColumn'>
+                      <div className='placementDescripCol'>
+                        <p className='paragraph'>{val.placementDescription[0]}</p>
+                        <p className='paragraph'>{val.placementDescription[1]}</p>
+                      </div>
+                    </Col>
+                    {/* </div> */}
+                    {/* <div className='image_Col'> */}
+                    <Col lg={6} className='firstColumn'>
+                      <div className='images'>
+                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                      </div>
+                    </Col>
+                    {/* </div> */}
+                  </>
+                )}
+              </Row>
             </div>
-          </Col>
-          <Col className='placed_Std_Col' >
-            <div className="content">
-              <p className='p1'>PLACEMENTS</p>
-              <p className='p2'>Recent Placements</p>
-              <p className='p3'>People Love To Learn With Us</p>
-            </div>
-          </Col>
-        </Row>
+          )}
+
+        </Container>
+      </div>
+
+      <div className="bgcontainer1">
+        <Container >
+          <h2 className='highlightHeading'>Placement Highlights</h2>
+          <div className="bgcontainer2">
+            <Container>
+              <Row style={{ margin: 'auto' }}>
+                {data?.placementHighlightCounter?.map((data, index) => (
+                  <>
+                    <Col lg={4} sm={6}>
+                      <div className='align_center_div'>
+                        <img src='https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-business-building-50.png' alt='img1' />
+                        <h2 className='placementCounter'>{data.companyVisited}</h2>
+                        <span className='counterDescription'>COMPANIES VISITED</span>
+                      </div>
+                    </Col>
+                    <Col lg={4} sm={6}>
+                      <div className='align_center_div'>
+                        <img src='	https://firstbitsolutions.com/public/assets/frontend/images/bg/icons8-group-of-companies-50.png' alt='img1' />
+                        <h2 className='placementCounter'>{data.noCriteriaCompanies}</h2>
+                        <span className='counterDescription'>NO CRITERIA COMPANIES</span>
+                      </div>
+                    </Col>
+                    <Col lg={4} sm={6}>
+                      <div className='align__center_div'>
+                        <img src='	https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-calling-50.png' alt='img1' />
+                        <h2 className='placementCounter'>{data.calls}</h2>
+                        <span className='counterDescription'>MAXIMUM CALLS WERE GIVEN</span>
+                      </div>
+                    </Col>
+                  </>
+                ))}
+              </Row>
+            </Container>
+          </div>
+        </Container>
+      </div>
+
+
+      <Container>
+        <div className="bgimg">
+          <Row >
+            <Col md={6}>
+              <div className="placementcard"  >
+                <Card className='placement_Cards' >
+                  <Slider {...settings}>
+                    {data?.placedstudents?.map((val, index) =>
+                      <div className='studimg'>
+                        <img src={val.img} alt={val.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                        <div className='stdnames'>
+                          <strong className='studentName'>{val.name}</strong>
+                        </div>
+                      </div>
+                    )}
+                  </Slider>
+                </Card>
+              </div>
+            </Col>
+            <Col className='placed_Std_Col' >
+              <div className="content">
+                <p className='p1'>PLACEMENTS</p>
+                <p className='p2'>Recent Placements</p>
+                <p className='p3'>People Love To Learn With Us</p>
+              </div>
+            </Col>
+          </Row>
+        </div>
       </Container >
+
       {/* <Footer /> */}
     </>
   );

@@ -46,7 +46,7 @@
   "contact": [
     {
       "id": "1",
-      "img":"images/Contact/contact_img.jpg",
+      "img": "images/Contact/contact_img.jpg",
       "address": "Pune : 2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.",
       "mobile": "8263926309 / 8208683698 / 8999639478",
       "email": "contact@hematitecorp.com"
@@ -1918,7 +1918,6 @@
   ],
   "aboutUsHeadings": [
     {
-      "heading1": "Knowledge is power, Information is liberating",
       "heading2": "Our Mission, Core Purpose and Values",
       "heading3": "Upcoming Events",
       "heading5": "Our Infrastructure"
@@ -1926,6 +1925,7 @@
   ],
   "aboutPage": [
     {
+      "heading1": "Knowledge is power, Information is liberating",
       "description": [
         "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.",
         "The center has modern infrastructure, including corporate-standard laboratories equipped with the latest state-of-the-art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from experts and visiting faculty, we also organize video-based sessions, seminars, assignments, internships, projects, faculty-student discussions, expert talks and profiling of the students, guidance in hackathons, Start-ups, etc. We also have a well-equipped library with a wide array of manuals. We also provide placement assistance to our students. Hematite Infotech has had an enviable placement record since its inception."
@@ -2406,7 +2406,6 @@
         }
       ]
     },
-   
     "headOffice": {
       "title": "HEAD OFFICE",
       "address": "2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.",
@@ -2414,6 +2413,6 @@
       "phone": "+91 - 8263926309 / 8208683698 / 8999639478"
     },
     "copyright": "© 2017 - 2024, Hematite Infotech, All rights reserved",
-    "subheading":"Web Design & Development by Hematite Infotech Pvt. Ltd."
+    "subheading": "Web Design & Development by Hematite Infotech Pvt. Ltd."
   }
 }

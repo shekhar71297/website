@@ -39,7 +39,7 @@ function App() {
     { path: "/contact", element: <ContactPage /> },
 
 
-    { path: "", element: <HomePage /> },
+    // { path: "", element: <HomePage /> },
     { path: "about", element: <AboutPage /> },
     { path: "placement", element: <PlacementPage /> }
   ]);
