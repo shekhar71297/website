@@ -136,6 +136,7 @@
 
     .align__center_div {
         padding: 10px;
+        border-bottom: 2px solid #ffffff;
     }
 
 }
