@@ -41,7 +41,7 @@ function PlacementPage() {
                     {/* <div className='image_Col'> */}
                     <Col lg={6} className='firstColumn'>
                       <div className='images'>
-                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
                       </div>
                     </Col>
                     {/* </div> */}
@@ -68,7 +68,7 @@ function PlacementPage() {
                     {/* <div className='image_Col'> */}
                     <Col lg={6} className='firstColumn'>
                       <div className='images'>
-                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
                       </div>
                     </Col>
                     {/* </div> */}
@@ -128,7 +128,7 @@ function PlacementPage() {
                   <Slider {...settings}>
                     {data?.placedstudents?.map((val, index) =>
                       <div className='studimg'>
-                        <img src={val.img} alt={val.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                        <img src={val.img} alt={val.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
                         <div className='stdnames'>
                           <strong className='studentName'>{val.name}</strong>
                         </div>
