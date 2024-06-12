@@ -89,21 +89,21 @@ function PlacementPage() {
               <Row style={{ margin: 'auto' }}>
                 {data?.placementHighlightCounter?.map((data, index) => (
                   <>
-                    <Col lg={4} sm={6}>
+                    <Col lg={4} md={4} sm={6}>
                       <div className='align_center_div'>
                         <img src='https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-business-building-50.png' alt='img1' />
                         <h2 className='placementCounter'>{data.companyVisited}</h2>
                         <span className='counterDescription'>COMPANIES VISITED</span>
                       </div>
                     </Col>
-                    <Col lg={4} sm={6}>
+                    <Col lg={4} md={4}  sm={6}>
                       <div className='align_center_div'>
                         <img src='	https://firstbitsolutions.com/public/assets/frontend/images/bg/icons8-group-of-companies-50.png' alt='img1' />
                         <h2 className='placementCounter'>{data.noCriteriaCompanies}</h2>
                         <span className='counterDescription'>NO CRITERIA COMPANIES</span>
                       </div>
                     </Col>
-                    <Col lg={4} sm={6}>
+                    <Col lg={4} md={4}  sm={6}>
                       <div className='align__center_div'>
                         <img src='	https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-calling-50.png' alt='img1' />
                         <h2 className='placementCounter'>{data.calls}</h2>
