@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import Slider from "react-slick";
 import "./AboutUs.css"
+import FooterPage from "../../common/footer/FooterPage";
 
 function AboutPage() {
   const data = useContext(WebContext);
@@ -19,8 +20,8 @@ function AboutPage() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: "true",
-    // autoplaySpeed: 2000,
+    autoplay: "true",
+    autoplaySpeed: 2000,
 
     responsive: [
       {
@@ -67,12 +68,7 @@ function AboutPage() {
                     src={data.imageUrl}
                     alt="img1"
                     className="aboutimg"
-                    style={{
-                      maxWidth: "100%",
-                      maxHeight: "100%",
-                      objectFit: "contain",
-                      borderRadius: "100%",
-                    }} />
+                   />
 
                 </div>
               ))}
@@ -89,6 +85,7 @@ function AboutPage() {
                   <p className="aboutUsSubheading">People Love To Learn With Us</p>
                   <div className="aboutUsBtnDiv">
                     <Button
+                    size="sm"
                       className="aboutUsBtn" variant=""
                       onClick={navigateToCourses}
                     >
@@ -201,12 +198,7 @@ function AboutPage() {
                   <div className="infrastructure_Images">
                     <img
                       src={data.imageUrl}
-                      style={{
-                        maxWidth: "100%",
-                        maxHeight: "100%",
-                        objectFit: "contain",
-                        borderRadius: '5px'
-                      }}
+                     alt="aboutimage"
                     />
                   </div>
                 </div>
@@ -286,7 +278,7 @@ function AboutPage() {
           </div>
         </Container>
       </div>
-
+<FooterPage/>
     </>
   )
 }

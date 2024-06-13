@@ -12,6 +12,7 @@ import { WebContext } from "../../App";
 import { FaRupeeSign } from "react-icons/fa6";
 import NavigationBar from "../../common/navbar/NavigationBar";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
+import FooterPage from "../../common/footer/FooterPage";
 
 function CourseDetails() {
   const data = useContext(WebContext);
@@ -199,6 +200,7 @@ function CourseDetails() {
           </Col>
         </Row>
       </Container>
+      <FooterPage/>
     </div>
   );
 }

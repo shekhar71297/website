@@ -3,11 +3,11 @@
     flex-direction: row;
     margin-bottom: 30px;
     color: #ffffff;
-    
+
 }
 
 .contact-body {
-    padding: 80px 30px 80px 30px;
+    padding: 100px 30px 80px 30px;
     background-color: #218bbb;
     border-radius: 5px;
 }
@@ -37,16 +37,17 @@
     margin-right: 20px
 }
 
-.contact-form{
+.contact-form {
     margin: auto;
-margin:40px 0px 40px 0px;
+    margin: 40px 0px 40px 0px;
 
 }
+
 .contact-form-body {
     /* background-color: rgba(248, 248, 245, 0.158); */
-    padding: 30px;
+    padding: 25px;
     box-shadow: 5px 2px 13px #00000021;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: -24px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -56,18 +57,34 @@ margin:40px 0px 40px 0px;
 .form-label {
     color: #218bbb;
 }
-.map-section{
+
+.map-section {
     margin-bottom: 40px;
 }
-.form-input{
-    width: 338px!important;
+
+/* .form-input {
+    width: 338px !important;
     max-width: 100%;
-}
-.address{
+} */
+
+.address {
     text-align: justify;
 }
 
-@media ((min-width: 310px) and (max-width: 414px)) {
+#contact-btn {
+    background: #218BBB;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffff;
+    border: none;
+}
+
+#contact-btn:hover {
+    background-color: #0b5fb9;
+    color: #ffff;
+}
+
+@media ((min-width: 310px) and (max-width: 375px)) {
 
     .contact-form-body {
         margin-left: 0px !important;
@@ -76,52 +93,62 @@ margin:40px 0px 40px 0px;
     .contact-body {
         padding: 30px 30px 30px 30px;
     }
-    .form-input{
-        width: 145px !important;
-    }
+
+    /* .form-input {
+        width: 106px !important;
+    } */
 }
+
 @media ((min-width: 665px) and (max-width: 740px)) {
     .contact-body {
         padding: 30px 30px 30px 30px;
     }
+
     .contact-form-body {
         margin-left: 0px !important;
     }
-    .form-input{
+/* 
+    .form-input {
         width: 216px !important;
-    }
+    } */
 }
+
 @media ((min-width: 770px) and (max-width: 1025px)) {
- 
+
     .contact-form-body {
         margin-left: -24px !important;
     }
+
     .contact-icon {
         background-color: #ffffff3f;
         font-size: 45px;
         padding: 15px;
         border-radius: 50%;
     }
-    .address{
-       font-size: 14px !important;
-    }
-    .email{
+
+    .address {
         font-size: 14px !important;
     }
-    .phone{
+
+    .email {
         font-size: 14px !important;
     }
-    .form-input{
+
+    .phone {
+        font-size: 14px !important;
+    }
+
+    .form-input {
         width: 278px !important;
     }
 }
 
 @media (min-width: 741px) and (max-width: 768px) {
-    .form-input{
+    .form-input {
         width: 306px !important;
     }
+
     .contact-form-body {
         margin-left: 0px !important;
     }
 }
-

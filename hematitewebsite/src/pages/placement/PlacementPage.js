@@ -12,6 +12,7 @@ import { Breadcrumb } from 'react-bootstrap';
 import BackToTop from "../../common/backTotop/BackToTop"
 import { WebContext } from '../../App';
 import "./placement.css"
+import FooterPage from '../../common/footer/FooterPage';
 function PlacementPage() {
   const data = useContext(WebContext);
   var settings = {
@@ -149,7 +150,7 @@ function PlacementPage() {
         </div>
       </Container >
 
-      {/* <Footer /> */}
+     <FooterPage/>
     </>
   );
 }

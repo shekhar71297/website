@@ -8,7 +8,7 @@ function CustomBreadCrumb({ pageTitle }) {
 
     <div className="header">
       <div className='container'>
-        <h3>{pageTitle}</h3>
+        <span className='PageName' >{pageTitle}</span>
         <Breadcrumb className="custom-breadcrumb">
           <Breadcrumb.Item>
             <Link className="breadcrumb-link" to='/'>Home</Link>
