@@ -10,6 +10,7 @@ import CourseDetails from './pages/course/CourseDetails';
 import AboutPage from './pages/about/AboutPage';
 import PlacementPage from './pages/placement/PlacementPage';
 import ContactPage from './pages/contact/ContactPage';
+import ServicePage from './pages/service/ServicePage';
 
 
 
@@ -37,11 +38,9 @@ function App() {
     { path: "/upcomingcourse", element: <AllUpcomingCourse /> },
     { path: "/coursedetail/:id", element: <CourseDetails /> },
     { path: "/contact", element: <ContactPage /> },
-
-
-    // { path: "", element: <HomePage /> },
     { path: "about", element: <AboutPage /> },
-    { path: "placement", element: <PlacementPage /> }
+    { path: "placement", element: <PlacementPage /> },
+    { path: "/service", element: <ServicePage /> },
   ]);
 
   return (

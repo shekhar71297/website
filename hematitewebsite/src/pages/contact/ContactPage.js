@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import {  Col, Container, Form, Row, Stack } from 'react-bootstrap'
+import { Button, Col, Container, Form, Row, Stack } from 'react-bootstrap'
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
@@ -12,71 +12,74 @@ import FooterPage from '../../common/footer/FooterPage';
 
 function ContactPage() {
   const data = useContext(WebContext);
-  
+
   return (
     <>
-    <BackToTop />
+      <BackToTop />
       <NavigationBar />
       <CustomBreadCrumb pageTitle='Contact Us' />
-    <div className='contact-form' >
+      <div className='contact-form' >
+        <Container>
+          <Row>
+            <Col lg={4} md={12} sm={12}>
+
+              <div className='contact-body' >
+                <div className='contact-heading'>
+                  <span>Contact Us</span>
+                </div>
+                <div className='contact_info'>
+                  <div className='icon-div'><FaLocationDot className='contact-icon' /></div>
+                  <p className='address' >2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.</p>
+                </div>
+                <div className='contact_info' >
+                  <div className='icon-div' ><IoMdMail className='contact-icon' /></div>
+                  <span className='email'  >contact@hematitecorp.com</span>
+                </div>
+                <div className='contact_info' >
+                  <div className='icon-div' ><FaPhone className='contact-icon' /></div>
+                  <span className='phone'  >8263926309 / 8208683698 / 8999639478</span>
+                </div>
+              </div>
+            </Col>
+            <Col lg={8} md={12} sm={12}>
+              <div className='contact-form-body'>
+                <div className='contact-heading2'>
+                  <span>Get In Touch</span>
+                </div>
+
+                <Form>
+                  <Stack direction="horizontal" gap={4}>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                      <Form.Label className='form-label' >First Name</Form.Label>
+                      <Form.Control className='form-input' type="text" placeholder="Jhon" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                      <Form.Label className='form-label' >Last Name</Form.Label>
+                      <Form.Control className='form-input' type="text" placeholder="Doe" />
+                    </Form.Group>
+                  </Stack>
+
+                  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                    <Form.Label className='form-label' >Subject</Form.Label>
+                    <Form.Control type="text" placeholder="subject" />
+                  </Form.Group>
+
+                  <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                    <Form.Label className='form-label' >Message</Form.Label>
+                    <Form.Control as="textarea" rows={6} />
+                  </Form.Group>
+                  <Button size='sm' id="contact-btn" type="submit" className="btn btn-lg mb-0">
+                    Send a message
+                  </Button>
+                </Form>
+
+              </div>
+
+            </Col>
+          </Row>
+        </Container>
+      </div>
       <Container>
-        <Row>
-          <Col lg={4} md={12} sm={12}>
-
-            <div className='contact-body' >
-              <div className='contact-heading'>
-                <span>Contact Us</span>
-              </div>
-              <div className='contact_info'>
-                <div className='icon-div'><FaLocationDot className='contact-icon' /></div>
-                <p className='address' >2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.</p>
-              </div>
-              <div className='contact_info' >
-                <div className='icon-div' ><IoMdMail className='contact-icon' /></div>
-                <span className='email'  >contact@hematitecorp.com</span>
-              </div>
-              <div className='contact_info' >
-                <div className='icon-div' ><FaPhone className='contact-icon' /></div>
-                <span className='phone'  >8263926309 / 8208683698 / 8999639478</span>
-              </div>
-            </div>
-          </Col>
-          <Col lg={8} md={12} sm={12}>
-            <div className='contact-form-body'>
-              <div className='contact-heading2'>
-                <span>Get In Touch</span>
-              </div>
-
-              <Form>
-                <Stack direction="horizontal" gap={4}>
-                  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label className='form-label' >First Name</Form.Label>
-                    <Form.Control className='form-input' type="text" placeholder="Jhon" />
-                  </Form.Group>
-                  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label className='form-label' >Last Name</Form.Label>
-                    <Form.Control className='form-input' type="text" placeholder="Doe" />
-                  </Form.Group>
-                </Stack>
-
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Label className='form-label' >Subject</Form.Label>
-                  <Form.Control type="text" placeholder="subject" />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                  <Form.Label className='form-label' >Message</Form.Label>
-                  <Form.Control as="textarea" rows={6} />
-                </Form.Group>
-              </Form>
-
-            </div>
-
-          </Col>
-        </Row>
-      </Container>
-    </div>
-    <Container>
         <div className="map-section">
           <iframe
             title="Google Map"
@@ -88,7 +91,7 @@ function ContactPage() {
           ></iframe>
         </div>
       </Container>
-    <FooterPage />
+      <FooterPage />
     </>
   )
 }

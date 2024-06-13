@@ -87,7 +87,11 @@
     display: inline-block;
     margin: 15px 0px;
 }
-
+.aboutimg{
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 100%;
+}
 /* css for Event Container */
 
 .bgImage {
@@ -310,6 +314,11 @@
 
     .star-icons i {
         font-size: 0.7em;
+    }
+    .aboutimg{
+        max-width: 80%;
+        object-fit: contain;
+        border-radius: 100%;
     }
 }
 
@@ -535,11 +544,14 @@
 @media ((min-width: 320px) and (max-width: 425px)) {
 
     .aboutUsHeading {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .aboutUsImage {
         text-align: center;
+    }
+    .aboutUspara{
+        font-size: 14px;
     }
 
     .aboutUspara {
@@ -547,7 +559,17 @@
     }
 
     .mission_heading {
-        font-size: 32px;
+        font-size: 24px;
+    }
+    .bgImage {
+        margin-top: 40px;
+    }
+    .infrastructure_Container {
+        margin-top: 40px;
+    }
+    .about_feedback {
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .mission_card {

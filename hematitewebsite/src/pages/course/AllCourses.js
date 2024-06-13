@@ -10,6 +10,7 @@ import BackToTop from "../../common/backTotop/BackToTop";
 import { WebContext } from "../../App";
 import "./courses.css";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
+import FooterPage from "../../common/footer/FooterPage";
 
 function AllCourses() {
   const data = useContext(WebContext);
@@ -108,6 +109,7 @@ function AllCourses() {
         </Row>
       </Container>
       </div>
+      <FooterPage/>
     </div>
   );
 }

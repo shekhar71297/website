@@ -354,11 +354,11 @@ a.btn-about:hover {
 }
 
 .slider-image {
-    height: 300px;
-    width: 300px;
+    /* height: 300px; */
+    /* width: 300px; */
     display: flex;
     align-items: center;
-    padding: 15px;
+    /* padding: 15px; */
     perspective: 100px;
 }
 
@@ -462,7 +462,7 @@ a.btn-about:hover {
 
 @media ((min-width: 320px) and (max-width: 425px)) {
     .counter-main-body{
-       margin-left: 20%;
+       margin-left: 18%;
     }
     .counter-card {
         margin-bottom: 20px;
@@ -513,120 +513,3 @@ a.btn-about:hover {
     }
 }
 
-/*---------------------------------------------------service css-------------------------------------------------*/
-.logo {
-    max-width: 20%;
-}
-
-.main-card {
-    /* padding: 20px; */
-    margin-bottom: 20px;
-    /* border: none; */
-    height: 450px !important;
-}
-
-.main-card:hover {
-    transition: 0.7s;
-    background-color: #218bbb;
-    color: #ffffff;
-    /* border: none; */
-}
-
-/* .card-container {
-    text-align: center;
-} */
-
-.serviceicon {
-    text-align: center;
-}
-
-.cardtext {
-    text-align: justify;
-    font-size: 15px !important;
-    /* word-spacing: 1px !important; */
-}
-
-.service-title {
-    text-align: center;
-}
-
-.service-container {
-    margin-top: 20px;
-}
-
-.service-heading-title {
-    font-size: 36px;
-    color: #218bbb;
-    font-weight: 550;
-    font-family: sans-serif;
-    padding: 10px;
-}
-
-.heading2 {
-    text-align: center;
-}
-
-
-@media ((min-width: 312px) and (max-width: 414px)) {
-
-    .cardtext {
-        text-align: justify;
-        font-size: 12px !important;
-        /* word-spacing: 1px !important; */
-    }
-    .main-card {
-        height: 300px !important;
-    }
-    
-
-    .logo {
-        max-width: 20%;
-    }
-
-    .service-heading-title {
-        font-size: 24px;
-    }
-}
-
-@media ((min-width: 415px) and (max-width: 600px)) {
-
-    .cardtext {
-        text-align: justify;
-        font-size: 14px !important;
-        /* word-spacing: 1px !important; */
-    }
-    
-
-    .logo {
-        max-width: 20%;
-    }
-
-    .service-heading-title {
-        font-size: 24px;
-    }
-}
-
-@media ((min-width: 737px) and (max-width: 770px)) {
-    .logo {
-        max-width: 10%;
-    }
-    .main-card {
-        /* padding: 20px; */
-        margin-bottom: 20px;
-        /* border: none; */
-        height: 300px !important;
-    }
-}
-@media ((min-width: 771px) and (max-width: 1030px)) {
-    .cardtext {
-        text-align: justify;
-        font-size: 12px !important;
-        /* word-spacing: 1px !important; */
-    }
-    .main-card {
-        /* padding: 10px !important; */
-        margin-bottom: 20px;
-        /* border: none; */
-        height: 400px !important;
-    }
-}
