@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Row, Card, Container, Col, Button } from "react-bootstrap";
 import { MdLibraryBooks } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -14,6 +14,10 @@ import FooterPage from "../../common/footer/FooterPage";
 
 function AllCourses() {
   const data = useContext(WebContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
@@ -46,16 +50,16 @@ function AllCourses() {
                    
                     <hr />
                     <div>
-                      {data.price.discount && (
+                      {data?.price?.discount && (
                         <div>
-                          <span className="courseOfferPrice"><FaRupeeSign />{data.price.offerprice}</span> 
+                          <span className="courseOfferPrice"><FaRupeeSign />{data?.price?.offerprice}</span> 
                           
                           <b className="coursePriceHeading" >Original Price</b>
-                          <span className="courseOriginalPrice" > <FaRupeeSign />{data.price.originalprice}</span>
+                          <span className="courseOriginalPrice" > <FaRupeeSign />{data?.price?.originalprice}</span>
                         </div >
                       )}
-                      {!data.price.discount && (
-                        <span className="courseOfferPrice"><FaRupeeSign />{data.price.originalprice}</span>
+                      {!data?.price?.discount && (
+                        <span className="courseOfferPrice"><FaRupeeSign />{data?.price?.originalprice}</span>
                       )}
                     </div>
                   </div>
@@ -73,16 +77,16 @@ function AllCourses() {
                   </h6>
                   <br />
                   <div>
-                      {data.price.discount && (
+                      {data?.price?.discount && (
                         <div>
-                          <span className="hovercourseOfferPrice"><FaRupeeSign />{data.price.offerprice}</span> 
+                          <span className="hovercourseOfferPrice"><FaRupeeSign />{data?.price?.offerprice}</span> 
                           
                           <b className="hovercoursePriceHeading">Original Price</b>
-                          <span className="hovercourseOriginalPrice" > <FaRupeeSign />{data.price.originalprice}</span>
+                          <span className="hovercourseOriginalPrice" > <FaRupeeSign />{data?.price?.originalprice}</span>
                         </div >
                       )}
-                      {!data.price.discount && (
-                        <span className="hovercourseOfferPrice"><FaRupeeSign />{data.price.originalprice}</span>
+                      {!data?.price?.discount && (
+                        <span className="hovercourseOfferPrice"><FaRupeeSign />{data?.price?.originalprice}</span>
                       )}
                     </div>
                   <br />
