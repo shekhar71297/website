@@ -14,11 +14,9 @@ import FooterPage from "../../common/footer/FooterPage";
 
 function AllCourses() {
   const data = useContext(WebContext);
-
-  useEffect(() => {
+  useEffect(() => {  
     window.scrollTo(0, 0);
   }, []);
-
   return (
     <div>
       <BackToTop />

@@ -61,10 +61,11 @@ padding: 40px 0px 40px 0px;
     .cardtext {
         text-align: justify;
         font-size: 12px !important;
+        padding: 10px;
         /* word-spacing: 1px !important; */
     }
     .main-card {
-        height: 350px !important;
+        height: 380px !important;
     }
     
 

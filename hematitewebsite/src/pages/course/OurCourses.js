@@ -35,8 +35,8 @@ function OurCourses() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
     
     
     responsive: [
@@ -65,12 +65,12 @@ function OurCourses() {
          <NavigationBar />
       <BackToTop />
       {/* Our Courses in Home Page */}
-      <div className="backgroundImgUrl allcoursemargintop">
+      <div className="backgroundImgUrl">
         <Container>
           <Row>
             <Col>
-              <h2 className="course-heading coursetopmargin">OUR COURSES</h2>
-              <div className="coursetopmargin">
+              <h2 className="course-heading ">OUR COURSES</h2>
+              <div className="upcoming-slider-body">
                 <Slider {...settings}>
                   {slicedata &&
                     slicedata.length > 0 &&
@@ -78,7 +78,7 @@ function OurCourses() {
                       <Card className="card-adjustment" key={index}>
                         <Card.Body>
                           <Card.Img src={course.cardimg} fluid />
-                          <h6 className="coursetextfontsize">
+                          <h6 className="course-duration">
                             <MdLibraryBooks /> {course.month}
                           </h6>
                           <hr />
@@ -108,7 +108,7 @@ function OurCourses() {
                             {course.title}
                           </Card.Title>
                           <br />
-                          <h6 className="coursetextfontsize">
+                          <h6 className="course-duration">
                           
                             <MdLibraryBooks /> {course.month}
                           </h6>
@@ -157,7 +157,7 @@ function OurCourses() {
                           <Link
                             to={`/coursedetail/${course?.id}`}
                           >
-                            <Button type="button" variant="">
+                            <Button size='sm' type="button" variant="">
                               Know More <FaArrowRightLong />
                             </Button>
                           </Link>
@@ -167,7 +167,7 @@ function OurCourses() {
                 </Slider>
               </div>
               <div className="d-flex justify-content-center">
-                <Button className="viewmorebtn" onClick={navigateToAllCourse}>
+                <Button size='sm' className="viewmorebtn" onClick={navigateToAllCourse}>
                   View More <FaArrowRightLong />
                 </Button>
               </div>
@@ -176,14 +176,14 @@ function OurCourses() {
         </Container>
       </div>
       {/* Upcoming Courses in Home Page */}
-      <div className="upcomingcourse-padding">
+      <div className="upcomingcourse-body">
       <Container>
         <Row>
           <Col lg='12'>
-            <h1 className="upcomingcourseheading coursetopmargin">
+            <h1 className="upcomingcourseheading">
               UPCOMING BATCHES
             </h1>
-            <div className="coursetopmargin">
+            <div className="upcoming-slider-body">
               <Slider {...settings}>
                 {sliceupcomingbatch &&
                   sliceupcomingbatch.length > 0 &&
@@ -195,7 +195,7 @@ function OurCourses() {
                         </div>
                         <hr />
                         <Card.Img src={course.cardimg} fluid />
-                        <h6 className="coursetextfontsize">
+                        <h6 className="course-duration">
                           <MdLibraryBooks /> {course.month}
                         </h6>
                         <hr />
@@ -226,7 +226,7 @@ function OurCourses() {
                           {course.title}
                         </Card.Title>
                         <br />
-                        <h6 className="coursetextfontsize">
+                        <h6 className="course-duration">
                           <MdLibraryBooks /> {course.month}
                         </h6>
                         <br />
@@ -274,7 +274,7 @@ function OurCourses() {
                           to={`/coursedetail/${course?.id}`}
                           
                         >
-                          <Button type="button" variant="">
+                          <Button size='sm' type="button" variant="">
                             Know More <FaArrowRightLong />
                           </Button>
                         </Link>
@@ -285,6 +285,7 @@ function OurCourses() {
             </div>
             <div className="d-flex justify-content-center">
               <Button
+              size='sm'
                 className="viewmorebtn"
                 onClick={navigateToUpcomingCourse}
               >

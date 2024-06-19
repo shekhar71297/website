@@ -29,7 +29,7 @@
 .backgroundImgUrl {
   background-image: url("../../../public/images/home/Section\ Devider.png");
   background-size: 100% 100%;
-  padding: 20px;
+  padding: 24px;
 }
 
 .card-adjustment:hover .promo {
@@ -67,7 +67,9 @@
 .card-adjustment:hover .applyinghover {
   opacity: 1;
 }
-
+.upcomingcourse-body {
+  padding:40px 20px 40px 20px;
+}
 .applyinghover h6,
 .applyinghover p {
   margin: 0;
@@ -77,7 +79,7 @@
   font-size: 15px;
 }
 
-.coursetextfontsize {
+.course-duration {
   font-size: 16px;
   margin: 20px 0px;
 }
@@ -141,6 +143,7 @@
   font-size: 36px;
   text-align: center;
   color: #0e4d63;
+  padding: 10px;
 }
 
 .applyinghover Button {
@@ -158,20 +161,14 @@
 .viewmorebtn {
   background-color: #153441 !important;
   border: none !important;
-  padding: 13px 43px !important;
-  font-size: 15px !important;
-  font-weight: 700 !important;
-  margin-top: 40px;
-}
-
-.coursetopmargin {
+  /* font-size: 15px !important; */
+  /* font-weight: 700 !important; */
   margin-top: 40px;
 }
 
 
-.allcoursemargintop {
-  margin-top: 25px;
-}
+
+
 
 
 @media only screen and (min-width: 319px) and (max-width: 768px) {
@@ -188,6 +185,10 @@
     font-size: 12px;
     font-weight: 500;
   }
+  .course-heading {
+    font-size: 24px;
+    padding: 20px 0px 20px 0px ;
+  }
 
   .coursePriceHeading {
     font-size: 12px;
@@ -195,8 +196,12 @@
   }
 
   .hovercourseOfferPrice {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
+  }
+  .upcomingcourseheading {
+    font-size: 24px;
+    padding: 20px 0px 20px 0px ;
   }
 
   .hovercourseOriginalPrice {
@@ -205,7 +210,7 @@
   }
 
   .hovercoursePriceHeading {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
   }
 
@@ -213,10 +218,18 @@
     max-width: 100%;
   }
 
-  .upcomingcourse-padding {
+  .upcomingcourse-body {
     padding: 20px;
   }
-
+  .upcoming-slider-body{
+    padding: 16px;
+  }
+  .registration-text{
+    font-size: 12px;
+  }
+.course-duration{
+  font-size: 14px;
+}
   /* .slick-prev {
     left: -20px !important;
     z-index: 1;
@@ -226,4 +239,62 @@
     right: -13px !important;
     z-index: 1;
   } */
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+
+  .registration-text{
+    font-size: 12px;
+  }
+.course-duration{
+  font-size: 14px;
+}
+  .upcoming-slider-body{
+    padding: 24px
+  }
+  .courseOfferPrice {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .applyinghover Button {
+    margin-top: -30px;
+  }
+
+  .courseOriginalPrice {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .course-heading {
+    font-size: 24px;
+    padding: 20px 0px 20px 0px ;
+  }
+
+  .coursePriceHeading {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .hovercourseOfferPrice {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .upcomingcourseheading {
+    font-size: 24px;
+    padding: 20px 0px 20px 0px ;
+  }
+
+  .hovercourseOriginalPrice {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .hovercoursePriceHeading {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .courseimg-width {
+    max-width: 100%;
+  }
+
 }

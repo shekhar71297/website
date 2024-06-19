@@ -11,12 +11,12 @@
 
 .bgimg.placementcard.placement_Cards.slick-prev {
     left: -35px !important;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .bgimg.placementcard.placement_Cards.slick-next {
     right: -25px !important;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .placement_Description_Container {

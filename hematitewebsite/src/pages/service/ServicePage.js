@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { WebContext } from '../../App';
 import NavigationBar from '../../common/navbar/NavigationBar';
@@ -9,6 +9,9 @@ import CustomBreadCrumb from '../../common/breadCrumb/CustomBreadCrumb';
 
 function ServicePage() {
   const data = useContext(WebContext);
+  useEffect(() => {  
+    window.scrollTo(0, 0);
+  }, []);
   const getServiceIcon = (iconUrl) => {
     // If an icon URL is provided, return an img element with the icon
     if (iconUrl) {

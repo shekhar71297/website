@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import BackToTop from "../../common/backTotop/BackToTop"
 import NavigationBar from "../../common/navbar/NavigationBar";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb"
@@ -13,15 +13,18 @@ import FooterPage from "../../common/footer/FooterPage";
 
 function AboutPage() {
   const data = useContext(WebContext);
-
+  useEffect(() => {
+    
+    window.scrollTo(0, 0);
+  }, []);
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: "true",
-    autoplaySpeed: 2000,
+    // autoplay: "true",
+    // autoplaySpeed: 2000,
 
     responsive: [
       {
@@ -199,6 +202,7 @@ function AboutPage() {
                     <img
                       src={data.imageUrl}
                      alt="aboutimage"
+                     className="about-img"
                     />
                   </div>
                 </div>
@@ -215,7 +219,7 @@ function AboutPage() {
           <div>
             <h3 className="feedback_heading">Our Lovely Students Feedback</h3>
           </div>
-          <div className="slider-container">
+          <div className="feedback-slider-container">
             <Slider {...settings}>
               {data?.about?.map((about, index) => (
                 <div>
@@ -251,7 +255,7 @@ function AboutPage() {
                           style={{ color: "gold" }}
                         ></i>
                       </div>
-                      <hr className="sk-separator"></hr>
+                      
                       <div className="feedback-content-container">
                         <p className="feedback-content">{about.comment}</p>
                         <div className="feedback-content-scrollbar"></div>

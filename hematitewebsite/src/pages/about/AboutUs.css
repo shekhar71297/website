@@ -167,7 +167,7 @@
 
 }
 
-.slider-container {
+.feedback-slider-container {
     width: 100%;
     margin: 0 auto;
 }
@@ -295,13 +295,18 @@
     color: #4285f4;
     margin-right: 10px;
 }
+.about-img{
+    max-width: 100%;
+}
+
 
 /* Devices with width 375px */
 @media (max-width: 375px) {
-    .slider-container {
+    .feedback-slider-container {
         width: 100%;
-        padding: 0px 23px;
+        padding: 0px 35px;
     }
+    
 
     .feedback-content {
         font-size: 11px;
@@ -311,7 +316,10 @@
     .about-feedback h3 {
         font-size: 1rem;
     }
-
+    .sk-review-image {
+        height: 50px;
+        width: 50px;
+    }
     .star-icons i {
         font-size: 0.7em;
     }
@@ -361,6 +369,7 @@
     .eventImage {
         margin-bottom: 20px;
     }
+    
 
     .infrastructure_heading {
         font-size: 32px;
@@ -377,22 +386,25 @@
 
     .image_Carousel {
         /* padding: 0px 23px; */
-        max-width: 76%;
+        max-width: 94%;
         margin: auto;
     }
 
     .slick-prev {
         left: -15px !important;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     .slick-next {
         right: -5px !important;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     .slick-slide>div {
         margin: 0px 15px;
+    }
+    .about_feedback{
+        padding: 46px !important;
     }
 }
 
@@ -456,12 +468,12 @@
 
     .slick-prev {
         left: -15px !important;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     .slick-next {
         right: -5px !important;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     .slick-slide>div {
@@ -528,12 +540,12 @@
 
     .slick-prev {
         left: -15px !important;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     .slick-next {
         right: -5px !important;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     .slick-slide>div {
@@ -541,7 +553,7 @@
     }
 }
 
-@media ((min-width: 320px) and (max-width: 425px)) {
+@media ((min-width: 320px) and (max-width: 420px)) {
 
     .aboutUsHeading {
         font-size: 24px;
@@ -597,7 +609,10 @@
     }
 
     .feedback_heading {
-        font-size: 32px;
+        font-size: 20px;
+    }
+    .about-img{
+        max-width: 100%;
     }
 
     .infrastructure_Images {
@@ -605,21 +620,115 @@
     }
 
     .image_Carousel {
-        padding: 0px 23px;
+        padding: 40px;
     }
 
     .slick-prev {
         left: -15px !important;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     .slick-next {
         right: -5px !important;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     .slick-slide>div {
         margin: 0px 15px;
+    }
+    .feedback-slider-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media ((min-width: 421px) and (max-width: 425px)) {
+
+    .aboutUsHeading {
+        font-size: 24px;
+    }
+    .aboutimg{
+        max-width: 80%;
+    }
+    .aboutUsImage {
+        text-align: center;
+    }
+    .aboutUspara{
+        font-size: 14px;
+    }
+
+    .aboutUspara {
+        font-size: 14px;
+    }
+
+    .mission_heading {
+        font-size: 24px;
+    }
+    .bgImage {
+        margin-top: 40px;
+    }
+    .infrastructure_Container {
+        margin-top: 40px;
+    }
+    .about_feedback {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .mission_card {
+        margin: 10px 0px;
+    }
+
+    .bgImage {
+        padding: 0px;
+    }
+
+    .about_event {
+        margin: 30px 0px;
+    }
+
+    .event_subheading {
+        font-size: 32px;
+    }
+
+    .eventImage {
+        margin-bottom: 20px;
+    }
+
+    .infrastructure_heading {
+        font-size: 32px;
+    }
+
+    .feedback_heading {
+        font-size: 20px;
+    }
+    .about-img{
+        max-width: 100%;
+    }
+
+    .infrastructure_Images {
+        margin-left: 0px !important;
+    }
+
+    .image_Carousel {
+        padding: 44px;
+    }
+
+    .slick-prev {
+        left: -15px !important;
+        /* z-index: 1; */
+    }
+
+    .slick-next {
+        right: -5px !important;
+        /* z-index: 1; */
+    }
+
+    .slick-slide>div {
+        margin: 0px 15px;
+    }
+    .feedback-slider-container {
+        width: 78%;
+        margin: 0 auto;
     }
 }
 
@@ -640,4 +749,13 @@
     .eventImage {
         width: 460px;
     }
+    .image_Carousel {
+        /* padding: 0px 23px; */
+        max-width: 94%;
+        margin: auto;
+    }
+    .about_feedback{
+        padding: 50px !important;
+    }
+    
 }

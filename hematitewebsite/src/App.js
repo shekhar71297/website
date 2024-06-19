@@ -9,8 +9,9 @@ import AllUpcomingCourse from './pages/course/AllUpcomingCourse';
 import CourseDetails from './pages/course/CourseDetails';
 import AboutPage from './pages/about/AboutPage';
 import PlacementPage from './pages/placement/PlacementPage';
-import ContactPage from './pages/contact/ContactPage';
+
 import ServicePage from './pages/service/ServicePage';
+import ContactPage from './pages/contact/ContactPage';
 
 
 
@@ -23,6 +24,7 @@ function App() {
   const fetchJson = async () => {
     const res = await fetch('/db.json')
     const jsonRes = await res.json();
+    console.log(jsonRes);
     setDataJson(jsonRes);
   }
 
@@ -31,13 +33,12 @@ function App() {
   }, []);
 
   const router = createBrowserRouter([
-
+    { path: "/contact", element: <ContactPage /> },
     { path: "", element: <HomePage /> },
     { path: "/courses", element: <OurCourses /> },
     { path: "/allcourse", element: <AllCourses /> },
     { path: "/upcomingcourse", element: <AllUpcomingCourse /> },
     { path: "/coursedetail/:id", element: <CourseDetails /> },
-    { path: "/contact", element: <ContactPage /> },
     { path: "about", element: <AboutPage /> },
     { path: "placement", element: <PlacementPage /> },
     { path: "/service", element: <ServicePage /> },

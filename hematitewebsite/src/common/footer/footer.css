@@ -149,6 +149,11 @@ ul{
         font-size: 12px;
         text-align: center;
     }
+    .icon-bar {
+    
+        top: 70% !important;
+        
+      }
 }
 
 @media ((min-width: 770px) and (max-width: 1025px)) {
@@ -161,7 +166,7 @@ ul{
 /* social media sticky bar */
 .icon-bar {
     position: fixed;
-    top: 50%;
+    top: 54%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -207,14 +212,14 @@ ul{
     color: white;
   }
 
-  @media ((min-width: 320px) and (max-width: 414px)) {
+  @media ((min-width: 320px) and (max-width: 1024px)) {
     .icon-bar a {
         display: block;
         text-align: center;
-        padding: 8px;
+        padding: 10px;
         transition: all 0.3s ease;
         color: white;
-        font-size: 15px;
+        font-size: 12px;
       }
   }
   

@@ -16,6 +16,9 @@ function AllUpcomingCourse() {
   const filterBatch = data?.courses?.filter((data, index) => data.upcomingbatch == true
   );
   console.log("filterd batch", filterBatch);
+  useEffect(() => {  
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
