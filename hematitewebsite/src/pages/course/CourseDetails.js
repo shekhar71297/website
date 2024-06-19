@@ -92,7 +92,7 @@ function CourseDetails() {
                               {syllabus.title}
                             </div>
                             <ul>
-                              {syllabus.contents.map((content, i) => (
+                              {syllabus?.contents?.map((content, i) => (
                                 <li
                                   className="detail-content-subheading"
                                   key={i}

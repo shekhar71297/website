@@ -74,8 +74,8 @@
     {
       "id": "1",
       "cardimg": "images/courseimg/images/GraphicDesign.png",
-      "bannerImgurl":"images/courseimg/images/DefaultBanner.png",
-      "offerImgurl":"images/courseimg/images/DefaultOfferCoverImage.png",
+      "bannerImgurl": "images/courseimg/images/DefaultBanner.png",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
       "month": "3 Months Minimum",
       "title": "Graphic Design",
       "upcomingbatch": true,
@@ -162,7 +162,7 @@
     },
     {
       "id": "2",
-      "cardimg": "images/courseimg/images/Python.png",
+      "cardimg": "images/courseimg/images/PythonDjango.png",
       "bannerImgurl": "images/courseimg/images/temp.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
       "month": "3 Months Minimum",
@@ -260,6 +260,76 @@
               "File Uploads",
               "Django Rest Framework",
               "Git & Github"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "cardimg": "images/courseimg/images/Python.png",
+      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "month": "3 Months Minimum",
+      "title": " Python",
+      "upcomingbatch": true,
+      "price": {
+        "originalprice": "30000",
+        "offerprice": "25499",
+        "discount": true
+      },
+      "courseDetail": {
+        "introduction": [
+          {
+            "title": "What is Python?",
+            "description": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built-in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application development as well as for use as a scripting language to connect existing components together. Python's simple, easy-to-learn syntax emphasizes readability and therefore reduces the cost of program maintenance."
+          },
+          {
+            "title": "Pre-requisites for Python",
+            "description": "There are no hard prerequisites. Students should be comfortable using the operating system (Linux, Unix, Windows, Solaris, macOS, etc.) on which they will be running Python."
+          }
+        ],
+        "objective": [
+          {
+            "contents": [
+              "To understand the concepts and constructs of Python",
+              "Design a program to solve the problem",
+              "Write Python functions to facilitate code reuse",
+              "To create own Python programs and work on a real-time project running on Python",
+              "Understanding Automation in python"
+            ]
+          }
+        ],
+        "syllabus": [
+          {
+            "title": "Core Python",
+            "contents": [
+              "Introduction to Python",
+              "Installation",
+              "Python IDLE & Shell/REPL",
+              "Python Editors",
+              "Input/output mechanisms",
+              "Variable and Keywords",
+              "Python data types",
+              "Operators and their types",
+              "Conditional Statement",
+              "Loops in Python",
+              "Functions"
+            ]
+          },
+          {
+            "title": "Advance Python",
+            "contents": [
+              "Functions and its calling techniques",
+              "Filter map reduce in python",
+              "Lambda function",
+              "Recursion function",
+              "Object-oriented programming",
+              "Recursion function",
+              "Multiprocessing in python",
+              "Multithreading in python",
+              "Methods in python",
+              "File handling"
             ]
           }
         ]
@@ -668,21 +738,6 @@
               "Data Visualization in Python using matplotlib",
               "Web Scraping with BeautifulSoup",
               "Python integration with Hadoop MapReduce and Spark"
-            ]
-          },
-          {
-            "title": "Advance Python",
-            "contents": [
-              "Functions and its calling techniques",
-              "Filter map reduce in python",
-              "Lambda function",
-              "Recursion function",
-              "Object-oriented programming",
-              "Recursion function",
-              "Multiprocessing in python",
-              "Multithreading in python",
-              "Methods in python",
-              "File handling"
             ]
           }
         ]
@@ -1226,7 +1281,7 @@
       "bannerImgurl": "images/courseimg/images/temp.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
       "month": "45 Days",
-      "title": "C",
+      "title": "C ",
       "upcomingbatch": false,
       "price": {
         "originalprice": "15000",
@@ -1236,8 +1291,8 @@
       "courseDetail": {
         "introduction": [
           {
-            "title": "What is C++?  ",
-            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+            "title": "What is C?",
+            "description": "C is a powerful general-purpose programming language developed in the early 1970s by Dennis Ritchie at Bell Labs. It is widely used for system programming, developing operating systems, and embedded system applications due to its efficiency and control over system resources. C provides low-level access to memory, simple set of keywords, and a clean style, making it highly suitable for system software development."
           }
         ],
         "objective": [
@@ -1246,69 +1301,90 @@
               "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
               "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
               "Memory Management: Understand and implement dynamic memory management techniques.",
-              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
               "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
             ]
           }
         ],
         "syllabus": [
           {
-            "title": "Language Features",
+            "title": "Introduction and First Program ",
             "contents": [
-              "How C++ differs from C",
-              "Variables Declaration ",
-              "Function overloading",
-              "Optional Parameters",
-              "Reference Variables ",
-              "Operator overloading",
-              "Basics of Console Input and Output",
-              "Constant Pointers",
-              "Dynamic Memory Allocation"
+              "History of C Language",
+              "Hello World Program "
             ]
           },
           {
-            "title": "OOPs Concepts ",
+            "title": "Variables and Data Types ",
             "contents": [
-              "Overview of OOPs Principles",
-              "Introduction to classes & objects",
-              "Creation & destruction of objects ",
-              "Data Members & Member Functions",
-              "this Pointer",
-              "Constructor & Destructor",
-              "Static class member",
-              "Friend class and functions",
-              "Namespace"
+              "Identifiers in C",
+              "Variables and Datatypes",
+              "Constants "
             ]
           },
           {
-            "title": "Inheritance",
+            "title": "Operators and Expressions",
             "contents": [
-              "Introduction and benefits.",
-              "Access Specifier.",
-              "Base and Derived class Constructors",
-              "Types of Inheritance.",
-              "Down casting and up casting.",
-              "Function overriding."
+              "Expressions and Arithmetic Operators",
+              "Relational and Logical Operators",
+              "Bitwise Operators"
             ]
           },
           {
-            "title": "Polymorphism",
+            "title": "Control Flow Statements",
             "contents": [
-              "What is Polymorphism",
-              "Pure virtual functions",
-              "Virtual Base Class "
+              "If Statement",
+              "Switch Statement",
+              "Unconditional Branching using goto statement",
+              "While Loop",
+              "Do While Loop",
+              "For Loop ",
+              "Break and Continue ",
+              "Special Cases"
             ]
           },
           {
-            "title": "Exception Handling ",
+            "title": "Working with Functions",
             "contents": [
-              "Introduction to Exception.",
-              "Benefits of Exception handling.",
-              "Try and catch block.",
-              "Throw statement.",
-              "Pre-defined exceptions in C++.",
-              "Writing custom Exception class."
+              "Introduction and Writing Functions ",
+              "Scope of Variables, Storage Classes, Pass by Value and reference and Recursion "
             ]
+          },
+          {
+            "title": "Working with Arrays ",
+            "contents": [
+              "Arrays Declaration and Initialization",
+              "Sample Programs using Arrays",
+              "Arrays as Function Parameters",
+              "2-Dimensional Array"
+            ]
+          },
+          {
+            "title": "Pointers",
+            "contents": [
+              "Pointers as Function Parameter",
+              "Pointer Arithmetic ",
+              "Pointers and Arrays ",
+              "Function Pointers "
+            ]
+          },
+          {
+            "title": "File Handling ",
+            "contents": [
+              "What is a Stream ",
+              "File Handling-Writing and Reading Characters Writing and Reading Structure in Text Format Writing and Reading in Binary Format"
+            ]
+          },
+          {
+            "title": "Pre-Processor Directives"
+          },
+          {
+            "title": "String Handling"
+          },
+          {
+            "title": "Structures and Unions"
+          },
+          {
+            "title": "Command Line Arguments"
           }
         ]
       }
@@ -1329,78 +1405,165 @@
       "courseDetail": {
         "introduction": [
           {
-            "title": "What is C++?  ",
-            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+            "title": "What is Advanced Selenium?  ",
+            "description": "Selenium automates browsers. Primarily, it is for automating web applications for testing purposes, but it is certainly not limited to just that. Web-based administration tasks can also be automated. Selenium has the support of some of the largest vendors, who have taken steps to make Selenium a native part of their browsers. It is also the core technology in countless other browser automation tools, APIs, and frameworks."
           }
         ],
         "objective": [
           {
             "contents": [
-              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
-              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
-              "Memory Management: Understand and implement dynamic memory management techniques.",
-              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
-              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+              "To become an expert in Advanced Selenium concepts and be able to implement them in the industry.",
+              "To learn BDD testing using Cucumber.",
+              "Tools help the professionals increase the testing accuracy and coverage of automated testing with less time and cost."
             ]
           }
         ],
         "syllabus": [
           {
-            "title": "Language Features",
+            "title": "Introduction",
             "contents": [
-              "How C++ differs from C",
-              "Variables Declaration ",
-              "Function overloading",
-              "Optional Parameters",
-              "Reference Variables ",
-              "Operator overloading",
-              "Basics of Console Input and Output",
-              "Constant Pointers",
-              "Dynamic Memory Allocation"
+              "Overview of Selenium",
+              "Advantages of Selenium",
+              "The Selenium Suite",
+              "Inroduction to Selenium IDE",
+              "Selenium Remote Control",
+              "Selenium Grid",
+              "Architecture of Selenium Grid",
+              "The Hub & The Nodes",
+              "Basics of Web Driver",
+              "Setting up the environment",
+              "Configure FireBug & FirePath",
+              "Advanced Selenium WebDriver",
+              "TestNG",
+              "Automation Framework",
+              "Advanced Automation Framework"
             ]
           },
           {
-            "title": "OOPs Concepts ",
+            "title": "Core Java Overview",
             "contents": [
-              "Overview of OOPs Principles",
-              "Introduction to classes & objects",
-              "Creation & destruction of objects ",
-              "Data Members & Member Functions",
-              "this Pointer",
-              "Constructor & Destructor",
-              "Static class member",
-              "Friend class and functions",
-              "Namespace"
+              "Why Java for Selenium",
+              "First Java program",
+              "Datatypes in Java",
+              "Variables & Constants",
+              "Control-flow statements",
+              "Operators",
+              "Arrays",
+              "Loops",
+              "Classes and Objects",
+              "Class Constructors",
+              "Classs program in Java",
+              "Inheritance & Polymorphism",
+              "Introduction to Interface",
+              "Collection hierarchy"
             ]
           },
           {
-            "title": "Inheritance",
+            "title": "Selenium IDE",
             "contents": [
-              "Introduction and benefits.",
-              "Access Specifier.",
-              "Base and Derived class Constructors",
-              "Types of Inheritance.",
-              "Down casting and up casting.",
-              "Function overriding."
+              "Introduction to Selenium IDE",
+              "Features of Selenium IDE",
+              "Installing Selenium IDE",
+              "IDE Options",
+              "Building test cases",
+              "Running Test Cases",
+              "IDE Script Debugging",
+              "Writing a Test Suite",
+              "Using Locators in Selenium",
+              "Verification points in IDE",
+              "Working with regular expressions",
+              "User extensions",
+              "Execute scripts across browsers"
             ]
           },
           {
-            "title": "Polymorphism",
+            "title": "Selenium WebDriver",
             "contents": [
-              "What is Polymorphism",
-              "Pure virtual functions",
-              "Virtual Base Class "
+              "Introduction",
+              "How Selenium WebDriver Works",
+              "Configuring Selenium WebDriver With Eclipse",
+              "Selenium RC vs WebDriver",
+              "Set Up WebDriver Client",
+              "Programming your tests in WebDriver",
+              "Debugging WebDriver test cases",
+              "Troubleshooting",
+              "Testing HTTPS and Security Pop-ups",
+              "Running Test on GeckoDriver",
+              "Executing and Debugging tests in browsers",
+              "Desired Capabilities in Selenium WebDriver",
+              "Session Handling",
+              "Handle Alerts and Multiple Windows using WebDriver",
+              "Uploading & Downloading using WebDriver"
             ]
           },
           {
-            "title": "Exception Handling ",
+            "title": "Accessing Forms & GUI Objects",
             "contents": [
-              "Introduction to Exception.",
-              "Benefits of Exception handling.",
-              "Try and catch block.",
-              "Throw statement.",
-              "Pre-defined exceptions in C++.",
-              "Writing custom Exception class."
+              "Text box interaction",
+              "Radio button interaction",
+              "Handling Checkboxes with WebDriver API",
+              "Handling static dropdowns",
+              "Handling dynamic dropdowns",
+              "Drag & Drop",
+              "Keyboard Interaction",
+              "Mouse Interaction",
+              "Multi select"
+            ]
+          },
+          {
+            "title": "Selenium Commands ",
+            "contents": [
+              "Actions",
+              "Accessors",
+              "Assertions",
+              "Using Locators in Selenium"
+            ]
+          },
+          {
+            "title": "Synchronization in WebDriver",
+            "contents": [
+              "What is implicit wait?",
+              "What is explicit wait?",
+              "AJAX Calls in Selenium"
+            ]
+          },
+          {
+            "title": "Accessing Web Tables",
+            "contents": [
+              "What is a Web Table?",
+              "Locating Web Table elements",
+              "Fetching number of rows and columns",
+              "Fetching cell value"
+            ]
+          },
+          {
+            "title": "TestNG Framework ",
+            "contents": [
+              "Introduction",
+              "TestNG Features",
+              "Install and set up TestNG environment",
+              "First Test Case with TestNG",
+              "TestNG annotations",
+              "Junit vs TestNG",
+              "TestNG Test Suite",
+              "Annotations, Groups & DependOn",
+              "TestNG - Ignore Test",
+              "Group Test in TestNG",
+              "Exception Test",
+              "Dependency Test",
+              "TestNG Parameters & Data Provider",
+              "TestNG Reporters & Asserts",
+              "Test Cases Prioritizing & Sequencing",
+              "TestNG DataProvider with Excel",
+              "Multi Browser & Parallel Testing"
+            ]
+          },
+          {
+            "title": "Selenium Frameworks",
+            "contents": [
+              "Data Driven Test Framework",
+              "Keyword Driven Test Framework",
+              "Hybrid Test Framework"
             ]
           }
         ]
@@ -1502,92 +1665,71 @@
     {
       "id": "20",
       "cardimg": "images/courseimg/images/JAVA.png",
-      "bannerImgurl": "images/courseimg/images/temp.jpg",
+      "bannerImgurl": "images/courseimg/images/DefaultBanner.png",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 Days",
-      "title": "java",
-      "upcomingbatch": false,
+      "month": "3 Months Minimum",
+      "title": "Java",
+      "upcomingbatch": true,
       "price": {
-        "originalprice": "15000",
-        "offerprice": "11999",
-        "discount": true
+        "originalprice": "32000",
+        "offerprice": "26999",
+        "discount": false
       },
       "courseDetail": {
         "introduction": [
           {
-            "title": "What is C++?  ",
-            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+            "title": "What is Java?",
+            "description": "Java is a technology developed by James Gosling at Sun Microsystems, which is now a part of Oracle Corporation. This is one of the most powerful and secure languages used to build Software, Web applications, and Mobile applications. It uses an object-oriented approach to enhance its power."
           }
         ],
         "objective": [
           {
             "contents": [
-              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
-              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
-              "Memory Management: Understand and implement dynamic memory management techniques.",
-              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
-              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+              "Gain knowledge about basic Java language syntax and semantics to write Java programs and use concepts such as variables, conditional and iterative execution methods etc.",
+              "Understand the fundamentals of object-oriented programming in Java, including defining classes, objects, invoking methods etc and exception handling mechanisms.",
+              "Understand the principles of inheritance, packages and interfaces."
             ]
           }
         ],
         "syllabus": [
           {
-            "title": "Language Features",
+            "title": "Core Java",
             "contents": [
-              "How C++ differs from C",
-              "Variables Declaration ",
-              "Function overloading",
-              "Optional Parameters",
-              "Reference Variables ",
-              "Operator overloading",
-              "Basics of Console Input and Output",
-              "Constant Pointers",
-              "Dynamic Memory Allocation"
+              "Java Basics",
+              "Control Statements",
+              "Java Object Class",
+              "Java Inheritance",
+              "Java Polymorphism",
+              "Java Abstraction",
+              "Java Encapsulation",
+              "Java Array",
+              "Java String",
+              "Exception Handling",
+              "Java Inner Classes",
+              "Java Multithreading",
+              "Java Collection",
+              "JDBC",
+              "Java 8"
             ]
           },
           {
-            "title": "OOPs Concepts ",
+            "title": "Web Based Techonology",
             "contents": [
-              "Overview of OOPs Principles",
-              "Introduction to classes & objects",
-              "Creation & destruction of objects ",
-              "Data Members & Member Functions",
-              "this Pointer",
-              "Constructor & Destructor",
-              "Static class member",
-              "Friend class and functions",
-              "Namespace"
+              "Servlet",
+              "JSP",
+              "JSTL"
             ]
           },
           {
-            "title": "Inheritance",
+            "title": "Frameworks",
             "contents": [
-              "Introduction and benefits.",
-              "Access Specifier.",
-              "Base and Derived class Constructors",
-              "Types of Inheritance.",
-              "Down casting and up casting.",
-              "Function overriding."
+              "Hibernate",
+              "Spring",
+              "Spring Boot"
             ]
           },
           {
-            "title": "Polymorphism",
-            "contents": [
-              "What is Polymorphism",
-              "Pure virtual functions",
-              "Virtual Base Class "
-            ]
-          },
-          {
-            "title": "Exception Handling ",
-            "contents": [
-              "Introduction to Exception.",
-              "Benefits of Exception handling.",
-              "Try and catch block.",
-              "Throw statement.",
-              "Pre-defined exceptions in C++.",
-              "Writing custom Exception class."
-            ]
+            "title": "REST Web Services"
           }
         ]
       }
@@ -1608,78 +1750,38 @@
       "courseDetail": {
         "introduction": [
           {
-            "title": "What is C++?  ",
-            "description": "C++, created by Bjarne Stroustrup in the 1980s as an extension of C, adds object-oriented programming features to the language. It supports classes and objects, enabling better data abstraction, encapsulation, and modularity. C++ retains the efficiency and flexibility of C while introducing additional features like function overloading, inheritance, and polymorphism. This makes C++ suitable for large-scale software development, including games, real-time simulations, and complex system applications."
+            "title": "What is Tally Prime?  ",
+            "description": "Tally Prime is a business management software designed for small and medium-sized businesses. It is a comprehensive accounting and ERP (Enterprise Resource Planning) solution that helps manage various aspects of a business."
           }
         ],
         "objective": [
           {
             "contents": [
-              "Foundational Skills: Acquire a strong grasp of C/C++ syntax and core programming concepts.",
-              "Efficient Coding: Develop proficiency in writing efficient, optimized code for performance-critical applications.",
-              "Memory Management: Understand and implement dynamic memory management techniques.",
-              "OOP Principles: Master object-oriented programming (OOP) concepts and their application in C++.",
-              "Problem-Solving: Enhance problem-solving skills through algorithm development and debugging practices."
+              "Simplify business operations and management",
+              "Automate accounting, inventory, and financial processes",
+              "Provide real-time insights and data-driven decision-making",
+              "Ensure compliance with tax laws and regulations",
+              "Streamline sales, purchase, and inventory management",
+              "Enhance cash flow and financial management",
+              "Improve efficiency and productivity",
+              "Support business growth and scalability",
+              "Offer a user-friendly and intuitive interface",
+              "Provide seamless integration with other business applications"
             ]
           }
         ],
         "syllabus": [
           {
-            "title": "Language Features",
+            "title": "Tally Prime",
             "contents": [
-              "How C++ differs from C",
-              "Variables Declaration ",
-              "Function overloading",
-              "Optional Parameters",
-              "Reference Variables ",
-              "Operator overloading",
-              "Basics of Console Input and Output",
-              "Constant Pointers",
-              "Dynamic Memory Allocation"
-            ]
-          },
-          {
-            "title": "OOPs Concepts ",
-            "contents": [
-              "Overview of OOPs Principles",
-              "Introduction to classes & objects",
-              "Creation & destruction of objects ",
-              "Data Members & Member Functions",
-              "this Pointer",
-              "Constructor & Destructor",
-              "Static class member",
-              "Friend class and functions",
-              "Namespace"
-            ]
-          },
-          {
-            "title": "Inheritance",
-            "contents": [
-              "Introduction and benefits.",
-              "Access Specifier.",
-              "Base and Derived class Constructors",
-              "Types of Inheritance.",
-              "Down casting and up casting.",
-              "Function overriding."
-            ]
-          },
-          {
-            "title": "Polymorphism",
-            "contents": [
-              "What is Polymorphism",
-              "Pure virtual functions",
-              "Virtual Base Class "
-            ]
-          },
-          {
-            "title": "Exception Handling ",
-            "contents": [
-              "Introduction to Exception.",
-              "Benefits of Exception handling.",
-              "Try and catch block.",
-              "Throw statement.",
-              "Pre-defined exceptions in C++.",
-              "Writing custom Exception class."
+              "Fundamentals of Accounting",
+              "Introduction, Downloading and Installation of Tally Prime",
+              "Migration Tally. ERP 9 Data to Tally Prime, Chart of Accounts, Creating Inventory Masters",
+              "Recording Accounting Vouchers with bill-wise details in Tally Prime",
+              "Inventory Management ",
+              "Banking Entries & Bank Reconciliation",
+              "Sales & Purchase Management in Inventory & Regular Account",
+              "Goods & Service Tax Maintaining"
             ]
           }
         ]

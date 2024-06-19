@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Row, Card, Container, Col, Button } from "react-bootstrap";
 import { MdLibraryBooks } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -16,6 +16,11 @@ function AllUpcomingCourse() {
   const filterBatch = data?.courses?.filter((data, index) => data.upcomingbatch == true
   );
   console.log("filterd batch", filterBatch);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   return (
     <div>
