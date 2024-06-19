@@ -46,10 +46,10 @@
   "contact": [
     {
       "id": "1",
-      "img": "images/Contact/contact_img.jpg",
       "address": "Pune : 2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.",
       "mobile": "8263926309 / 8208683698 / 8999639478",
-      "email": "contact@hematitecorp.com"
+      "email": "contact@hematitecorp.com",
+      "maplink":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.700402408061!2d-73.93801658549696!3d40.66450937933627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a19619db66b%3A0xb129f37d68f7cc38!2s1477%20Bedford%20Ave%2C%20Brooklyn%2C%20NY%2011216!5e0!3m2!1sen!2sus!4v1622148017013!5m2!1sen!2sus"
     }
   ],
   "placementcontent": [

@@ -1,11 +1,11 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
 import Slider from "react-slick";
 import ScrollTrigger from "react-scroll-trigger";
 import NavigationBar from '../../common/navbar/NavigationBar'
 import { WebContext } from '../../App';
 import './home.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import CountUp from "react-countup";
 import FooterPage from '../../common/footer/FooterPage';
 import BackToTop from '../../common/backTotop/BackToTop';
@@ -14,6 +14,10 @@ import OurCourses from '../course/OurCourses';
 function HomePage() {
   const data = useContext(WebContext);
   const [counterOn, setCounterOn] = useState(false);
+  const nav = useNavigate()
+  useEffect(() => {  
+    window.scrollTo(0, 0);
+  }, []);
 
   let settings = {
     dots: false,
@@ -75,6 +79,10 @@ function HomePage() {
       cssEase: "linear",
     };
   }
+
+  const navigateToContact =()=>{
+    nav('/contact')
+  }
   return (
     <div>
       <header>
@@ -93,7 +101,7 @@ function HomePage() {
                     <span className='home-tagline2' >{val.tagline3}</span>
                   </div>
                   <div className="enroll-button">
-                    <Button size="lg" className="btn">
+                    <Button size='sm' className="btn" onClick={navigateToContact}>
                       ENROLL NOW
                     </Button>
                   </div>
@@ -139,7 +147,7 @@ function HomePage() {
                     <p className="description">{val.description2}</p>
                   </div>
                   <div className="aboutus-btn">
-                    <Link to='/about' className="btn-about">KNOW MORE</Link>
+                   <Button size='sm' className="btn-about">KNOW MORE</Button> 
                   </div>
                 </div>
               </Col>
@@ -154,8 +162,8 @@ function HomePage() {
         <Container>
           <Row>
             <Col>
+            <p className="slider-container-main-heading">OUR PLACED STUDENTS</p>
               <div className="slider-container">
-                <p className="slider-container-main-heading">OUR PLACED STUDENTS</p>
                 <Slider {...settings}>
                   {data?.placedstudents?.map((src) => (
                     <div className="slider-image" key={src.id}>

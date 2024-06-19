@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -15,6 +15,9 @@ import "./placement.css"
 import FooterPage from '../../common/footer/FooterPage';
 function PlacementPage() {
   const data = useContext(WebContext);
+  useEffect(() => {  
+    window.scrollTo(0, 0);
+  }, []);
   var settings = {
     // dots: true,
     infinite: true,

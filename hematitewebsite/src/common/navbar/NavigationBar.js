@@ -18,7 +18,7 @@ function NavigationBar() {
     const handleScroll = () => {
       let isTop;
 
-      if (window.innerWidth >= 375 && window.innerWidth <= 768) {
+      if (window.innerWidth >= 320 && window.innerWidth <= 768) {
         // Adjust the scroll threshold for widths between 376px and 768px
         isTop = window.scrollY < 0;  // Adjust this value as needed for this range
       } else {

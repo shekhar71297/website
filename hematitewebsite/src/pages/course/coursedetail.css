@@ -110,7 +110,7 @@ color: black;
   }
 }
 
-@media only screen and (min-width: 319px) and (max-width: 415px) {
+@media only screen and (min-width: 319px) and (max-width: 425px) {
   .course-detail-content {
     width: 100%;
     margin: auto;
@@ -123,6 +123,16 @@ color: black;
   .main-image img {
     height: 100%;
   }
+  .course-intro-heading {
+    font-size: 24px !important;
+  }
+  .detail-content-heading {
+    font-size: 18px !important;
+}
+
+.detail-content-subheading {
+  font-size: 14px !important;
+}
 }
 
 .course-intro-heading{
@@ -133,12 +143,11 @@ color: black;
 .detail-content-heading {
   font-size: 24px;
   font-weight: 600;
-  margin-top: 20px;
+ padding: 20px 0px 10px 0px;
 }
 
 .detail-content-subheading {
   font-size: 15px;
-  margin-top: 10px;
   justify-items: center;
 }
 
