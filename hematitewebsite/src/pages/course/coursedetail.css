@@ -67,7 +67,7 @@ color: black;
 .widget-content ul {
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style: disc;
 }
 
 .eduvibe-widget-details .widget-content ul li {
@@ -91,9 +91,50 @@ color: black;
   border: none;
 }
 
+.coursetopmargin{
+  margin-top: 20px;
+}
+
 .buttonlayout:hover {
   background-color:  #0E4D63;
   color: white;
+}
+
+
+.course-intro-heading{
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.detail-content-heading {
+  font-size: 24px;
+  font-weight: 600;
+ padding: 20px 0px 10px 0px;
+}
+
+.detail-content-subheading {
+  font-size: 15px;
+  justify-items: center;
+ 
+}
+
+.course-content-space {
+  margin: 30px;
+}
+
+
+.course_bullet_point {
+  list-style-type: disc; /* Use disc for default bullet points */
+  margin-left: 20px; /* Adjust margin for indentation */
+}
+
+.detail-content-title{
+  font-size: 18px;
+  margin: 10px 0px;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 /* .listadjustment ul li {
@@ -135,23 +176,5 @@ color: black;
 }
 }
 
-.course-intro-heading{
-  font-size: 35px;
-  font-weight: 700;
-}
 
-.detail-content-heading {
-  font-size: 24px;
-  font-weight: 600;
- padding: 20px 0px 10px 0px;
-}
-
-.detail-content-subheading {
-  font-size: 15px;
-  justify-items: center;
-}
-
-.course-content-space {
-  margin: 20px;
-}
 
