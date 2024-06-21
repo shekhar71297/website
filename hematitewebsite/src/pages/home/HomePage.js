@@ -83,6 +83,10 @@ function HomePage() {
   const navigateToContact =()=>{
     nav('/contact')
   }
+
+  const navgateToAbout = () =>{
+    nav('/about')
+  }
   return (
     <div>
       <header>
@@ -147,7 +151,7 @@ function HomePage() {
                     <p className="description">{val.description2}</p>
                   </div>
                   <div className="aboutus-btn">
-                   <Button size='sm' className="btn-about">KNOW MORE</Button> 
+                   <Button size='sm' onClick={navgateToAbout} className="btn-about">KNOW MORE</Button> 
                   </div>
                 </div>
               </Col>
