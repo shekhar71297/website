@@ -9,7 +9,7 @@ import { Link, useParams } from "react-router-dom";
 import { Breadcrumb } from "react-bootstrap";
 import BackToTop from "../../common/backTotop/BackToTop";
 import { WebContext } from "../../App";
-import { FaRupeeSign } from "react-icons/fa6";
+import { FaIndianRupeeSign } from "react-icons/fa6";
 import NavigationBar from "../../common/navbar/NavigationBar";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
 import FooterPage from "../../common/footer/FooterPage";
@@ -29,7 +29,7 @@ function CourseDetails() {
     <div>
       <NavigationBar />
       <BackToTop />
-      <CustomBreadcrumb pageTitle= {filterBatch?.title} />
+      <CustomBreadcrumb pageTitle={filterBatch?.title} />
       {/* Banner Image code */}
       {/* <Container>
             <Row>
@@ -52,8 +52,7 @@ function CourseDetails() {
               <div className="tab-content" id="myTabContent">
                 <Card className="course-content-space">
                   <div className="course-content-space">
-                    <div className="course-intro-heading">Introduction</div>
-                    <div>
+                    {/* <div>
                       {filterBatch?.courseDetail?.introduction.map(
                         (intro, index) => (
                           <div key={index}>
@@ -104,11 +103,104 @@ function CourseDetails() {
                           </div>
                         )
                       )}
+                    </Card.Text> */}
+
+                    <Card.Text>
+                      <div className="detail-content-heading">
+                        What You'll Learn
+                      </div>
+                      <ul>
+                        {filterBatch?.courseDetail?.objective[0]?.contents.map(
+                          (content, i) => (
+                            <li
+                              className="detail-content-subheading course_bullet_point"
+                              key={i}
+                            >
+                              {content}
+                            </li>
+                          )
+                        )}
+                      </ul>
                     </Card.Text>
 
-                    <div className="detail-content-heading">
-                      Certificate
-                    </div>
+                    <Card.Text>
+                      <div className="detail-content-heading">Requirements</div>
+                      <ul>
+                        {filterBatch?.courseDetail?.requirements[0]?.contents.map(
+                          (content, i) => (
+                            <li
+                              key={i}
+                              className="detail-content-subheading course_bullet_point"
+                            >
+                              {content}
+                            </li>
+                          )
+                        )}
+                      </ul>
+                    </Card.Text>
+
+                    {filterBatch?.courseDetail?.courseDescription && (
+                      <Card.Text>
+                        <div className="detail-content-heading">
+                          Course Description
+                        </div>
+                        <ul>
+                          {filterBatch.courseDetail.courseDescription.description.map(
+                            (desc, i) => (
+                              <li key={i} className="detail-content-subheading">
+                                {desc}
+                              </li>
+                            )
+                          )}
+                        </ul>
+                      </Card.Text>
+                    )}
+
+                    <Card.Text>
+                      <div className="detail-content-heading">
+                        Course Content
+                      </div>
+                      {filterBatch?.courseDetail?.syllabus.map(
+                        (syllabus, index) => (
+                          <div key={index}>
+                            <div className="detail-content-title">
+                              <strong>{syllabus.title}</strong>
+                            </div>
+                            <ul>
+                              {syllabus.contents.map((content, i) => (
+                                <li
+                                  className="detail-content-subheading course_bullet_point"
+                                  key={i}
+                                >
+                                  <strong>{content.title}</strong>:{" "}
+                                  {content.description}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )
+                      )}
+                    </Card.Text>
+
+                    <Card.Text>
+                      <div className="detail-content-heading">
+                        Who This Course is For
+                      </div>
+                      <ul>
+                        {filterBatch?.courseDetail?.whoThisCourseIsFor[0]?.contents.map(
+                          (content, i) => (
+                            <li
+                              className="detail-content-subheading course_bullet_point"
+                              key={i}
+                            >
+                              {content}
+                            </li>
+                          )
+                        )}
+                      </ul>
+                    </Card.Text>
+
+                    <div className="detail-content-heading">Certificate</div>
                     <p className="detail-content-subheading">Yes.</p>
                   </div>
                 </Card>
@@ -174,7 +266,7 @@ function CourseDetails() {
                       {filterBatch?.price?.discount && (
                         <div>
                           <span className="hovercourseOfferPrice">
-                            <FaRupeeSign />
+                            <FaIndianRupeeSign />
                             {filterBatch?.price?.offerprice}
                           </span>
 
@@ -182,13 +274,14 @@ function CourseDetails() {
                             Original Price
                           </b>
                           <span className="hovercourseOriginalPrice">
-                            {" "}
+                            <FaIndianRupeeSign />
                             {filterBatch?.price?.originalprice}
                           </span>
                         </div>
                       )}
                       {!filterBatch?.price?.discount && (
                         <span className="hovercourseOfferPrice">
+                          <FaIndianRupeeSign />
                           {filterBatch?.price?.originalprice}
                         </span>
                       )}
@@ -200,7 +293,7 @@ function CourseDetails() {
           </Col>
         </Row>
       </Container>
-      <FooterPage/>
+      <FooterPage />
     </div>
   );
 }
