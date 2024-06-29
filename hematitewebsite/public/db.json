@@ -283,6 +283,31 @@
             ]
           },
           {
+            "title": "MongoDB",
+            "contents": [
+              {
+                "title": "Basics of NoSQL Databases",
+                "description": " Learn the fundamental concepts of NoSQL databases, highlighting the differences from traditional SQL databases."
+              },
+              {
+                "title": "Installation and Setup",
+                "description": " Guide through installing MongoDB and setting up the development environment."
+              },
+              {
+                "title": "Data Modeling",
+                "description": "Understand how to design and manage data structures using collections and documents."
+              },
+              {
+                "title": "CRUD Operations",
+                "description": " Perform Create, Read, Update, and Delete operations in MongoDB."
+              },
+              {
+                "title": "Mongoose",
+                "description": "Learn how to use Mongoose, an ODM (Object Data Modeling) library, to interact with MongoDB in a Node.js application for schema definition, data validation, and query building."
+              }
+            ]
+          },
+          {
             "title": "Django",
             "contents": [
               {
@@ -468,85 +493,80 @@
         "objective": [
           {
             "contents": [
-              "Understand the correct syntax of Python language elements like indentation, loops, conditionals, and functions.",
-              "Learn how to work with various data types and structures, including strings, lists, dictionaries, and tuples, enabling you to manipulate and analyze data effectively.",
-              "Develop Python Modules to Create Re-Usable Code.",
-              "Learn how to read from and write to files, enabling you to interact with external data sources and persist information across sessions.",
-              "You will learn Beautiful Soup, Request, Pandas, NumPy, Scikit Learn, and Matplotlib."
+              "Integrate various data sources into Power BI and Tableau, including CSV files, SQL databases, and cloud storage services.",
+              "Understand relationships, cardinality, and schema types (Star and Snowflake) in Power BI data modeling.",
+              "Create dashboards in Power BI and Tableau to effectively communicate data insights through visual storytelling.",
+              "Use DAX functions in Power BI and calculated fields in Tableau for sophisticated data manipulation and insight generation.",
+              "Apply filtering and sorting techniques in Power BI and Tableau for focused and precise data exploration.",
+              "Gain skills in saving, sharing, and presenting data visualizations in professional formats using Power BI and Tableau."
             ]
           }
         ],
         "requirements": [
           {
             "contents": [
-              "Absolutely no prior experience necessary."
+              "No prior knowledge of data visualization required.",
+              "No programming skills required"
             ]
           }
         ],
         "courseDescription": {
           "description": [
-            "Python is a versatile and powerful programming language known for its simplicity and readability. It is widely used in various domains such as web development, data analysis, artificial intelligence, scientific computing, and more. With its extensive standard library and active community support, Python is an excellent choice for both beginners and experienced developers."
+            "Data visualization is the graphical representation of data to communicate insights and patterns effectively. By converting complex data into visual formats such as charts, graphs, and maps, data visualization allows for easier interpretation, analysis, and decision-making. It enables users to uncover trends, correlations, and outliers in data sets, making it an essential tool across various industries, including business, science, and academia."
           ]
         },
         "syllabus": [
           {
-            "title": "Python",
+            "title": "POWER BI",
             "contents": [
               {
-                "title": "Overview of Python",
-                "description": "Introduction to Python, its features, and how it works internally."
+                "title": "Introduction to Power BI",
+                "description": "Overview of tools, installation, data import, and understanding Direct Query vs. Import Data."
               },
               {
-                "title": "Variables and Keywords",
-                "description": "Understanding variables, naming conventions, and Python keywords."
+                "title": "Data Transformation",
+                "description": "Using Power Query Editor for data manipulation, including column adjustments, appending, merging queries, creating tables, and using query parameters."
               },
               {
-                "title": "Python Data Types",
-                "description": "Exploring built-in data types like numeric, string, list, tuple, dictionary, and set."
+                "title": "Modeling with Power BI",
+                "description": "Basics of data modeling, managing relationships, cardinality, cross-filtering, hierarchies, calculated columns, measures, and quick measures."
               },
               {
-                "title": "Operators and their Types",
-                "description": " Overview of operators in Python including arithmetic, comparison, logical, and bitwise."
+                "title": "Power BI Visualization",
+                "description": "Creating charts and visuals, applying formatting, filters, advanced techniques like drill down/up, managing visuals, and custom report themes."
               },
               {
-                "title": "Control Flow",
-                "description": " Conditional statements (if, elif) for decision-making, and loops (for loop, while loop) for iteration."
+                "title": "DAX Functions and Publishing",
+                "description": "Introduction to DAX, data types, operators, advanced DAX usage, function types, sharing, publishing reports, and using collaborative tools."
+              }
+            ]
+          },
+          {
+            "title": "TABLEAU",
+            "contents": [
+              {
+                "title": "Introduction to Tableau",
+                "description": "Overview of Tableau tools and interface, data connection, and preparation."
               },
               {
-                "title": "Functions",
-                "description": "Introduction to defining and calling functions, function arguments, inner calling techniques, and lambda functions."
+                "title": "Data Connections and Preparation",
+                "description": "Connecting to various data sources, blending data, managing extracts, and joining data."
               },
               {
-                "title": "Recursion Function",
-                "description": "Understanding recursion and implementing recursive functions."
+                "title": "Data Transformation",
+                "description": "Tableau's data organization, applying filters, creating groups, and calculated fields."
               },
               {
-                "title": "Dynamic Input in Lists",
-                "description": "Handling dynamic input in lists using list comprehension and input() function."
+                "title": "Visual Analytics",
+                "description": "Creating basic and advanced charts, geospatial visualization, trend lines, and reference lines."
               },
               {
-                "title": "Object-Oriented Programming",
-                "description": "Introduction to OOP concepts like classes, objects, inheritance, polymorphism, and encapsulation."
+                "title": "Dashboards and Stories",
+                "description": "Designing interactive dashboards, adding actions and filters, and creating compelling data stories."
               },
               {
-                "title": "Decorators in Python",
-                "description": "Understanding decorators to add functionality to functions and methods."
-              },
-              {
-                "title": "Multiprocessing and Multithreading",
-                "description": "Working with multiple processes using the multiprocessing module and multithreading concepts using the threading module."
-              },
-              {
-                "title": "File Handling",
-                "description": "Reading from and writing to files in Python."
-              },
-              {
-                "title": "Modules and Packages",
-                "description": "Understanding modules and packages for code organization and reuse"
-              },
-              {
-                "title": "Automation",
-                "description": "Automating tasks using scripting and scheduling."
+                "title": "Sharing and Collaboration",
+                "description": ":Publishing to Tableau Server and Online, sharing workbooks, and using collaborative features."
               }
             ]
           }
@@ -554,10 +574,11 @@
         "whoThisCourseIsFor": [
           {
             "contents": [
-              "New to programming, seeking to learn their first language due to Python's simplicity and readability.",
-              "Programmers incorporating Python into web development, automation, or software projects.",
-              "Students and academics using Python in their curriculum or research.",
-              "Non-programmers (e.g., finance, marketing, engineering) automating tasks or conducting data analysis with Python"
+              "Programmers, researchers, designers, data scientists, journalists, and communication experts who need to present data effectively.",
+              "MS Excel users who have basic skills but want to master advanced charts, graphs & dashboard.",
+              "Anyone interested in understanding how graphs work and learning to identify misleading visualizations.",
+              "Professionals across industries aiming to enhance data analysis skills",
+              "Students in data science or business analytics fields seeking to expand their skills"
             ]
           }
         ]
