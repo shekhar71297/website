@@ -10,6 +10,9 @@ import { WebContext } from "../../App";
 import "./courses.css";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
 import FooterPage from "../../common/footer/FooterPage";
+import IconBar from "../../common/IconBar/IconBar";
+import reveal from "../../common/ScrollAnimation/reveal";
+
 
 function AllUpcomingCourse() {
   const data = useContext(WebContext);
@@ -24,9 +27,12 @@ function AllUpcomingCourse() {
     window.scrollTo(0, 0);
   }, []);
 
-
+useEffect(()=>{
+  reveal()
+})
   return (
     <div>
+      <IconBar/>
       <NavigationBar />
       <BackToTop />
       <CustomBreadcrumb pageTitle='Upcoming Courses' />
@@ -38,7 +44,7 @@ function AllUpcomingCourse() {
             md={6}
             lg={4}
             >
-              <Card className="card-adjustment shadowapplying">
+              <Card className="card-adjustment shadowapplying reveal fade-bottom ">
                 <Card.Body>
                   <div className="promo">
                     <Card.Img

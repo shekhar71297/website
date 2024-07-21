@@ -13,6 +13,7 @@ import { FaIndianRupeeSign } from "react-icons/fa6";
 import NavigationBar from "../../common/navbar/NavigationBar";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
 import FooterPage from "../../common/footer/FooterPage";
+import IconBar from "../../common/IconBar/IconBar";
 
 function CourseDetails() {
   const data = useContext(WebContext);
@@ -29,6 +30,7 @@ function CourseDetails() {
     <div>
       <NavigationBar />
       <BackToTop />
+      <IconBar/>
       <CustomBreadcrumb pageTitle={filterBatch?.title} />
       {/* Banner Image code */}
       {/* <Container>

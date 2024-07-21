@@ -6,6 +6,7 @@ import BackToTop from '../../common/backTotop/BackToTop';
 import FooterPage from '../../common/footer/FooterPage';
 import './service.css'
 import CustomBreadCrumb from '../../common/breadCrumb/CustomBreadCrumb';
+import reveal from '../../common/ScrollAnimation/reveal';
 
 function ServicePage() {
   const data = useContext(WebContext);
@@ -19,13 +20,17 @@ function ServicePage() {
     }
     return null;
   };
+
+  useEffect(()=>{
+    reveal()
+  },[])
   return (
     <div>
       <NavigationBar/>
       <BackToTop/>
       <CustomBreadCrumb pageTitle='Services'/>
       <Container>
-        <div className="service-container">
+        <div className="service-container reveal fade-bottom ">
           <div className="heading2">
             <span className="service-heading-title">What We Provide</span>
           </div>

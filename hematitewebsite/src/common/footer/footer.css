@@ -16,16 +16,18 @@
     background: #218bbb;
     height: 90%
 }
+
 ul li {
-list-style-type: none;
+    list-style-type: none;
 }
-ul{
+
+ul {
     padding-inline-start: 0px !important;
 }
 
 .footer-body {
     background-color: #153441;
-    padding: 50px 50px;
+    padding: 50px 23px;
     max-width: 100%;
 }
 
@@ -120,6 +122,30 @@ ul{
         font-size: 12px;
         text-align: center;
     }
+
+    .footer-content {
+        font-size: 14px;
+    }
+
+    .site-map-links {
+        font-size: 14px;
+    }
+
+    .footer-contact {
+        font-size: 14px;
+    }
+
+    .footer-email {
+        font-size: 14px;
+    }
+
+    .footer-phone {
+        font-size: 14px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
 }
 
 @media ((min-width: 667px) and (max-width: 736px)) {
@@ -135,12 +161,37 @@ ul{
         font-size: 12px;
         text-align: center;
     }
+    
+    .footer-content {
+        font-size: 14px;
+    }
+
+    .site-map-links {
+        font-size: 14px;
+    }
+
+    .footer-contact {
+        font-size: 14px;
+    }
+
+    .footer-email {
+        font-size: 14px;
+    }
+
+    .footer-phone {
+        font-size: 14px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
 }
 
 @media ((min-width: 740px) and (max-width: 768px)) {
     .site-map-body {
         padding-left: 40px !important;
     }
+
     .footer-copyright {
         display: flex;
         flex-direction: column;
@@ -149,11 +200,12 @@ ul{
         font-size: 12px;
         text-align: center;
     }
+
     .icon-bar {
-    
+
         top: 70% !important;
-        
-      }
+
+    }
 }
 
 @media ((min-width: 770px) and (max-width: 1025px)) {
@@ -162,64 +214,3 @@ ul{
     }
 }
 
-/*--------------------------------------------social media bar---------------------------------------------------*/
-/* social media sticky bar */
-.icon-bar {
-    position: fixed;
-    top: 54%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  
-  /* Style the icon bar links */
-  .icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 12px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 15px;
-  }
-  
-  /* Style the social media icons with color, if you want */
-  .icon-bar a:hover {
-    background-color: #000;
-  }
-  
-  .facebook {
-    background: #218bbb;
-    color: white;
-  }
-  
-  .instagram {
-    background: #f9522d;
-    color: white;
-  }
-  
-  .whatsapp {
-    background: #39dd4c;
-    color: white;
-  }
-  
-  .linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .youtube {
-    background: #bb0000;
-    color: white;
-  }
-
-  @media ((min-width: 320px) and (max-width: 1024px)) {
-    .icon-bar a {
-        display: block;
-        text-align: center;
-        padding: 10px;
-        transition: all 0.3s ease;
-        color: white;
-        font-size: 12px;
-      }
-  }
-  

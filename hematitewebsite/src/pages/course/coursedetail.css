@@ -76,11 +76,11 @@ color: black;
 }
 
 .eduvibe-widget-details .widget-content ul li span {
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 16px;
   line-height: 26px;
   display: inline-block;
-  margin-right: 25px;
+  /* margin-right: 25px; */
 }
 
 .buttonlayout {

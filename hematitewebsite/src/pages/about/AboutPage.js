@@ -10,6 +10,9 @@ import { FaGoogle } from "react-icons/fa";
 import Slider from "react-slick";
 import "./AboutUs.css"
 import FooterPage from "../../common/footer/FooterPage";
+import IconBar from "../../common/IconBar/IconBar";
+import reveal from "../../common/ScrollAnimation/reveal";
+
 
 function AboutPage() {
   const data = useContext(WebContext);
@@ -52,16 +55,20 @@ function AboutPage() {
   const navigateToCourses = () => {
     navigate("/allcourse");
   };
+  useEffect (()=>{
+    reveal()
+  },[])
 
   return (
     <>
+    <IconBar/>
       <BackToTop />
       <NavigationBar />
       <CustomBreadcrumb pageTitle="About us" />
 
       {/* ---------------------------------------- About Section ------------------------------ */}
 
-      <div className="aboutUsContainer">
+      <div className="aboutUsContainer   reveal fade-bottom ">
         <Container >
           <Row>
             <Col sm={12} lg={6} >
@@ -104,7 +111,7 @@ function AboutPage() {
 
       {/*  ----------------------------- Mission, Purpose, Values Section -------------------------- */}
 
-      <div className="mission_Container">
+      <div className="mission_Container  reveal fade-bottom ">
         <Container >
           {data?.aboutUsHeadings?.map((data, index) => (
             <div>
@@ -141,7 +148,7 @@ function AboutPage() {
 
       {/* ---------------------------------Event Section -------------------------------- */}
 
-      <div className="bgImage">
+      <div className="bgImage  reveal fade-bottom ">
         <Container className="event_Container">
           <Row>
             <Col sm={12} lg={6}>
@@ -156,6 +163,7 @@ function AboutPage() {
                       className="about_eventBtn"
                       variant=""
                       onClick={navigateToCourses}
+                      size="sm"
                     >
                       More Upcoming Events
                       <FaArrowRightLong />
@@ -187,7 +195,7 @@ function AboutPage() {
       </div>
 
       {/* ---------------------------------- Infrastructure Section ---------------------------  */}
-      <div className="infrastructure_Container">
+      <div className="infrastructure_Container  reveal fade-bottom ">
         <Container>
           {data?.aboutUsHeadings?.map((data, index) => (
             <div>
@@ -214,7 +222,7 @@ function AboutPage() {
 
       {/* ----------------------- Feedback Section --------------------------------  */}
 
-      <div className="about_feedback">
+      <div className="about_feedback  reveal fade-bottom ">
         <Container>
           <div>
             <h3 className="feedback_heading">Our Lovely Students Feedback</h3>
@@ -282,7 +290,7 @@ function AboutPage() {
           </div>
         </Container>
       </div>
-<FooterPage/>
+<FooterPage  />
     </>
   )
 }

@@ -9,6 +9,7 @@ import NavigationBar from '../../common/navbar/NavigationBar';
 import CustomBreadCrumb from '../../common/breadCrumb/CustomBreadCrumb';
 import FooterPage from '../../common/footer/FooterPage';
 import './contact.css';
+import reveal from '../../common/ScrollAnimation/reveal';
 
 function ContactPage() {
   const data = useContext(WebContext);
@@ -17,6 +18,10 @@ function ContactPage() {
     
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(()=>{
+    reveal()
+    },[])
 
   if (!data) {
     return <div>Loading data...</div>;
@@ -27,7 +32,7 @@ function ContactPage() {
       <BackToTop />
       <NavigationBar />
       <CustomBreadCrumb pageTitle='Contact Us' />
-      <div className='contact-form'>
+      <div className='contact-form  reveal fade-bottom '>
         <Container>
           <Row>
             {data.contact && data.contact.map((val, index) => (
@@ -60,17 +65,18 @@ function ContactPage() {
                   <Stack direction="horizontal" gap={4}>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                       <Form.Label className='form-label'>First Name</Form.Label>
-                      <Form.Control className='form-input' type="text" placeholder="John" />
+                      <Form.Control className='form-input' type="text" placeholder="Enter first name" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                       <Form.Label className='form-label'>Last Name</Form.Label>
-                      <Form.Control className='form-input' type="text" placeholder="Doe" />
+                      <Form.Control className='form-input' type="text" placeholder="Enter last name" />
                     </Form.Group>
                   </Stack>
                   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label className='form-label'>Subject</Form.Label>
-                    <Form.Control type="text" placeholder="subject" />
+                    <Form.Label className='form-label'>Mobile No</Form.Label>
+                    <Form.Control type="text" placeholder="Enter mobile number" />
                   </Form.Group>
+                  
                   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                     <Form.Label className='form-label'>Message</Form.Label>
                     <Form.Control as="textarea" rows={6} />
@@ -86,7 +92,7 @@ function ContactPage() {
       </div>
       <Container>
         { data.contact && data.contact.map((val , index)=>(
-          <div className="map-section" key={index}>
+          <div className="map-section reveal fade-bottom " key={index}>
           <iframe
             title="Google Map"
             src={val.maplink}

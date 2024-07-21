@@ -2,17 +2,40 @@
   "logo": [
     {
       "id": 1,
-      "logoImgurl": "/images/home/hematitelogohorizontal.png"
+      "logoImgurl": "/images/home/logo3.png"
+    }
+  ],
+
+  "direction":[
+    {
+      "id": 1,
+      "img":"/images/home/right-arrow.png",
+      "img1":"/images/home/left-arrow.png"
     }
   ],
   "HomePage": [
     {
       "id": 1,
       "bannerImgurl": "/images/home/homepage.png",
+      "carouselImg1":"/images/home/carousel1.jpg",
+      "carouselImg2":"/images/home/carousel2.jpg",
+      "carouselImg3":"/images/home/carousel3.jpg",
       "title": "Best Online & Offline Institute",
       "tagline1": "Master IT Skills",
       "tagline2": "Transform Your Future in",
       "tagline3": "IT with Our Expertise"
+    }
+  ],
+  "offerImg":[
+    {
+      "id": 1,
+      "img":"/images/home/carousel1.jpg"
+    },{
+      "id": 2,
+      "img":"/images/home/carousel2.jpg"
+    },{
+      "id": 3,
+      "img":"/images/home/carousel3.jpg"
     }
   ],
   "homepageabout": [

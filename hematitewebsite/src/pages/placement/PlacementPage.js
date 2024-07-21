@@ -13,6 +13,8 @@ import BackToTop from "../../common/backTotop/BackToTop"
 import { WebContext } from '../../App';
 import "./placement.css"
 import FooterPage from '../../common/footer/FooterPage';
+import IconBar from '../../common/IconBar/IconBar';
+import reveal from '../../common/ScrollAnimation/reveal';
 function PlacementPage() {
   const data = useContext(WebContext);
   useEffect(() => {  
@@ -27,9 +29,12 @@ function PlacementPage() {
     // autoplay: true,
     // autoplaySpeed: 2000,
   };
-
+useEffect(()=>{
+  reveal()
+})
   return (
     <>
+    <IconBar/>
       <BackToTop />
       <NavigationBar />
       <CustomBreadcrumb pageTitle='Placements' />
@@ -37,7 +42,7 @@ function PlacementPage() {
       <div className='placement_Description_Container'>
         <Container>
           {data?.placementcontent?.map((val, index) =>
-            <div className='placement_Row'>
+            <div className='placement_Row reveal fade-bottom'>
               <Row>
                 {index % 2 === 0 ? (
                   // When index is 1, render the image on the left side
@@ -85,7 +90,7 @@ function PlacementPage() {
         </Container>
       </div>
 
-      <div className="bgcontainer1">
+      <div className="bgcontainer1 reveal fade-bottom ">
         <Container >
           <h2 className='highlightHeading'>Placement Highlights</h2>
           <div className="bgcontainer2">
@@ -124,8 +129,8 @@ function PlacementPage() {
 
 
       <Container>
-        <div className="bgimg">
-          <Row >
+        <div className="bgimg reveal fade-bottom ">
+          <Row > 
             <Col md={6}>
               <div className="placementcard"  >
                 <Card className='placement_Cards' >

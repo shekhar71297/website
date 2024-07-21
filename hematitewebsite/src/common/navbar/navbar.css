@@ -6,7 +6,11 @@
   }
   .navbar{
     text-align: center;
+    background-color:#ffffff57;
+    
   }
+  
+
   
   .nav-link:hover {
     color:#218dbb !important;
@@ -35,6 +39,15 @@
   
   .custom-dropdown:hover .dropdown-menu {
     display: block;
+  }
+  .slogan{
+    display: flex;
+    flex-direction: column;
+  }
+  .slogan-text{
+    font-size: 12px;
+    font-family: cursive;
+    font-weight: 300;
   }
   
   

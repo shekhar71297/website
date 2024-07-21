@@ -72,14 +72,17 @@ function NavigationBar() {
       <Navbar
         fixed='top'
         expand="lg"
-        className={`navbar p-3 ${scrolled ? 'scrolled' : ''}`}
+        className={`navbar  ${scrolled ? 'scrolled' : ''}`}
       >
         <div className='container'>
           {data?.logo?.map((val, index) =>
             <Navbar.Brand >
+             <div>
               <Link to='/' >
-              <Image src={val.logoImgurl} alt={val.id} style={{ maxHeight: '30px', maxWidth: '150px' }} />
+              <Image src={val.logoImgurl} alt={val.id} style={{maxHeight:'55px',maxWidth:'180px'}} />
               </Link>
+              {/* <p className='slogan-text' >Success Redefined</p> */}
+              </div>
             </Navbar.Brand>
           )}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

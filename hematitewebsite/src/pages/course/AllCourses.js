@@ -11,14 +11,21 @@ import { WebContext } from "../../App";
 import "./courses.css";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
 import FooterPage from "../../common/footer/FooterPage";
+import IconBar from "../../common/IconBar/IconBar";
+import reveal from "../../common/ScrollAnimation/reveal";
 
 function AllCourses() {
   const data = useContext(WebContext);
   useEffect(() => {  
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(()=>{
+    reveal()
+  })
   return (
     <div>
+      <IconBar/>
       <BackToTop />
       <NavigationBar />
       <CustomBreadcrumb pageTitle='All Courses' />
@@ -27,11 +34,11 @@ function AllCourses() {
       <Row>
           {data?.courses?.map((data, index) => (
             <Col key={index}  xs={12}
-            sm={6}
+            sm={6} 
             md={6}
             lg={4}
             >
-              <Card className="card-adjustment shadowapplying">
+              <Card className="card-adjustment shadowapplying reveal fade-bottom">
                 <Card.Body>
                   <div className="promo">
                     <Card.Img
