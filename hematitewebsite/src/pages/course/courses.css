@@ -6,6 +6,7 @@
 
 .allcourse-section {
   margin-top: 25px;
+  padding: 25px;
 }
 
 .card-adjustment {
@@ -68,6 +69,7 @@
   opacity: 1;
 }
 .upcomingcourse-body {
+  margin-top: 50px;
   padding:40px 20px 40px 20px;
 }
 .applyinghover h6,
@@ -168,6 +170,10 @@
   margin-top: 40px;
 }
 
+.allcoursemargintop{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 
 
 
@@ -181,6 +187,9 @@
 
   .applyinghover Button {
     margin-top: -30px;
+  }
+  .allcoursemargintop{
+    padding: 20px 40px !important;
   }
 
   .courseOriginalPrice {

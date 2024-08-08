@@ -87,11 +87,13 @@
     display: inline-block;
     margin: 15px 0px;
 }
-.aboutimg{
+
+.aboutimg {
     max-width: 100%;
     object-fit: contain;
     border-radius: 100%;
 }
+
 /* css for Event Container */
 
 .bgImage {
@@ -295,7 +297,8 @@
     color: #4285f4;
     margin-right: 10px;
 }
-.about-img{
+
+.about-img {
     max-width: 100%;
 }
 
@@ -306,7 +309,7 @@
         width: 100%;
         padding: 0px 35px;
     }
-    
+
 
     .feedback-content {
         font-size: 11px;
@@ -316,14 +319,17 @@
     .about-feedback h3 {
         font-size: 1rem;
     }
+
     .sk-review-image {
         height: 50px;
         width: 50px;
     }
+
     .star-icons i {
         font-size: 0.7em;
     }
-    .aboutimg{
+
+    .aboutimg {
         max-width: 80%;
         object-fit: contain;
         border-radius: 100%;
@@ -369,7 +375,7 @@
     .eventImage {
         margin-bottom: 20px;
     }
-    
+
 
     .infrastructure_heading {
         font-size: 32px;
@@ -403,7 +409,8 @@
     .slick-slide>div {
         margin: 0px 15px;
     }
-    .about_feedback{
+
+    .about_feedback {
         padding: 46px !important;
     }
 }
@@ -559,10 +566,19 @@
         font-size: 24px;
     }
 
+    .aboutUsContent {
+        padding: 22px;
+    }
+
+    .aboutimg {
+        max-width: 85%;
+    }
+
     .aboutUsImage {
         text-align: center;
     }
-    .aboutUspara{
+
+    .aboutUspara {
         font-size: 14px;
     }
 
@@ -573,20 +589,28 @@
     .mission_heading {
         font-size: 24px;
     }
+
     .bgImage {
         margin-top: 40px;
     }
+
     .infrastructure_Container {
         margin-top: 40px;
     }
+
     .about_feedback {
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
     .mission_card {
-        margin: 10px 0px;
+        margin: 10px 25px 10px 25px;
     }
+
+    .event_Container {
+        padding: 10px 35px 10px 35px !important;
+    }
+
 
     .bgImage {
         padding: 0px;
@@ -611,7 +635,8 @@
     .feedback_heading {
         font-size: 20px;
     }
-    .about-img{
+
+    .about-img {
         max-width: 100%;
     }
 
@@ -636,46 +661,64 @@
     .slick-slide>div {
         margin: 0px 15px;
     }
+
     .feedback-slider-container {
         width: 100%;
         margin: 0 auto;
+        padding: 0px 40px 0px 40px !important;
     }
 }
+
 @media ((min-width: 421px) and (max-width: 425px)) {
 
     .aboutUsHeading {
         font-size: 24px;
     }
-    .aboutimg{
+
+    .aboutimg {
         max-width: 80%;
     }
+
     .aboutUsImage {
         text-align: center;
-    }
-    .aboutUspara{
-        font-size: 14px;
     }
 
     .aboutUspara {
         font-size: 14px;
     }
 
+    .aboutUsContent {
+        padding: 22px;
+    }
+
+
+    .aboutUspara {
+        font-size: 14px;
+    }
+
+    .event_Container {
+        padding: 10px 35px 10px 35px !important;
+    }
+
     .mission_heading {
         font-size: 24px;
     }
+
+    .mission_card {
+        margin: 10px 25px 10px 25px;
+    }
+
     .bgImage {
         margin-top: 40px;
     }
+
     .infrastructure_Container {
         margin-top: 40px;
     }
+
     .about_feedback {
         margin-top: 40px;
         margin-bottom: 40px;
-    }
-
-    .mission_card {
-        margin: 10px 0px;
     }
 
     .bgImage {
@@ -701,7 +744,8 @@
     .feedback_heading {
         font-size: 20px;
     }
-    .about-img{
+
+    .about-img {
         max-width: 100%;
     }
 
@@ -726,6 +770,7 @@
     .slick-slide>div {
         margin: 0px 15px;
     }
+
     .feedback-slider-container {
         width: 78%;
         margin: 0 auto;
@@ -749,13 +794,15 @@
     .eventImage {
         width: 460px;
     }
+
     .image_Carousel {
         /* padding: 0px 23px; */
         max-width: 94%;
         margin: auto;
     }
-    .about_feedback{
+
+    .about_feedback {
         padding: 50px !important;
     }
-    
+
 }

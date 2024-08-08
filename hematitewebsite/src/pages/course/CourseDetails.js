@@ -13,37 +13,35 @@ import { FaIndianRupeeSign } from "react-icons/fa6";
 import NavigationBar from "../../common/navbar/NavigationBar";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
 import FooterPage from "../../common/footer/FooterPage";
+import IconBar from "../../common/IconBar/IconBar";
 
 function CourseDetails() {
   const data = useContext(WebContext);
-  const { id } = useParams();
-  const filterBatch = data?.courses?.filter((course) => course.id === id)[0];
+  const { title } = useParams();
+  const filterBatch = data?.courses?.filter((course) => course.title === title)[0];
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  console.log("anmol", filterBatch, id);
+
 
   return (
     <div>
       <NavigationBar />
       <BackToTop />
-      <CustomBreadcrumb pageTitle={filterBatch?.title} />
+      <IconBar />
+      {/* <CustomBreadcrumb pageTitle={filterBatch?.title} /> */}
       {/* Banner Image code */}
-      {/* <Container>
-            <Row>
-                <Col lg={12}>
-                <div className="main-image">
-                <img
-                  className="w-100 "
-                  src={`${process.env.PUBLIC_URL}/${filterBatch?.bannerImgurl}`}
-                  alt="programming"
-                />
-              </div>
-                </Col>
-            </Row>
-        </Container> */}
+
+      <div className="main-image">
+        <img
+          className="w-100 "
+          src={`${process.env.PUBLIC_URL}/${filterBatch?.bannerImgurl}`}
+          alt="programming"
+        />
+      </div>
+
 
       <Container>
         <Row g={5}>

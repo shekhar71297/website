@@ -9,6 +9,8 @@ import NavigationBar from "../../common/navbar/NavigationBar";
 import BackToTop from "../../common/backTotop/BackToTop";
 import { WebContext } from "../../App";
 import "./courses.css";
+import '../../common/ScrollAnimation/scroll.css'
+import reveal from "../../common/ScrollAnimation/reveal";
 
 function OurCourses() {
   const data = useContext(WebContext);
@@ -60,12 +62,13 @@ function OurCourses() {
       },
     ],
   };
+  reveal()
   return (
     <div>
-         <NavigationBar />
+         {/* <NavigationBar /> */}
       <BackToTop />
       {/* Our Courses in Home Page */}
-      <div className="backgroundImgUrl">
+      <div className="backgroundImgUrl  reveal fade-bottom">
         <Container>
           <Row>
             <Col>
@@ -155,7 +158,7 @@ function OurCourses() {
                   </Button> */}
                           <br />
                           <Link
-                            to={`/coursedetail/${course?.id}`}
+                            to={`/coursedetail/${course?.title}`}
                           >
                             <Button size='sm' type="button" variant="">
                               Know More <FaArrowRightLong />
@@ -176,7 +179,7 @@ function OurCourses() {
         </Container>
       </div>
       {/* Upcoming Courses in Home Page */}
-      <div className="upcomingcourse-body">
+      <div className="upcomingcourse-body  reveal fade-bottom ">
       <Container>
         <Row>
           <Col lg='12'>
@@ -271,7 +274,7 @@ function OurCourses() {
                  </Button> */}
                         <br />
                         <Link
-                          to={`/coursedetail/${course?.id}`}
+                          to={`/coursedetail/${course?.title}`}
                           
                         >
                           <Button size='sm' type="button" variant="">

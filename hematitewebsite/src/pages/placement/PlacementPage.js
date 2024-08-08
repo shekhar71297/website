@@ -3,16 +3,15 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import NavigationBar from "../../common/navbar/NavigationBar";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb"
-// import Footer from '../courses/Footer';
-import { Breadcrumb } from 'react-bootstrap';
 import BackToTop from "../../common/backTotop/BackToTop"
 import { WebContext } from '../../App';
 import "./placement.css"
 import FooterPage from '../../common/footer/FooterPage';
+import IconBar from '../../common/IconBar/IconBar';
+import reveal from '../../common/ScrollAnimation/reveal';
 function PlacementPage() {
   const data = useContext(WebContext);
   useEffect(() => {  
@@ -24,12 +23,15 @@ function PlacementPage() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
-
+useEffect(()=>{
+  reveal()
+})
   return (
     <>
+    <IconBar/>
       <BackToTop />
       <NavigationBar />
       <CustomBreadcrumb pageTitle='Placements' />
@@ -37,7 +39,7 @@ function PlacementPage() {
       <div className='placement_Description_Container'>
         <Container>
           {data?.placementcontent?.map((val, index) =>
-            <div className='placement_Row'>
+            <div className='placement_Row '>
               <Row>
                 {index % 2 === 0 ? (
                   // When index is 1, render the image on the left side
@@ -62,7 +64,7 @@ function PlacementPage() {
                   // When index is 0 or any other number, render the image on the right side
                   <>
                     {/* <div className='placementDescripCol'> */}
-                    <Col lg={6} className='secondColumn'>
+                    <Col lg={6} className='secondColumn  reveal fade-bottom '>
                       <div className='placementDescripCol'>
                         <p className='paragraph'>{val.placementDescription[0]}</p>
                         <p className='paragraph'>{val.placementDescription[1]}</p>
@@ -70,7 +72,7 @@ function PlacementPage() {
                     </Col>
                     {/* </div> */}
                     {/* <div className='image_Col'> */}
-                    <Col lg={6} className='firstColumn'>
+                    <Col lg={6} className='firstColumn reveal fade-bottom '>
                       <div className='images'>
                         <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
                       </div>
@@ -85,7 +87,7 @@ function PlacementPage() {
         </Container>
       </div>
 
-      <div className="bgcontainer1">
+      <div className="bgcontainer1 reveal fade-bottom ">
         <Container >
           <h2 className='highlightHeading'>Placement Highlights</h2>
           <div className="bgcontainer2">
@@ -124,8 +126,8 @@ function PlacementPage() {
 
 
       <Container>
-        <div className="bgimg">
-          <Row >
+        <div className="bgimg reveal fade-bottom ">
+          <Row > 
             <Col md={6}>
               <div className="placementcard"  >
                 <Card className='placement_Cards' >
