@@ -1,7 +1,7 @@
 /*-------------------------------------------------------home css------------------------------------------------- */
-/* .home-body {
-    margin-top: 75px;
-} */
+.home-body {
+    margin-top: 81px;
+}
 
 .home-content {
     padding-top: 100px;
@@ -626,7 +626,7 @@ width: 100%;
 } */
 
 .course-section{
-margin-top: 100px;
+margin-top: 120px;
 }
 
 /* Direction image */
@@ -650,4 +650,27 @@ max-height: 100%;
     z-index: 999;
     margin-left: 50px;
     
+}
+
+@media ((min-width: 320px) and (max-width: 425px)) {
+    .direction-img{
+        height: 70px;
+        width: 70px;
+        float: right;
+        position: relative;
+        z-index: 999;
+        
+    }
+    .course-section{
+        margin-top: 100px !important;
+    }
+    .direction-img2{
+        height: 70px;
+        width: 70px;
+        float: left;
+        position: relative;
+        z-index: 999;
+        margin-left: 50px;
+        
+    }
 }

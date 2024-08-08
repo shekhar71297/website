@@ -23,6 +23,8 @@ function AllCourses() {
   useEffect(()=>{
     reveal()
   })
+
+  
   return (
     <div>
       <IconBar/>
@@ -31,14 +33,14 @@ function AllCourses() {
       <CustomBreadcrumb pageTitle='All Courses' />
 <div className="allcourse-section">
       <Container>
-      <Row>
+      <Row className="">
           {data?.courses?.map((data, index) => (
             <Col key={index}  xs={12}
             sm={6} 
             md={6}
             lg={4}
             >
-              <Card className="card-adjustment shadowapplying reveal fade-bottom">
+              <Card className="card-adjustment shadowapplying ">
                 <Card.Body>
                   <div className="promo">
                     <Card.Img
@@ -105,7 +107,7 @@ function AllCourses() {
                   </Button> */}
                   <br />
                   <Link
-                    to={`/coursedetail/${data?.id}`}>
+                    to={`/coursedetail/${data?.title}`}>
                     <Button type="button" variant="">
                       Know More <FaArrowRightLong />
                     </Button>

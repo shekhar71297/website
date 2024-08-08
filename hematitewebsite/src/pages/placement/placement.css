@@ -205,4 +205,13 @@
 .paragraph {
    font-size: 14px;
 }
+.firstColumn{
+    margin-top: 68px !important
+  }
 }
+
+@media ((min-width: 1025px) and (max-width: 1440px)) {
+  .firstColumn{
+    margin-top: 62px !important
+  }
+    }

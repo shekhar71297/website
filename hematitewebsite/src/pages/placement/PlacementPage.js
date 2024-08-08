@@ -3,12 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import NavigationBar from "../../common/navbar/NavigationBar";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb"
-// import Footer from '../courses/Footer';
-import { Breadcrumb } from 'react-bootstrap';
 import BackToTop from "../../common/backTotop/BackToTop"
 import { WebContext } from '../../App';
 import "./placement.css"
@@ -26,8 +23,8 @@ function PlacementPage() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
 useEffect(()=>{
   reveal()
@@ -42,7 +39,7 @@ useEffect(()=>{
       <div className='placement_Description_Container'>
         <Container>
           {data?.placementcontent?.map((val, index) =>
-            <div className='placement_Row reveal fade-bottom'>
+            <div className='placement_Row '>
               <Row>
                 {index % 2 === 0 ? (
                   // When index is 1, render the image on the left side
@@ -67,7 +64,7 @@ useEffect(()=>{
                   // When index is 0 or any other number, render the image on the right side
                   <>
                     {/* <div className='placementDescripCol'> */}
-                    <Col lg={6} className='secondColumn'>
+                    <Col lg={6} className='secondColumn  reveal fade-bottom '>
                       <div className='placementDescripCol'>
                         <p className='paragraph'>{val.placementDescription[0]}</p>
                         <p className='paragraph'>{val.placementDescription[1]}</p>
@@ -75,7 +72,7 @@ useEffect(()=>{
                     </Col>
                     {/* </div> */}
                     {/* <div className='image_Col'> */}
-                    <Col lg={6} className='firstColumn'>
+                    <Col lg={6} className='firstColumn reveal fade-bottom '>
                       <div className='images'>
                         <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
                       </div>

@@ -30,7 +30,7 @@ function ServicePage() {
       <BackToTop/>
       <CustomBreadCrumb pageTitle='Services'/>
       <Container>
-        <div className="service-container reveal fade-bottom ">
+        <div className="service-container">
           <div className="heading2">
             <span className="service-heading-title">What We Provide</span>
           </div>

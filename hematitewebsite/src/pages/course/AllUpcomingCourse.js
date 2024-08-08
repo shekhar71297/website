@@ -111,7 +111,7 @@ useEffect(()=>{
                   </Button> */}
                   <br />
                   <Link
-                    to={`/coursedetail/${data?.id}`}
+                    to={`/coursedetail/${data?.title}`}
                     
                   >
                     <Button type="button" variant="">

@@ -14,7 +14,8 @@ import reveal from "../ScrollAnimation/reveal";
 function FooterPage() {
 	const data = useContext(WebContext);
 	const location = useLocation();
-	
+	const currentYear = new Date().getFullYear();
+  const copyrightText = `© 2017-${currentYear} Hematite Infotech, All Rights Reserved.`;
 	useEffect(() => {
 		if (location.state && location.state.scrollToTop) {
 			window.scrollTo({ top: 0, behavior: "smooth" });
@@ -112,7 +113,7 @@ function FooterPage() {
 			<div className="copyright-body" >
 				<Container>
 					<div className="footer-copyright" >
-						<span>{data?.footer?.copyright}</span>
+						<span>{copyrightText}</span>
 
 						<span>{data?.footer?.subheading}</span>
 					</div>

@@ -158,7 +158,7 @@ function OurCourses() {
                   </Button> */}
                           <br />
                           <Link
-                            to={`/coursedetail/${course?.id}`}
+                            to={`/coursedetail/${course?.title}`}
                           >
                             <Button size='sm' type="button" variant="">
                               Know More <FaArrowRightLong />
@@ -274,7 +274,7 @@ function OurCourses() {
                  </Button> */}
                         <br />
                         <Link
-                          to={`/coursedetail/${course?.id}`}
+                          to={`/coursedetail/${course?.title}`}
                           
                         >
                           <Button size='sm' type="button" variant="">

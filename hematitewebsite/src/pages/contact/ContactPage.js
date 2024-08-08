@@ -32,7 +32,7 @@ function ContactPage() {
       <BackToTop />
       <NavigationBar />
       <CustomBreadCrumb pageTitle='Contact Us' />
-      <div className='contact-form  reveal fade-bottom '>
+      <div className='contact-form '>
         <Container>
           <Row>
             {data.contact && data.contact.map((val, index) => (

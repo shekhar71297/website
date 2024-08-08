@@ -68,7 +68,7 @@ function AboutPage() {
 
       {/* ---------------------------------------- About Section ------------------------------ */}
 
-      <div className="aboutUsContainer   reveal fade-bottom ">
+      <div className="aboutUsContainer ">
         <Container >
           <Row>
             <Col sm={12} lg={6} >

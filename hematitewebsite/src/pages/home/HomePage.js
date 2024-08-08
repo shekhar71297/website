@@ -20,6 +20,7 @@ function HomePage() {
   const [counterOn, setCounterOn] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const nav = useNavigate();
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1024);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -92,6 +93,7 @@ function HomePage() {
       cssEase: "linear",
     };
   }
+  
 
 
   const navigateToContact = () => {
@@ -122,6 +124,16 @@ function HomePage() {
   },[])
 
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth >= 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
   return (
     <div>
       <header>
@@ -137,10 +149,7 @@ function HomePage() {
                 src={val.carouselImg1}
                 alt="First slide"
               />
-              <Carousel.Caption>
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Carousel.Caption>
+              
             </Carousel.Item>
             <Carousel.Item className='carousel-item'>
               <img
@@ -158,10 +167,6 @@ function HomePage() {
                 src={val.carouselImg3}
                 alt="Third slide"
               />
-              <Carousel.Caption>
-                <h5>Third slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         ))}
@@ -199,7 +204,7 @@ function HomePage() {
 
       {/* About Us Section */}
       <Container>
-        <div className='about-body  reveal fade-bottom'>
+        <div className={`about-body ${isWideScreen ? 'reveal fade-bottom' : ''}`}>
           {data?.homepageabout?.map((val, index) => (
             <Row key={index}>
               <Col md={6}>
@@ -232,23 +237,23 @@ function HomePage() {
           ))}
         </div>
       </Container>
-      <div className='direction-img' >
+      {/* <div className='direction-img reveal fade-bottom' >
         { data?.direction?.map((val)=>(
           <img src={val.img} alt='direction-right' className='drt-img' />
         )) }
         
-      </div>
+      </div> */}
 
       {/* Courses Section */}
       <div className='course-section' >
       <OurCourses />
       </div>
 
-      <div className='direction-img2' >
+      {/* <div className='direction-img2 reveal fade-bottom' >
         { data?.direction?.map((val)=>(
           <img src={val.img1} alt='direction-left' className='drt-img' />
         )) }
-      </div>
+      </div> */}
       {/* Slider Section */}
       <div className='slider-section  reveal fade-bottom '>
         <Container>
@@ -343,10 +348,6 @@ function HomePage() {
                   src={val.img}
                   alt="First slide"
                 />
-                <Carousel.Caption>
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
               </Carousel.Item>
             ))}
           </Carousel>
