@@ -135,9 +135,9 @@ useEffect(()=>{
                     {data?.placedstudents?.map((val, index) =>
                       <div className='studimg'>
                         <img src={val.img} alt={val.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
-                        <div className='stdnames'>
+                        {/* <div className='stdnames'>
                           <strong className='studentName'>{val.name}</strong>
-                        </div>
+                        </div> */}
                       </div>
                     )}
                   </Slider>

@@ -8,7 +8,7 @@
     color: #fcfcfc;
     border-radius: 5px;
     height: 30px;
-    width: 70px;
+    width: 40px;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@
   
   @media only screen and (min-width: 319px) and (max-width: 425px) {
     .top-btn{
-      height: 25px;
-      width: 50px;
+      height: 20px;
+      width: 35px;
   }
 }

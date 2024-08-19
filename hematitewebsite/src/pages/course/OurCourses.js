@@ -194,7 +194,7 @@ function OurCourses() {
                     <Card className="card-adjustment" key={index}>
                       <Card.Body>
                         <div className="registration-text">
-                          Registration Start From 01-05-2024 to 15-05-2024
+                          Registration Start From {course.registrationStart} to {course.registrationEnd}
                         </div>
                         <hr />
                         <Card.Img src={course.cardimg} fluid />
@@ -292,7 +292,7 @@ function OurCourses() {
                 className="viewmorebtn"
                 onClick={navigateToUpcomingCourse}
               >
-                View All Courses <FaArrowRightLong />
+                View More <FaArrowRightLong />
               </Button>
             </div>
           </Col>

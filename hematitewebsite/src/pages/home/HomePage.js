@@ -157,9 +157,6 @@ function HomePage() {
                 src={val.carouselImg2}
                 alt="Second slide"
               />
-              <Carousel.Caption>
-                <div></div>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item className='carousel-item'>
               <img
@@ -204,39 +201,35 @@ function HomePage() {
 
       {/* About Us Section */}
       <Container>
-        <div className={`about-body ${isWideScreen ? 'reveal fade-bottom' : ''}`}>
-          {data?.homepageabout?.map((val, index) => (
-            <Row key={index}>
-              <Col md={6}>
-                <div className="aboutus-image">
-                  <img
-                    src={val.aboutImageurl}
-                    alt="homeaboutimage"
-                    className="home-about-image"
-                  />
-                </div>
-              </Col>
-              <Col md={6}>
-                <div className='about-section'>
-                  <div>
-                    <span className="pre-title">About</span>
-                    <h3 className="about-title">{val.title}</h3>
-                  </div>
-                  <div className="description-wrapper">
-                    <p className="description">{val.description1}</p>
-                  </div>
-                  <div className="description-wrapper">
-                    <p className="description">{val.description2}</p>
-                  </div>
-                  <div className="aboutus-btn">
-                    <Button size='sm' onClick={navgateToAbout} className="btn-about">Know More</Button>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          ))}
-        </div>
-      </Container>
+      <div className={`about-body ${isWideScreen ? 'reveal fade-bottom' : ''}`}>
+        {data?.homepageabout?.map((val, index) => (
+          <Row key={index}>
+            <Col md={6} className="firstColumn aboutus-image">
+              <img
+                src={val.aboutImageurl}
+                alt="homeaboutimage"
+                className="home-about-image"
+              />
+            </Col>
+            <Col md={6} className='secondColumn about-section'>
+              <div> 
+                <span className="pre-title">About</span>
+                <h3 className="about-title">{val.title}</h3>
+              </div>
+              <div className="description-wrapper">
+                <p className="description">{val.description1}</p>
+              </div>
+              <div className="description-wrapper">
+                <p className="description">{val.description2}</p>
+              </div>
+              <div className="aboutus-btn">
+                <Button size='sm' onClick={navgateToAbout} className="btn-about">Know More</Button>
+              </div>
+            </Col>
+          </Row>
+        ))}
+      </div>
+    </Container>
       {/* <div className='direction-img reveal fade-bottom' >
         { data?.direction?.map((val)=>(
           <img src={val.img} alt='direction-right' className='drt-img' />

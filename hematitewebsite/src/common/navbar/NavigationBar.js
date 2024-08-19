@@ -4,14 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Image, NavDropdown } from 'react-bootstrap';
 import { FaAngleDown } from "react-icons/fa";
 import { WebContext } from '../../App';
+import { Link, useLocation } from 'react-router-dom';
 import './navbar.css';
-import { Link } from 'react-router-dom';
 
 function NavigationBar() {
-
   const data = useContext(WebContext);
   const [showDropdown, setShowDropdown] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation(); // Get current path
 
   useEffect(() => {
     //------------------------------------Function to handle scroll events-------------------------------//
@@ -67,33 +67,34 @@ function NavigationBar() {
     setShowDropdown(false);
   };
 
+  const isDropdownActive = location.pathname === '/allcourse' || location.pathname === '/upcomingcourse';
+  const dropdownTitleClass = `dropdown-title ${isDropdownActive ? 'active' : ''}`;
   return (
     <div>
       <Navbar
         fixed='top'
         expand="lg"
-        className={`navbar  ${scrolled ? 'scrolled' : ''}`}
+        className={`navbar ${scrolled ? 'scrolled' : ''}`}
       >
         <div className='container'>
           {data?.logo?.map((val, index) =>
-            <Navbar.Brand >
-             <div>
-              <Link to='/' >
-              <Image src={val.logoImgurl} alt={val.id} style={{maxHeight:'55px',maxWidth:'180px'}} />
-              </Link>
-              {/* <p className='slogan-text' >Success Redefined</p> */}
+            <Navbar.Brand key={index}>
+              <div>
+                <Link to='/'>
+                  <Image src={val.logoImgurl} alt={val.id} style={{ maxHeight: '55px', maxWidth: '180px' }} />
+                </Link>
               </div>
             </Navbar.Brand>
           )}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-aut">
-              <Link className='nav-link' to="/">Home</Link>
-              <Link className='nav-link' to="/about">About</Link>
-              <Link className='nav-link' to="/service">Services</Link>
+              <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/">Home</Link>
+              <Link className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} to="/about">About</Link>
+              <Link className={`nav-link ${location.pathname === '/service' ? 'active' : ''}`} to="/service">Services</Link>
               <NavDropdown
                 title={
-                  <span>
+                  <span className={dropdownTitleClass}>
                     Course <FaAngleDown />
                   </span>
                 }
@@ -102,11 +103,11 @@ function NavigationBar() {
                 onMouseEnter={handleDropdownMouseEnter}
                 onMouseLeave={handleDropdownMouseLeave}
               >
-                <Link className='nav-dropdown-item dropdown-item' to="/allcourse">Courses</Link>
-                <Link className='nav-dropdown-item dropdown-item' to="/upcomingcourse">Upcoming Batches</Link>
+                <Link className={`nav-dropdown-item dropdown-item ${location.pathname === '/allcourse' ? 'active' : ''}`} to="/allcourse">Courses</Link>
+                <Link className={`nav-dropdown-item dropdown-item ${location.pathname === '/upcomingcourse' ? 'active' : ''}`} to="/upcomingcourse">Upcoming Batches</Link>
               </NavDropdown>
-              <Link className='nav-link' to="/placement">Placement</Link>
-              <Link className='nav-link' to="/contact">Contact Us</Link>
+              <Link className={`nav-link ${location.pathname === '/placement' ? 'active' : ''}`} to="/placement">Placement</Link>
+              <Link className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact">Contact</Link>
             </Nav>
           </Navbar.Collapse>
         </div>
