@@ -1,7 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import "./coursedetail.css";
-import { Row, Col, Card, Container } from "react-bootstrap";
-import { IoMdTime } from "react-icons/io";
+import { Row, Col, Card, Container } from "react-bootstrap";  
+import { LuClock } from "react-icons/lu";
+import { BsClock } from "react-icons/bs";
 import { TbMessageLanguage } from "react-icons/tb";
 import { HiComputerDesktop } from "react-icons/hi2";
 import { LiaCertificateSolid } from "react-icons/lia";
@@ -171,7 +172,7 @@ function CourseDetails() {
                                   key={i}
                                 >
                                   <strong>{content.title}</strong>:{" "}
-                                  {content.description}
+                                 <p style={{textAlign:'justify'}} > {content.description}</p>
                                 </li>
                               ))}
                             </ul>
@@ -222,10 +223,13 @@ function CourseDetails() {
                     <div className="widget-content">
                       <ul>
                         <li>
+                          <div className="info-icon">
                           <span>
-                            <IoMdTime />
-                            Duration
+                            <LuClock />     
                           </span>
+                          <span className="course-duration" >Duration</span>
+                          </div>
+                       
                           <span>{filterBatch?.month}</span>
                         </li>
                         <hr />
@@ -245,7 +249,7 @@ function CourseDetails() {
                         <hr />
                         <li>
                           <span>
-                            <IoMdTime /> Project Assistance
+                            <LuClock /> Project Assistance
                           </span>
                           <span>Yes</span>
                         </li>
@@ -267,7 +271,6 @@ function CourseDetails() {
                             <FaIndianRupeeSign />
                             {filterBatch?.price?.offerprice}
                           </span>
-
                           <b className="hovercoursePriceHeading">
                             Original Price
                           </b>

@@ -92,7 +92,8 @@ function AboutPage() {
                   <p className="aboutUsHeading">{data.heading1}</p>
                   <p className="aboutUspara">{data.description[0]}</p>
                   <p className="aboutUspara">{data.description[1]}</p>
-                  <p className="aboutUsSubheading">People Love To Learn With Us</p>
+                
+                  {/* <p className="aboutUsSubheading">People Love To Learn With Us</p> */}
                   <div className="aboutUsBtnDiv">
                     <Button
                     size="sm"
@@ -148,7 +149,7 @@ function AboutPage() {
 
       {/* ---------------------------------Event Section -------------------------------- */}
 
-      <div className="bgImage  reveal fade-bottom ">
+      {/* <div className="bgImage  reveal fade-bottom ">
         <Container className="event_Container">
           <Row>
             <Col sm={12} lg={6}>
@@ -162,7 +163,7 @@ function AboutPage() {
                     <Button
                       className="about_eventBtn"
                       variant=""
-                      onClick={navigateToCourses}
+                      // onClick={navigateToCourses}
                       size="sm"
                     >
                       More Upcoming Events
@@ -192,7 +193,7 @@ function AboutPage() {
           </Row>
 
         </Container>
-      </div>
+      </div> */}
 
       {/* ---------------------------------- Infrastructure Section ---------------------------  */}
       <div className="infrastructure_Container  reveal fade-bottom ">
@@ -266,7 +267,7 @@ function AboutPage() {
                       
                       <div className="feedback-content-container">
                         <p className="feedback-content">{about.comment}</p>
-                        <div className="feedback-content-scrollbar"></div>
+                        
                       </div>
                       <div className="sk-google-review-button-container">
                         <a

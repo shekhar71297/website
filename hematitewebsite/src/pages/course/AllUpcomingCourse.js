@@ -3,7 +3,7 @@ import { Row, Card, Container, Col, Button } from "react-bootstrap";
 import { MdLibraryBooks } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaRupeeSign } from "react-icons/fa";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import NavigationBar from "../../common/navbar/NavigationBar";
 import BackToTop from "../../common/backTotop/BackToTop";
 import { WebContext } from "../../App";
@@ -11,7 +11,6 @@ import "./courses.css";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
 import FooterPage from "../../common/footer/FooterPage";
 import IconBar from "../../common/IconBar/IconBar";
-import reveal from "../../common/ScrollAnimation/reveal";
 
 
 function AllUpcomingCourse() {
@@ -19,7 +18,7 @@ function AllUpcomingCourse() {
   const filterBatch = data?.courses?.filter((data, index) => data.upcomingbatch == true
   );
   console.log("filterd batch", filterBatch);
-  useEffect(() => {  
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -27,44 +26,42 @@ function AllUpcomingCourse() {
     window.scrollTo(0, 0);
   }, []);
 
-useEffect(()=>{
-  reveal()
-})
+
   return (
     <div>
-      <IconBar/>
+      <IconBar />
       <NavigationBar />
       <BackToTop />
-      <CustomBreadcrumb pageTitle='Upcoming Courses' />
+      <CustomBreadcrumb pageTitle='Upcoming Batches' />
       <Container className="allcoursemargintop">
-      <Row>
+        <Row>
           {filterBatch?.map((data, index) => (
-            <Col key={index}  xs={12}
-            sm={6}
-            md={6}
-            lg={4}
+            <Col key={index} xs={12}
+              sm={6}
+              md={6}
+              lg={4}
             >
-              <Card className="card-adjustment shadowapplying reveal fade-bottom ">
+              <Card className="card-adjustment shadowapplying">
                 <Card.Body>
                   <div className="promo">
                     <Card.Img
                       src={data.cardimg}
                       fluid
-                     
+
                     />
 
                     <br />
                     <h6 className="coursetextfontsize">
-                      <MdLibraryBooks  />
+                      <MdLibraryBooks />
                       {data.month}
                     </h6>
-                   
+
                     <hr />
                     <div>
                       {data.price.discount && (
                         <div>
-                          <span className="courseOfferPrice"><FaRupeeSign />{data.price.offerprice}</span> 
-                          
+                          <span className="courseOfferPrice"><FaRupeeSign />{data.price.offerprice}</span>
+
                           <b className="coursePriceHeading" >Original Price</b>
                           <span className="courseOriginalPrice" > <FaRupeeSign />{data.price.originalprice}</span>
                         </div >
@@ -76,30 +73,32 @@ useEffect(()=>{
                   </div>
                 </Card.Body>
                 <div className="applyinghover" >
-                 
+
                   <Card.Title className="text-alignment">
                     {" "}
                     {data.title}
                   </Card.Title>
-                  <br />
+                  
+                  <h6 className="coursetextfontsize">Registration Date : {data.registrationStart} to {data.registrationEnd}</h6>
+               
                   <h6 className="coursetextfontsize">
                     {" "}
-                    <MdLibraryBooks  /> {data.month}
+                    <MdLibraryBooks /> {data.month}
                   </h6>
-                  <br />
+                  
                   <div>
-                      {data.price.discount && (
-                        <div>
-                          <span className="hovercourseOfferPrice"><FaRupeeSign />{data.price.offerprice}</span> 
-                          
-                          <b className="hovercoursePriceHeading">Original Price</b>
-                          <span className="hovercourseOriginalPrice" > <FaRupeeSign />{data.price.originalprice}</span>
-                        </div >
-                      )}
-                      {!data.price.discount && (
-                        <span className="hovercourseOfferPrice"><FaRupeeSign />{data.price.originalprice}</span>
-                      )}
-                    </div>
+                    {data.price.discount && (
+                      <div>
+                        <span className="hovercourseOfferPrice"><FaRupeeSign />{data.price.offerprice}</span>
+
+                        <b className="hovercoursePriceHeading">Original Price</b>
+                        <span className="hovercourseOriginalPrice" > <FaRupeeSign />{data.price.originalprice}</span>
+                      </div >
+                    )}
+                    {!data.price.discount && (
+                      <span className="hovercourseOfferPrice"><FaRupeeSign />{data.price.originalprice}</span>
+                    )}
+                  </div>
                   <br />
                   {/* <Button
                     className="buttonscreen"
@@ -112,7 +111,7 @@ useEffect(()=>{
                   <br />
                   <Link
                     to={`/coursedetail/${data?.title}`}
-                    
+
                   >
                     <Button type="button" variant="">
                       Know More <FaArrowRightLong />
@@ -125,7 +124,7 @@ useEffect(()=>{
           ))}
         </Row>
       </Container>
-          <FooterPage/>
+      <FooterPage />
     </div>
   );
 }

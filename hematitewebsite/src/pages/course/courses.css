@@ -41,8 +41,11 @@
   font-size: 24px;
   font-weight: 700;
   margin: 20px 0px;
+  padding-bottom: 15px;
 }
-
+.coursetextfontsize{
+  padding-bottom: 15px;
+}
 .slick-slide>div {
   margin: 0 10px;
 }
@@ -69,8 +72,8 @@
   opacity: 1;
 }
 .upcomingcourse-body {
-  margin-top: 50px;
-  padding:40px 20px 40px 20px;
+  margin-top: 40px;
+  /* padding:40px 20px 40px 20px; */
 }
 .applyinghover h6,
 .applyinghover p {
@@ -81,10 +84,7 @@
   font-size: 15px;
 }
 
-.course-duration {
-  font-size: 16px;
-  margin: 20px 0px;
-}
+
 
 .coursePriceHeading {
   margin-left: 20px;
@@ -108,7 +108,7 @@
 }
 
 .hovercourseOfferPrice {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   color: white;
 }
@@ -136,7 +136,7 @@
 }
 
 .registration-text {
-  animation: fadeInOut 3s infinite;
+  animation: fadeInOut 5s infinite;
 }
 
 .course-heading {
@@ -177,11 +177,9 @@
 
 
 
-
-
-@media only screen and (min-width: 319px) and (max-width: 768px) {
+@media only screen and (min-width: 319px) and (max-width: 413px) {
   .courseOfferPrice {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
   }
 
@@ -192,6 +190,7 @@
     padding: 20px 40px !important;
   }
 
+
   .courseOriginalPrice {
     font-size: 12px;
     font-weight: 500;
@@ -199,6 +198,14 @@
   .course-heading {
     font-size: 24px;
     padding: 20px 0px 20px 0px ;
+  }
+  .coursetextfontsize{
+    font-size: 14px !important;
+  }
+  .text-alignment{
+    font-size: 16px;
+    margin:0px !important;
+    padding-bottom: 0px !important;
   }
 
 
@@ -222,7 +229,7 @@
   }
 
   .hovercoursePriceHeading {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
   }
 
@@ -239,9 +246,84 @@
   .registration-text{
     font-size: 12px;
   }
-.course-duration{
-  font-size: 14px;
+  /* .slick-prev {
+    left: -20px !important;
+    z-index: 1;
+  }
+  
+  .slick-next {
+    right: -13px !important;
+    z-index: 1;
+  } */
 }
+
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+  .courseOfferPrice {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .applyinghover Button {
+    margin-top: -30px;
+  }
+  .allcoursemargintop{
+    padding: 20px 40px !important;
+  }
+
+  .courseOriginalPrice {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .course-heading {
+    font-size: 24px;
+    padding: 20px 0px 20px 0px ;
+  }
+  .coursetextfontsize{
+    font-size: 14px !important;
+  }
+  .text-alignment{
+    font-size: 16px;
+
+  }
+
+
+  .coursePriceHeading {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .hovercourseOfferPrice {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .upcomingcourseheading {
+    font-size: 24px;
+    padding: 20px 0px 20px 0px ;
+  }
+
+  .hovercourseOriginalPrice {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .hovercoursePriceHeading {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .courseimg-width {
+    max-width: 100%;
+  }
+
+  .upcomingcourse-body {
+    padding: 20px;
+  }
+  .upcoming-slider-body{
+    padding: 16px;
+  }
+  .registration-text{
+    font-size: 12px;
+  }
   /* .slick-prev {
     left: -20px !important;
     z-index: 1;
@@ -257,9 +339,7 @@
   .registration-text{
     font-size: 12px;
   }
-.course-duration{
-  font-size: 14px;
-}
+
   .upcoming-slider-body{
     padding: 24px
   }

@@ -16,78 +16,78 @@ import reveal from "../../common/ScrollAnimation/reveal";
 
 function AllCourses() {
   const data = useContext(WebContext);
-  useEffect(() => {  
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     reveal()
   })
 
-  
+
   return (
     <div>
-      <IconBar/>
+      <IconBar />
       <BackToTop />
       <NavigationBar />
       <CustomBreadcrumb pageTitle='All Courses' />
-<div className="allcourse-section">
-      <Container>
-      <Row className="">
-          {data?.courses?.map((data, index) => (
-            <Col key={index}  xs={12}
-            sm={6} 
-            md={6}
-            lg={4}
-            >
-              <Card className="card-adjustment shadowapplying ">
-                <Card.Body>
-                  <div className="promo">
-                    <Card.Img
-                      src={data.cardimg}
-                      fluid
-                     
-                    />
+      <div className="allcourse-section">
+        <Container>
+          <Row className="">
+            {data?.courses?.map((data, index) => (
+              <Col key={index} xs={12}
+                sm={6}
+                md={6}
+                lg={4}
+              >
+                <Card className="card-adjustment shadowapplying ">
+                  <Card.Body>
+                    <div className="promo">
+                      <Card.Img
+                        src={data.cardimg}
+                        fluid
 
-                    <br />
+                      />
+
+                      <br />
+                      <h6 className="coursetextfontsize">
+                        <MdLibraryBooks />
+                        {data.month}
+                      </h6>
+
+                      <hr />
+                      <div>
+                        {data?.price?.discount && (
+                          <div>
+                            <span className="courseOfferPrice"><FaRupeeSign />{data?.price?.offerprice}</span>
+
+                            <b className="coursePriceHeading" >Original Price</b>
+                            <span className="courseOriginalPrice" > <FaRupeeSign />{data?.price?.originalprice}</span>
+                          </div >
+                        )}
+                        {!data?.price?.discount && (
+                          <span className="courseOfferPrice"><FaRupeeSign />{data?.price?.originalprice}</span>
+                        )}
+                      </div>
+                    </div>
+                  </Card.Body>
+                  <div className="applyinghover" >
+
+                    <Card.Title className="text-alignment">
+                      {" "}
+                      {data.title}
+                    </Card.Title>
+                    
                     <h6 className="coursetextfontsize">
-                      <MdLibraryBooks  />
-                      {data.month}
+                      {" "}
+                      <MdLibraryBooks /> {data.month}
                     </h6>
-                   
-                    <hr />
+                  
                     <div>
                       {data?.price?.discount && (
                         <div>
-                          <span className="courseOfferPrice"><FaRupeeSign />{data?.price?.offerprice}</span> 
-                          
-                          <b className="coursePriceHeading" >Original Price</b>
-                          <span className="courseOriginalPrice" > <FaRupeeSign />{data?.price?.originalprice}</span>
-                        </div >
-                      )}
-                      {!data?.price?.discount && (
-                        <span className="courseOfferPrice"><FaRupeeSign />{data?.price?.originalprice}</span>
-                      )}
-                    </div>
-                  </div>
-                </Card.Body>
-                <div className="applyinghover" >
-                 
-                  <Card.Title className="text-alignment">
-                    {" "}
-                    {data.title}
-                  </Card.Title>
-                  <br />
-                  <h6 className="coursetextfontsize">
-                    {" "}
-                    <MdLibraryBooks  /> {data.month}
-                  </h6>
-                  <br />
-                  <div>
-                      {data?.price?.discount && (
-                        <div>
-                          <span className="hovercourseOfferPrice"><FaRupeeSign />{data?.price?.offerprice}</span> 
-                          
+                          <span className="hovercourseOfferPrice"><FaRupeeSign />{data?.price?.offerprice}</span>
+
                           <b className="hovercoursePriceHeading">Original Price</b>
                           <span className="hovercourseOriginalPrice" > <FaRupeeSign />{data?.price?.originalprice}</span>
                         </div >
@@ -96,8 +96,8 @@ function AllCourses() {
                         <span className="hovercourseOfferPrice"><FaRupeeSign />{data?.price?.originalprice}</span>
                       )}
                     </div>
-                  <br />
-                  {/* <Button
+                    <br />
+                    {/* <Button
                     className="buttonscreen"
                     variant=""
                     style={{ width: "210px", height: "40px" }}
@@ -105,22 +105,22 @@ function AllCourses() {
                   >
                     Join Our Telegram Group
                   </Button> */}
-                  <br />
-                  <Link
-                    to={`/coursedetail/${data?.title}`}>
-                    <Button type="button" variant="">
-                      Know More <FaArrowRightLong />
-                    </Button>
-                  </Link>
-                </div>
-              </Card>
-              <br />
-            </Col>
-          ))}
-        </Row>
-      </Container>
+                    <br />
+                    <Link
+                      to={`/coursedetail/${data?.title}`}>
+                      <Button type="button" variant="">
+                        Know More <FaArrowRightLong />
+                      </Button>
+                    </Link>
+                  </div>
+                </Card>
+                <br />
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </div>
-      <FooterPage/>
+      <FooterPage />
     </div>
   );
 }

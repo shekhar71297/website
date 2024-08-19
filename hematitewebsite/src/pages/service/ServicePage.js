@@ -7,6 +7,7 @@ import FooterPage from '../../common/footer/FooterPage';
 import './service.css'
 import CustomBreadCrumb from '../../common/breadCrumb/CustomBreadCrumb';
 import reveal from '../../common/ScrollAnimation/reveal';
+import IconBar from '../../common/IconBar/IconBar';
 
 function ServicePage() {
   const data = useContext(WebContext);
@@ -28,6 +29,7 @@ function ServicePage() {
     <div>
       <NavigationBar/>
       <BackToTop/>
+      <IconBar/>
       <CustomBreadCrumb pageTitle='Services'/>
       <Container>
         <div className="service-container">

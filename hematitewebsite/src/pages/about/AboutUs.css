@@ -91,7 +91,7 @@
 .aboutimg {
     max-width: 100%;
     object-fit: contain;
-    border-radius: 100%;
+    border-radius: 10px;
 }
 
 /* css for Event Container */
@@ -214,27 +214,23 @@
 
 .feedback-content {
     color: rgb(33, 37, 41);
-    font-family: "Century Gothic", sans-serif;
+    font-family: 'Segoe UI', Roboto;
     text-align: justify;
     line-height: 20px;
     white-space: pre-line;
     font-size: 16px;
 }
 
-.feedback-content-container {
-    position: relative;
-}
-
 .feedback-content {
-    max-height: 300px;
-    overflow-y: hidden;
-    transition: max-height 0.5s;
-}
-
-.feedback-content:hover {
-    max-height: 500px;
-    overflow-y: auto;
-}
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Optional: add a max-height if you need more control */
+    max-height: calc(1.2em * 8); /* 1.2em is an estimated line height */
+  }
+  
 
 .feedback-content::-webkit-scrollbar {
     width: 8px;
@@ -344,8 +340,13 @@
         font-size: 32px;
     }
 
+    .aboutimg {
+        max-width: 45% !important;
+
+    }
     .aboutUsImage {
         text-align: center;
+        margin-top: 0px !important;
     }
 
     .aboutUspara {
@@ -488,6 +489,10 @@
     }
 }
 
+.aboutUsImage{
+    margin-top: 40px;
+}
+
 @media ((min-width: 426px) and (max-width: 575px)) {
 
     .aboutUsHeading {
@@ -496,6 +501,7 @@
 
     .aboutUsImage {
         text-align: center;
+        margin-top: 0px;
     }
 
     .aboutUspara {
@@ -576,6 +582,7 @@
 
     .aboutUsImage {
         text-align: center;
+        margin-top: 0px;
     }
 
     .aboutUspara {
@@ -681,6 +688,7 @@
 
     .aboutUsImage {
         text-align: center;
+        margin-top: 0px;
     }
 
     .aboutUspara {
@@ -782,6 +790,8 @@
     .aboutUspara {
         font-size: 14px;
     }
+
+    
 
     .mission_card {
         margin: 10px 0px;

@@ -43,8 +43,8 @@
       "id": 1,
       "aboutImageurl": "images/home/infra (10).jpg",
       "title": "Hematite Infotech",
-      "description1": "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.The center has modern infrastructure, including corporate-standard laboratories equipped with the latest state-of-the-art technologies. We are proud to remain associated with the best faculty in the industry etc.",
-      "description2": " We also have a well-equipped library with a wide array of manuals. We also provide placement assistance to our students. Hematite Infotech has had an enviable placement record since its inception."
+      "description1": "Hematite Infotech Pvt. Ltd., established in 2017, is dedicated to the spread of IT education and the transformation of aspiring students into tomorrow’s IT professionals. Our Academy focuses on advanced information technologies, high-end academics, and comprehensive training. Our distinguished faculty, complemented by expert and visiting lecturers, delivers a range of educational activities including video sessions, seminars, internships, projects, and guidance in hackathons and start-ups. We also provide robust placement assistance, maintaining an enviable placement record since our inception.",
+      "description2": "In addition to IT education, Hematite Infotech offers IT training, consulting, corporate training, application development, and digital marketing services. Our young team of technology experts is committed to providing the best solutions to our customers. "
     }
   ],
   "services": [
@@ -72,7 +72,7 @@
       "address": "Pune : 2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.",
       "mobile": "8263926309 / 8208683698 / 8999639478",
       "email": "contact@hematitecorp.com",
-      "maplink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.700402408061!2d-73.93801658549696!3d40.66450937933627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a19619db66b%3A0xb129f37d68f7cc38!2s1477%20Bedford%20Ave%2C%20Brooklyn%2C%20NY%2011216!5e0!3m2!1sen!2sus!4v1622148017013!5m2!1sen!2sus"
+      "maplink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.301558443656!2d73.92858157393674!3d18.56043856795771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1efd084fb8b%3A0x1f8e0c9fe165aea4!2sHematite%20Infotech%20IT%20Training%20%26%20Placement%20Institute!5e0!3m2!1sen!2sin!4v1724058927815!5m2!1sen!2sin"
     }
   ],
   "placementcontent": [
@@ -99,8 +99,10 @@
       "cardimg": "images/courseimg/images/GraphicDesign.png",
       "bannerImgurl": "images/courseimg/images/GraphicDesign.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "3 Months Minimum",
+      "month": "90 days Minimum",
       "title": "Graphic Design",
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "upcomingbatch": true,
       "price": {
         "originalprice": "25000",
@@ -201,6 +203,8 @@
       "month": "3 Months Minimum",
       "title": " Python with Django",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "30000",
         "offerprice": "25499",
@@ -395,6 +399,8 @@
       "month": "3 Months Minimum",
       "title": " Python",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "30000",
         "offerprice": "25499",
@@ -507,6 +513,8 @@
       "month": "3 Months Minimum",
       "title": "Data Visualization",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "21000",
         "offerprice": "18499",
@@ -615,6 +623,8 @@
       "month": "3 Months Minimum",
       "title": "React JS",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "30000",
         "offerprice": "24999",
@@ -727,6 +737,8 @@
       "month": "3 Months Minimum",
       "title": "Software Testing",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "35000",
         "offerprice": "24999",
@@ -826,6 +838,8 @@
       "month": "3 Months Minimum",
       "title": "Angular 13 +",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "30000",
         "offerprice": "24999",
@@ -936,8 +950,10 @@
       "bannerImgurl": "images/courseimg/images/Excel.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
       "month": "45 Days",
-      "title": "MS Excel",
+      "title": "MS Excel with AI",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "8000",
         "offerprice": "5499",
@@ -1050,6 +1066,8 @@
       "month": "5 Months Minimum",
       "title": "Data Science",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "50000",
         "offerprice": "46999",
@@ -1162,6 +1180,8 @@
       "month": "3 Months Minimum",
       "title": "Digital Marketing",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "25000",
         "offerprice": "22499",
@@ -1265,6 +1285,8 @@
       "month": "5 Months Minimum",
       "title": "MEAN Stack",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "45000",
         "offerprice": "39999",
@@ -1450,6 +1472,8 @@
       "month": "5 Months Minimum",
       "title": "MERN Stack",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "45000",
         "offerprice": "39999",
@@ -1584,6 +1608,8 @@
       "month": "3 Months Minimum",
       "title": "Cloud Computing",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "40000",
         "offerprice": "29999",
@@ -1677,6 +1703,8 @@
       "month": "5 Months Minimum",
       "title": "Full Stack",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "45000",
         "offerprice": "41999",
@@ -1789,6 +1817,8 @@
       "month": "45 Days",
       "title": "C++",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "15000",
         "offerprice": "11999",
@@ -1901,6 +1931,8 @@
       "month": "45 Days",
       "title": "C Programming",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "15000",
         "offerprice": "11999",
@@ -2001,6 +2033,8 @@
       "month": "45 Days",
       "title": "Advance Selenium",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "15000",
         "offerprice": "11999",
@@ -2113,6 +2147,8 @@
       "month": "45 Days",
       "title": "Data Analytics",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "15000",
         "offerprice": "11999",
@@ -2225,6 +2261,8 @@
       "month": "3 Months Minimum",
       "title": "Java",
       "upcomingbatch": true,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "32000",
         "offerprice": "26999",
@@ -2335,11 +2373,13 @@
       "bannerImgurl": "images/courseimg/images/Tally Prime.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
       "month": "45 Days",
-      "title": "Tally Prime",
+      "title": "Tally Prime With GST",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
-        "originalprice": "15000",
-        "offerprice": "11999",
+        "originalprice": "8000",
+        "offerprice": "5499",
         "discount": true
       },
       "courseDetail": {
@@ -2449,6 +2489,8 @@
       "month": "45 Days",
       "title": "UI Development",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "15000",
         "offerprice": "11999",
@@ -2561,6 +2603,8 @@
       "month": "45 Days",
       "title": "Wordpress",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "15000",
         "offerprice": "11999",
@@ -2673,6 +2717,8 @@
       "month": "45 Days",
       "title": "Wordpress",
       "upcomingbatch": false,
+      "registrationStart": "12-07-2024" ,
+      "registrationEnd": "17-07-2024" ,
       "price": {
         "originalprice": "15000",
         "offerprice": "11999",
@@ -2781,45 +2827,45 @@
   "about": [
     {
       "img": "images/google-image.png",
-      "name": "Kajol Kaware",
+      "name": "Manisha Subhash Mahale",
       "color": "blue",
-      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
-      "googleLink": "https://g.co/kgs/LKYbdjn"
+      "comment": "I recently completed my web development course at Hematite Institute,and it was an exceptional experience from start to finish.The hands pn projects ,led by industry experts will give edge in todays tech world.I highly recommend Hematite Institute to anyone looking to learn web development.Thank you to the entire team for a fantastic learning journey.",
+      "googleLink": "https://g.co/kgs/e15762u"
     },
     {
       "img": "images/google-image.png",
-      "name": " Nilam Pallavi",
+      "name": "Afroj Khan",
       "color": "blue",
-      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
-      "googleLink": "http://www.hematitecorp.com/#/studentfeedback"
+      "comment": "Hematile Infotech Pvt Ltd. It's a damn good instituted for IT classes excellent techers and very good management. All teachers are very qualified and talented. So if you want to take admission in it classes i recommended you come in Hematile and make your dreams come true.",
+      "googleLink": "https://g.co/kgs/8UVYtuu"
     },
     {
       "img": "images/google-image.png",
-      "name": "Sai Mane",
+      "name": "Panchashil M. Wankhede",
       "color": "blue",
-      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
-      "googleLink": "http://www.hematitecorp.com/#/studentfeedback"
+      "comment": "This growing company offers training for both corporate IT professionals and students interested in IT courses as well as provide internship also. Their trainers present real-world scenarios and provide exams to ensure understanding. They address all types of doubts, simple or complex, and arrange mock interviews after completing the course. Their main focus is on practical learning. Teachers and Staff are more supportive. I highly recommend this as the best place to learn IT courses.",
+      "googleLink": "https://g.co/kgs/FqnphYC"
     },
     {
       "img": "images/google-image.png",
-      "name": "Vishaka Mankar",
+      "name": "Gulshan Khan",
       "color": "blue",
-      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
-      "googleLink": "http://www.hematitecorp.com/#/studentfeedback"
+      "comment": "One of the good place to learn Digital marketing which can definitely enhance your skills and personality to which you can definitely think about career what you really want in your life....and guys initiave taken by student is very important to anything in the world, so learn enhance and you are ready.Overall good experience guys for everything and very good mentorship.",
+      "googleLink": "https://g.co/kgs/7ZcMuyZ"
     },
     {
       "img": "images/google-image.png",
-      "name": "Komal Thamne",
+      "name": "santosh Khandekar",
       "color": "blue",
-      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
-      "googleLink": "http://www.hematitecorp.com/#/studentfeedback"
+      "comment": "I Would like To tell A lot of Thanks to a my hematite institute teacher...Their  teaching way Was Very understandable..A behaviour of teachers with students its very good...I was completed my digital marketing course in this institute.. and I saw of my  lot of Growths and Improvement of marketing and business field was done here. Thank You So Much...!",
+      "googleLink": "https://g.co/kgs/zcozUSp"
     },
     {
       "img": "images/google-image.png",
-      "name": " Mankar",
+      "name": "Sagar Aware",
       "color": "blue",
-      "comment": "When I heard about software testing I think I cannot do this course because my education background was not in it but thank you all my teachers and monika mam to teach me very well she teach me so deeply all the things because I was not from it back- ground.",
-      "googleLink": "http://www.hematitecorp.com/#/studentfeedback"
+      "comment": "Hematite Institute offers unparalleled opportunities for career growth and development. Through their industrial training program, I've gained invaluable technical skills and hands-on experience with live projects, setting me up for success in the job market. Under the guidance of Mr. Panchashil Wankhede Sir, whose teaching style is enriched with real-life examples, I've honed my abilities and confidence in the IT field. The supportive environment and friendly trainers at Hematite ensure that all doubts are addressed without judgment, making it the ideal place to thrive and excel. Grateful for the exceptional training provided by Hematite, I confidently recommend it as the premier destination for those looking to embark on a rewarding career journey in IT.",
+      "googleLink": "https://g.co/kgs/CbtF5fs"
     }
   ],
   "aboutUsHeadings": [
@@ -2833,8 +2879,8 @@
     {
       "heading1": "Knowledge is power, Information is liberating",
       "description": [
-        "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.",
-        "The center has modern infrastructure, including corporate-standard laboratories equipped with the latest state-of-the-art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from experts and visiting faculty, we also organize video-based sessions, seminars, assignments, internships, projects, faculty-student discussions, expert talks and profiling of the students, guidance in hackathons, Start-ups, etc. We also have a well-equipped library with a wide array of manuals. We also provide placement assistance to our students. Hematite Infotech has had an enviable placement record since its inception."
+        "In addition to IT education, Hematite Infotech offers IT training, consulting, corporate training, application development, and digital marketing services. Our young team of technology experts is committed to providing the best solutions to our customers. We specialize in equipping workforces with the skills and knowledge needed to excel in today’s dynamic business landscape. By delivering comprehensive, tailored training solutions across various industries, we empower individuals and organizations to reach their full potential. Our commitment to excellence and passion for learning drive us to continuously upgrade our performance and deliver top-notch training programs that achieve significant results.",
+        "Our tagline, 'Success Redefined,' emphasizes a modern approach to achievement in the IT world. It highlights that success isn't just about mastering skills or landing a job but also about innovation, adaptability, and making a meaningful impact in the industry. Our institute aims to reshape the traditional view of success by focusing on continuous learning, real-world problem-solving, and nurturing leaders who can redefine the future of technology."
       ],
       "description1": "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.",
       "heading4": "You Want Courses That Get You a Job?"
