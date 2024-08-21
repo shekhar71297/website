@@ -47,9 +47,7 @@
   border-radius: 10px;
 }
 
-.eduvibe-sidebar.course-details-sidebar
-  .eduvibe-widget
-  .eduvibe-widget-details {
+.eduvibe-sidebar.course-details-sidebar .eduvibe-widget .eduvibe-widget-details {
   padding: 0 20px 20px;
 }
 
@@ -58,9 +56,9 @@
   list-style: none;
 }
 
-.widget-content ul hr{
-font-size: 5px;
-color: black;
+.widget-content ul hr {
+  font-size: 5px;
+  color: black;
 }
 
 
@@ -84,24 +82,27 @@ color: black;
 }
 
 .buttonlayout {
+  width: 275px;
+  max-width: 100%;
   margin: 0px 0px;
-  padding: 10px 10px;
-  background-color:#218BBB ;
+  /* padding: 10px 10px; */
+  background-color: #218BBB !important;
   color: white;
-  border: none;
+  border: none !important;
+  border-radius: 0px !important;
 }
 
-.coursetopmargin{
+.coursetopmargin {
   margin-top: 20px;
 }
 
 .buttonlayout:hover {
-  background-color:  #0E4D63;
+  background-color: #0E4D63;
   color: white;
 }
 
 
-.course-intro-heading{
+.course-intro-heading {
   font-size: 35px;
   font-weight: 700;
 }
@@ -109,14 +110,15 @@ color: black;
 .detail-content-heading {
   font-size: 18px;
   font-weight: 600;
- padding: 20px 0px 10px 0px;
+  padding: 20px 0px 10px 0px;
 }
 
-.info-icon{
+.info-icon {
   display: flex;
   flex-direction: row;
 }
-.course-duration{
+
+.course-duration {
   margin-top: 2px;
   margin-left: 4px;
 }
@@ -128,11 +130,13 @@ color: black;
 
 
 .course_bullet_point {
-  list-style-type: disc; /* Use disc for default bullet points */
-  margin-left: 20px; /* Adjust margin for indentation */
+  list-style-type: disc;
+  /* Use disc for default bullet points */
+  margin-left: 20px;
+  /* Adjust margin for indentation */
 }
 
-.detail-content-title{
+.detail-content-title {
   font-size: 18px;
   margin: 10px 0px;
 }
@@ -150,27 +154,38 @@ li {
 } */
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
+
   /* .eduvibe-widget {
     padding: 30px 20px;
   } */
   #sticky-position {
     max-width: 60% !important;
-    margin: auto !important ;
-   }
+    margin: auto !important;
+  }
 
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .eduvibe-widget-details .widget-content ul li span {
     font-size: 14px !important;
-}
-.course-duration {
+  }
+
+  .course-duration {
     margin-top: 1px;
     margin-left: 4px;
+  }
+
+  .eduvibe-widget {
+    padding: 15px;
+  }
 }
-.eduvibe-widget {
-  padding:15px;
-}
+
+@media only screen and (min-width: 1024px) and (max-width: 1140px) {
+  .buttonlayout {
+    /* width: 275px; */
+    max-width: 100% !important;
+   
+  }
 }
 
 
@@ -179,7 +194,14 @@ li {
     width: 100%;
     margin: auto;
   }
-  
+
+  .price-title {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
 
   #sticky-position {
     width: 100%;
@@ -188,29 +210,41 @@ li {
   .main-image img {
     height: 100%;
   }
+
   .course-intro-heading {
     font-size: 24px !important;
   }
+
   .detail-content-heading {
     font-size: 18px !important;
+  }
+
+  .detail-content-subheading {
+    font-size: 14px !important;
+  }
+
+  .eduvibe-widget-details .widget-content ul li span {
+    font-size: 14px !important;
+
+  }
+
+  .course-duration {
+    margin-top: 2px;
+  }
+
+  .eduvibe-widget-details {
+    padding: 0px !important;
+  }
+
 }
 
-.detail-content-subheading {
-  font-size: 14px !important;
-}
-.eduvibe-widget-details .widget-content ul li span {
-  font-size: 14px !important;
 
-}
-.course-duration{
-  margin-top: 2px;
+
+.offer-price {
+  display: flex;
+  flex-direction: row;
 }
 
-.eduvibe-widget-details {
-  padding: 0px !important;
+.price-title {
+  margin-left: 9px;
 }
-
-}
-
-
-

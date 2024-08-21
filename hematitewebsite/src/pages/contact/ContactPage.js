@@ -27,6 +27,7 @@ function ContactPage() {
   const [alertMessage, setAlertMessage] = useState('');
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
   const [errors, setErrors] = useState({
     fname: '',
@@ -36,7 +37,7 @@ function ContactPage() {
   });
 
   const nameRegex = /^[A-Za-z]{2,}$/;
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailRegex = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/mg;
   const mobileRegex = /^[0-9]{10}$/;
 
   const data = useContext(WebContext);
@@ -58,6 +59,16 @@ function ContactPage() {
   useEffect(() => {
     reveal();
   }, []);
+
+  
+  useEffect(() => {
+    // Check if all fields are filled and valid
+    if (fname && lname && mobile && email && message && !errors.fname && !errors.lname && !errors.email && !errors.mobile) {
+      setIsButtonDisabled(false);
+    } else {
+      setIsButtonDisabled(true);
+    }
+  }, [fname, lname, mobile, email, message, errors]);
 
   if (!data) {
     return <div>Loading data...</div>;
@@ -89,6 +100,7 @@ function ContactPage() {
   const handleBlur = (event) => {
     validateField(event.target.name);
   };
+
 
   const validateField = (name) => {
     let error = '';
@@ -354,7 +366,7 @@ function ContactPage() {
                       rows={6}
                     />
                   </Form.Group>
-                  <Button className='contact-btn' size='sm' type="submit">
+                  <Button className='contact-btn' size='sm' disabled={isButtonDisabled} type="submit">
                     Send
                   </Button>
                 </Form>

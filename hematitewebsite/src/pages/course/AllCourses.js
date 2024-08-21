@@ -50,10 +50,10 @@ function AllCourses() {
                       />
 
                       <br />
-                      <h6 className="coursetextfontsize">
+                      <span className="coursetextfontsize">
                         <MdLibraryBooks />
                         {data.month}
-                      </h6>
+                      </span>
 
                       <hr />
                       <div>
@@ -74,14 +74,12 @@ function AllCourses() {
                   <div className="applyinghover" >
 
                     <Card.Title className="text-alignment">
-                      {" "}
                       {data.title}
                     </Card.Title>
                     
-                    <h6 className="coursetextfontsize">
-                      {" "}
+                    <span className="coursetextfontsize">
                       <MdLibraryBooks /> {data.month}
-                    </h6>
+                    </span>
                   
                     <div>
                       {data?.price?.discount && (

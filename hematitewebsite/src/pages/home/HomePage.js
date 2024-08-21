@@ -204,14 +204,14 @@ function HomePage() {
       <div className={`about-body ${isWideScreen ? 'reveal fade-bottom' : ''}`}>
         {data?.homepageabout?.map((val, index) => (
           <Row key={index}>
-            <Col md={6} className="firstColumn aboutus-image">
+            <Col md={6} className="about-firstColumn aboutus-image">
               <img
                 src={val.aboutImageurl}
                 alt="homeaboutimage"
                 className="home-about-image"
               />
             </Col>
-            <Col md={6} className='secondColumn about-section'>
+            <Col md={6} className='about-secondColumn about-section'>
               <div> 
                 <span className="pre-title">About</span>
                 <h3 className="about-title">{val.title}</h3>
@@ -249,7 +249,7 @@ function HomePage() {
       </div> */}
       {/* Slider Section */}
       <div className='slider-section  reveal fade-bottom '>
-        <Container>
+        <Container >
           <Row>
             <Col>
               <p className="slider-container-main-heading">OUR PLACED STUDENTS</p>
