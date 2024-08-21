@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import "./coursedetail.css";
-import { Row, Col, Card, Container } from "react-bootstrap";  
+import { Row, Col, Card, Container, Button } from "react-bootstrap";  
 import { LuClock } from "react-icons/lu";
 import { BsClock } from "react-icons/bs";
 import { TbMessageLanguage } from "react-icons/tb";
@@ -264,20 +264,19 @@ function CourseDetails() {
                     </div>
                   </div>
                   <center>
-                    <button className="buttonlayout" type="button">
+                    <Button className="buttonlayout" type="button">
                       {filterBatch?.price?.discount && (
-                        <div>
-                          <span className="hovercourseOfferPrice">
+                        <div className="offer-price">
+                          <div>
+                          <span className="price" >
                             <FaIndianRupeeSign />
                             {filterBatch?.price?.offerprice}
+                          </span>  
+                          </div>
+                          <div>
+                          <span className="price-title"> Original Price <FaIndianRupeeSign /></span> <span className="hovercourseOriginalPrice" > {filterBatch?.price?.originalprice}
                           </span>
-                          <b className="hovercoursePriceHeading">
-                            Original Price
-                          </b>
-                          <span className="hovercourseOriginalPrice">
-                            <FaIndianRupeeSign />
-                            {filterBatch?.price?.originalprice}
-                          </span>
+                          </div>             
                         </div>
                       )}
                       {!filterBatch?.price?.discount && (
@@ -286,7 +285,7 @@ function CourseDetails() {
                           {filterBatch?.price?.originalprice}
                         </span>
                       )}
-                    </button>
+                    </Button>
                   </center>
                 </div>
               </div>

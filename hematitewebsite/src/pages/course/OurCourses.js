@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Slider from "react-slick";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { MdLibraryBooks } from "react-icons/md";
-import {FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { FaRupeeSign } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import NavigationBar from "../../common/navbar/NavigationBar";
@@ -16,7 +16,7 @@ function OurCourses() {
   const data = useContext(WebContext);
   const nav = useNavigate();
 
-  
+
   const navigateToAllCourse = () => {
     nav("/allcourse");
   };
@@ -39,8 +39,8 @@ function OurCourses() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    
-    
+
+
     responsive: [
       {
         breakpoint: 992,
@@ -65,7 +65,7 @@ function OurCourses() {
   reveal()
   return (
     <div>
-         {/* <NavigationBar /> */}
+      {/* <NavigationBar /> */}
       <BackToTop />
       {/* Our Courses in Home Page */}
       <div className="backgroundImgUrl  reveal fade-bottom">
@@ -107,12 +107,12 @@ function OurCourses() {
                         </Card.Body>
                         <div className="applyinghover">
                           <Card.Title className="text-alignment">
-                           
+
                             {course.title}
                           </Card.Title>
                           <br />
                           <h6 className="course-duration">
-                          
+
                             <MdLibraryBooks /> {course.month}
                           </h6>
                           <br />
@@ -126,15 +126,15 @@ function OurCourses() {
 
                                 <b
                                   className="hovercoursePriceHeading"
-                                 
+
                                 >
                                   Original Price
                                 </b>
                                 <span
                                   className="hovercourseOriginalPrice"
-                                  
+
                                 >
-                                  
+
                                   <FaRupeeSign />
                                   {course?.price?.originalprice}
                                 </span>
@@ -180,91 +180,91 @@ function OurCourses() {
       </div>
       {/* Upcoming Courses in Home Page */}
       <div className="upcomingcourse-body  reveal fade-bottom ">
-      <Container>
-        <Row>
-          <Col lg='12'>
-            <h1 className="upcomingcourseheading">
-              UPCOMING BATCHES
-            </h1>
-            <div className="upcoming-slider-body">
-              <Slider {...settings}>
-                {sliceupcomingbatch &&
-                  sliceupcomingbatch.length > 0 &&
-                  sliceupcomingbatch.map((course, index) => (
-                    <Card className="card-adjustment" key={index}>
-                      <Card.Body>
-                        <div className="registration-text">
-                          Registration Start From {course.registrationStart} to {course.registrationEnd}
-                        </div>
-                        <hr />
-                        <Card.Img src={course.cardimg} fluid />
-                        <h6 className="course-duration">
-                          <MdLibraryBooks /> {course.month}
-                        </h6>
-                        <hr />
-                        <div>
-                          {course.price.discount ? (
-                            <div className="price-wrapper">
-                              <span className="courseOfferPrice">
-                                <FaRupeeSign /> {course.price.offerprice}
-                              </span>
-                              <b className="coursePriceHeading">
-                                Original Price
-                              </b>
-                              <span className="courseOriginalPrice">
-                                <FaRupeeSign /> {course.price.originalprice}
-                              </span>
-                            </div>
-                          ) : (
-                            <div className="price-wrapper">
-                              <span className="courseOfferPrice">
-                                <FaRupeeSign /> {course.price.originalprice}
-                              </span>
-                            </div>
-                          )}
-                        </div>
-                      </Card.Body>
-                      <div className="applyinghover">
-                        <Card.Title className="text-alignment">
-                          {course.title}
-                        </Card.Title>
-                        <br />
-                        <h6 className="course-duration">
-                          <MdLibraryBooks /> {course.month}
-                        </h6>
-                        <br />
-                        <div>
-                          {course.price.discount && (
-                            <div>
-                              <span className="hovercourseOfferPrice">
-                                <FaRupeeSign />
-                                {course.price.offerprice}
-                              </span>
+        <Container>
+          <Row>
+            <Col lg='12'>
+              <h1 className="upcomingcourseheading">
+                UPCOMING BATCHES
+              </h1>
+              <div className="upcoming-slider-body">
+                <Slider {...settings}>
+                  {sliceupcomingbatch &&
+                    sliceupcomingbatch.length > 0 &&
+                    sliceupcomingbatch.map((course, index) => (
+                      <Card className="card-adjustment" key={index}>
+                        <Card.Body>
+                          <div className="registration-text">
+                            Registration Start From {course.registrationStart} to {course.registrationEnd}
+                          </div>
+                          <hr />
+                          <Card.Img src={course.cardimg} fluid />
+                          <h6 className="course-duration">
+                            <MdLibraryBooks /> {course.month}
+                          </h6>
+                          <hr />
+                          <div>
+                            {course.price.discount ? (
+                              <div className="price-wrapper">
+                                <span className="courseOfferPrice">
+                                  <FaRupeeSign /> {course.price.offerprice}
+                                </span>
+                                <b className="coursePriceHeading">
+                                  Original Price
+                                </b>
+                                <span className="courseOriginalPrice">
+                                  <FaRupeeSign /> {course.price.originalprice}
+                                </span>
+                              </div>
+                            ) : (
+                              <div className="price-wrapper">
+                                <span className="courseOfferPrice">
+                                  <FaRupeeSign /> {course.price.originalprice}
+                                </span>
+                              </div>
+                            )}
+                          </div>
+                        </Card.Body>
+                        <div className="applyinghover">
+                          <Card.Title className="text-alignment">
+                            {course.title}
+                          </Card.Title>
+                          <br />
+                          <h6 className="course-duration">
+                            <MdLibraryBooks /> {course.month}
+                          </h6>
+                          <br />
+                          <div>
+                            {course.price.discount && (
+                              <div>
+                                <span className="hovercourseOfferPrice">
+                                  <FaRupeeSign />
+                                  {course.price.offerprice}
+                                </span>
 
-                              <b
-                                className="hovercoursePriceHeading"
-                               
-                              >
-                                Original Price
-                              </b>
-                              <span
-                                className="hovercourseOriginalPrice"
-                               
-                              >
+                                <b
+                                  className="hovercoursePriceHeading"
+
+                                >
+                                  Original Price
+                                </b>
+                                <span
+                                  className="hovercourseOriginalPrice"
+
+                                >
+                                  <FaRupeeSign />
+                                  {course.price.originalprice}
+                                </span>
+                              </div>
+                            )}
+                            {!course.price.discount && (
+                              <span className="hovercourseOfferPrice">
                                 <FaRupeeSign />
                                 {course.price.originalprice}
                               </span>
-                            </div>
-                          )}
-                          {!course.price.discount && (
-                            <span className="hovercourseOfferPrice">
-                              <FaRupeeSign />
-                              {course.price.originalprice}
-                            </span>
-                          )}
-                        </div>
-                        <br />
-                        {/* <Button
+                            )}
+                          </div>
+                          <br />
+                          {/* <Button
                    className="buttonscreen"
                    variant=""
                    style={{ width: "210px", height: "40px" }}
@@ -272,35 +272,35 @@ function OurCourses() {
                  >
                    Join Our Telegram Group
                  </Button> */}
-                        <br />
-                        <Link
-                          to={`/coursedetail/${course?.title}`}
-                          
-                        >
-                          <Button size='sm' type="button" variant="">
-                            Know More <FaArrowRightLong />
-                          </Button>
-                        </Link>
-                      </div>
-                    </Card>
-                  ))}
-              </Slider>
-            </div>
-            <div className="d-flex justify-content-center">
-              <Button
-              size='sm'
-                className="viewmorebtn"
-                onClick={navigateToUpcomingCourse}
-              >
-                View More <FaArrowRightLong />
-              </Button>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+                          <br />
+                          <Link
+                            to={`/coursedetail/${course?.title}`}
 
-        </div>
-     
+                          >
+                            <Button size='sm' type="button" variant="">
+                              Know More <FaArrowRightLong />
+                            </Button>
+                          </Link>
+                        </div>
+                      </Card>
+                    ))}
+                </Slider>
+              </div>
+              <div className="d-flex justify-content-center">
+                <Button
+                  size='sm'
+                  className="viewmorebtn"
+                  onClick={navigateToUpcomingCourse}
+                >
+                  View More <FaArrowRightLong />
+                </Button>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+
+      </div>
+
     </div>
   );
 }

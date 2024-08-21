@@ -148,7 +148,7 @@ useEffect(()=>{
               <div className="content">
                 <p className='p1'>PLACEMENTS</p>
                 <p className='p2'>Recent Placements</p>
-                <p className='p3'>People Love To Learn With Us</p>
+                {/* <p className='p3'>People Love To Learn With Us</p> */}
               </div>
             </Col>
           </Row>

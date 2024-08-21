@@ -307,7 +307,7 @@
 
 .about-body {
     /* margin-top: 100px; */
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .about-section {
@@ -329,12 +329,12 @@
 }
 
 .description {
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 16px;
     padding-left: 20px;
     position: relative;
     margin: 0 0 30px;
-    color: #6f6b80;
+    /* color: #6f6b80; */
 }
 
 .description::before {
@@ -376,7 +376,7 @@
 .about-body {
     display: flex;
     align-items: center;
-    /* margin-top: 20px; */
+    margin-top: 20px;
 }
 
 .about-body .aboutus-image {
@@ -387,8 +387,8 @@
 
 .about-body .about-section {
 
-    padding: 30px;
-    margin-top: 20px;
+    /* padding: 30px; */
+    /* margin-top: 20px; */
     
 }
 .description-wrapper {
@@ -524,6 +524,29 @@
     }
 
 }
+@media (max-width: 991px) {
+    .placement_Row:nth-child(2) .about-firstColumn {
+        order: 1;
+    }
+
+    .placement_Row:nth-child(2) .about-secondColumn {
+        order: 2;
+    }
+}
+@media ((min-width: 991px) and (max-width: 1024px)) {
+    .paragraph {
+       font-size: 14px;
+    }
+    .about-firstColumn{
+        margin-top: 18px !important
+      }
+    }
+    
+    @media ((min-width: 1025px) and (max-width: 1440px)) {
+      .about-firstColumn{
+        margin-top: 18px !important
+      }
+        }
 
 /*----------------------------------------------Slider-css----------------------------------------------------*/
 
@@ -535,8 +558,8 @@
 }
 
 .slider-section {
-    margin-top:  50px;
-    margin-bottom: 50px;
+    margin-top:  20px;
+    margin-bottom: 20px;
 }
 
 .slider-image {
@@ -642,8 +665,8 @@
 
 /*-----------------------------------------------Couter bar css------------------------------------------------*/
 .counter-section {
-    /* margin-top: 40px; */
-    margin-bottom: 50px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
 }
 
 .counter-card {
