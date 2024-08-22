@@ -11,7 +11,7 @@
 }
 
 .eduvibe-widget-details {
-  padding: 0 20px 20px;
+  padding: 0px 20px ;
 }
 
 
@@ -93,7 +93,7 @@
 }
 
 .coursetopmargin {
-  margin-top: 20px;
+  margin: 20px 0px;
 }
 
 .buttonlayout:hover {
@@ -243,6 +243,7 @@ li {
 .offer-price {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .price-title {

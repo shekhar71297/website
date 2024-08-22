@@ -112,7 +112,7 @@ function AboutPage() {
 
       {/*  ----------------------------- Mission, Purpose, Values Section -------------------------- */}
 
-      <div className="mission_Container  reveal fade-bottom ">
+      <div className="mission_Container ">
         <Container >
           {data?.aboutUsHeadings?.map((data, index) => (
             <div>
@@ -136,7 +136,7 @@ function AboutPage() {
                     </div>
                     <div className="text_Content">
                       <span className="mission_subheading">{data.title}</span>
-                      <p>{data.description}</p>
+                      <p className="mission-description">{data.description}</p>
                     </div>
                   </div>
                 </div>
@@ -196,8 +196,9 @@ function AboutPage() {
       </div> */}
 
       {/* ---------------------------------- Infrastructure Section ---------------------------  */}
-      <div className="infrastructure_Container  reveal fade-bottom ">
-        <Container>
+      <Container>
+      <div className="infrastructure_Container  ">
+       
           {data?.aboutUsHeadings?.map((data, index) => (
             <div>
               <p className="infrastructure_heading">{data.heading5}</p>
@@ -218,12 +219,13 @@ function AboutPage() {
               ))}
             </Slider>
           </div>
-        </Container>
+       
       </div>
+      </Container>
 
       {/* ----------------------- Feedback Section --------------------------------  */}
 
-      <div className="about_feedback  reveal fade-bottom ">
+      <div className="about_feedback  ">
         <Container>
           <div>
             <h3 className="feedback_heading">Our Lovely Students Feedback</h3>

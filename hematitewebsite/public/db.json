@@ -79,17 +79,49 @@
     {
       "id": "1",
       "img": "images/placement/infra (17).jpeg",
+      "title": "Training and Placement Process",
       "placementDescription": [
-        "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow's IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.",
-        "The center has modern infrastructure, including corporate-standard laboratories equipped with the latest state-of-the-art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from experts and visiting faculty, we also organize video-based sessions, seminars, assignments, internships, projects, faculty-student discussions, expert talks and profiling of the students, guidance in hackathons, Start-ups, etc. We also have a well-equipped library with a wide array of manuals. We also provide placement assistance to our students. Hematite Infotech has had an enviable placement record since its inception."
+        "Hematite Infotech Pvt Ltd has a dedicated placement team that provides students with daily job notifications, ensuring continuous opportunities for career advancement. While the Training and Placement cell facilitates placement activities, it does not guarantee a job. However, we are committed to preparing students for success through a structured process:"
       ]
     },
     {
       "id": "2",
       "img": "images/placement/infra (16).jpeg",
       "placementDescription": [
-        "Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming aspiring students into tomorrow's IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics, and training.",
-        "The center has modern infrastructure, including corporate-standard laboratories equipped with the latest state-of-the-art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from experts and visiting faculty, we also organize video-based sessions, seminars, assignments, internships, projects, faculty-student discussions, expert talks and profiling of the students, guidance in hackathons, Start-ups, etc. We also have a well-equipped library with a wide array of manuals. We also provide placement assistance to our students. Hematite Infotech has had an enviable placement record since its inception."
+        {
+          "title": "Course Completion",
+          "description": "Students must complete their course with at least 80% attendance."
+        },
+       
+        {
+          "title": "Skill Tests",
+          "description": "Passing mid-course tests is a requirement."
+        },
+        {
+          "title": "Mock Interviews",
+          "description": "Participation in both HR and technical mock interviews is essential."
+        },
+        {
+          "title": "Project Submission",
+          "description": "Completion and submission of two projects, along with presentations, is mandatory"
+        },
+        {
+          "title": "Faculty Review",
+          "description": "Projects must be reviewed and approved by a faculty member."
+        },
+        {
+          "title": "CV Submission",
+          "description": "An updated CV must be submitted to advance in the placement process"
+        },
+        {
+          "title": "Fee Clearance",
+          "description": "Both payment installments must be settled before participating in the placement drive, after the syllabus and project work are completed."
+        },
+        {
+          "title": "Stay Connected",
+          "description": "Students are responsible for maintaining regular communication with the Training and Placement Coordinators through the provided email for updates on placement matters."
+        }
+
       ]
     }
   ],
@@ -99,7 +131,7 @@
       "cardimg": "images/courseimg/images/GraphicDesign.png",
       "bannerImgurl": "images/courseimg/images/GraphicDesign.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "90 days Minimum",
+      "month": "90 days",
       "title": "Graphic Design",
       "registrationStart": "12-07-2024" ,
       "registrationEnd": "17-07-2024" ,
@@ -200,7 +232,7 @@
       "cardimg": "images/courseimg/images/PythonDjango.png",
       "bannerImgurl": "images/courseimg/images/Python Django.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "3 Months Minimum",
+      "month": "90 days",
       "title": " Python with Django",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -396,7 +428,7 @@
       "cardimg": "images/courseimg/images/Python.png",
       "bannerImgurl": "images/courseimg/images/Python.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "3 Months Minimum",
+      "month": "90 days",
       "title": " Python",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -510,7 +542,7 @@
       "cardimg": "images/courseimg/images/DataVisualization.png",
       "bannerImgurl": "images/courseimg/images/Data Visualization.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "3 Months Minimum",
+      "month": "90 days",
       "title": "Data Visualization",
       "upcomingbatch": false,
       "registrationStart": "12-07-2024" ,
@@ -620,7 +652,7 @@
       "cardimg": "images/courseimg/images/ReactJS.png",
       "bannerImgurl": "images/courseimg/images/ReactJs.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "3 Months Minimum",
+      "month": "90 days",
       "title": "React JS",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -734,7 +766,7 @@
       "cardimg": "images/courseimg/images/SoftwareTesting.png",
       "bannerImgurl": "images/courseimg/images/SoftwareTesting.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "3 Months Minimum",
+      "month": "90 days",
       "title": "Software Testing",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -833,9 +865,9 @@
     {
       "id": "7",
       "cardimg": "images/courseimg/images/Angular13+.png",
-      "bannerImgurl": "images/courseimg/images/AngularJs.jpg",
+      "bannerImgurl": "images/courseimg/images/Angular 13+.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "3 Months Minimum",
+      "month": "90 days",
       "title": "Angular 13 +",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -947,10 +979,10 @@
     {
       "id": "8",
       "cardimg": "images/courseimg/images/AdvanceExcel.png",
-      "bannerImgurl": "images/courseimg/images/Excel.jpg",
+      "bannerImgurl": "images/courseimg/images/Advance Excel.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 Days",
-      "title": "MS Excel with AI",
+      "month": "45 days",
+      "title": "Advance Excel",
       "upcomingbatch": false,
       "registrationStart": "12-07-2024" ,
       "registrationEnd": "17-07-2024" ,
@@ -1063,7 +1095,7 @@
       "cardimg": "images/courseimg/images/DataScience.png",
       "bannerImgurl": "images/courseimg/images/Data Science.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "5 Months Minimum",
+      "month": "150 days",
       "title": "Data Science",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -1175,9 +1207,9 @@
     {
       "id": "10",
       "cardimg": "images/courseimg/images/DigitalMarketing.png",
-      "bannerImgurl": "images/courseimg/images/DigitalMarketing.jpg",
+      "bannerImgurl": "images/courseimg/images/Digital Marketing.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "3 Months Minimum",
+      "month": "90 days",
       "title": "Digital Marketing",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -1282,7 +1314,7 @@
       "cardimg": "images/courseimg/images/MEANstack.png",
       "bannerImgurl": "images/courseimg/images/MEAN Stack.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "5 Months Minimum",
+      "month": "150 days",
       "title": "MEAN Stack",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -1467,9 +1499,9 @@
     {
       "id": "12",
       "cardimg": "images/courseimg/images/MERNstack.png",
-      "bannerImgurl": "images/courseimg/images/MernStack.jpg",
+      "bannerImgurl": "images/courseimg/images/Mern Stack.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "5 Months Minimum",
+      "month": "150 days",
       "title": "MERN Stack",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -1605,7 +1637,7 @@
       "cardimg": "images/courseimg/images/CloudComputing.png",
       "bannerImgurl": "images/courseimg/images/Cloud Computing.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "3 Months Minimum",
+      "month": "90 days",
       "title": "Cloud Computing",
       "upcomingbatch": false,
       "registrationStart": "12-07-2024" ,
@@ -1697,10 +1729,10 @@
     },
     {
       "id": "15",
-      "cardimg": "images/courseimg/images/FullStack.png",
+      "cardimg": "images/courseimg/images/fullstack.png",
       "bannerImgurl": "images/courseimg/images/Full Stack.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "5 Months Minimum",
+      "month": "150 days",
       "title": "Full Stack",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -1814,7 +1846,7 @@
       "cardimg": "images/courseimg/images/C++.png",
       "bannerImgurl": "images/courseimg/images/C++.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 Days",
+      "month": "45 days",
       "title": "C++",
       "upcomingbatch": false,
       "registrationStart": "12-07-2024" ,
@@ -1928,7 +1960,7 @@
       "cardimg": "images/courseimg/images/C.png",
       "bannerImgurl": "images/courseimg/images/C.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 Days",
+      "month": "45 days",
       "title": "C Programming",
       "upcomingbatch": false,
       "registrationStart": "12-07-2024" ,
@@ -2030,7 +2062,7 @@
       "cardimg": "images/courseimg/images/AdvancedSelenium.png",
       "bannerImgurl": "images/courseimg/images/Advance Selenium.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 Days",
+      "month": "45 days",
       "title": "Advance Selenium",
       "upcomingbatch": false,
       "registrationStart": "12-07-2024" ,
@@ -2142,9 +2174,9 @@
     {
       "id": "19",
       "cardimg": "images/courseimg/images/DataAnalytics.png",
-      "bannerImgurl": "images/courseimg/images/Dta Analytics.jpg",
+      "bannerImgurl": "images/courseimg/images/Data Analytics.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 Days",
+      "month": "45 days",
       "title": "Data Analytics",
       "upcomingbatch": false,
       "registrationStart": "12-07-2024" ,
@@ -2258,7 +2290,7 @@
       "cardimg": "images/courseimg/images/JAVA.png",
       "bannerImgurl": "images/courseimg/images/Java Development.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "3 Months Minimum",
+      "month": "90 days",
       "title": "Java",
       "upcomingbatch": true,
       "registrationStart": "12-07-2024" ,
@@ -2372,7 +2404,7 @@
       "cardimg": "images/courseimg/images/TallyPrime.png",
       "bannerImgurl": "images/courseimg/images/Tally Prime.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 Days",
+      "month": "45 days",
       "title": "Tally Prime With GST",
       "upcomingbatch": false,
       "registrationStart": "12-07-2024" ,
@@ -2486,7 +2518,7 @@
       "cardimg": "images/courseimg/images/UIDevelopment.png",
       "bannerImgurl": "images/courseimg/images/UI Development.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 Days",
+      "month": "45 days",
       "title": "UI Development",
       "upcomingbatch": false,
       "registrationStart": "12-07-2024" ,
@@ -2600,121 +2632,7 @@
       "cardimg": "images/courseimg/images/Wordpress.png",
       "bannerImgurl": "images/courseimg/images/Wordpress.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 Days",
-      "title": "Wordpress",
-      "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
-      "price": {
-        "originalprice": "15000",
-        "offerprice": "11999",
-        "discount": true
-      },
-      "courseDetail": {
-        "objective": [
-          {
-            "contents": [
-              "Understand the correct syntax of Python language elements like indentation, loops, conditionals, and functions.",
-              "Learn how to work with various data types and structures, including strings, lists, dictionaries, and tuples, enabling you to manipulate and analyze data effectively.",
-              "Develop Python Modules to Create Re-Usable Code.",
-              "Learn how to read from and write to files, enabling you to interact with external data sources and persist information across sessions.",
-              "You will learn Beautiful Soup, Request, Pandas, NumPy, Scikit Learn, and Matplotlib."
-            ]
-          }
-        ],
-        "requirements": [
-          {
-            "contents": [
-              "Absolutely no prior experience necessary."
-            ]
-          }
-        ],
-        "courseDescription": {
-          "description": [
-            "Python is a versatile and powerful programming language known for its simplicity and readability. It is widely used in various domains such as web development, data analysis, artificial intelligence, scientific computing, and more. With its extensive standard library and active community support, Python is an excellent choice for both beginners and experienced developers."
-          ]
-        },
-        "syllabus": [
-          {
-            "title": "Python",
-            "contents": [
-              {
-                "title": "Overview of Python",
-                "description": "Introduction to Python, its features, and how it works internally."
-              },
-              {
-                "title": "Variables and Keywords",
-                "description": "Understanding variables, naming conventions, and Python keywords."
-              },
-              {
-                "title": "Python Data Types",
-                "description": "Exploring built-in data types like numeric, string, list, tuple, dictionary, and set."
-              },
-              {
-                "title": "Operators and their Types",
-                "description": " Overview of operators in Python including arithmetic, comparison, logical, and bitwise."
-              },
-              {
-                "title": "Control Flow",
-                "description": " Conditional statements (if, elif) for decision-making, and loops (for loop, while loop) for iteration."
-              },
-              {
-                "title": "Functions",
-                "description": "Introduction to defining and calling functions, function arguments, inner calling techniques, and lambda functions."
-              },
-              {
-                "title": "Recursion Function",
-                "description": "Understanding recursion and implementing recursive functions."
-              },
-              {
-                "title": "Dynamic Input in Lists",
-                "description": "Handling dynamic input in lists using list comprehension and input() function."
-              },
-              {
-                "title": "Object-Oriented Programming",
-                "description": "Introduction to OOP concepts like classes, objects, inheritance, polymorphism, and encapsulation."
-              },
-              {
-                "title": "Decorators in Python",
-                "description": "Understanding decorators to add functionality to functions and methods."
-              },
-              {
-                "title": "Multiprocessing and Multithreading",
-                "description": "Working with multiple processes using the multiprocessing module and multithreading concepts using the threading module."
-              },
-              {
-                "title": "File Handling",
-                "description": "Reading from and writing to files in Python."
-              },
-              {
-                "title": "Modules and Packages",
-                "description": "Understanding modules and packages for code organization and reuse"
-              },
-              {
-                "title": "Automation",
-                "description": "Automating tasks using scripting and scheduling."
-              }
-            ]
-          }
-        ],
-        "whoThisCourseIsFor": [
-          {
-            "contents": [
-              "New to programming, seeking to learn their first language due to Python's simplicity and readability.",
-              "Programmers incorporating Python into web development, automation, or software projects.",
-              "Students and academics using Python in their curriculum or research.",
-              "Non-programmers (e.g., finance, marketing, engineering) automating tasks or conducting data analysis with Python"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "24",
-      "cardimg": "images/courseimg/images/DefaultCoursesCoverPage.png",
-      "bannerImgurl": "images/courseimg/images/Microsoft Word.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 Days",
+      "month": "45 days",
       "title": "Wordpress",
       "upcomingbatch": false,
       "registrationStart": "12-07-2024" ,
@@ -2870,7 +2788,7 @@
   ],
   "aboutUsHeadings": [
     {
-      "heading2": "Our Mission, Core Purpose and Values",
+      "heading2": "Our Mission, Vision and Values",
       "heading3": "Upcoming Events",
       "heading5": "Our Infrastructure"
     }
@@ -2935,19 +2853,19 @@
       "bgcolour": "#eaf8f6",
       "iconImg": "images/aboutus/mission.png",
       "title": "Mission",
-      "description": "To Provide the Quality of Apple Products in Price of Android in our Trainings"
+      "description": "To provide the best quality IT training to our clients with the understanding of industry requirements , the latest technology, and customer satisfaction"
     },
     {
       "bgcolour": "#fff3ee",
       "iconImg": "images/aboutus/purpose.png",
-      "title": "Core purpose",
-      "description": "Student's Delight Through Teacher's Insight"
+      "title": "Vision",
+      "description": "To transform and empower the clients using our effective and excellent training techniques , and to become a leader in the training industry"
     },
     {
       "bgcolour": "#fff1f1",
       "iconImg": "images/aboutus/values.png",
       "title": "Values",
-      "description": "Hardwork, Honour, Humility, Honesty, Humanity"
+      "description": "Integrity,Efficiency, Responsibility, and Continuous Growth"
     }
   ],
   "Counters": [

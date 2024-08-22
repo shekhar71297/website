@@ -20,7 +20,8 @@
 }
 
 .aboutUsContainer {
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .aboutUsColumn {
@@ -33,6 +34,7 @@
     font-weight: 700;
     text-align: left;
     color: #218bbb;
+    margin-top: 25px;
 }
 
 .aboutUspara {
@@ -56,7 +58,7 @@
 }
 
 .btn.aboutUsBtn:hover {
-    background-color: rgb(6, 79, 106);
+    background-color: #218bbb;
     color: #ffffff;
 }
 
@@ -64,7 +66,7 @@
 /* css for Mission, Purpose, Vision Container */
 
 .mission_Container {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .mission_heading {
@@ -79,6 +81,9 @@
     padding: 40px 30px;
     border-radius: 5px;
     height: 270px;
+}
+.mission-description{
+    text-align: justify !important;
 }
 
 .mission_subheading {
@@ -135,7 +140,9 @@
 /* css for infrastructurestructure Container */
 
 .infrastructure_Container {
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-bottom: 25px;
+   
 }
 
 .infrastructure_heading {
@@ -152,8 +159,8 @@
 /*-----------------------css for feedback container----------------------------*/
 
 .about_feedback {
-    /* margin: 100px 0px; */
-    margin: 100px 0px 50px 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     /* background-color: #62D2FF; */
     background-size: 100% 100%;

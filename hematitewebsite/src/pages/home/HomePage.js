@@ -103,27 +103,6 @@ function HomePage() {
   const navgateToAbout = () => {
     nav('/about');
   };
-
-  // function reveal() {
-  //   var reveals = document.querySelectorAll(".reveal");
-  
-  //   for (var i = 0; i < reveals.length; i++) {
-  //     var windowHeight = window.innerHeight;
-  //     var elementTop = reveals[i].getBoundingClientRect().top;
-  //     var elementVisible = 150;
-  
-  //     if (elementTop < windowHeight - elementVisible) {
-  //       reveals[i].classList.add("active");
-  //     } else {
-  //       reveals[i].classList.remove("active");
-  //     }
-  //   }
-  // }
-  useEffect (()=>{
-    reveal()
-  },[])
-
-
   useEffect(() => {
     const handleResize = () => {
       setIsWideScreen(window.innerWidth >= 1024);
@@ -201,7 +180,7 @@ function HomePage() {
 
       {/* About Us Section */}
       <Container>
-      <div className={`about-body ${isWideScreen ? 'reveal fade-bottom' : ''}`}>
+      <div className= 'about-body' >
         {data?.homepageabout?.map((val, index) => (
           <Row key={index}>
             <Col md={6} className="about-firstColumn aboutus-image">
@@ -248,7 +227,7 @@ function HomePage() {
         )) }
       </div> */}
       {/* Slider Section */}
-      <div className='slider-section  reveal fade-bottom '>
+      <div className='slider-section  '>
         <Container >
           <Row>
             <Col>
@@ -272,7 +251,7 @@ function HomePage() {
       </div>
 
       {/* Counter Section */}
-      <div className='counter-section  reveal fade-bottom '>
+      <div className='counter-section  '>
         <Container>
           <Row>
             {data?.Counters?.map((counter, index) => (
@@ -321,7 +300,7 @@ function HomePage() {
       </div>
 
       <BackToTop />
-      <div className='reveal fade-bottom ' >
+      <div >
       <FooterPage  />
       </div>
 

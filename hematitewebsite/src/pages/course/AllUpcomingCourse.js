@@ -43,6 +43,10 @@ function AllUpcomingCourse() {
             >
               <Card className="card-adjustment shadowapplying">
                 <Card.Body>
+                  <div className="registration-text">
+                    Registration start from {data.registrationStart} 
+                  </div>
+                  <hr />
                   <div className="promo">
                     <Card.Img
                       src={data.cardimg}
@@ -50,20 +54,18 @@ function AllUpcomingCourse() {
 
                     />
 
-                    <br />
-                    <h6 className="coursetextfontsize">
-                      <MdLibraryBooks />
-                      {data.month}
-                    </h6>
+                    <span className="course-duration-wrapper">
+                      <MdLibraryBooks /> {data.month}
+                    </span>
 
                     <hr />
-                    <div>
+                    <div className="course-price">
                       {data.price.discount && (
-                        <div>
+                        <div className="course-discounted-price" >
                           <span className="courseOfferPrice"><FaRupeeSign />{data.price.offerprice}</span>
 
-                          <b className="coursePriceHeading" >Original Price</b>
-                          <span className="courseOriginalPrice" > <FaRupeeSign />{data.price.originalprice}</span>
+                          
+                          <span>Original Price: <FaRupeeSign /><del>{data.price.originalprice}</del></span>
                         </div >
                       )}
                       {!data.price.discount && (
@@ -78,14 +80,14 @@ function AllUpcomingCourse() {
                     {" "}
                     {data.title}
                   </Card.Title>
-                  
+
                   <h6 className="coursetextfontsize">Registration Date : {data.registrationStart} to {data.registrationEnd}</h6>
-               
+
                   <h6 className="coursetextfontsize">
                     {" "}
                     <MdLibraryBooks /> {data.month}
                   </h6>
-                  
+
                   <div>
                     {data.price.discount && (
                       <div>

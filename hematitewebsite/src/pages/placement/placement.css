@@ -20,7 +20,7 @@
 }
 
 .placement_Description_Container {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .paragraph {
@@ -65,17 +65,18 @@
 .counterDescription {
     color: white;
 }
-
+.bgcontainer1{
+    margin-bottom: 50px;
+}
 /* css for StudPlacements.js */
 
 .bgimg {
     position: relative;
     padding: 90px;
-    margin-top: 100px;
     /* height: 700px;
     display: flex; */
     box-shadow: 10px 19px 53px rgba(48, 41, 41, 0.2);
-    margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 .studimg {
@@ -165,6 +166,9 @@
     }
 
 }
+.placementDescripCol{
+text-align: justify;
+}
 
 @media ((min-width: 320px) and (max-width: 991px)) {
     .placementcard {
@@ -210,8 +214,25 @@
   }
 }
 
-@media ((min-width: 1025px) and (max-width: 1440px)) {
+/* @media ((min-width: 1025px) and (max-width: 1440px)) {
   .firstColumn{
     margin-top: 62px !important
   }
+    } */
+    .training-placement-title{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    color: #218bbb;
+    margin-top: 25px;
     }
+    .placement-div{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    @media ((min-width: 320px) and (max-width: 425px)) {
+        .training-placement-title{
+        font-size: 24px;
+        }
+    }
+    

@@ -37,7 +37,7 @@ function App() {
     { path: "", element: <HomePage /> },
     { path: "/courses", element: <OurCourses /> },
     { path: "/allcourse", element: <AllCourses /> },
-    { path: "/upcomingcourse", element: <AllUpcomingCourse /> },
+    { path: "/batches", element: <AllUpcomingCourse /> },
     { path: "/coursedetail/:title", element: <CourseDetails /> },
     { path: "/about", element: <AboutPage /> },
     { path: "/placement", element: <PlacementPage /> },
