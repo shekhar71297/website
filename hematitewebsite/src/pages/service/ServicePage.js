@@ -22,9 +22,7 @@ function ServicePage() {
     return null;
   };
 
-  useEffect(()=>{
-    reveal()
-  },[])
+
   return (
     <div>
       <NavigationBar/>

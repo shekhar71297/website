@@ -87,7 +87,7 @@ function ContactPage() {
         setMobile(value.trim());
         break;
       case 'message':
-        setMessage(value.trim());
+        setMessage(value);
         break;
       case 'email':
         setEmail(value.trim());
@@ -383,7 +383,7 @@ function ContactPage() {
       />
       <Container>
         {data.contact && data.contact.map((val, index) => (
-          <div className="map-section reveal fade-bottom " key={index}>
+          <div className="map-section " key={index}>
             <iframe
               title="Google Map"
               src={val.maplink}

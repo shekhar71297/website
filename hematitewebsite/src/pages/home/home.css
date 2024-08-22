@@ -351,8 +351,9 @@
     margin-top: 10px;
 }
 .btn{
-    /* background: #218bbb !important; */
+    background: #218bbb !important;
     border: none !important;
+    color: white !important;
 }
 
 .btn-about {
@@ -376,7 +377,8 @@
 .about-body {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 .about-body .aboutus-image {
@@ -558,8 +560,7 @@
 }
 
 .slider-section {
-    margin-top:  20px;
-    margin-bottom: 20px;
+    margin-top:  50px;
 }
 
 .slider-image {
@@ -665,8 +666,8 @@
 
 /*-----------------------------------------------Couter bar css------------------------------------------------*/
 .counter-section {
-    /* margin-top: 20px; */
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .counter-card {
@@ -752,7 +753,7 @@
 }
 
 .modal-content {
-    background-color: #ffffffde !important;
+    background-color: #ffffff !important;
 }
 
 /* .modal-content {
@@ -760,7 +761,8 @@
 } */
 
 .course-section {
-    margin-top: 20px;
+    margin-top: 50px;
+    /* margin-bottom: 25px; */
 }
 
 /* Direction image */

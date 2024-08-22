@@ -92,20 +92,8 @@ function NavigationBar() {
               <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/">Home</Link>
               <Link className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} to="/about">About</Link>
               <Link className={`nav-link ${location.pathname === '/service' ? 'active' : ''}`} to="/service">Services</Link>
-              <NavDropdown
-                title={
-                  <span className={dropdownTitleClass}>
-                    Course <FaAngleDown />
-                  </span>
-                }
-                className="custom-dropdown"
-                show={showDropdown}
-                onMouseEnter={handleDropdownMouseEnter}
-                onMouseLeave={handleDropdownMouseLeave}
-              >
-                <Link className={`nav-dropdown-item dropdown-item ${location.pathname === '/allcourse' ? 'active' : ''}`} to="/allcourse">Courses</Link>
-                <Link className={`nav-dropdown-item dropdown-item ${location.pathname === '/upcomingcourse' ? 'active' : ''}`} to="/upcomingcourse">Upcoming Batches</Link>
-              </NavDropdown>
+              <Link className={`nav-link ${location.pathname === '/allcourse' ? 'active' : ''}`} to="/allcourse">Courses</Link>
+              <Link className={`nav-link ${location.pathname === '/batches' ? 'active' : ''}`} to="/batches">Batches</Link>
               <Link className={`nav-link ${location.pathname === '/placement' ? 'active' : ''}`} to="/placement">Placement</Link>
               <Link className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact">Contact</Link>
             </Nav>

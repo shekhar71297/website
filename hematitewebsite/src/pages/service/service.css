@@ -8,7 +8,7 @@
     /* padding: 20px; */
     margin-bottom: 20px;
     border-radius: 10px;
-    /* border: none; */
+    border: 1px solid rgba(128, 128, 128, 0.377) !important;
     height: 450px !important;
 }
 
@@ -19,7 +19,7 @@
     /* border: none; */
 }
 .service-container{
-padding: 40px 0px 40px 0px;
+/* padding: 40px 0px 40px 0px; */
 }
 
 /* .card-container {
@@ -38,10 +38,11 @@ padding: 40px 0px 40px 0px;
 
 .service-title {
     text-align: center;
+    margin-top: 8px !important;
 }
 
 .service-container {
-    margin-top: 20px;
+    margin: 8px;
 }
 
 .service-heading-title {
@@ -57,6 +58,7 @@ padding: 40px 0px 40px 0px;
 
 .heading2 {
     text-align: center;
+    padding: 20px;
 }
 
 
@@ -126,3 +128,4 @@ padding: 40px 0px 40px 0px;
         height: 400px !important;
     }
 }
+

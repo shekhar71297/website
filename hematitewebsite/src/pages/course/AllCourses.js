@@ -20,10 +20,6 @@ function AllCourses() {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    reveal()
-  })
-
 
   return (
     <div>
@@ -50,19 +46,17 @@ function AllCourses() {
                       />
 
                       <br />
-                      <span className="coursetextfontsize">
-                        <MdLibraryBooks />
-                        {data.month}
+                      <span className="course-duration-wrapper">
+                        <MdLibraryBooks /> {data.month}
                       </span>
 
                       <hr />
-                      <div>
+                      <div className="course-price">
                         {data?.price?.discount && (
-                          <div>
+                          <div className="course-discounted-price">
                             <span className="courseOfferPrice"><FaRupeeSign />{data?.price?.offerprice}</span>
 
-                            <b className="coursePriceHeading" >Original Price</b>
-                            <span className="courseOriginalPrice" > <FaRupeeSign />{data?.price?.originalprice}</span>
+                            <span>Original Price: <FaRupeeSign /><del>{data.price.originalprice}</del></span>
                           </div >
                         )}
                         {!data?.price?.discount && (

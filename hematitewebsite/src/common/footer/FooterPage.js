@@ -22,13 +22,10 @@ function FooterPage() {
 		}
 	}, [location]);
 
-	useEffect (()=>{
-    reveal()
-  },[])
 
 	return (
 		<div>
-			<footer className="footer-body  reveal fade-bottom ">
+			<footer className="footer-body  ">
 				<Container>
 					<Row>
 						<Col md={4}  >

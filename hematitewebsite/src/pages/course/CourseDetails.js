@@ -263,20 +263,18 @@ function CourseDetails() {
                       </ul>
                     </div>
                   </div>
-                  <center>
                     <Button className="buttonlayout" type="button">
                       {filterBatch?.price?.discount && (
                         <div className="offer-price">
-                          <div>
+                          {/* <div> */}
                           <span className="price" >
                             <FaIndianRupeeSign />
                             {filterBatch?.price?.offerprice}
                           </span>  
-                          </div>
-                          <div>
-                          <span className="price-title"> Original Price <FaIndianRupeeSign /></span> <span className="hovercourseOriginalPrice" > {filterBatch?.price?.originalprice}
-                          </span>
-                          </div>             
+                          {/* </div> */}
+                          {/* <div> */}
+                          <span className="price-title">Original Price: <FaIndianRupeeSign />{filterBatch?.price?.originalprice}</span> 
+                          {/* </div>              */}
                         </div>
                       )}
                       {!filterBatch?.price?.discount && (
@@ -286,7 +284,7 @@ function CourseDetails() {
                         </span>
                       )}
                     </Button>
-                  </center>
+              
                 </div>
               </div>
             </div>

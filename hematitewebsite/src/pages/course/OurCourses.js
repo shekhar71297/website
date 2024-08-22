@@ -22,7 +22,7 @@ function OurCourses() {
   };
 
   const navigateToUpcomingCourse = () => {
-    nav("/upcomingcourse");
+    nav("/batches");
   };
 
 
@@ -62,13 +62,13 @@ function OurCourses() {
       },
     ],
   };
-  reveal()
+  
   return (
     <div>
       {/* <NavigationBar /> */}
       <BackToTop />
       {/* Our Courses in Home Page */}
-      <div className="backgroundImgUrl  reveal fade-bottom">
+      <div className="backgroundImgUrl">
         <Container>
           <Row>
             <Col>
@@ -81,22 +81,16 @@ function OurCourses() {
                       <Card className="card-adjustment" key={index}>
                         <Card.Body>
                           <Card.Img src={course.cardimg} fluid />
-                          <h6 className="course-duration">
+                          <h6 className="course-duration-wrapper">
                             <MdLibraryBooks /> {course.month}
                           </h6>
                           <hr />
-                          <div>
+                          <div id="course-price" >
                             {course.price.discount ? (
-                              <div className="price-wrapper">
-                                <span className="courseOfferPrice">
-                                  <FaRupeeSign /> {course.price.offerprice}
+                              <div className="course-discounted-price">
+                                <span className="courseOfferPrice"><FaRupeeSign /> {course.price.offerprice}
                                 </span>
-                                <b className="coursePriceHeading">
-                                  Original Price:
-                                </b>
-                                <span className="courseOriginalPrice">
-                                  <FaRupeeSign /> {course.price.originalprice}
-                                </span>
+                                <span>Original Price: <FaRupeeSign /><del>{course.price.originalprice}</del></span>
                               </div>
                             ) : (
                               <span className="courseOfferPrice">
@@ -179,7 +173,7 @@ function OurCourses() {
         </Container>
       </div>
       {/* Upcoming Courses in Home Page */}
-      <div className="upcomingcourse-body  reveal fade-bottom ">
+      <div className="upcomingcourse-body   ">
         <Container>
           <Row>
             <Col lg='12'>
@@ -194,26 +188,20 @@ function OurCourses() {
                       <Card className="card-adjustment" key={index}>
                         <Card.Body>
                           <div className="registration-text">
-                            Registration Start From {course.registrationStart} to {course.registrationEnd}
+                            Registration start from {course.registrationStart}
                           </div>
                           <hr />
                           <Card.Img src={course.cardimg} fluid />
-                          <h6 className="course-duration">
+                          <h6 className="course-duration-wrapper">
                             <MdLibraryBooks /> {course.month}
                           </h6>
                           <hr />
                           <div>
                             {course.price.discount ? (
-                              <div className="price-wrapper">
-                                <span className="courseOfferPrice">
-                                  <FaRupeeSign /> {course.price.offerprice}
+                              <div className="course-discounted-price">
+                                <span className="courseOfferPrice"><FaRupeeSign /> {course.price.offerprice}
                                 </span>
-                                <b className="coursePriceHeading">
-                                  Original Price
-                                </b>
-                                <span className="courseOriginalPrice">
-                                  <FaRupeeSign /> {course.price.originalprice}
-                                </span>
+                                <span>Original Price: <FaRupeeSign /><del>{course.price.originalprice}</del></span>
                               </div>
                             ) : (
                               <div className="price-wrapper">

@@ -5,8 +5,8 @@
 }
 
 .allcourse-section {
-  margin-top: 25px;
-  padding: 25px;
+  margin-top: 28px;
+  /* padding: 25px; */
 }
 
 .card-adjustment {
@@ -14,7 +14,11 @@
   cursor: pointer;
   border-radius: 90px;
   border: none;
-  box-shadow: 0px 0px 2px 0px gray
+  box-shadow: 0px 0px 2px 0px gray;
+  
+}
+.course-price{
+  /* text-align: center !important; */
 }
 
 .btncardadjustment {
@@ -44,7 +48,12 @@
   padding-bottom: 15px;
 }
 .coursetextfontsize{
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
+}
+
+.course-duration-wrapper{
+  margin-top: 10px;
+  display: block;
 }
 .slick-slide>div {
   margin: 0 10px;
@@ -72,7 +81,8 @@
   opacity: 1;
 }
 .upcomingcourse-body {
-  margin-top: 20px;
+  margin-top: 50px;
+
   /* padding:40px 20px 40px 20px; */
 }
 .applyinghover h6,
@@ -135,9 +145,9 @@
   }
 }
 
-.registration-text {
+/* .registration-text {
   animation: fadeInOut 5s infinite;
-}
+} */
 
 .course-heading {
   color: #fff;
@@ -149,7 +159,7 @@
   font-size: 36px;
   text-align: center;
   color: #0e4d63;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .applyinghover Button {
@@ -171,7 +181,7 @@
 }
 
 .allcoursemargintop{
-  margin-top: 40px;
+  margin-top: 28px;
   margin-bottom: 20px;
 }
 
@@ -389,4 +399,17 @@
     max-width: 100%;
   }
 
+}
+.card{
+  border: none !important;
+}
+
+.course-discounted-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slick-list {
+  padding: 5px !important;
 }

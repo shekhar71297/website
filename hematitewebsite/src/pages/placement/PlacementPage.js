@@ -11,10 +11,10 @@ import { WebContext } from '../../App';
 import "./placement.css"
 import FooterPage from '../../common/footer/FooterPage';
 import IconBar from '../../common/IconBar/IconBar';
-import reveal from '../../common/ScrollAnimation/reveal';
+
 function PlacementPage() {
   const data = useContext(WebContext);
-  useEffect(() => {  
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   var settings = {
@@ -26,108 +26,16 @@ function PlacementPage() {
     autoplay: true,
     autoplaySpeed: 2000,
   };
-useEffect(()=>{
-  reveal()
-})
+
   return (
     <>
-    <IconBar/>
+      <IconBar />
       <BackToTop />
       <NavigationBar />
       <CustomBreadcrumb pageTitle='Placements' />
-
-      <div className='placement_Description_Container'>
-        <Container>
-          {data?.placementcontent?.map((val, index) =>
-            <div className='placement_Row '>
-              <Row>
-                {index % 2 === 0 ? (
-                  // When index is 1, render the image on the left side
-                  <>
-                    {/* <div className='image_Col'> */}
-                    <Col lg={6} className='firstColumn'>
-                      <div className='images'>
-                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
-                      </div>
-                    </Col>
-                    {/* </div> */}
-                    {/* <div className='placementDescripCol'> */}
-                    <Col lg={6} className='secondColumn'>
-                      <div className='placementDescripCol'>
-                        <p className='paragraph'>{val.placementDescription[0]}</p>
-                        <p className='paragraph'>{val.placementDescription[1]}</p>
-                      </div>
-                    </Col>
-                    {/* </div> */}
-                  </>
-                ) : (
-                  // When index is 0 or any other number, render the image on the right side
-                  <>
-                    {/* <div className='placementDescripCol'> */}
-                    <Col lg={6} className='secondColumn  reveal fade-bottom '>
-                      <div className='placementDescripCol'>
-                        <p className='paragraph'>{val.placementDescription[0]}</p>
-                        <p className='paragraph'>{val.placementDescription[1]}</p>
-                      </div>
-                    </Col>
-                    {/* </div> */}
-                    {/* <div className='image_Col'> */}
-                    <Col lg={6} className='firstColumn reveal fade-bottom '>
-                      <div className='images'>
-                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
-                      </div>
-                    </Col>
-                    {/* </div> */}
-                  </>
-                )}
-              </Row>
-            </div>
-          )}
-
-        </Container>
-      </div>
-
-      <div className="bgcontainer1 reveal fade-bottom ">
-        <Container >
-          <h2 className='highlightHeading'>Placement Highlights</h2>
-          <div className="bgcontainer2">
-            <Container>
-              <Row style={{ margin: 'auto' }}>
-                {data?.placementHighlightCounter?.map((data, index) => (
-                  <>
-                    <Col lg={4} md={4} sm={6}>
-                      <div className='align_center_div'>
-                        <img src='https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-business-building-50.png' alt='img1' />
-                        <h2 className='placementCounter'>{data.companyVisited}</h2>
-                        <span className='counterDescription'>COMPANIES VISITED</span>
-                      </div>
-                    </Col>
-                    <Col lg={4} md={4}  sm={6}>
-                      <div className='align_center_div'>
-                        <img src='	https://firstbitsolutions.com/public/assets/frontend/images/bg/icons8-group-of-companies-50.png' alt='img1' />
-                        <h2 className='placementCounter'>{data.noCriteriaCompanies}</h2>
-                        <span className='counterDescription'>NO CRITERIA COMPANIES</span>
-                      </div>
-                    </Col>
-                    <Col lg={4} md={4}  sm={6}>
-                      <div className='align__center_div'>
-                        <img src='	https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-calling-50.png' alt='img1' />
-                        <h2 className='placementCounter'>{data.calls}</h2>
-                        <span className='counterDescription'>MAXIMUM CALLS WERE GIVEN</span>
-                      </div>
-                    </Col>
-                  </>
-                ))}
-              </Row>
-            </Container>
-          </div>
-        </Container>
-      </div>
-
-
       <Container>
-        <div className="bgimg reveal fade-bottom ">
-          <Row > 
+        <div className="bgimg">
+          <Row >
             <Col md={6}>
               <div className="placementcard"  >
                 <Card className='placement_Cards' >
@@ -154,8 +62,99 @@ useEffect(()=>{
           </Row>
         </div>
       </Container >
+      <Container>
+        <div className='placement_Description_Container'>
+          <div className='placement-div'>
+          <span className='training-placement-title'>Training and Placement Process</span>
+          </div>
+        
+          {data?.placementcontent?.map((val, index) => (
+            <div className='placement_Row' key={val.id}>
+              <Row>
+                {index % 2 === 0 ? (
+                  <>
+                    <Col lg={6} className='firstColumn'>
+                      <div className='images'>
+                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
+                      </div>
+                    </Col>
+                    <Col lg={6} className='secondColumn'>
+                    
+                      <div className='placementDescripCol'>
+                        <p className='paragraph'>{val.placementDescription[0]}</p>
+                      </div>
+                    </Col>
+                  </>
+                ) : (
+                  <>
+                    <Col lg={6} className='secondColumn'>
+                      <div className='placementDescripCol'>
+                        <ul>
+                          {val.placementDescription.map((desc, descIndex) => (
+                            <li key={descIndex}>
+                              <strong>{desc.title}:</strong> {desc.description}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </Col>
+                    <Col lg={6} className='firstColumn'>
+                      <div className='images'>
+                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
+                      </div>
+                    </Col>
+                  </>
+                )}
+              </Row>
+            </div>
+          ))}
+        </div>
+      </Container>
 
-     <FooterPage/>
+
+      <Container >
+        <div className="bgcontainer1">
+
+          <h2 className='highlightHeading'>Placement Highlights</h2>
+          <div className="bgcontainer2">
+
+            <Row style={{ margin: 'auto' }}>
+              {data?.placementHighlightCounter?.map((data, index) => (
+                <>
+                  <Col lg={4} md={4} sm={6}>
+                    <div className='align_center_div'>
+                      <img src='https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-business-building-50.png' alt='img1' />
+                      <h2 className='placementCounter'>{data.companyVisited}</h2>
+                      <span className='counterDescription'>COMPANIES VISITED</span>
+                    </div>
+                  </Col>
+                  <Col lg={4} md={4} sm={6}>
+                    <div className='align_center_div'>
+                      <img src='	https://firstbitsolutions.com/public/assets/frontend/images/bg/icons8-group-of-companies-50.png' alt='img1' />
+                      <h2 className='placementCounter'>{data.noCriteriaCompanies}</h2>
+                      <span className='counterDescription'>NO CRITERIA COMPANIES</span>
+                    </div>
+                  </Col>
+                  <Col lg={4} md={4} sm={6}>
+                    <div className='align__center_div'>
+                      <img src='	https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-calling-50.png' alt='img1' />
+                      <h2 className='placementCounter'>{data.calls}</h2>
+                      <span className='counterDescription'>MAXIMUM CALLS WERE GIVEN</span>
+                    </div>
+                  </Col>
+                </>
+              ))}
+            </Row>
+
+          </div>
+
+        </div>
+      </Container>
+
+
+
+
+      <FooterPage />
     </>
   );
 }
