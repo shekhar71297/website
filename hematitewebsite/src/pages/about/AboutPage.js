@@ -26,8 +26,8 @@ function AboutPage() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: "true",
-    // autoplaySpeed: 2000,
+    autoplay: "true",
+    autoplaySpeed: 2000,
 
     responsive: [
       {
@@ -278,7 +278,7 @@ function AboutPage() {
                         >
                           <FaGoogle className="google-icon" size={20} />
                         </a>
-                        <Card.Link href={about.googleLink}>
+                        <Card.Link href={about.googleLink} target="blank" >
                           View On Google
                         </Card.Link>
                       </div>
