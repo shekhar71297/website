@@ -98,8 +98,7 @@ function AllCourses() {
                     Join Our Telegram Group
                   </Button> */}
                     <br />
-                    <Link
-                      to={`/coursedetail/${data?.title}`}>
+                    <Link to={`/coursedetail/${data.title.toLowerCase().replace(/\s+/g, '-')}`}>
                       <Button type="button" variant="">
                         Know More <FaArrowRightLong />
                       </Button>

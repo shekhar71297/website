@@ -19,7 +19,10 @@ import IconBar from "../../common/IconBar/IconBar";
 function CourseDetails() {
   const data = useContext(WebContext);
   const { title } = useParams();
-  const filterBatch = data?.courses?.filter((course) => course.title === title)[0];
+  const formattedTitle = title.replace(/-/g, " "); // Convert URL title to match data
+  const filterBatch = data?.courses?.filter((course) => 
+    course.title.toLowerCase() === formattedTitle.toLowerCase()
+  )[0];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -273,7 +276,7 @@ function CourseDetails() {
                           </span>  
                           {/* </div> */}
                           {/* <div> */}
-                          <span className="price-title">Original Price: <FaIndianRupeeSign />{filterBatch?.price?.originalprice}</span> 
+                          <span className="price-title">Original Price: <FaIndianRupeeSign /><del>{filterBatch?.price?.originalprice}</del></span> 
                           {/* </div>              */}
                         </div>
                       )}
