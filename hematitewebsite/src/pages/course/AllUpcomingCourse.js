@@ -87,7 +87,7 @@ function AllUpcomingCourse() {
                     {" "}
                     <MdLibraryBooks /> {data.month}
                   </h6>
-
+                  <br/>
                   <div>
                     {data.price.discount && (
                       <div>

@@ -89,7 +89,7 @@ function AboutPage() {
                 <div className="aboutUsContent">
 
                   {/* <span className="aboutUsHeading">{data.heading1}</span> */}
-                  <p className="aboutUsHeading">{data.heading1}</p>
+                  {/* <p className="aboutUsHeading">{data.heading1}</p> */}
                   <p className="aboutUspara">{data.description[0]}</p>
                   <p className="aboutUspara">{data.description[1]}</p>
 

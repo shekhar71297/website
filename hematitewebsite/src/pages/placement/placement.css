@@ -135,7 +135,9 @@
     font-weight: 500;
     color: #222f5d;
 }
-
+.firstColumn{
+    margin-top: 6px;
+}
 @media (max-width: 992px) {
     .align_center_div {
         border-bottom: 2px solid #ffffff;

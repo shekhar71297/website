@@ -16,6 +16,7 @@ import reveal from "../../common/ScrollAnimation/reveal";
 
 function AllCourses() {
   const data = useContext(WebContext);
+  const activeCourses = data.courses.filter((course) => course.isActive === true);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -30,7 +31,7 @@ function AllCourses() {
       <div className="allcourse-section">
         <Container>
           <Row className="">
-            {data?.courses?.map((data, index) => (
+            {activeCourses?.map((data, index) => (
               <Col key={index} xs={12}
                 sm={6}
                 md={6}
@@ -70,11 +71,11 @@ function AllCourses() {
                     <Card.Title className="text-alignment">
                       {data.title}
                     </Card.Title>
-                    
+
                     <span className="coursetextfontsize">
                       <MdLibraryBooks /> {data.month}
                     </span>
-                  
+                    <br />
                     <div>
                       {data?.price?.discount && (
                         <div>
