@@ -53,7 +53,7 @@ function AboutPage() {
 
   const navigate = useNavigate();
   const navigateToCourses = () => {
-    navigate("/allcourse");
+    navigate("/courses");
   };
   useEffect(() => {
     reveal()
@@ -132,7 +132,7 @@ function AboutPage() {
                         className="about_icon"
                         src={data.iconImg}
                         alt="iconImg1"
-                        
+
                       />
                     </div>
                     <div className="text_Content">
