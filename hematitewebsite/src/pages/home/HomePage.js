@@ -93,7 +93,7 @@ function HomePage() {
       cssEase: "linear",
     };
   }
-  
+
 
 
   const navigateToContact = () => {
@@ -118,7 +118,7 @@ function HomePage() {
       <header>
         <NavigationBar />
       </header>
-      <IconBar/>
+      <IconBar />
       <div className='home-body '>
         {data?.HomePage?.map((val, index) => (
           <Carousel key={index} data-bs-theme="dark">
@@ -128,7 +128,7 @@ function HomePage() {
                 src={val.carouselImg1}
                 alt="First slide"
               />
-              
+
             </Carousel.Item>
             <Carousel.Item className='carousel-item'>
               <img
@@ -180,35 +180,35 @@ function HomePage() {
 
       {/* About Us Section */}
       <Container>
-      <div className= 'about-body' >
-        {data?.homepageabout?.map((val, index) => (
-          <Row key={index}>
-            <Col md={6} className="about-firstColumn aboutus-image">
-              <img
-                src={val.aboutImageurl}
-                alt="homeaboutimage"
-                className="home-about-image"
-              />
-            </Col>
-            <Col md={6} className='about-secondColumn about-section'>
-              <div> 
-                <span className="pre-title">About</span>
-                <h3 className="about-title">{val.title}</h3>
-              </div>
-              <div className="description-wrapper">
-                <p className="description">{val.description1}</p>
-              </div>
-              <div className="description-wrapper">
-                <p className="description">{val.description2}</p>
-              </div>
-              <div className="aboutus-btn">
-                <Button size='sm' onClick={navgateToAbout} className="btn-about">Know More</Button>
-              </div>
-            </Col>
-          </Row>
-        ))}
-      </div>
-    </Container>
+        <div className='about-body' >
+          {data?.homepageabout?.map((val, index) => (
+            <Row key={index}>
+              <Col md={6} className="about-firstColumn aboutus-image">
+                <img
+                  src={val.aboutImageurl}
+                  alt="homeaboutimage"
+                  className="home-about-image"
+                />
+              </Col>
+              <Col md={6} className='about-secondColumn about-section'>
+                <div>
+                  <span className="pre-title">About</span>
+                  <h3 className="about-title">{val.title}</h3>
+                </div>
+                <div className="description-wrapper">
+                  <p className="description">{val.description1}</p>
+                </div>
+                <div className="description-wrapper">
+                  <p className="description">{val.description2}</p>
+                </div>
+                <div className="aboutus-btn">
+                  <Button size='sm' onClick={navgateToAbout} className="btn-about">Know More</Button>
+                </div>
+              </Col>
+            </Row>
+          ))}
+        </div>
+      </Container>
       {/* <div className='direction-img reveal fade-bottom' >
         { data?.direction?.map((val)=>(
           <img src={val.img} alt='direction-right' className='drt-img' />
@@ -218,7 +218,7 @@ function HomePage() {
 
       {/* Courses Section */}
       <div className='course-section' >
-      <OurCourses />
+        <OurCourses />
       </div>
 
       {/* <div className='direction-img2 reveal fade-bottom' >
@@ -301,37 +301,30 @@ function HomePage() {
 
       <BackToTop />
       <div >
-      <FooterPage  />
+        <FooterPage />
       </div>
 
       {/* Modal Component */}
       <Modal show={showModal} onHide={handleCloseModal} centered className='main-modal'>
         <Modal.Header closeButton>
-          <Modal.Title className='modal-title' >Special Offer</Modal.Title>
+          <Modal.Title className='modal-title'>Special Offer</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
-
-          <Carousel  data-bs-theme="dark">
-            {data?.offerImg?.map((val, index) => (
-              <Carousel.Item key={index} className='carousel-item'>
-                <img
-                  className="carousel-image"
-                  src={val.img}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
-
-          {/* <img 
-            src={val.carouselImg3}
-            alt="Special Offer" 
-            style={{ width: '100%', marginBottom: '20px' }} 
-          /> */}
+          {data?.offerImg?.length > 0 && (
+            <div style={{maxHeight:'400px', display:'flex'}}>
+              <img
+                className="modal-image"
+                src={data.offerImg[0].img}
+                alt="Special Offer"
+                style={{ width: '100%' }}
+              />
+            </div>
+          )}
           {/* Don't miss out on our special discount! */}
         </Modal.Body>
       </Modal>
+
     </div>
   );
 }

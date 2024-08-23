@@ -28,22 +28,14 @@
   "offerImg": [
     {
       "id": 1,
-      "img": "/images/home/carousel1.jpg"
-    },
-    {
-      "id": 2,
-      "img": "/images/home/carousel2.jpg"
-    },
-    {
-      "id": 3,
-      "img": "/images/home/carousel3.jpg"
+      "img": "/images/offers/hematite_latest_offer_230824.jpg"
     }
+   
   ],
   "homepageabout": [
     {
       "id": 1,
       "aboutImageurl": "images/home/infra (10).jpg",
-      "title": "Hematite Infotech",
       "description1": "Hematite Infotech Pvt. Ltd., established in 2017, is dedicated to the spread of IT education and the transformation of aspiring students into tomorrow’s IT professionals. Our Academy focuses on advanced information technologies, high-end academics, and comprehensive training. Our distinguished faculty, complemented by expert and visiting lecturers, delivers a range of educational activities including video sessions, seminars, internships, projects, and guidance in hackathons and start-ups. We also provide robust placement assistance, maintaining an enviable placement record since our inception.",
       "description2": "In addition to IT education, Hematite Infotech offers IT training, consulting, corporate training, application development, and digital marketing services. Our young team of technology experts is committed to providing the best solutions to our customers. "
     }
@@ -71,7 +63,7 @@
     {
       "id": "1",
       "address": "Pune : 2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.",
-      "mobile": "8263926309 / 8208683698 / 8999639478",
+      "mobile": "8263926309 / 8999639478",
       "email": "contact@hematitecorp.com",
       "maplink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.301558443656!2d73.92858157393674!3d18.56043856795771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1efd084fb8b%3A0x1f8e0c9fe165aea4!2sHematite%20Infotech%20IT%20Training%20%26%20Placement%20Institute!5e0!3m2!1sen!2sin!4v1724058927815!5m2!1sen!2sin"
     }
@@ -127,14 +119,15 @@
   "courses": [
     {
       "id": "1",
-      "cardimg": "images/courseimg/images/GraphicDesign.png",
-      "bannerImgurl": "images/courseimg/images/GraphicDesign.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/GraphicDesign.png",
+      "bannerImgurl": "images/courses/banners/GraphicDesign.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "90 days",
-      "title":"Graphic Design",
-      "registrationStart": "12-07-2024",
-      "registrationEnd": "17-07-2024",
+      "title": "Graphic Design",
       "upcomingbatch": true,
+      "registrationStart": "28-08-2024",
+      "registrationEnd": "11-09-2024",
       "price": {
         "originalprice": "18000",
         "offerprice": "15000",
@@ -228,13 +221,13 @@
     },
     {
       "id": "2",
-      "cardimg": "images/courseimg/images/PythonDjango.png",
-      "bannerImgurl": "images/courseimg/images/Python Django.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/PythonDjango.png",
+      "bannerImgurl": "images//courses/banners/PythonDjango.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "60 days",
-      "title":"Python with Django",
-      
-      "upcomingbatch": true,
+      "title": "Python with Django",
+      "upcomingbatch": false,
       "registrationStart": "12-07-2024",
       "registrationEnd": "17-07-2024",
       "price": {
@@ -276,7 +269,7 @@
         },
         "syllabus": [
           {
-            "title":"Python",
+            "title": "Python",
             "contents": [
               {
                 "title": "Introduction",
@@ -425,12 +418,13 @@
     },
     {
       "id": "3",
-      "cardimg": "images/courseimg/images/Python.png",
-      "bannerImgurl": "images/courseimg/images/Python.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/Python.png",
+      "bannerImgurl": "images/courses/banners/Python.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "45 days",
       "title": "Python",
-      "upcomingbatch": true,
+      "upcomingbatch": false,
       "registrationStart": "12-07-2024",
       "registrationEnd": "17-07-2024",
       "price": {
@@ -539,9 +533,10 @@
     },
     {
       "id": "4",
-      "cardimg": "images/courseimg/images/DataVisualization.png",
-      "bannerImgurl": "images/courseimg/images/Data Visualization.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/DataVisualization.png",
+      "bannerImgurl": "images/courses/banners/DataVisualization.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "90 days",
       "title": "Data Visualization",
       "upcomingbatch": false,
@@ -649,12 +644,13 @@
     },
     {
       "id": "5",
-      "cardimg": "images/courseimg/images/ReactJS.png",
-      "bannerImgurl": "images/courseimg/images/ReactJs.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/ReactJS.png",
+      "bannerImgurl": "images/courses/banners/ReactJs.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "90 days",
       "title": "React JS",
-      "upcomingbatch": true,
+      "upcomingbatch": false,
       "registrationStart": "12-07-2024",
       "registrationEnd": "17-07-2024",
       "price": {
@@ -678,11 +674,9 @@
         "requirements": [
           {
             "contents": [
-             "NO React experience necessary! I take you from beginner to expert!.",
-             "Basic understanding of JavaScript is required (this course contains a quick JavaScript review section).",
-             "Any computer and OS will work — Windows, macOS or Linux."
-
-
+              "NO React experience necessary! I take you from beginner to expert!.",
+              "Basic understanding of JavaScript is required (this course contains a quick JavaScript review section).",
+              "Any computer and OS will work — Windows, macOS or Linux."
             ]
           }
         ],
@@ -698,7 +692,6 @@
               {
                 "title": "Why Use It",
                 "description": "Efficient rendering, component-based architecture, virtual DOM, and easy integration."
-
               },
               {
                 "title": "Webpack",
@@ -779,10 +772,9 @@
           {
             "contents": [
               "You just finished learning JavaScript and are looking for your next step!",
-             " You want to truly master React development, including common libraries needed to build real-world apps: React Router, Redux, React Query, Next..js, and many others.",
+              " You want to truly master React development, including common libraries needed to build real-world apps: React Router, Redux, React Query, Next..js, and many others.",
               "You have been learning React, but 1) still don't understand React, or 2) still don't feel confident to build professional React apps.",
-             " You have been building React apps, but are still missing the advanced stuff: useReducer, performance optimization, how React actually works, advanced design patterns, etc."
-
+              " You have been building React apps, but are still missing the advanced stuff: useReducer, performance optimization, how React actually works, advanced design patterns, etc."
             ]
           }
         ]
@@ -790,14 +782,15 @@
     },
     {
       "id": "6",
-      "cardimg": "images/courseimg/images/SoftwareTesting.png",
-      "bannerImgurl": "images/courseimg/images/SoftwareTesting.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/SoftwareTesting.png",
+      "bannerImgurl": "images/courses/banners/SoftwareTesting.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "90 days",
       "title": "Software Testing",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024",
-      "registrationEnd": "17-07-2024",
+      "registrationStart": "28-08-2024",
+      "registrationEnd": "11-09-2024",
       "price": {
         "originalprice": "16000",
         "offerprice": "14000",
@@ -891,12 +884,13 @@
     },
     {
       "id": "7",
-      "cardimg": "images/courseimg/images/Angular13+.png",
-      "bannerImgurl": "images/courseimg/images/Angular 13+.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/Angular13+.png",
+      "bannerImgurl": "images/courses/banners/Angular13+.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "90 days",
       "title": "Angular 13+",
-      "upcomingbatch": true,
+      "upcomingbatch": false,
       "registrationStart": "12-07-2024",
       "registrationEnd": "17-07-2024",
       "price": {
@@ -908,85 +902,90 @@
         "objective": [
           {
             "contents": [
-              "Understand the correct syntax of Python language elements like indentation, loops, conditionals, and functions.",
-              "Learn how to work with various data types and structures, including strings, lists, dictionaries, and tuples, enabling you to manipulate and analyze data effectively.",
-              "Develop Python Modules to Create Re-Usable Code.",
-              "Learn how to read from and write to files, enabling you to interact with external data sources and persist information across sessions.",
-              "You will learn Beautiful Soup, Request, Pandas, NumPy, Scikit Learn, and Matplotlib."
+              "Learn Angular's evolution, set up Node.js, npm, and Angular CLI, and understand TypeScript essentials.",
+              "Create reusable components, manage data flow, and master template syntax with data binding.",
+              "Manage business logic with services, implement secure routing, and develop template-driven and reactive forms.",
+              "Handle HTTP operations, manage state with NgRx, organize applications with modules, and optimize with lazy loading.",
+              "Create custom directives/pipes, apply skills in real-world projects, and enhance UI with Angular Material."
             ]
           }
         ],
         "requirements": [
           {
             "contents": [
-              "Absolutely no prior experience necessary."
+              "Proficiency in HTML, CSS, JS & TS is crucial for understanding and working effectively with Angular.",
+              "Basic computer and mobile skills are necessary for participating in the course."
             ]
           }
         ],
         "courseDescription": {
           "description": [
-            "Python is a versatile and powerful programming language known for its simplicity and readability. It is widely used in various domains such as web development, data analysis, artificial intelligence, scientific computing, and more. With its extensive standard library and active community support, Python is an excellent choice for both beginners and experienced developers."
+            "Learn Angular 13+, the latest version of Google's web framework, to build dynamic, high-performance applications. This course covers essential features, including component-based architecture, state management, and routing, with a focus on creating modern Single Page Applications (SPAs) and Progressive Web Apps (PWAs)."
           ]
         },
         "syllabus": [
           {
-            "title": "Python",
+            "title": "Angular 13+",
             "contents": [
               {
-                "title": "Overview of Python",
-                "description": "Introduction to Python, its features, and how it works internally."
+                "title": "Introduction to Angular",
+                "description": "Understand the framework's core concepts, its evolution, and how it compares to other frameworks."
               },
               {
-                "title": "Variables and Keywords",
-                "description": "Understanding variables, naming conventions, and Python keywords."
+                "title": "Environment Setup",
+                "description": "Learn to install and configure Node.js, npm, and Angular CLI. Create and manage Angular projects effectively."
               },
               {
-                "title": "Python Data Types",
-                "description": "Exploring built-in data types like numeric, string, list, tuple, dictionary, and set."
+                "title": "TypeScript Basics",
+                "description": "Get up to speed with TypeScript, the primary language for Angular development, and learn essential syntax and features."
               },
               {
-                "title": "Operators and their Types",
-                "description": " Overview of operators in Python including arithmetic, comparison, logical, and bitwise."
+                "title": "Component-Based Architecture",
+                "description": "Build reusable components, understand lifecycle hooks, manage data with Input and Output properties, and apply view encapsulation."
               },
               {
-                "title": "Control Flow",
-                "description": " Conditional statements (if, elif) for decision-making, and loops (for loop, while loop) for iteration."
+                "title": "Template Syntax and Data Binding",
+                "description": "Master Angular's powerful template syntax, explore various data binding techniques, and use built-in directives and pipes."
               },
               {
-                "title": "Functions",
-                "description": "Introduction to defining and calling functions, function arguments, inner calling techniques, and lambda functions."
+                "title": "Services and Dependency Injection",
+                "description": "Create services to manage business logic and data, and understand Angular's Dependency Injection system."
               },
               {
-                "title": "Recursion Function",
-                "description": "Understanding recursion and implementing recursive functions."
+                "title": "Routing and Navigation",
+                "description": " Implement robust routing solutions, configure routes, handle navigation, and secure your applications with guards and resolvers."
               },
               {
-                "title": "Dynamic Input in Lists",
-                "description": "Handling dynamic input in lists using list comprehension and input() function."
+                "title": "Forms Handling",
+                "description": "Develop both template-driven and reactive forms, implement validation, and create custom form controls."
               },
               {
-                "title": "Object-Oriented Programming",
-                "description": "Introduction to OOP concepts like classes, objects, inheritance, polymorphism, and encapsulation."
+                "title": "HTTP Client Integration",
+                "description": "Communicate with backend services, handle HTTP responses and errors, and use interceptors to manage requests and responses."
               },
               {
-                "title": "Decorators in Python",
-                "description": "Understanding decorators to add functionality to functions and methods."
+                "title": "State Management with NgRx",
+                "description": "Learn to manage application state with NgRx, including store setup, actions, reducers, effects, and selectors."
               },
               {
-                "title": "Multiprocessing and Multithreading",
-                "description": "Working with multiple processes using the multiprocessing module and multithreading concepts using the threading module."
+                "title": "Modular Development",
+                "description": " Organize your application using Angular modules, and implement lazy loading for performance optimization."
               },
               {
-                "title": "File Handling",
-                "description": "Reading from and writing to files in Python."
+                "title": "Custom Directives and Pipe",
+                "description": "Extend Angular's capabilities by creating custom directives and pipes for specialized behaviour and data transformation."
               },
               {
-                "title": "Modules and Packages",
-                "description": "Understanding modules and packages for code organization and reuse"
+                "title": "Real-World Application Development",
+                "description": "Apply your skills in a practical project, from planning and implementation to testing and deployment."
               },
               {
-                "title": "Automation",
-                "description": "Automating tasks using scripting and scheduling."
+                "title": "Further Learning and Resources",
+                "description": "Access additional resources, stay updated with the latest Angular trends, and integrate useful third-party libraries and tools."
+              },
+              {
+                "title": "Angular Materia",
+                "description": "Use Angular Material for UI components."
               }
             ]
           }
@@ -994,10 +993,10 @@
         "whoThisCourseIsFor": [
           {
             "contents": [
-              "New to programming, seeking to learn their first language due to Python's simplicity and readability.",
-              "Programmers incorporating Python into web development, automation, or software projects.",
-              "Students and academics using Python in their curriculum or research.",
-              "Non-programmers (e.g., finance, marketing, engineering) automating tasks or conducting data analysis with Python"
+              "Beginners who are starting their Angular and front-end development journey.",
+              "Intermediate Developers wanting to learn the latest Angular features.",
+              " Experienced Developers seeking to master Angular's advanced capabilities.",
+              " Front-end Developers aiming to create scalable and maintainable web applications."
             ]
           }
         ]
@@ -1005,9 +1004,10 @@
     },
     {
       "id": "8",
-      "cardimg": "images/courseimg/images/AdvanceExcel.png",
-      "bannerImgurl": "images/courseimg/images/Advance Excel.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": false,
+      "cardimg": "images/courses/tiles/AdvanceExcel.png",
+      "bannerImgurl": "images/courses/banners/AdvanceExcel.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "45 days",
       "title": "Advance Excel",
       "upcomingbatch": false,
@@ -1119,12 +1119,13 @@
     },
     {
       "id": "9",
-      "cardimg": "images/courseimg/images/DataScience.png",
-      "bannerImgurl": "images/courseimg/images/Data Science.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": false,
+      "cardimg": "images/courses/tiles/DataScience.png",
+      "bannerImgurl": "images/courses/banners/DataScience.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "150 days",
       "title": "Data Science",
-      "upcomingbatch": true,
+      "upcomingbatch": false,
       "registrationStart": "12-07-2024",
       "registrationEnd": "17-07-2024",
       "price": {
@@ -1233,14 +1234,15 @@
     },
     {
       "id": "10",
-      "cardimg": "images/courseimg/images/DigitalMarketing.png",
-      "bannerImgurl": "images/courseimg/images/Digital Marketing.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/DigitalMarketing.png",
+      "bannerImgurl": "images/courses/banners/DigitalMarketing.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "90 days",
       "title": "Digital Marketing",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024",
-      "registrationEnd": "17-07-2024",
+      "registrationStart": "28-08-2024",
+      "registrationEnd": "11-09-2024",
       "price": {
         "originalprice": "18000",
         "offerprice": "15000",
@@ -1338,12 +1340,13 @@
     },
     {
       "id": "11",
-      "cardimg": "images/courseimg/images/MEANstack.png",
-      "bannerImgurl": "images/courseimg/images/MEAN Stack.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/MeanStack.png",
+      "bannerImgurl": "images/courses/banners/MeanStack.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "150 days",
       "title": "MEAN Stack",
-      "upcomingbatch": true,
+      "upcomingbatch": false,
       "registrationStart": "12-07-2024",
       "registrationEnd": "17-07-2024",
       "price": {
@@ -1525,14 +1528,15 @@
     },
     {
       "id": "12",
-      "cardimg": "images/courseimg/images/MERNstack.png",
-      "bannerImgurl": "images/courseimg/images/Mern Stack.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/MernStack.png",
+      "bannerImgurl": "images/courses/banners/MeanStack.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "150 days",
       "title": "MERN Stack",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024",
-      "registrationEnd": "17-07-2024",
+      "registrationStart": "28-08-2024",
+      "registrationEnd": "11-09-2024",
       "price": {
         "originalprice": "35000",
         "offerprice": "30000",
@@ -1661,9 +1665,10 @@
     },
     {
       "id": "14",
-      "cardimg": "images/courseimg/images/CloudComputing.png",
-      "bannerImgurl": "images/courseimg/images/Cloud Computing.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/CloudComputing.png",
+      "bannerImgurl": "images/courses/banners/CloudComputing.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "90 days",
       "title": "Cloud Computing",
       "upcomingbatch": false,
@@ -1756,12 +1761,13 @@
     },
     {
       "id": "15",
-      "cardimg": "images/courseimg/images/fullstack.png",
-      "bannerImgurl": "images/courseimg/images/Full Stack.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": false,
+      "cardimg": "images/courses/tiles/FullStack.png",
+      "bannerImgurl": "images/courses/banners/FullStack.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "150 days",
       "title": "Full Stack",
-      "upcomingbatch": true,
+      "upcomingbatch": false,
       "registrationStart": "12-07-2024",
       "registrationEnd": "17-07-2024",
       "price": {
@@ -1773,37 +1779,38 @@
         "objective": [
           {
             "contents": [
-              "Understand the correct syntax of Python language elements like indentation, loops, conditionals, and functions.",
-              "Learn how to work with various data types and structures, including strings, lists, dictionaries, and tuples, enabling you to manipulate and analyze data effectively.",
-              "Develop Python Modules to Create Re-Usable Code.",
-              "Learn how to read from and write to files, enabling you to interact with external data sources and persist information across sessions.",
-              "You will learn Beautiful Soup, Request, Pandas, NumPy, Scikit Learn, and Matplotlib."
+              "Build dynamic, responsive user interfaces using modern JavaScript frameworks.",
+              "Develop server-side applications, manage databases, and create APIs.",
+              "Design and administer scalable SQL and NoSQL databases.",
+              "Implement CI/CD pipelines, containerize applications, and deploy on cloud platforms.",
+              "Integrate front-end and back-end components to create cohesive, scalable applications."
             ]
           }
         ],
         "requirements": [
           {
             "contents": [
-              "Absolutely no prior experience necessary."
+              "Access to a computer with internet for coding and resources.",
+              "Willingness to engage in exercises, projects, and peer collaboration."
             ]
           }
         ],
         "courseDescription": {
           "description": [
-            "Python is a versatile and powerful programming language known for its simplicity and readability. It is widely used in various domains such as web development, data analysis, artificial intelligence, scientific computing, and more. With its extensive standard library and active community support, Python is an excellent choice for both beginners and experienced developers."
+            "Full Stack Development involves building both the front-end and back-end of web applications. It encompasses creating dynamic user interfaces with HTML, CSS, and JavaScript frameworks, and developing server-side logic with technologies like Node.js, Python, or Java. It also includes database management and deployment practices, providing a comprehensive skill set for developing complete, scalable web solutions."
           ]
         },
         "syllabus": [
           {
-            "title": "Python",
+            "title": "FullStack",
             "contents": [
               {
-                "title": "Overview of Python",
-                "description": "Introduction to Python, its features, and how it works internally."
+                "title": "Front-End Development",
+                "description": "HTML, CSS, JavaScript,  React.js or Angular"
               },
               {
-                "title": "Variables and Keywords",
-                "description": "Understanding variables, naming conventions, and Python keywords."
+                "title": "Back-End Development",
+                "description": "Node.js, Express.js, Python, or Java."
               },
               {
                 "title": "Python Data Types",
@@ -1870,9 +1877,10 @@
     },
     {
       "id": "16",
-      "cardimg": "images/courseimg/images/C++.png",
-      "bannerImgurl": "images/courseimg/images/C++.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/C++.png",
+      "bannerImgurl": "images/courses/banners/C++.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "30 days",
       "title": "C++",
       "upcomingbatch": false,
@@ -1894,16 +1902,14 @@
               "Learn about objects, classes, operator overloading, inheritance, and pointers in C++ programming.",
               "Dive into virtual functions, streams, and file handling in C++, and learn how to develop an application through a project.",
               "Explore the Standard Template Library (STL) in detail."
-
             ]
           }
         ],
         "requirements": [
           {
             "contents": [
-             " Only Computer is Required We'll Start From Basics.",
+              " Only Computer is Required We'll Start From Basics.",
               "No Prior Programming knowledge is required."
-
             ]
           }
         ],
@@ -1970,8 +1976,8 @@
         "whoThisCourseIsFor": [
           {
             "contents": [
-             " For Beginner , For College Students , For Developers who want to Advance in C++",
-             " Anyone looking to increase career options by learning one the most in-demand programming languages."          
+              " For Beginner , For College Students , For Developers who want to Advance in C++",
+              " Anyone looking to increase career options by learning one the most in-demand programming languages."
             ]
           }
         ]
@@ -1979,9 +1985,10 @@
     },
     {
       "id": "17",
-      "cardimg": "images/courseimg/images/C.png",
-      "bannerImgurl": "images/courseimg/images/C.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/C.png",
+      "bannerImgurl": "images/courses/banners/C.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "30 days",
       "title": "C",
       "upcomingbatch": false,
@@ -2081,9 +2088,10 @@
     },
     {
       "id": "18",
-      "cardimg": "images/courseimg/images/AdvancedSelenium.png",
-      "bannerImgurl": "images/courseimg/images/Advance Selenium.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": false,
+      "cardimg": "images/courses/tiles/AdvanceSelenium.png",
+      "bannerImgurl": "images/courses/banners/AdvanceSelenium.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "30 days",
       "title": "Advance Selenium",
       "upcomingbatch": false,
@@ -2195,9 +2203,10 @@
     },
     {
       "id": "19",
-      "cardimg": "images/courseimg/images/DataAnalytics.png",
-      "bannerImgurl": "images/courseimg/images/Data Analytics.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": false,
+      "cardimg": "images/courses/tiles/DataAnalytics.png",
+      "bannerImgurl": "images/courses/banners/DataAnalytics.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "150 days",
       "title": "Data Analytics",
       "upcomingbatch": false,
@@ -2309,12 +2318,13 @@
     },
     {
       "id": "20",
-      "cardimg": "images/courseimg/images/JAVA.png",
-      "bannerImgurl": "images/courseimg/images/Java Development.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": true,
+      "cardimg": "images/courses/tiles/JAVA.png",
+      "bannerImgurl": "images/courses/banners/JavaDevelopment.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "90 days",
       "title": "Java",
-      "upcomingbatch": true,
+      "upcomingbatch": false,
       "registrationStart": "12-07-2024",
       "registrationEnd": "17-07-2024",
       "price": {
@@ -2326,85 +2336,40 @@
         "objective": [
           {
             "contents": [
-              "Understand the correct syntax of Python language elements like indentation, loops, conditionals, and functions.",
-              "Learn how to work with various data types and structures, including strings, lists, dictionaries, and tuples, enabling you to manipulate and analyze data effectively.",
-              "Develop Python Modules to Create Re-Usable Code.",
-              "Learn how to read from and write to files, enabling you to interact with external data sources and persist information across sessions.",
-              "You will learn Beautiful Soup, Request, Pandas, NumPy, Scikit Learn, and Matplotlib."
+              "Master essential Java concepts including OOP principles, keywords, operators, objects, classes, methods, constructors, control flow statements, loops, inheritance, and interfaces.",
+              "Develop skills in exception handling, wrapper classes, collections framework, enums, and Date and Time API.",
+              "Learn advanced Java topics such as generics, functional programming, lambda expressions, functional interfaces, method references, streams API, and multi-threading."
             ]
           }
         ],
         "requirements": [
           {
             "contents": [
-              "Absolutely no prior experience necessary."
+              "No prior programming experience required, but familiarity with basic programming concepts will be beneficial.",
+              "A computer with internet access and a willingness to learn and practice."
             ]
           }
         ],
         "courseDescription": {
           "description": [
-            "Python is a versatile and powerful programming language known for its simplicity and readability. It is widely used in various domains such as web development, data analysis, artificial intelligence, scientific computing, and more. With its extensive standard library and active community support, Python is an excellent choice for both beginners and experienced developers."
+            "Java is a versatile, high-level programming language known for its simplicity, reliability, and cross-platform capabilities. Designed to be object-oriented, Java allows developers to create robust, scalable applications with the principle of 'write once, run anywhere,' thanks to the Java Virtual Machine (JVM). Widely used in web development, enterprise solutions, and mobile applications (especially Android), Java benefits from a rich set of libraries, powerful frameworks, and strong community support, making it a popular choice for addressing complex programming challenges."
           ]
         },
         "syllabus": [
           {
-            "title": "Python",
+            "title": "Java",
             "contents": [
               {
-                "title": "Overview of Python",
-                "description": "Introduction to Python, its features, and how it works internally."
+                "title": "Java",
+                "description": "Introduction, Java Basics, Intermediate Concepts, Advanced Concepts, Concurrency, JVM Internals, Networking and Java I/O."
               },
               {
-                "title": "Variables and Keywords",
-                "description": "Understanding variables, naming conventions, and Python keywords."
+                "title": "Hibernate Framework (3.x) Highlights",
+                "description": "Overview and Setup, Mapping, Session Management and Advanced Features."
               },
               {
-                "title": "Python Data Types",
-                "description": "Exploring built-in data types like numeric, string, list, tuple, dictionary, and set."
-              },
-              {
-                "title": "Operators and their Types",
-                "description": " Overview of operators in Python including arithmetic, comparison, logical, and bitwise."
-              },
-              {
-                "title": "Control Flow",
-                "description": " Conditional statements (if, elif) for decision-making, and loops (for loop, while loop) for iteration."
-              },
-              {
-                "title": "Functions",
-                "description": "Introduction to defining and calling functions, function arguments, inner calling techniques, and lambda functions."
-              },
-              {
-                "title": "Recursion Function",
-                "description": "Understanding recursion and implementing recursive functions."
-              },
-              {
-                "title": "Dynamic Input in Lists",
-                "description": "Handling dynamic input in lists using list comprehension and input() function."
-              },
-              {
-                "title": "Object-Oriented Programming",
-                "description": "Introduction to OOP concepts like classes, objects, inheritance, polymorphism, and encapsulation."
-              },
-              {
-                "title": "Decorators in Python",
-                "description": "Understanding decorators to add functionality to functions and methods."
-              },
-              {
-                "title": "Multiprocessing and Multithreading",
-                "description": "Working with multiple processes using the multiprocessing module and multithreading concepts using the threading module."
-              },
-              {
-                "title": "File Handling",
-                "description": "Reading from and writing to files in Python."
-              },
-              {
-                "title": "Modules and Packages",
-                "description": "Understanding modules and packages for code organization and reuse"
-              },
-              {
-                "title": "Automation",
-                "description": "Automating tasks using scripting and scheduling."
+                "title": "Spring Framework (3.x)",
+                "description": "Introduction and Setup, Core Container, Spring MVC and Data Access and Security."
               }
             ]
           }
@@ -2412,10 +2377,9 @@
         "whoThisCourseIsFor": [
           {
             "contents": [
-              "New to programming, seeking to learn their first language due to Python's simplicity and readability.",
-              "Programmers incorporating Python into web development, automation, or software projects.",
-              "Students and academics using Python in their curriculum or research.",
-              "Non-programmers (e.g., finance, marketing, engineering) automating tasks or conducting data analysis with Python"
+              "Beginners aspiring to learn Java programming.",
+              "Experienced developers looking to expand their Java skills.",
+              "Students and professionals seeking to advance their careers in software development."
             ]
           }
         ]
@@ -2423,9 +2387,10 @@
     },
     {
       "id": "21",
-      "cardimg": "images/courseimg/images/TallyPrime.png",
-      "bannerImgurl": "images/courseimg/images/Tally Prime.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": false,
+      "cardimg": "images/courses/tiles/TallyPrime.png",
+      "bannerImgurl": "images/courses/banners/TallyPrime.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "45 days",
       "title": "Tally Prime",
       "upcomingbatch": false,
@@ -2537,9 +2502,10 @@
     },
     {
       "id": "22",
-      "cardimg": "images/courseimg/images/UIDevelopment.png",
-      "bannerImgurl": "images/courseimg/images/UI Development.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
+      "isActive": false,
+      "cardimg": "images/courses/tiles/UIDevelopment.png",
+      "bannerImgurl": "images/courses/banners/UiDevelopment.jpg",
+      "offerImgurl": "images/courses/tiles/DefaultOfferCoverImage.png",
       "month": "45 days",
       "title": "UI Development",
       "upcomingbatch": false,
@@ -3312,7 +3278,7 @@
       "title": "HEAD OFFICE",
       "address": "2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.",
       "email": "contact@hematitecorp.com",
-      "phone": "+91 - 8263926309 / 8208683698 / 8999639478"
+      "phone": "+91 - 8263926309 / 8999639478"
     },
     "subheading": "Web Design & Development by Hematite Infotech Pvt. Ltd."
   }

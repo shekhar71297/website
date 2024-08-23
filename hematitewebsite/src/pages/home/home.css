@@ -56,7 +56,11 @@
 
 .carousel-image {
     width: 100%;
-    /* height: 600px; */
+    /* height: 400px; */
+}
+.modal-image{
+    /* height: 500px; */
+    /* width: 100%; */
 }
 
 @keyframes wipeAnimation {
