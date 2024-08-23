@@ -24,7 +24,7 @@ function HomePage() {
     window.scrollTo(0, 0);
     const timer = setTimeout(() => {
       setShowModal(true);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
