@@ -272,7 +272,7 @@ function ContactPage() {
                         />
                         {!errors.fname && (
                           <Form.Text className="text-muted">
-                            e.g:Om
+                            e.g:Jhon
                           </Form.Text>
                         )}
                         <Form.Control.Feedback type="invalid">
@@ -321,7 +321,7 @@ function ContactPage() {
                         />
                         {!errors.email && (
                           <Form.Text className="text-muted">
-                            e.g:name@example.com
+                            e.g:name@gmail.com
                           </Form.Text>
                         )}
                         <Form.Control.Feedback type="invalid">

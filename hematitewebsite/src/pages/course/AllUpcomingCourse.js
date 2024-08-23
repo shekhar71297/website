@@ -81,7 +81,7 @@ function AllUpcomingCourse() {
                     {data.title}
                   </Card.Title>
 
-                  <h6 className="coursetextfontsize">Registration Date : {data.registrationStart} to {data.registrationEnd}</h6>
+                  {/* <h6 className="coursetextfontsize">Registration Date : {data.registrationStart} to {data.registrationEnd}</h6> */}
 
                   <h6 className="coursetextfontsize">
                     {" "}
