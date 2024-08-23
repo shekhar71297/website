@@ -93,7 +93,7 @@ function HomePage() {
   }
 
   const navgateToAbout = () => {
-    nav('/about');
+    nav('/about-us');
   };
 
   return (

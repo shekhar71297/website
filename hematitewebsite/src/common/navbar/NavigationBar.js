@@ -78,9 +78,9 @@ function NavigationBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-aut">
               <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/">Home</Link>
-              <Link className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} to="/about">About</Link>
-              <Link className={`nav-link ${location.pathname === '/service' ? 'active' : ''}`} to="/service">Services</Link>
-              <Link className={`nav-link ${location.pathname === '/allcourse' ? 'active' : ''}`} to="/allcourse">Courses</Link>
+              <Link className={`nav-link ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">About</Link>
+              <Link className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`} to="/services">Services</Link>
+              <Link className={`nav-link ${location.pathname === '/courses' ? 'active' : ''}`} to="/courses">Courses</Link>
               <Link className={`nav-link ${location.pathname === '/batches' ? 'active' : ''}`} to="/batches">Batches</Link>
               <Link className={`nav-link ${location.pathname === '/placement' ? 'active' : ''}`} to="/placement">Placement</Link>
               <Link className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact">Contact</Link>

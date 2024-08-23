@@ -16,7 +16,7 @@ function OurCourses() {
 
 
   const navigateToAllCourse = () => {
-    nav("/allcourse");
+    nav("/courses");
   };
 
   const navigateToUpcomingCourse = () => {
@@ -150,7 +150,7 @@ function OurCourses() {
                           <br />
 
 
-                         <Link to={`/coursedetail/${course.title.toLowerCase().replace(/\s+/g, '-')}`}>
+                          <Link to={`/course/${course.title.toLowerCase().replace(/\s+/g, '-')}`}>
                             <Button size='sm' type="button" variant="">
                               Know More <FaArrowRightLong />
                             </Button>
@@ -258,7 +258,7 @@ function OurCourses() {
                    Join Our Telegram Group
                  </Button> */}
                           <br />
-                          <Link to={`/coursedetail/${course.title.toLowerCase().replace(/\s+/g, '-')}`}>
+                          <Link to={`/course/${course.title.toLowerCase().replace(/\s+/g, '-')}`}>
                             <Button size='sm' type="button" variant="">
                               Know More <FaArrowRightLong />
                             </Button>

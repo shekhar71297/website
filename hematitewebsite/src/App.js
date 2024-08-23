@@ -35,13 +35,12 @@ function App() {
   const router = createBrowserRouter([
     { path: "/contact", element: <ContactPage /> },
     { path: "", element: <HomePage /> },
-    { path: "/courses", element: <OurCourses /> },
-    { path: "/allcourse", element: <AllCourses /> },
+    { path: "/courses", element: <AllCourses /> },
     { path: "/batches", element: <AllUpcomingCourse /> },
-    { path: "/coursedetail/:title", element: <CourseDetails /> },
-    { path: "/about", element: <AboutPage /> },
+    { path: "/course/:title", element: <CourseDetails /> },
+    { path: "/about-us", element: <AboutPage /> },
     { path: "/placement", element: <PlacementPage /> },
-    { path: "/service", element: <ServicePage /> },
+    { path: "/services", element: <ServicePage /> },
   ]);
 
   return (

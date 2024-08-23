@@ -3258,15 +3258,15 @@
         },
         {
           "name": "About",
-          "link": "/about"
+          "link": "/about-us"
         },
         {
           "name": "Services",
-          "link": "/service"
+          "link": "/services"
         },
         {
           "name": "Courses",
-          "link": "/allcourse"
+          "link": "/courses"
         },
         {
           "name": "Contact",
