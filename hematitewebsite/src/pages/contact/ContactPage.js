@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Button, Col, Container, Form, Row, Stack, Toast } from 'react-bootstrap';
+import { Button, Col, Container, Form, Row, Stack } from 'react-bootstrap';
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
@@ -10,7 +10,6 @@ import NavigationBar from '../../common/navbar/NavigationBar';
 import CustomBreadCrumb from '../../common/breadCrumb/CustomBreadCrumb';
 import FooterPage from '../../common/footer/FooterPage';
 import './contact.css';
-import reveal from '../../common/ScrollAnimation/reveal';
 import { Post } from '../../services/HttpService';
 import { urls } from '../../util/Constant';
 import IconBar from '../../common/IconBar/IconBar';
@@ -25,8 +24,6 @@ function ContactPage() {
   const [modalShow, setModalShow] = React.useState(false);
   const [alertTitle, setAlertTitle] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
-  const [showToast, setShowToast] = useState(false);
-  const [toastMessage, setToastMessage] = useState('');
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
   const [errors, setErrors] = useState({
@@ -58,7 +55,7 @@ function ContactPage() {
 
 
 
-  
+
   useEffect(() => {
     // Check if all fields are filled and valid
     if (fname && lname && mobile && email && message && !errors.fname && !errors.lname && !errors.email && !errors.mobile) {
@@ -395,15 +392,6 @@ function ContactPage() {
       </Container>
       <FooterPage />
       {/* Snackbar for validation messages */}
-      <Toast
-        onClose={() => setShowToast(false)}
-        show={showToast}
-        delay={3000}
-        autohide
-        style={{ position: 'fixed', top: 0, left: '50%', transform: 'translateX(-50%)', backgroundColor: 'red', color: 'white' }}
-      >
-        <Toast.Body>{toastMessage}</Toast.Body>
-      </Toast>
     </>
   );
 }

@@ -15,7 +15,7 @@ import IconBar from "../../common/IconBar/IconBar";
 
 function AllUpcomingCourse() {
   const data = useContext(WebContext);
-  const filterBatch = data?.courses?.filter((data, index) => data.upcomingbatch == true
+  const filterBatch = data?.courses?.filter((data, index) => data.upcomingbatch === true
   );
   console.log("filterd batch", filterBatch);
   useEffect(() => {
@@ -44,7 +44,7 @@ function AllUpcomingCourse() {
               <Card className="card-adjustment shadowapplying">
                 <Card.Body>
                   <div className="registration-text">
-                    Registration start from {data.registrationStart} 
+                    Registration start from {data.registrationStart}
                   </div>
                   <hr />
                   <div className="promo">
@@ -64,7 +64,7 @@ function AllUpcomingCourse() {
                         <div className="course-discounted-price" >
                           <span className="courseOfferPrice"><FaRupeeSign />{data.price.offerprice}</span>
 
-                          
+
                           <span>Original Price: <FaRupeeSign /><del>{data.price.originalprice}</del></span>
                         </div >
                       )}

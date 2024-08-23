@@ -4,55 +4,70 @@
   --secondary-color: #0e4d63;
   /* Define your secondary color here */
 }
+
 /* breadcrumbs css */
 .header {
-    border: none;
-    color: white;
-    max-width: 100%;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 81px;
-    text-align: left;
-    background-color: var(--primary-color);
+  border: none;
+  color: white;
+  max-width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 81px;
+  text-align: left;
+  background-color: var(--primary-color);
+}
+
+.PageName {
+  font-size: 28px;
+}
+
+/* Remove underline from breadcrumb links */
+.breadcrumb-link {
+  color: #FFFFFF;
+  text-decoration: none !important;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Change active color to orange and remove underline */
+.custom-breadcrumb .breadcrumb-item.active,
+.custom-breadcrumb .breadcrumb-item.active>Link {
+  color: #62D2FF;
+  /* Change to the color you want */
+  text-decoration: none !important;
+  font-size: 18px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  float: left;
+  padding-right: var(--bs-breadcrumb-item-padding-x);
+  color: #ffffff;
+  content: var(--bs-breadcrumb-divider, "/");
+}
+
+@media ((min-width: 320px) and (max-width: 425px)) {
+  .header {
+    padding: 8px;
   }
-  .PageName{
-    font-size: 28px;
-  }
-  
-  /* Remove underline from breadcrumb links */
+
   .breadcrumb-link {
     color: #FFFFFF;
     text-decoration: none !important;
-    font-size: 18px;
+    font-size: 14px;
   }
-  a {
-    text-decoration: none !important;
-  }  
-  /* Change active color to orange and remove underline */
+
   .custom-breadcrumb .breadcrumb-item.active,
   .custom-breadcrumb .breadcrumb-item.active>Link {
-    color: #62D2FF;
-    /* Change to the color you want */
-    text-decoration: none !important;
-    font-size: 18px;
+    font-size: 14px;
   }
-  @media ((min-width: 320px) and (max-width: 425px)) {
-    .header {
-      padding: 8px;
-    }
-    .breadcrumb-link {
-      color: #FFFFFF;
-      text-decoration: none !important;
-      font-size: 14px;
-    }
-    .custom-breadcrumb .breadcrumb-item.active,
-    .custom-breadcrumb .breadcrumb-item.active>Link {
-      font-size: 14px;
-    }
-    .PageName{
-      font-size: 24px;
-    }
-    
 
+  .PageName {
+    font-size: 24px;
   }
+
+
+}

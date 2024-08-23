@@ -6,13 +6,12 @@ import NavigationBar from '../../common/navbar/NavigationBar';
 import { WebContext } from '../../App';
 import './home.css';
 import '../../common/ScrollAnimation/scroll.css'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import CountUp from "react-countup";
 import FooterPage from '../../common/footer/FooterPage';
 import BackToTop from '../../common/backTotop/BackToTop';
 import OurCourses from '../course/OurCourses';
 import Carousel from 'react-bootstrap/Carousel';
-import reveal from '../../common/ScrollAnimation/reveal';
 import IconBar from '../../common/IconBar/IconBar';
 
 function HomePage() {
@@ -20,7 +19,6 @@ function HomePage() {
   const [counterOn, setCounterOn] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const nav = useNavigate();
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1024);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -94,24 +92,9 @@ function HomePage() {
     };
   }
 
-
-
-  const navigateToContact = () => {
-    nav('/contact');
-  };
-
   const navgateToAbout = () => {
     nav('/about');
   };
-  useEffect(() => {
-    const handleResize = () => {
-      setIsWideScreen(window.innerWidth >= 1024);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
 
   return (
     <div>
@@ -192,8 +175,8 @@ function HomePage() {
               </Col>
               <Col md={6} className='about-secondColumn about-section'>
                 <div>
-                  <span className="pre-title">About</span>
-                  <h3 className="about-title">{val.title}</h3>
+                  <span className="pre-title">About Us</span>
+                  {/* <h3 className="about-title">{val.title}</h3> */}
                 </div>
                 <div className="description-wrapper">
                   <p className="description">{val.description1}</p>
@@ -213,7 +196,7 @@ function HomePage() {
         { data?.direction?.map((val)=>(
           <img src={val.img} alt='direction-right' className='drt-img' />
         )) }
-        
+
       </div> */}
 
       {/* Courses Section */}

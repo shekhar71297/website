@@ -5,12 +5,10 @@ import { MdLibraryBooks } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaRupeeSign } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import NavigationBar from "../../common/navbar/NavigationBar";
 import BackToTop from "../../common/backTotop/BackToTop";
 import { WebContext } from "../../App";
 import "./courses.css";
 import '../../common/ScrollAnimation/scroll.css'
-import reveal from "../../common/ScrollAnimation/reveal";
 
 function OurCourses() {
   const data = useContext(WebContext);
@@ -62,10 +60,9 @@ function OurCourses() {
       },
     ],
   };
-  
+
   return (
     <div>
-      {/* <NavigationBar /> */}
       <BackToTop />
       {/* Our Courses in Home Page */}
       <div className="backgroundImgUrl">
@@ -151,7 +148,7 @@ function OurCourses() {
                     Join Our Telegram Group
                   </Button> */}
                           <br />
-                          
+
 
                          <Link to={`/coursedetail/${course.title.toLowerCase().replace(/\s+/g, '-')}`}>
                             <Button size='sm' type="button" variant="">

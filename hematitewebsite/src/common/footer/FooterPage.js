@@ -10,7 +10,7 @@ import { FaPhone } from "react-icons/fa6";
 import { WebContext } from "../../App";
 import './footer.css'
 import '../IconBar/IconBar.css'
-import reveal from "../ScrollAnimation/reveal";
+
 function FooterPage() {
 	const data = useContext(WebContext);
 	const location = useLocation();

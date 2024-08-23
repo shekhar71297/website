@@ -6,12 +6,11 @@ import BackToTop from '../../common/backTotop/BackToTop';
 import FooterPage from '../../common/footer/FooterPage';
 import './service.css'
 import CustomBreadCrumb from '../../common/breadCrumb/CustomBreadCrumb';
-import reveal from '../../common/ScrollAnimation/reveal';
 import IconBar from '../../common/IconBar/IconBar';
 
 function ServicePage() {
   const data = useContext(WebContext);
-  useEffect(() => {  
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const getServiceIcon = (iconUrl) => {

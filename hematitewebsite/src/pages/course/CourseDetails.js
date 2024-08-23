@@ -1,18 +1,15 @@
 import React, { useContext, useEffect } from "react";
 import "./coursedetail.css";
-import { Row, Col, Card, Container, Button } from "react-bootstrap";  
+import { Row, Col, Card, Container, Button } from "react-bootstrap";
 import { LuClock } from "react-icons/lu";
-import { BsClock } from "react-icons/bs";
 import { TbMessageLanguage } from "react-icons/tb";
 import { HiComputerDesktop } from "react-icons/hi2";
 import { LiaCertificateSolid } from "react-icons/lia";
-import { Link, useParams } from "react-router-dom";
-import { Breadcrumb } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 import BackToTop from "../../common/backTotop/BackToTop";
 import { WebContext } from "../../App";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import NavigationBar from "../../common/navbar/NavigationBar";
-import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
 import FooterPage from "../../common/footer/FooterPage";
 import IconBar from "../../common/IconBar/IconBar";
 
@@ -20,7 +17,7 @@ function CourseDetails() {
   const data = useContext(WebContext);
   const { title } = useParams();
   const formattedTitle = title.replace(/-/g, " "); // Convert URL title to match data
-  const filterBatch = data?.courses?.filter((course) => 
+  const filterBatch = data?.courses?.filter((course) =>
     course.title.toLowerCase() === formattedTitle.toLowerCase()
   )[0];
 
@@ -228,11 +225,11 @@ function CourseDetails() {
                         <li>
                           <div className="info-icon">
                           <span>
-                            <LuClock />     
+                            <LuClock />
                           </span>
                           <span className="course-duration" >Duration</span>
                           </div>
-                       
+
                           <span>{filterBatch?.month}</span>
                         </li>
                         <hr />
@@ -273,10 +270,10 @@ function CourseDetails() {
                           <span className="price" >
                             <FaIndianRupeeSign />
                             {filterBatch?.price?.offerprice}
-                          </span>  
+                          </span>
                           {/* </div> */}
                           {/* <div> */}
-                          <span className="price-title">Original Price: <FaIndianRupeeSign /><del>{filterBatch?.price?.originalprice}</del></span> 
+                          <span className="price-title">Original Price: <FaIndianRupeeSign /><del>{filterBatch?.price?.originalprice}</del></span>
                           {/* </div>              */}
                         </div>
                       )}
@@ -287,7 +284,7 @@ function CourseDetails() {
                         </span>
                       )}
                     </Button>
-              
+
                 </div>
               </div>
             </div>

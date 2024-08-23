@@ -30,7 +30,7 @@
       "id": 1,
       "img": "/images/offers/hematite_latest_offer_230824.jpg"
     }
-   
+
   ],
   "homepageabout": [
     {
@@ -3257,20 +3257,20 @@
           "link": "/"
         },
         {
-          "name": "Courses",
-          "link": "/allcourse"
-        },
-        {
-          "name": "Contact",
-          "link": "/contact"
-        },
-        {
           "name": "About",
           "link": "/about"
         },
         {
           "name": "Services",
           "link": "/service"
+        },
+        {
+          "name": "Courses",
+          "link": "/allcourse"
+        },
+        {
+          "name": "Contact",
+          "link": "/contact"
         }
       ]
     },

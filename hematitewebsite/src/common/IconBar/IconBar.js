@@ -1,7 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { WebContext } from "../../App";
-import './IconBar.css'
+import './IconBar.css';
 import {
 	faFacebook,
 	faLinkedin,
@@ -9,10 +8,9 @@ import {
 	faWhatsapp,
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { Container } from 'react-bootstrap';
 
 function IconBar() {
-    const data = useContext(WebContext);
+
     const socialLinks = [
 		{
 			href: "https://www.facebook.com/hematiteinfotech/",

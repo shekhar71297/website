@@ -12,7 +12,6 @@ import "./courses.css";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb";
 import FooterPage from "../../common/footer/FooterPage";
 import IconBar from "../../common/IconBar/IconBar";
-import reveal from "../../common/ScrollAnimation/reveal";
 
 function AllCourses() {
   const data = useContext(WebContext);

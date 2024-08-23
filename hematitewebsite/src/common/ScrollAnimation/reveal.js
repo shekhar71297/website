@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react';
 
 function reveal() {
- 
- 
+
+
     let prevScrollPos = window.scrollY;
 
     function reveal() {
@@ -27,7 +27,7 @@ function reveal() {
     return () => {
       window.removeEventListener("scroll", reveal);
     };
-  
+
 }
 
 export default reveal

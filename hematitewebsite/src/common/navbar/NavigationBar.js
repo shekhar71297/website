@@ -1,15 +1,13 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Image, NavDropdown } from 'react-bootstrap';
-import { FaAngleDown } from "react-icons/fa";
+import { Image } from 'react-bootstrap';
 import { WebContext } from '../../App';
 import { Link, useLocation } from 'react-router-dom';
 import './navbar.css';
 
 function NavigationBar() {
   const data = useContext(WebContext);
-  const [showDropdown, setShowDropdown] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation(); // Get current path
 
@@ -59,16 +57,6 @@ function NavigationBar() {
     };
   }, []);
 
-  const handleDropdownMouseEnter = () => {
-    setShowDropdown(true);
-  };
-
-  const handleDropdownMouseLeave = () => {
-    setShowDropdown(false);
-  };
-
-  const isDropdownActive = location.pathname === '/allcourse' || location.pathname === '/upcomingcourse';
-  const dropdownTitleClass = `dropdown-title ${isDropdownActive ? 'active' : ''}`;
   return (
     <div>
       <Navbar
