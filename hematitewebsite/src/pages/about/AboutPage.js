@@ -17,16 +17,16 @@ import reveal from "../../common/ScrollAnimation/reveal";
 function AboutPage() {
   const data = useContext(WebContext);
   useEffect(() => {
-    
+
     window.scrollTo(0, 0);
   }, []);
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: "true",
+    autoplay: true,
     autoplaySpeed: 2000,
 
     responsive: [
@@ -55,13 +55,13 @@ function AboutPage() {
   const navigateToCourses = () => {
     navigate("/allcourse");
   };
-  useEffect (()=>{
+  useEffect(() => {
     reveal()
-  },[])
+  }, [])
 
   return (
     <>
-    <IconBar/>
+      <IconBar />
       <BackToTop />
       <NavigationBar />
       <CustomBreadcrumb pageTitle="About us" />
@@ -78,7 +78,7 @@ function AboutPage() {
                     src={data.imageUrl}
                     alt="img1"
                     className="aboutimg"
-                   />
+                  />
 
                 </div>
               ))}
@@ -92,11 +92,11 @@ function AboutPage() {
                   <p className="aboutUsHeading">{data.heading1}</p>
                   <p className="aboutUspara">{data.description[0]}</p>
                   <p className="aboutUspara">{data.description[1]}</p>
-                
+
                   {/* <p className="aboutUsSubheading">People Love To Learn With Us</p> */}
                   <div className="aboutUsBtnDiv">
                     <Button
-                    size="sm"
+                      size="sm"
                       className="aboutUsBtn" variant=""
                       onClick={navigateToCourses}
                     >
@@ -127,11 +127,12 @@ function AboutPage() {
                   style={{ backgroundColor: `${data.bgcolour}` }}
                 >
                   <div className="inner">
-                    <div className="about_icon">
+                    <div >
                       <img
+                        className="about_icon"
                         src={data.iconImg}
                         alt="iconImg1"
-                        style={{ marginTop: "18px" }}
+                        
                       />
                     </div>
                     <div className="text_Content">
@@ -197,8 +198,8 @@ function AboutPage() {
 
       {/* ---------------------------------- Infrastructure Section ---------------------------  */}
       <Container>
-      <div className="infrastructure_Container  ">
-       
+        <div className="infrastructure_Container  ">
+
           {data?.aboutUsHeadings?.map((data, index) => (
             <div>
               <p className="infrastructure_heading">{data.heading5}</p>
@@ -211,16 +212,16 @@ function AboutPage() {
                   <div className="infrastructure_Images">
                     <img
                       src={data.imageUrl}
-                     alt="aboutimage"
-                     className="about-img"
+                      alt="aboutimage"
+                      className="about-img"
                     />
                   </div>
                 </div>
               ))}
             </Slider>
           </div>
-       
-      </div>
+
+        </div>
       </Container>
 
       {/* ----------------------- Feedback Section --------------------------------  */}
@@ -266,10 +267,10 @@ function AboutPage() {
                           style={{ color: "gold" }}
                         ></i>
                       </div> */}
-                      
+
                       <div className="feedback-content-container">
                         <p className="feedback-content">{about.comment}</p>
-                        
+
                       </div>
                       <div className="sk-google-review-button-container">
                         <a
@@ -293,7 +294,7 @@ function AboutPage() {
           </div>
         </Container>
       </div>
-<FooterPage  />
+      <FooterPage />
     </>
   )
 }

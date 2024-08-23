@@ -78,7 +78,7 @@
 
 .mission_card {
     text-align: center;
-    padding: 40px 30px;
+    /* padding: 40px 30px; */
     border-radius: 5px;
     height: 270px;
 }
@@ -304,6 +304,12 @@
 .about-img {
     max-width: 100%;
 }
+.inner{
+    padding: 25px;
+}
+/* .about_icon{
+    margin-top: 18px;
+} */
 
 
 /* Devices with width 375px */
@@ -313,7 +319,12 @@
         padding: 0px 35px;
     }
 
-
+.mission-description{
+    font-size: 14px;
+}
+/* .about_icon{
+ margin-top: 5px;
+} */
     .feedback-content {
         font-size: 11px;
         line-height: 18px;
