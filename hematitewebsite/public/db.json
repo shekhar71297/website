@@ -5,37 +5,38 @@
       "logoImgurl": "/images/home/logo3.png"
     }
   ],
-
-  "direction":[
+  "direction": [
     {
       "id": 1,
-      "img":"/images/home/right-arrow.png",
-      "img1":"/images/home/left-arrow.png"
+      "img": "/images/home/right-arrow.png",
+      "img1": "/images/home/left-arrow.png"
     }
   ],
   "HomePage": [
     {
       "id": 1,
       "bannerImgurl": "/images/home/homepage.png",
-      "carouselImg1":"/images/home/carousel3.jpg",
-      "carouselImg2":"/images/home/carousel1.jpg",
-      "carouselImg3":"/images/home/carousel2.jpg",
+      "carouselImg1": "/images/home/carousel3.jpg",
+      "carouselImg2": "/images/home/carousel1.jpg",
+      "carouselImg3": "/images/home/carousel2.jpg",
       "title": "Best Online & Offline Institute",
       "tagline1": "Master IT Skills",
       "tagline2": "Transform Your Future in",
       "tagline3": "IT with Our Expertise"
     }
   ],
-  "offerImg":[
+  "offerImg": [
     {
       "id": 1,
-      "img":"/images/home/carousel1.jpg"
-    },{
+      "img": "/images/home/carousel1.jpg"
+    },
+    {
       "id": 2,
-      "img":"/images/home/carousel2.jpg"
-    },{
+      "img": "/images/home/carousel2.jpg"
+    },
+    {
       "id": 3,
-      "img":"/images/home/carousel3.jpg"
+      "img": "/images/home/carousel3.jpg"
     }
   ],
   "homepageabout": [
@@ -92,7 +93,6 @@
           "title": "Course Completion",
           "description": "Students must complete their course with at least 80% attendance."
         },
-       
         {
           "title": "Skill Tests",
           "description": "Passing mid-course tests is a requirement."
@@ -121,7 +121,6 @@
           "title": "Stay Connected",
           "description": "Students are responsible for maintaining regular communication with the Training and Placement Coordinators through the provided email for updates on placement matters."
         }
-
       ]
     }
   ],
@@ -132,13 +131,13 @@
       "bannerImgurl": "images/courseimg/images/GraphicDesign.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
       "month": "90 days",
-      "title": "Graphic Design",
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "title":"Graphic Design",
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "upcomingbatch": true,
       "price": {
-        "originalprice": "25000",
-        "offerprice": "21999",
+        "originalprice": "18000",
+        "offerprice": "15000",
         "discount": true
       },
       "courseDetail": {
@@ -232,14 +231,15 @@
       "cardimg": "images/courseimg/images/PythonDjango.png",
       "bannerImgurl": "images/courseimg/images/Python Django.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "90 days",
-      "title": " Python with Django",
+      "month": "60 days",
+      "title":"Python with Django",
+      
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "30000",
-        "offerprice": "25499",
+        "originalprice": "22000",
+        "offerprice": "18000",
         "discount": true
       },
       "courseDetail": {
@@ -276,7 +276,7 @@
         },
         "syllabus": [
           {
-            "title": "Python",
+            "title":"Python",
             "contents": [
               {
                 "title": "Introduction",
@@ -428,14 +428,14 @@
       "cardimg": "images/courseimg/images/Python.png",
       "bannerImgurl": "images/courseimg/images/Python.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "90 days",
-      "title": " Python",
+      "month": "45 days",
+      "title": "Python",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "30000",
-        "offerprice": "25499",
+        "originalprice": "10000",
+        "offerprice": "8000",
         "discount": true
       },
       "courseDetail": {
@@ -545,12 +545,12 @@
       "month": "90 days",
       "title": "Data Visualization",
       "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "21000",
-        "offerprice": "18499",
-        "discount": false
+        "originalprice": "18000",
+        "offerprice": "16500",
+        "discount": true
       },
       "courseDetail": {
         "objective": [
@@ -655,96 +655,122 @@
       "month": "90 days",
       "title": "React JS",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "30000",
-        "offerprice": "24999",
+        "originalprice": "22000",
+        "offerprice": "18000",
         "discount": true
       },
       "courseDetail": {
         "objective": [
           {
             "contents": [
-              "Understand the correct syntax of Python language elements like indentation, loops, conditionals, and functions.",
-              "Learn how to work with various data types and structures, including strings, lists, dictionaries, and tuples, enabling you to manipulate and analyze data effectively.",
-              "Develop Python Modules to Create Re-Usable Code.",
-              "Learn how to read from and write to files, enabling you to interact with external data sources and persist information across sessions.",
-              "You will learn Beautiful Soup, Request, Pandas, NumPy, Scikit Learn, and Matplotlib."
+              "Gain comprehensive knowledge to become a proficient React developer, covering basics to advanced concepts.",
+              "Understand core fundamentals including Components & Props, State, Hooks, Context & Reducers, and more.",
+              "Effectively manage complex state with React's Context API & React Redux.",
+              "Create standalone React apps and backend-connected applications via HTTP.",
+              "Learn routing and route-related data fetching with React Router.",
+              "Begin React Unit Testing for robust applications."
             ]
           }
         ],
         "requirements": [
           {
             "contents": [
-              "Absolutely no prior experience necessary."
+             "NO React experience necessary! I take you from beginner to expert!.",
+             "Basic understanding of JavaScript is required (this course contains a quick JavaScript review section).",
+             "Any computer and OS will work — Windows, macOS or Linux."
+
+
             ]
           }
         ],
         "courseDescription": {
           "description": [
-            "Python is a versatile and powerful programming language known for its simplicity and readability. It is widely used in various domains such as web development, data analysis, artificial intelligence, scientific computing, and more. With its extensive standard library and active community support, Python is an excellent choice for both beginners and experienced developers."
+            "This React course teaches the fundamentals of building dynamic web applications using React.js, including components, state, hooks, and modern JavaScript (ES6). Learners will also explore advanced topics like state management with Redux, routing with React Router, and handling asynchronous data. Practical projects and hands-on exercises prepare students to build efficient, scalable applications and become proficient React developers."
           ]
         },
         "syllabus": [
           {
-            "title": "Python",
+            "title": "React JS",
             "contents": [
               {
-                "title": "Overview of Python",
-                "description": "Introduction to Python, its features, and how it works internally."
+                "title": "Why Use It",
+                "description": "Efficient rendering, component-based architecture, virtual DOM, and easy integration."
+
               },
               {
-                "title": "Variables and Keywords",
-                "description": "Understanding variables, naming conventions, and Python keywords."
+                "title": "Webpack",
+                "description": "A module bundler that handles assets and dependencies, converts files into browser-compatible formats, and manages images and styles."
               },
               {
-                "title": "Python Data Types",
-                "description": "Exploring built-in data types like numeric, string, list, tuple, dictionary, and set."
+                "title": "Modern JavaScript Syntax (ES6)",
+                "description": "Key syntax features like Classes, Properties, Functions, and Arrow Functions crucial for React development."
               },
               {
-                "title": "Operators and their Types",
-                "description": " Overview of operators in Python including arithmetic, comparison, logical, and bitwise."
+                "title": "Component Class and Propertie",
+                "description": "Define stateful and stateless components."
               },
               {
-                "title": "Control Flow",
-                "description": " Conditional statements (if, elif) for decision-making, and loops (for loop, while loop) for iteration."
+                "title": "React APIs",
+                "description": "Methods like createClass and createElement."
               },
               {
-                "title": "Functions",
-                "description": "Introduction to defining and calling functions, function arguments, inner calling techniques, and lambda functions."
+                "title": "Render Method",
+                "description": "Renders components to the DOM."
               },
               {
-                "title": "Recursion Function",
-                "description": "Understanding recursion and implementing recursive functions."
+                "title": "State and Props",
+                "description": "Manage internal (state) and external (props) data of components."
               },
               {
-                "title": "Dynamic Input in Lists",
-                "description": "Handling dynamic input in lists using list comprehension and input() function."
+                "title": "JSX",
+                "description": "HTML-like syntax for creating React elements."
               },
               {
-                "title": "Object-Oriented Programming",
-                "description": "Introduction to OOP concepts like classes, objects, inheritance, polymorphism, and encapsulation."
+                "title": "React Events",
+                "description": "Handle DOM and synthetic events."
               },
               {
-                "title": "Decorators in Python",
-                "description": "Understanding decorators to add functionality to functions and methods."
+                "title": "React Forms",
+                "description": " Manage form inputs, submissions, validations, and component state."
               },
               {
-                "title": "Multiprocessing and Multithreading",
-                "description": "Working with multiple processes using the multiprocessing module and multithreading concepts using the threading module."
+                "title": "Component Lifecycle Methods",
+                "description": "Manage components during mounting, updating, and unmounting."
               },
               {
-                "title": "File Handling",
-                "description": "Reading from and writing to files in Python."
+                "title": "Parent-Child Components",
+                "description": "Facilitate data and event passing between components."
               },
               {
-                "title": "Modules and Packages",
-                "description": "Understanding modules and packages for code organization and reuse"
+                "title": "React Router",
+                "description": "Manage navigation and routing within the application."
               },
               {
-                "title": "Automation",
-                "description": "Automating tasks using scripting and scheduling."
+                "title": "Async/Await",
+                "description": " A modern approach for managing asynchronous operations."
+              },
+              {
+                "title": "FLUX Architecture",
+                "description": "Manages unidirectional data flow in React applications."
+              },
+              {
+                "title": "Redux Store",
+                "description": " Centralized state management; dispatch actions to update the store."
+              },
+              {
+                "title": "Redux Actions",
+                "description": " Functions that describe state changes."
+              },
+              {
+                "title": "Redux Reducers",
+                "description": " Pure functions that update the state based on actions."
+              },
+              {
+                "title": "Injecting Redux Store",
+                "description": "Pass the Redux store to the React application via the Provider component."
               }
             ]
           }
@@ -752,10 +778,11 @@
         "whoThisCourseIsFor": [
           {
             "contents": [
-              "New to programming, seeking to learn their first language due to Python's simplicity and readability.",
-              "Programmers incorporating Python into web development, automation, or software projects.",
-              "Students and academics using Python in their curriculum or research.",
-              "Non-programmers (e.g., finance, marketing, engineering) automating tasks or conducting data analysis with Python"
+              "You just finished learning JavaScript and are looking for your next step!",
+             " You want to truly master React development, including common libraries needed to build real-world apps: React Router, Redux, React Query, Next..js, and many others.",
+              "You have been learning React, but 1) still don't understand React, or 2) still don't feel confident to build professional React apps.",
+             " You have been building React apps, but are still missing the advanced stuff: useReducer, performance optimization, how React actually works, advanced design patterns, etc."
+
             ]
           }
         ]
@@ -769,12 +796,12 @@
       "month": "90 days",
       "title": "Software Testing",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "35000",
-        "offerprice": "24999",
-        "discount": false
+        "originalprice": "16000",
+        "offerprice": "14000",
+        "discount": true
       },
       "courseDetail": {
         "objective": [
@@ -868,14 +895,14 @@
       "bannerImgurl": "images/courseimg/images/Angular 13+.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
       "month": "90 days",
-      "title": "Angular 13 +",
+      "title": "Angular 13+",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "30000",
-        "offerprice": "24999",
-        "discount": false
+        "originalprice": "22000",
+        "offerprice": "18000",
+        "discount": true
       },
       "courseDetail": {
         "objective": [
@@ -984,11 +1011,11 @@
       "month": "45 days",
       "title": "Advance Excel",
       "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "8000",
-        "offerprice": "5499",
+        "originalprice": "6000",
+        "offerprice": "5000",
         "discount": true
       },
       "courseDetail": {
@@ -1098,12 +1125,12 @@
       "month": "150 days",
       "title": "Data Science",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "50000",
-        "offerprice": "46999",
-        "discount": false
+        "originalprice": "47000",
+        "offerprice": "45000",
+        "discount": true
       },
       "courseDetail": {
         "objective": [
@@ -1212,11 +1239,11 @@
       "month": "90 days",
       "title": "Digital Marketing",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "25000",
-        "offerprice": "22499",
+        "originalprice": "18000",
+        "offerprice": "15000",
         "discount": true
       },
       "courseDetail": {
@@ -1317,12 +1344,12 @@
       "month": "150 days",
       "title": "MEAN Stack",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "45000",
-        "offerprice": "39999",
-        "discount": false
+        "originalprice": "35000",
+        "offerprice": "30000",
+        "discount": true
       },
       "courseDetail": {
         "objective": [
@@ -1504,11 +1531,11 @@
       "month": "150 days",
       "title": "MERN Stack",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "45000",
-        "offerprice": "39999",
+        "originalprice": "35000",
+        "offerprice": "30000",
         "discount": true
       },
       "courseDetail": {
@@ -1640,11 +1667,11 @@
       "month": "90 days",
       "title": "Cloud Computing",
       "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "40000",
-        "offerprice": "29999",
+        "originalprice": "22500",
+        "offerprice": "18500",
         "discount": true
       },
       "courseDetail": {
@@ -1735,11 +1762,11 @@
       "month": "150 days",
       "title": "Full Stack",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "45000",
-        "offerprice": "41999",
+        "originalprice": "35000",
+        "offerprice": "30000",
         "discount": true
       },
       "courseDetail": {
@@ -1846,99 +1873,96 @@
       "cardimg": "images/courseimg/images/C++.png",
       "bannerImgurl": "images/courseimg/images/C++.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 days",
+      "month": "30 days",
       "title": "C++",
       "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "15000",
-        "offerprice": "11999",
+        "originalprice": "6000",
+        "offerprice": "5000",
         "discount": true
       },
       "courseDetail": {
         "objective": [
           {
             "contents": [
-              "Understand the correct syntax of Python language elements like indentation, loops, conditionals, and functions.",
-              "Learn how to work with various data types and structures, including strings, lists, dictionaries, and tuples, enabling you to manipulate and analyze data effectively.",
-              "Develop Python Modules to Create Re-Usable Code.",
-              "Learn how to read from and write to files, enabling you to interact with external data sources and persist information across sessions.",
-              "You will learn Beautiful Soup, Request, Pandas, NumPy, Scikit Learn, and Matplotlib."
+              "Learn to program using C++, one of the most powerful programming languages today.",
+              "Explore the components of a C++ program in detail.",
+              "Master decision-making, loops, strings, and arrays in C++ programming.",
+              "Understand object-oriented programming (OOP) concepts in C++ with examples.",
+              "Learn about objects, classes, operator overloading, inheritance, and pointers in C++ programming.",
+              "Dive into virtual functions, streams, and file handling in C++, and learn how to develop an application through a project.",
+              "Explore the Standard Template Library (STL) in detail."
+
             ]
           }
         ],
         "requirements": [
           {
             "contents": [
-              "Absolutely no prior experience necessary."
+             " Only Computer is Required We'll Start From Basics.",
+              "No Prior Programming knowledge is required."
+
             ]
           }
         ],
         "courseDescription": {
           "description": [
-            "Python is a versatile and powerful programming language known for its simplicity and readability. It is widely used in various domains such as web development, data analysis, artificial intelligence, scientific computing, and more. With its extensive standard library and active community support, Python is an excellent choice for both beginners and experienced developers."
+            "C++ is a powerful, high-performance programming language known for its use in system/software development, game programming, and real-time simulations. It supports object-oriented, procedural, and generic programming, making it versatile for a wide range of applications."
           ]
         },
         "syllabus": [
           {
-            "title": "Python",
+            "title": "C++",
             "contents": [
               {
-                "title": "Overview of Python",
-                "description": "Introduction to Python, its features, and how it works internally."
+                "title": "C++ vs. C",
+                "description": " Understand the key differences between the languages."
               },
               {
-                "title": "Variables and Keywords",
-                "description": "Understanding variables, naming conventions, and Python keywords."
+                "title": "Function Overloading & Optional Parameters",
+                "description": " Use functions with the same name but different parameters and implement default parameters."
               },
               {
-                "title": "Python Data Types",
-                "description": "Exploring built-in data types like numeric, string, list, tuple, dictionary, and set."
+                "title": "Reference Variables & Operator Overloading",
+                "description": " Utilize references instead of pointers and redefine operators for custom types."
               },
               {
-                "title": "Operators and their Types",
-                "description": " Overview of operators in Python including arithmetic, comparison, logical, and bitwise."
+                "title": "Console I/O Basics & Constant Pointers",
+                "description": "Learn basic input/output operations and about pointers that cannot change their memory location."
               },
               {
-                "title": "Control Flow",
-                "description": " Conditional statements (if, elif) for decision-making, and loops (for loop, while loop) for iteration."
+                "title": "OOP Principles",
+                "description": "Grasp core principles, including classes, object lifecycle, and data members."
               },
               {
-                "title": "Functions",
-                "description": "Introduction to defining and calling functions, function arguments, inner calling techniques, and lambda functions."
+                "title": "Advanced OOP Concepts",
+                "description": "Learn about constructors, destructors, static members, friend classes, and pointers."
               },
               {
-                "title": "Recursion Function",
-                "description": "Understanding recursion and implementing recursive functions."
+                "title": "Inheritance & Access Specifiers",
+                "description": " Understand inheritance concepts, including public, private, and protected access specifiers, and various types of inheritance."
               },
               {
-                "title": "Dynamic Input in Lists",
-                "description": "Handling dynamic input in lists using list comprehension and input() function."
+                "title": "Constructors & Function Overriding",
+                "description": "Learn about base and derived class constructors, and how to override functions in derived classes."
               },
               {
-                "title": "Object-Oriented Programming",
-                "description": "Introduction to OOP concepts like classes, objects, inheritance, polymorphism, and encapsulation."
+                "title": "Polymorphism & Pure Virtual Functions",
+                "description": "Explore dynamic method binding, polymorphism, and abstract classes with pure virtual functions."
               },
               {
-                "title": "Decorators in Python",
-                "description": "Understanding decorators to add functionality to functions and methods."
+                "title": "Namespaces & Virtual Base Class",
+                "description": " Use namespaces to avoid name conflicts and manage multiple inheritance with virtual base classes."
               },
               {
-                "title": "Multiprocessing and Multithreading",
-                "description": "Working with multiple processes using the multiprocessing module and multithreading concepts using the threading module."
+                "title": "Exception Handling Basics",
+                "description": " Learn the fundamentals of exception handling, including the use of try and catch blocks, the throw statement, and predefined exceptions."
               },
               {
-                "title": "File Handling",
-                "description": "Reading from and writing to files in Python."
-              },
-              {
-                "title": "Modules and Packages",
-                "description": "Understanding modules and packages for code organization and reuse"
-              },
-              {
-                "title": "Automation",
-                "description": "Automating tasks using scripting and scheduling."
+                "title": "Custom Exceptions",
+                "description": "Discover the benefits of exception handling for robust programs and how to create custom exception classes."
               }
             ]
           }
@@ -1946,10 +1970,8 @@
         "whoThisCourseIsFor": [
           {
             "contents": [
-              "New to programming, seeking to learn their first language due to Python's simplicity and readability.",
-              "Programmers incorporating Python into web development, automation, or software projects.",
-              "Students and academics using Python in their curriculum or research.",
-              "Non-programmers (e.g., finance, marketing, engineering) automating tasks or conducting data analysis with Python"
+             " For Beginner , For College Students , For Developers who want to Advance in C++",
+             " Anyone looking to increase career options by learning one the most in-demand programming languages."          
             ]
           }
         ]
@@ -1960,14 +1982,14 @@
       "cardimg": "images/courseimg/images/C.png",
       "bannerImgurl": "images/courseimg/images/C.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 days",
-      "title": "C Programming",
+      "month": "30 days",
+      "title": "C",
       "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "15000",
-        "offerprice": "11999",
+        "originalprice": "6000",
+        "offerprice": "5000",
         "discount": true
       },
       "courseDetail": {
@@ -2062,14 +2084,14 @@
       "cardimg": "images/courseimg/images/AdvancedSelenium.png",
       "bannerImgurl": "images/courseimg/images/Advance Selenium.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 days",
+      "month": "30 days",
       "title": "Advance Selenium",
       "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "15000",
-        "offerprice": "11999",
+        "originalprice": "16000",
+        "offerprice": "14000",
         "discount": true
       },
       "courseDetail": {
@@ -2176,14 +2198,14 @@
       "cardimg": "images/courseimg/images/DataAnalytics.png",
       "bannerImgurl": "images/courseimg/images/Data Analytics.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 days",
+      "month": "150 days",
       "title": "Data Analytics",
       "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "15000",
-        "offerprice": "11999",
+        "originalprice": "45000",
+        "offerprice": "41000",
         "discount": true
       },
       "courseDetail": {
@@ -2293,8 +2315,8 @@
       "month": "90 days",
       "title": "Java",
       "upcomingbatch": true,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
         "originalprice": "32000",
         "offerprice": "26999",
@@ -2405,13 +2427,13 @@
       "bannerImgurl": "images/courseimg/images/Tally Prime.jpg",
       "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
       "month": "45 days",
-      "title": "Tally Prime With GST",
+      "title": "Tally Prime",
       "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
-        "originalprice": "8000",
-        "offerprice": "5499",
+        "originalprice": "5500",
+        "offerprice": "5000",
         "discount": true
       },
       "courseDetail": {
@@ -2521,125 +2543,11 @@
       "month": "45 days",
       "title": "UI Development",
       "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
+      "registrationStart": "12-07-2024",
+      "registrationEnd": "17-07-2024",
       "price": {
         "originalprice": "15000",
-        "offerprice": "11999",
-        "discount": true
-      },
-      "courseDetail": {
-        "objective": [
-          {
-            "contents": [
-              "Understand the correct syntax of Python language elements like indentation, loops, conditionals, and functions.",
-              "Learn how to work with various data types and structures, including strings, lists, dictionaries, and tuples, enabling you to manipulate and analyze data effectively.",
-              "Develop Python Modules to Create Re-Usable Code.",
-              "Learn how to read from and write to files, enabling you to interact with external data sources and persist information across sessions.",
-              "You will learn Beautiful Soup, Request, Pandas, NumPy, Scikit Learn, and Matplotlib."
-            ]
-          }
-        ],
-        "requirements": [
-          {
-            "contents": [
-              "Absolutely no prior experience necessary."
-            ]
-          }
-        ],
-        "courseDescription": {
-          "description": [
-            "Python is a versatile and powerful programming language known for its simplicity and readability. It is widely used in various domains such as web development, data analysis, artificial intelligence, scientific computing, and more. With its extensive standard library and active community support, Python is an excellent choice for both beginners and experienced developers."
-          ]
-        },
-        "syllabus": [
-          {
-            "title": "Python",
-            "contents": [
-              {
-                "title": "Overview of Python",
-                "description": "Introduction to Python, its features, and how it works internally."
-              },
-              {
-                "title": "Variables and Keywords",
-                "description": "Understanding variables, naming conventions, and Python keywords."
-              },
-              {
-                "title": "Python Data Types",
-                "description": "Exploring built-in data types like numeric, string, list, tuple, dictionary, and set."
-              },
-              {
-                "title": "Operators and their Types",
-                "description": " Overview of operators in Python including arithmetic, comparison, logical, and bitwise."
-              },
-              {
-                "title": "Control Flow",
-                "description": " Conditional statements (if, elif) for decision-making, and loops (for loop, while loop) for iteration."
-              },
-              {
-                "title": "Functions",
-                "description": "Introduction to defining and calling functions, function arguments, inner calling techniques, and lambda functions."
-              },
-              {
-                "title": "Recursion Function",
-                "description": "Understanding recursion and implementing recursive functions."
-              },
-              {
-                "title": "Dynamic Input in Lists",
-                "description": "Handling dynamic input in lists using list comprehension and input() function."
-              },
-              {
-                "title": "Object-Oriented Programming",
-                "description": "Introduction to OOP concepts like classes, objects, inheritance, polymorphism, and encapsulation."
-              },
-              {
-                "title": "Decorators in Python",
-                "description": "Understanding decorators to add functionality to functions and methods."
-              },
-              {
-                "title": "Multiprocessing and Multithreading",
-                "description": "Working with multiple processes using the multiprocessing module and multithreading concepts using the threading module."
-              },
-              {
-                "title": "File Handling",
-                "description": "Reading from and writing to files in Python."
-              },
-              {
-                "title": "Modules and Packages",
-                "description": "Understanding modules and packages for code organization and reuse"
-              },
-              {
-                "title": "Automation",
-                "description": "Automating tasks using scripting and scheduling."
-              }
-            ]
-          }
-        ],
-        "whoThisCourseIsFor": [
-          {
-            "contents": [
-              "New to programming, seeking to learn their first language due to Python's simplicity and readability.",
-              "Programmers incorporating Python into web development, automation, or software projects.",
-              "Students and academics using Python in their curriculum or research.",
-              "Non-programmers (e.g., finance, marketing, engineering) automating tasks or conducting data analysis with Python"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "23",
-      "cardimg": "images/courseimg/images/Wordpress.png",
-      "bannerImgurl": "images/courseimg/images/Wordpress.jpg",
-      "offerImgurl": "images/courseimg/images/DefaultOfferCoverImage.png",
-      "month": "45 days",
-      "title": "Wordpress",
-      "upcomingbatch": false,
-      "registrationStart": "12-07-2024" ,
-      "registrationEnd": "17-07-2024" ,
-      "price": {
-        "originalprice": "15000",
-        "offerprice": "11999",
+        "offerprice": "12000",
         "discount": true
       },
       "courseDetail": {
@@ -2742,7 +2650,7 @@
       }
     }
   ],
-  "about": [
+  "feedback": [
     {
       "img": "images/google-image.png",
       "name": "Manisha Subhash Mahale",
@@ -2756,13 +2664,6 @@
       "color": "blue",
       "comment": "Hematile Infotech Pvt Ltd. It's a damn good instituted for IT classes excellent techers and very good management. All teachers are very qualified and talented. So if you want to take admission in it classes i recommended you come in Hematile and make your dreams come true.",
       "googleLink": "https://g.co/kgs/8UVYtuu"
-    },
-    {
-      "img": "images/google-image.png",
-      "name": "Panchashil M. Wankhede",
-      "color": "blue",
-      "comment": "This growing company offers training for both corporate IT professionals and students interested in IT courses as well as provide internship also. Their trainers present real-world scenarios and provide exams to ensure understanding. They address all types of doubts, simple or complex, and arrange mock interviews after completing the course. Their main focus is on practical learning. Teachers and Staff are more supportive. I highly recommend this as the best place to learn IT courses.",
-      "googleLink": "https://g.co/kgs/FqnphYC"
     },
     {
       "img": "images/google-image.png",
@@ -2784,6 +2685,125 @@
       "color": "blue",
       "comment": "Hematite Institute offers unparalleled opportunities for career growth and development. Through their industrial training program, I've gained invaluable technical skills and hands-on experience with live projects, setting me up for success in the job market. Under the guidance of Mr. Panchashil Wankhede Sir, whose teaching style is enriched with real-life examples, I've honed my abilities and confidence in the IT field. The supportive environment and friendly trainers at Hematite ensure that all doubts are addressed without judgment, making it the ideal place to thrive and excel. Grateful for the exceptional training provided by Hematite, I confidently recommend it as the premier destination for those looking to embark on a rewarding career journey in IT.",
       "googleLink": "https://g.co/kgs/CbtF5fs"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Rahul Pawar",
+      "color": "blue",
+      "comment": "I recently completed my web development course at Hematite Institute,and it was an exceptional experience from start to finish.The hands pn projects ,led by industry experts will give edge in todays tech world",
+      "googleLink": "https://maps.app.goo.gl/nCUWdddDsR79raxa9"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Arpita Teldhune",
+      "color": "blue",
+      "comment": "This institute is the best platform to learn and grow in your career. Here I got Industrial training in which I had learn many new things in technical field they had also assign me live project with is helpful for getting better job opportunity. They also had trained me for interviews. Mr. Panchashil Wankhede Sir is the best trainer in Hematite who teaches with real life example and also provide task to perform which are so beneficial for me... I'm so thankful to hematite for provide me best training which is making me perfect in IT field. All trainer's over here as so friendly with Students. They will clear your all doubts without judging you.",
+      "googleLink": "https://maps.app.goo.gl/KDsfqAZqMDishdxr6"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Soyal Bhosle",
+      "color": "blue",
+      "comment": "I am having a great pleasure to work as a Frontend Developer intern in hematite Infotech IT Training & Placement Institute.",
+      "googleLink": "https://maps.app.goo.gl/bvzvrfEbDeQiDhuq6"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Mangesh Ohol",
+      "color": "blue",
+      "comment": "I have been studying in hematite infotech since five months and i would love to tell you that this is one of the best institute in pune.The best thing about this institute is they focus on practical learning and the enviroment is friendly in classes. if you don't have laptops then you don't have to worry about it cause they provides laptops for practice. one more thing, if you want to learn frontend then i will recommend you to learn it from panchashil sir.and for java mayuri ma'am is best. area for improvement: they should take more communication session.",
+      "googleLink": "https://g.co/kgs/D5VEHan"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Samiksha Balwatkar",
+      "color": "blue",
+      "comment": "The programming class is very easy to understand . Concepts are very clear nice faculty, effective teaching, and good devices have helped me in learning c programming",
+      "googleLink": "https://maps.app.goo.gl/id5D8BKeDAg96AWP9"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Velina Fernandes",
+      "color": "blue",
+      "comment": "It was a very good experience to work in Hematite . The staff here are very supportive and helpful.",
+      "googleLink": "https://maps.app.goo.gl/8pyuPEGU1uXgriew8"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Gaurav Kulkarni",
+      "color": "blue",
+      "comment": "It was a great experience during the course. Teaching was very good and teachers cleared all then doubts. Extra things and shortcuts were also taught",
+      "googleLink": "https://maps.app.goo.gl/e73zqfkdPyrJFL2P7"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Abhinav Nair",
+      "color": "blue",
+      "comment": "It was a great experience working with the hematite group. The team of Rahul Sir , Parag sir and Kasturi Ma'am is amazing and they helped in smooth functioning of the programme.",
+      "googleLink": "https://maps.app.goo.gl/BJLx6bb4CmGFhDWBA"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Pratik Masalkar",
+      "color": "blue",
+      "comment": "Trainers had good practical knowledge,and assigning task which is improve our logical knowledge. we had done individual project which was assigned by Hematite. Thanks for all support",
+      "googleLink": "https://maps.app.goo.gl/ub8P73rVh5LzPEW97"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Jadhav Sujeet",
+      "color": "blue",
+      "comment": "The session was great, it was an meaningfull and great time for learning new things. We all was inspired by the Sir and got there experience in various IT field.",
+      "googleLink": "https://maps.app.goo.gl/WVgvaaGo742YHjhv9"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Gulshan Khan",
+      "color": "blue",
+      "comment": "One of the good place to learn Digital marketing which can definitely enhance your skills and personality to which you can definitely think about career what you really want in your life....and guys initiave taken by student is very important to anything in the world, so learn enhance and you are ready. Overall good experience guys for everything and very good mentorship",
+      "googleLink": "https://maps.app.goo.gl/e73zqfkdPyrJFL2P7"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "santosh Khandekar",
+      "color": "blue",
+      "comment": "I Would like To tell A lot of Thanks to a my hematite institute teacher...Their  teaching way Was Very understandable..A behaviour of teachers with students its very good...I was completed my digital marketing course in this institute.. and I saw of my  lot of Growths and Improvement of marketing and business field was done here. Thank You So Much...!",
+      "googleLink": "https://maps.app.goo.gl/DEiBLA4hANGZQvnU9"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Hirendra Gurnani",
+      "color": "blue",
+      "comment": "Interning here is a fun experience. Factors such as Great work environment and friendly colleagues, are a great motivator.",
+      "googleLink": "https://maps.app.goo.gl/P4WNCeV5L9pxTVU6A"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "soyaib ansari",
+      "color": "blue",
+      "comment": "Thanks a lot to hematiti institution...learned a lot...good for IT students.A very big thanks to Rahul sir too.",
+      "googleLink": "https://maps.app.goo.gl/SXsf3kYb2GzpnuVD8"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Shravan Shinde",
+      "color": "blue",
+      "comment": "I am really thankful that I chosen hematitr infotech . The teaching staff is very knowledgeable and highly updated with the knowledge. The syllabus and topics are taught very perfectly and carefully. …",
+      "googleLink": "https://maps.app.goo.gl/FPR1noRf6MAhdy9n7"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "ANKITA SONAR",
+      "color": "blue",
+      "comment": "i came first upon visit this class, i am uncomfortable then digital marketing sir helps me a lot for i will be more better understand, staff and teachers are very good and helpful ...and their environment are very friendly...",
+      "googleLink": "https://maps.app.goo.gl/beammMowjbQZgxro8"
+    },
+    {
+      "img": "images/google-image.png",
+      "name": "Ram Shinde",
+      "color": "blue",
+      "comment": "I found this academy is best. I have good experience at hematite infotech . The faculties are knowledgeable and nice. They always provide us with different opportunities. I learned many things here",
+      "googleLink": "https://maps.app.goo.gl/beammMowjbQZgxro8"
     }
   ],
   "aboutUsHeadings": [
@@ -2821,7 +2841,7 @@
   ],
   "infrastructure": [
     {
-     "imageUrl": "images/aboutus/infra (3).jpg"
+      "imageUrl": "images/aboutus/infra (3).jpg"
     },
     {
       "imageUrl": "images/aboutus/infra (4).jpg"

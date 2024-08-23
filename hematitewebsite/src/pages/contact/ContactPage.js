@@ -37,7 +37,7 @@ function ContactPage() {
   });
 
   const nameRegex = /^[A-Za-z]{2,}$/;
-  const emailRegex = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/mg;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
   const mobileRegex = /^[0-9]{10}$/;
 
   const data = useContext(WebContext);
@@ -56,9 +56,7 @@ function ContactPage() {
     }
   }, [modalShow]);
 
-  useEffect(() => {
-    reveal();
-  }, []);
+
 
   
   useEffect(() => {

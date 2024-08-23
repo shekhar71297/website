@@ -162,6 +162,10 @@ li {
     max-width: 60% !important;
     margin: auto !important;
   }
+  .buttonlayout {
+    width: 100%;
+    max-width: 100%;
+  }
 
 }
 
@@ -180,11 +184,10 @@ li {
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1140px) {
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .buttonlayout {
-    /* width: 275px; */
-    max-width: 100% !important;
-   
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -234,6 +237,10 @@ li {
 
   .eduvibe-widget-details {
     padding: 0px !important;
+  }
+  .buttonlayout {
+    width: 100%;
+    max-width: 100%;
   }
 
 }

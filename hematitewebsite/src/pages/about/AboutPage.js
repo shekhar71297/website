@@ -232,7 +232,7 @@ function AboutPage() {
           </div>
           <div className="feedback-slider-container">
             <Slider {...settings}>
-              {data?.about?.map((about, index) => (
+              {data?.feedback?.map((about, index) => (
                 <div>
                   <Card className="card-container" key={index}>
                     <Card.Body>
@@ -244,7 +244,7 @@ function AboutPage() {
                         />
                       </div>
                       <h3 id="name-content">{about.name}</h3>
-                      <div className="star-icons">
+                      {/* <div className="star-icons">
                         <i
                           className="bi bi-star-fill"
                           style={{ color: "gold" }}
@@ -265,7 +265,7 @@ function AboutPage() {
                           className="bi bi-star-fill"
                           style={{ color: "gold" }}
                         ></i>
-                      </div>
+                      </div> */}
                       
                       <div className="feedback-content-container">
                         <p className="feedback-content">{about.comment}</p>
