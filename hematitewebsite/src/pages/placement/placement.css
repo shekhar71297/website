@@ -93,10 +93,14 @@
 }
 
 .content {
-    position: relative;
+    /* position: relative;
     padding-top: 70px;
     padding-left: 120px;
-    text-align: center;
+    text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .studentName {
@@ -104,8 +108,8 @@
 }
 
 .placementcard {
-    width: 460px;
-    margin-left: 50px;
+    /* width: 460px;
+    margin-left: 50px; */
 }
 
 .card.placement_Cards {
@@ -237,4 +241,3 @@ text-align: justify;
         font-size: 24px;
         }
     }
-    

@@ -30,7 +30,6 @@
       "id": 1,
       "img": "/images/offers/hematite_latest_offer_230824.jpg"
     }
-
   ],
   "homepageabout": [
     {
@@ -71,16 +70,12 @@
   "placementcontent": [
     {
       "id": "1",
-      "img": "images/placement/infra (17).jpeg",
       "title": "Training and Placement Process",
       "placementDescription": [
-        "Hematite Infotech Pvt Ltd has a dedicated placement team that provides students with daily job notifications, ensuring continuous opportunities for career advancement. While the Training and Placement cell facilitates placement activities, it does not guarantee a job. However, we are committed to preparing students for success through a structured process:"
-      ]
-    },
-    {
-      "id": "2",
-      "img": "images/placement/infra (16).jpeg",
-      "placementDescription": [
+        "Hematite Infotech Pvt Ltd has a dedicated placement team that provides students with daily job notifications, ensuring continuous opportunities for career advancement. While the Training and Placement cell facilitates placement activities, it does not guarantee a job.",
+        "However, we are committed to preparing students for success through a structured process:"
+      ],
+      "placementRules": [
         {
           "title": "Course Completion",
           "description": "Students must complete their course with at least 80% attendance."
@@ -113,6 +108,10 @@
           "title": "Stay Connected",
           "description": "Students are responsible for maintaining regular communication with the Training and Placement Coordinators through the provided email for updates on placement matters."
         }
+      ],
+      "placementPhotos": [
+        "images/placement/infra (17).jpeg",
+        "images/placement/infra (16).jpeg"
       ]
     }
   ],

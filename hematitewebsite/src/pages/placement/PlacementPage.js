@@ -54,8 +54,8 @@ function PlacementPage() {
             </Col>
             <Col className='placed_Std_Col' >
               <div className="content">
-                <p className='p1'>PLACEMENTS</p>
-                <p className='p2'>Recent Placements</p>
+                {/* <p className='p1'>PLACEMENTS</p> */}
+                <p className='p2' style={{ margin: '1rem 0px' }}>Recent Placements</p>
                 {/* <p className='p3'>People Love To Learn With Us</p> */}
               </div>
             </Col>
@@ -65,46 +65,40 @@ function PlacementPage() {
       <Container>
         <div className='placement_Description_Container'>
           <div className='placement-div'>
-          <span className='training-placement-title'>Training and Placement Process</span>
+            <span className='training-placement-title'>Training and Placement Process</span>
           </div>
-        
+
           {data?.placementcontent?.map((val, index) => (
             <div className='placement_Row' key={val.id}>
               <Row>
-                {index % 2 === 0 ? (
-                  <>
-                    <Col lg={6} className='firstColumn'>
-                      <div className='images'>
-                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
+                <Col lg={6} className='secondColumn'>
+                  <div className='placementDescripCol'>
+                    <p className='paragraph'>
+                      {val.placementDescription?.[0]}
+                    </p>
+                    <br />
+                    <p className='paragraph' style={{ color: "#218bbb", fontSize: "18px" }}>
+                      <strong>{val.placementDescription?.[1]}</strong>
+                    </p>
+                    <ul>
+                      {val.placementRules.map((desc, descIndex) => (
+                        <li key={descIndex}>
+                          <strong>{desc.title}:</strong> {desc.description}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </Col>
+                <Col lg={6} className='firstColumn'>
+                  {
+                    val?.placementPhotos && val?.placementPhotos.map((photo) => (
+                      <div className='images' style={{ marginBottom: "20px" }}>
+                        <img src={photo} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
                       </div>
-                    </Col>
-                    <Col lg={6} className='secondColumn'>
-                    
-                      <div className='placementDescripCol'>
-                        <p className='paragraph'>{val.placementDescription[0]}</p>
-                      </div>
-                    </Col>
-                  </>
-                ) : (
-                  <>
-                    <Col lg={6} className='secondColumn'>
-                      <div className='placementDescripCol'>
-                        <ul>
-                          {val.placementDescription.map((desc, descIndex) => (
-                            <li key={descIndex}>
-                              <strong>{desc.title}:</strong> {desc.description}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </Col>
-                    <Col lg={6} className='firstColumn'>
-                      <div className='images'>
-                        <img src={val.img} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
-                      </div>
-                    </Col>
-                  </>
-                )}
+                    ))
+                  }
+
+                </Col>
               </Row>
             </div>
           ))}
