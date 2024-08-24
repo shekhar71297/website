@@ -23,7 +23,8 @@ function HomePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
     const timer = setTimeout(() => {
-      setShowModal(true);
+      console.log('showModal');
+      // setShowModal(true);
     }, 1000);
 
     return () => clearTimeout(timer);
@@ -105,28 +106,17 @@ function HomePage() {
       <div className='home-body '>
         {data?.HomePage?.map((val, index) => (
           <Carousel key={index} data-bs-theme="dark">
-            <Carousel.Item className='carousel-item'>
-              <img
-                className="carousel-image"
-                src={val.carouselImg1}
-                alt="First slide"
-              />
-
-            </Carousel.Item>
-            <Carousel.Item className='carousel-item'>
-              <img
-                className="carousel-image"
-                src={val.carouselImg2}
-                alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item className='carousel-item'>
-              <img
-                className="carousel-image"
-                src={val.carouselImg3}
-                alt="Third slide"
-              />
-            </Carousel.Item>
+            {
+              val?.carouselBanners?.[0] && val?.carouselBanners.map((banner, index) => (
+                <Carousel.Item className='carousel-item' key={`Slide-${index+1}`}>
+                  <img
+                    className="carousel-image"
+                    src={banner}
+                    alt={`Slide-${index+1}`}
+                  />
+                </Carousel.Item>
+              ))
+            }
           </Carousel>
         ))}
         {/* <Container>
@@ -295,7 +285,7 @@ function HomePage() {
 
         <Modal.Body>
           {data?.offerImg?.length > 0 && (
-            <div style={{maxHeight:'400px', display:'flex'}}>
+            <div style={{ maxHeight: '400px', display: 'flex' }}>
               <img
                 className="modal-image"
                 src={data.offerImg[0].img}

@@ -12,8 +12,6 @@ import PlacementPage from './pages/placement/PlacementPage';
 import ServicePage from './pages/service/ServicePage';
 import ContactPage from './pages/contact/ContactPage';
 
-
-
 export const WebContext = createContext();
 
 function App() {
@@ -23,7 +21,7 @@ function App() {
   const fetchJson = async () => {
     const res = await fetch('/db.json')
     const jsonRes = await res.json();
-    console.log(jsonRes);
+    // console.log(jsonRes);
     setDataJson(jsonRes);
   }
 

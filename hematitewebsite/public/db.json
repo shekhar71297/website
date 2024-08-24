@@ -15,14 +15,20 @@
   "HomePage": [
     {
       "id": 1,
-      "bannerImgurl": "/images/home/homepage.png",
-      "carouselImg1": "/images/home/carousel3.jpg",
-      "carouselImg2": "/images/home/carousel1.jpg",
-      "carouselImg3": "/images/home/carousel2.jpg",
+      "carouselImg1": "/images/home/HematiteAnniversaryBanner.jpg",
+      "carouselImg2": "/images/home/carousel3.jpg",
+      "carouselImg3": "/images/home/carousel1.jpg",
+      "carouselImg4": "/images/home/carousel2.jpg",
       "title": "Best Online & Offline Institute",
       "tagline1": "Master IT Skills",
       "tagline2": "Transform Your Future in",
-      "tagline3": "IT with Our Expertise"
+      "tagline3": "IT with Our Expertise",
+      "carouselBanners": [
+        "/images/home/HematiteAnniversaryBanner.jpg",
+        "/images/home/carousel3.jpg",
+        "/images/home/carousel1.jpg",
+        "/images/home/carousel2.jpg"
+      ]
     }
   ],
   "offerImg": [
