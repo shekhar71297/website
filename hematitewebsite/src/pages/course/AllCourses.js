@@ -15,7 +15,7 @@ import IconBar from "../../common/IconBar/IconBar";
 
 function AllCourses() {
   const data = useContext(WebContext);
-  const activeCourses = data.courses.filter((course) => course.isActive === true);
+  const activeCourses = data?.courses?.filter((course) => course.isActive === true);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
