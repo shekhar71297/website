@@ -63,6 +63,7 @@ function NavigationBar() {
         fixed='top'
         expand="lg"
         className={`navbar ${scrolled ? 'scrolled' : ''}`}
+        style={{backgroundColor: '#ffffff'}}
       >
         <div className='container'>
           {data?.logo?.map((val, index) =>
