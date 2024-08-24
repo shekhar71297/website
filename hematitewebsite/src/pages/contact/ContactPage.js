@@ -174,15 +174,17 @@ function ContactPage() {
     );
   }
 
-  const emailId = email;
+  // const emailId = email;
 
   const SentData = (event) => {
     event.preventDefault();
     if (!validateForm()) return;
-    Post(urls.sendEmail, {
-      from: emailId,
-      subject: 'New Enquiry',
-      message: `Student Name :${fname} ${lname},\n\nMobile No:${mobile}\n\nMessage:${message}.\n\n`,
+    Post(urls.sendEnquiry, {
+      fname:fname,
+      lname:lname,
+      email:email,
+      mobile:mobile,
+      message: message,
     }).then((response) => {
       setAlertTitle('Email Sent Successfully');
       setAlertMessage('Thank you for your enquiry. We will get back to you shortly.');

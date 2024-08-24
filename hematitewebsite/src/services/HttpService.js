@@ -29,7 +29,7 @@ import axios from "axios";
 //create axios object with basic config
 export const axiosHttp = axios.create({
     baseURL: window.location.hostname.includes('localhost')
-        ? 'http://hematiteweb.hematitecorp.com'
+        ? 'http://127.0.0.1:8000'
         : 'http://quiz-be.hematitecorp.com'
 });
 
