@@ -4,6 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Slider from 'react-slick';
+import { BsBuildings } from "react-icons/bs";
+import { BsBuildingUp } from "react-icons/bs";
+import { FiPhoneCall } from "react-icons/fi";
 import NavigationBar from "../../common/navbar/NavigationBar";
 import CustomBreadcrumb from "../../common/breadCrumb/CustomBreadCrumb"
 import BackToTop from "../../common/backTotop/BackToTop"
@@ -117,21 +120,21 @@ function PlacementPage() {
                 <>
                   <Col lg={4} md={4} sm={6}>
                     <div className='align_center_div'>
-                      <img src='https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-business-building-50.png' alt='img1' />
+                      <BsBuildings style={{color:'white',fontSize:'40px',marginBottom:'3px'}} />
                       <h2 className='placementCounter'>{data.companyVisited}</h2>
                       <span className='counterDescription'>COMPANIES VISITED</span>
                     </div>
                   </Col>
                   <Col lg={4} md={4} sm={6}>
                     <div className='align_center_div'>
-                      <img src='	https://firstbitsolutions.com/public/assets/frontend/images/bg/icons8-group-of-companies-50.png' alt='img1' />
+                    <BsBuildingUp style={{color:'white',fontSize:'40px',marginBottom:'3px'}} />
                       <h2 className='placementCounter'>{data.noCriteriaCompanies}</h2>
                       <span className='counterDescription'>NO CRITERIA COMPANIES</span>
                     </div>
                   </Col>
                   <Col lg={4} md={4} sm={6}>
                     <div className='align__center_div'>
-                      <img src='	https://firstbitsolutions.com/public/assets/frontend/images/icons/icons8-calling-50.png' alt='img1' />
+                      <FiPhoneCall style={{color:'white',fontSize:'40px',marginBottom:'3px'}} />
                       <h2 className='placementCounter'>{data.calls}</h2>
                       <span className='counterDescription'>MAXIMUM CALLS WERE GIVEN</span>
                     </div>

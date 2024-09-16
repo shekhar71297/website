@@ -40,7 +40,7 @@
   "homepageabout": [
     {
       "id": 1,
-      "aboutImageurl": "images/home/infra (10).jpg",
+      "aboutImageurl": "images/home/about_section_img.jpg",
       "description1": "Hematite Infotech Pvt. Ltd., established in 2017, is dedicated to the spread of IT education and the transformation of aspiring students into tomorrow’s IT professionals. Our Academy focuses on advanced information technologies, high-end academics, and comprehensive training. Our distinguished faculty, complemented by expert and visiting lecturers, delivers a range of educational activities including video sessions, seminars, internships, projects, and guidance in hackathons and start-ups. We also provide robust placement assistance, maintaining an enviable placement record since our inception.",
       "description2": "In addition to IT education, Hematite Infotech offers IT training, consulting, corporate training, application development, and digital marketing services. Our young team of technology experts is committed to providing the best solutions to our customers. "
     }
@@ -116,8 +116,8 @@
         }
       ],
       "placementPhotos": [
-        "images/placement/infra (17).jpeg",
-        "images/placement/infra (16).jpeg"
+        "images/placement/infrastructure_17.jpeg",
+        "images/placement/infrastructure_16.jpeg"
       ]
     }
   ],
@@ -2797,7 +2797,7 @@
   ],
   "aboutUsImages": [
     {
-      "imageUrl": "images/aboutus/infra (10).jpg",
+      "imageUrl": "images/aboutus/about_section_img.jpg",
       "eventImgUrl": "images/aboutus/upcomingevent.jpg",
       "image_Url": "images/aboutus/aboutus-3 (1).webp"
     }
@@ -2812,31 +2812,31 @@
   ],
   "infrastructure": [
     {
-      "imageUrl": "images/aboutus/infra (3).jpg"
+      "imageUrl": "images/aboutus/infrastructure_3.jpg"
     },
     {
-      "imageUrl": "images/aboutus/infra (4).jpg"
+      "imageUrl": "images/aboutus/infrastructure_4.jpg"
     },
     {
-      "imageUrl": "images/aboutus/infra (8).jpg"
+      "imageUrl": "images/aboutus/infrastructure_8.jpg"
     },
     {
-      "imageUrl": "images/aboutus/infra (9).jpg"
+      "imageUrl": "images/aboutus/infrastructure_9.jpg"
     },
     {
-      "imageUrl": "images/aboutus/infra (11).jpg"
+      "imageUrl": "images/aboutus/infrastructure_11.jpg"
     },
     {
-      "imageUrl": "images/aboutus/infra (12).jpg"
+      "imageUrl": "images/aboutus/infrastructure_12.jpg"
     },
     {
-      "imageUrl": "images/aboutus/infra (13).jpg"
+      "imageUrl": "images/aboutus/infrastructure_13.jpg"
     },
     {
-      "imageUrl": "images/aboutus/infra (14).jpg"
+      "imageUrl": "images/aboutus/infrastructure_14.jpg"
     },
     {
-      "imageUrl": "images/aboutus/infra (20).jpeg"
+      "imageUrl": "images/aboutus/infrastructure_20.jpeg"
     }
   ],
   "aboutAimDetails": [
