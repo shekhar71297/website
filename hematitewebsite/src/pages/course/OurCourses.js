@@ -419,7 +419,7 @@ function OurCourses() {
                             </Button>
                           </Link>
                           <Button type="button" className="registerBtn" variant="" onClick={handleShow} >
-                            Enroll Now <FaArrowRightLong />
+                            Register<FaArrowRightLong />
                           </Button>
                         </div>
                       </Card>
@@ -442,23 +442,22 @@ function OurCourses() {
       </div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Enrollment Form</Modal.Title>
+          <Modal.Title>Registration Form</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-
           <section class="container">
             <form action="#" class="form" onSubmit={EnrollData}>
               <div class="column">
                 <div class="input-box">
                   <label>First Name</label>
-                  <input type="text" name="fname" value={fname} onChange={handleInputChange} onBlur={handleBlur} placeholder="Enter full name" required />
+                  <input type="text" name="fname" value={fname} onChange={handleInputChange} onBlur={handleBlur} placeholder="Enter first name" required />
                   {!errors.fname && <small className="helper-text">Ex:john</small>}
                   {errors.fname && <small className="error" style={{ color: 'red' }} >{errors.fname}</small>}
                 </div>
                 <div class="input-box">
                   <label>Last Name</label>
-                  <input type="text" name="lname" value={lname} onChange={handleInputChange} onBlur={handleBlur} placeholder="Enter full name" required />
-                  {!errors.lname && <small className="helper-text">Ex:john</small>}
+                  <input type="text" name="lname" value={lname} onChange={handleInputChange} onBlur={handleBlur} placeholder="Enter last name" required />
+                  {!errors.lname && <small className="helper-text">Ex:Doe</small>}
                   {errors.lname && <small className="error" style={{ color: 'red' }} >{errors.lname}</small>}
                 </div>
               </div>
