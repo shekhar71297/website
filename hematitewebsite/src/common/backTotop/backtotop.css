@@ -1,14 +1,14 @@
- 
+
 .top-btn{
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: #5cccf9;
+    background-color: #218bbb;
     /* box-shadow: 0 0 2px 1px #7ea9ea; */
     color: #fcfcfc;
     border-radius: 5px;
     height: 30px;
-    width: 70px;
+    width: 40px;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
   }
   &-- icon {
     animation: backtotop 1.2s linear infinite alternate-reverse;
-  
+
   }
   @keyframes backtotop{
     0%{
@@ -28,8 +28,14 @@
     transform: translateY(1%);
   }
   }
-  
   .top-btn--icon{
     height: 50%;
     width: 50%;
   }
+
+  @media only screen and (min-width: 319px) and (max-width: 425px) {
+    .top-btn{
+      height: 20px;
+      width: 35px;
+  }
+}

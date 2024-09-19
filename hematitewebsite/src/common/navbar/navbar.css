@@ -1,12 +1,34 @@
 /*--------------------------------------- navbar css--------------------------------------- */
 .nav-link {
     font-size: 16px;
-    font-weight: 450;
+    font-weight: bold !important;
     margin-left: 10px;
   }
   .navbar{
     text-align: center;
+    background-color:#ffffff57;
+    
   }
+  /* Add this to your navbar.css file */
+
+/* Add this to your navbar.css file */
+
+.nav-link.active {
+  color: #218dbb !important; 
+  font-weight: 600; 
+}
+
+
+
+
+.custom-dropdown .dropdown-title.active {
+  color: #218dbb; /* Color when dropdown or its items are active */
+}
+
+.nav-dropdown-item.active {
+  color:#218dbb; /* Change this to the shade of blue you want */
+  font-weight: bold; /* Optional: make the active dropdown item stand out more */
+}
   
   .nav-link:hover {
     color:#218dbb !important;
@@ -16,7 +38,7 @@
   }
   .scrolled {
     background-color: #ffffff; /* Add your desired background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add your desired box shadow */
+    box-shadow: 0 2px 4px rgba(168, 154, 154, 0.1); /* Add your desired box shadow */
     transition: background-color 0.3s, box-shadow 0.3s; /* Add smooth transition */
   }
   .dropdown-item:hover{
@@ -35,6 +57,15 @@
   
   .custom-dropdown:hover .dropdown-menu {
     display: block;
+  }
+  .slogan{
+    display: flex;
+    flex-direction: column;
+  }
+  .slogan-text{
+    font-size: 12px;
+    font-family: cursive;
+    font-weight: 300;
   }
   
   

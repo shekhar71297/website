@@ -1,0 +1,131 @@
+/*---------------------------------------------------service css-------------------------------------------------*/
+.logo {
+    max-width: 20%;
+}
+
+
+.main-card {
+    /* padding: 20px; */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.377) !important;
+    height: 450px !important;
+}
+
+.main-card:hover {
+    transition: 0.7s;
+    background-color: #218bbb;
+    color: #ffffff;
+    /* border: none; */
+}
+.service-container{
+/* padding: 40px 0px 40px 0px; */
+}
+
+/* .card-container {
+    margin: 20px 0px 20px 0px;
+} */
+
+.serviceicon {
+    text-align: center;
+}
+
+.cardtext {
+    text-align: justify;
+    font-size: 15px !important;
+    /* word-spacing: 1px !important; */
+}
+
+.service-title {
+    text-align: center;
+    margin-top: 8px !important;
+}
+
+.service-container {
+    margin: 8px;
+}
+
+.service-heading-title {
+    font-size: 36px;
+    color: #218bbb;
+    font-weight: 550;
+    font-family: sans-serif;
+
+}
+.card {
+    border-radius: 10px !important;
+}
+
+.heading2 {
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media ((min-width: 312px) and (max-width: 414px)) {
+
+    .cardtext {
+        text-align: justify;
+        font-size: 12px !important;
+        padding: 10px;
+        /* word-spacing: 1px !important; */
+    }
+    .main-card {
+        height: 380px !important;
+    }
+    
+
+    .logo {
+        max-width: 20%;
+    }
+
+    .service-heading-title {
+        font-size: 24px;
+    }
+}
+
+@media ((min-width: 415px) and (max-width: 600px)) {
+
+    .cardtext {
+        text-align: justify;
+        font-size: 14px !important;
+        /* word-spacing: 1px !important; */
+    }
+    .main-card {
+        height: 400px !important;
+    }
+
+    .logo {
+        max-width: 20%;
+    }
+
+    .service-heading-title {
+        font-size: 24px;
+    }
+}
+
+@media ((min-width: 737px) and (max-width: 770px)) {
+    .logo {
+        max-width: 10%;
+    }
+    .main-card {
+        /* padding: 20px; */
+        margin-bottom: 20px;
+        /* border: none; */
+        height: 300px !important;
+    }
+}
+@media ((min-width: 771px) and (max-width: 1030px)) {
+    .cardtext {
+        text-align: justify;
+        font-size: 12px !important;
+        /* word-spacing: 1px !important; */
+    }
+    .main-card {
+        /* padding: 10px !important; */
+        margin-bottom: 20px;
+        /* border: none; */
+        height: 400px !important;
+    }
+}
+

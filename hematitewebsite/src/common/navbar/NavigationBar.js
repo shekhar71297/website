@@ -1,24 +1,22 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Image, NavDropdown } from 'react-bootstrap';
-import { FaAngleDown } from "react-icons/fa";
+import { Image } from 'react-bootstrap';
 import { WebContext } from '../../App';
+import { Link, useLocation } from 'react-router-dom';
 import './navbar.css';
-import { Link } from 'react-router-dom';
 
 function NavigationBar() {
-
   const data = useContext(WebContext);
-  const [showDropdown, setShowDropdown] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation(); // Get current path
 
   useEffect(() => {
     //------------------------------------Function to handle scroll events-------------------------------//
     const handleScroll = () => {
       let isTop;
 
-      if (window.innerWidth >= 375 && window.innerWidth <= 768) {
+      if (window.innerWidth >= 320 && window.innerWidth <= 768) {
         // Adjust the scroll threshold for widths between 376px and 768px
         isTop = window.scrollY < 0;  // Adjust this value as needed for this range
       } else {
@@ -59,51 +57,34 @@ function NavigationBar() {
     };
   }, []);
 
-  const handleDropdownMouseEnter = () => {
-    setShowDropdown(true);
-  };
-
-  const handleDropdownMouseLeave = () => {
-    setShowDropdown(false);
-  };
-
   return (
     <div>
       <Navbar
         fixed='top'
         expand="lg"
-        className={`navbar p-3 ${scrolled ? 'scrolled' : ''}`}
+        className={`navbar ${scrolled ? 'scrolled' : ''}`}
+        style={{backgroundColor: '#ffffff'}}
       >
         <div className='container'>
           {data?.logo?.map((val, index) =>
-            <Navbar.Brand >
-              <Link to='/' >
-              <Image src={val.logoImgurl} alt={val.id} style={{ maxHeight: '30px', maxWidth: '150px' }} />
-              </Link>
+            <Navbar.Brand key={index}>
+              <div>
+                <Link to='/'>
+                  <Image src={val.logoImgurl} alt={val.id} style={{ maxHeight: '55px', maxWidth: '180px' }} />
+                </Link>
+              </div>
             </Navbar.Brand>
           )}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-aut">
-              <Link className='nav-link' to="/">Home</Link>
-              <Link className='nav-link' to="/about">About</Link>
-              <Link className='nav-link' to="/service">Services</Link>
-              <NavDropdown
-                title={
-                  <span>
-                    Course <FaAngleDown />
-                  </span>
-                }
-                className="custom-dropdown"
-                show={showDropdown}
-                onMouseEnter={handleDropdownMouseEnter}
-                onMouseLeave={handleDropdownMouseLeave}
-              >
-                <Link className='nav-dropdown-item dropdown-item' to="/allcourse">Courses</Link>
-                <Link className='nav-dropdown-item dropdown-item' to="/upcomingcourse">Upcoming Batches</Link>
-              </NavDropdown>
-              <Link className='nav-link' to="/placement">Placement</Link>
-              <Link className='nav-link' to="/contact">Contact Us</Link>
+              <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/">Home</Link>
+              <Link className={`nav-link ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">About</Link>
+              <Link className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`} to="/services">Services</Link>
+              <Link className={`nav-link ${location.pathname === '/courses' ? 'active' : ''}`} to="/courses">Courses</Link>
+              <Link className={`nav-link ${location.pathname === '/batches' ? 'active' : ''}`} to="/batches">Batches</Link>
+              <Link className={`nav-link ${location.pathname === '/placement' ? 'active' : ''}`} to="/placement">Placement</Link>
+              <Link className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact">Contact</Link>
             </Nav>
           </Navbar.Collapse>
         </div>
