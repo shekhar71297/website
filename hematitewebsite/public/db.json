@@ -123,8 +123,6 @@
   ],
   "courses": [
     {
-<<<<<<< HEAD
-=======
       "id": "1",
       "isActive": true,
       "cardimg": "images/courses/tiles/GraphicDesign.png",
@@ -227,7 +225,6 @@
       }
     },
     {
->>>>>>> a1b89f1bcd7d3ade992344c1e461f0df1a07ad65
       "id": "2",
       "isActive": true,
       "cardimg": "images/courses/tiles/PythonWithDjango.png",
