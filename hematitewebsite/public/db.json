@@ -54,11 +54,13 @@
       "iconUrl": "images/services/html.png"
     },
     {
+      "id": 2,
       "title": "IT Training",
       "description": "Our comprehensive IT training programs cover a wide range of in-demand skills and technologies. Whether you're interested in mastering DevOps methodologies, becoming a proficient web developer, or delving into the world of Artificial Intelligence with Python and Machine Learning, we have the courses to suit your needs. Additionally, we offer training in Mobile App Development for both Android and iOS platforms, as well as expertise in ASP.NET, Java (Core + Advanced), software testing, cloud computing, CCNA networking, and effective business communication strategies ",
       "iconUrl": "images/services/training.png"
     },
     {
+      "id": 3,
       "title": "IT Consulting",
       "description": "Hematite Consultants advises on the technology enablement, Application security and process enablement for Organizations. Our specialized consultants help minimize the cost and time associated transformative changes in the business of IT. Primary client offerings include Management Consulting, IT Strategic Services, Project Leadership, Data Analytics, and Information Management, Application security consultants, Network engineers, Software Technology consultants.",
       "iconUrl": "images/services/strategic-consulting.png"

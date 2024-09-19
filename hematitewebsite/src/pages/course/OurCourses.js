@@ -343,7 +343,7 @@ function OurCourses() {
                             Registration start from {course.registrationStart}
                           </div>
                           <hr />
-                          <Card.Img src={course.cardimg} fluid />
+                          <Card.Img src={course.cardimg} className="img-fluid" />
                           <h6 className="course-duration-wrapper">
                             <MdLibraryBooks /> {course.month}
                           </h6>

@@ -23,7 +23,7 @@ function HomePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
     const timer = setTimeout(() => {
-      console.log('showModal');
+      // console.log('showModal');
       // setShowModal(true);
     }, 1000);
 
