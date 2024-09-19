@@ -185,6 +185,7 @@ function ContactPage() {
       email:email,
       mobile:mobile,
       message: message,
+      status:''
     }).then((response) => {
       setAlertTitle('Email Sent Successfully');
       setAlertMessage('Thank you for your enquiry. We will get back to you shortly.');
@@ -360,7 +361,7 @@ function ContactPage() {
                       value={message}
                       onChange={handleChange}
                       as="textarea"
-                      rows={6}
+                      rows={4}
                     />
                   </Form.Group>
                   <Button className='contact-btn' size='sm' disabled={isButtonDisabled} type="submit">
