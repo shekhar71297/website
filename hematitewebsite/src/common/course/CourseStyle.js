@@ -22,7 +22,7 @@ const CourseStyle = ({ course, onRegisterClick, show }) => {
         )}
         <hr />
         <div className="promo">
-          <Card.Img src={cardimg} fluid />
+          <Card.Img src={cardimg} className="img-fluid" />
           <span className="course-duration-wrapper">
             <MdLibraryBooks /> {month}
           </span>
