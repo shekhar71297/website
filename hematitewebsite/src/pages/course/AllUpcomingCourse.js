@@ -44,7 +44,7 @@ function AllUpcomingCourse() {
   const data = useContext(WebContext);
   const filterBatch = data?.courses?.filter((data, index) => data.upcomingbatch === true
   );
-  console.log("filterd batch", filterBatch);
+  // console.log("filterd batch", filterBatch);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -147,7 +147,7 @@ function AllUpcomingCourse() {
       course: course,
       mode: mode,
     }).then((response) => {
-      console.log(response, "Email success");
+      // console.log(response, "Email success");
       setShow(false)
 
       setVariant('success')
