@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import Slider from "react-slick";
-import { Button, Card, Col, Container, Modal, Row, Toast } from "react-bootstrap";
+import { Button, Card, Col, Container, Form, Modal, Row, Toast } from "react-bootstrap";
 import { MdLibraryBooks } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaRupeeSign } from "react-icons/fa";
@@ -186,12 +186,12 @@ function OurCourses() {
       setShow(false)
 
       setVariant('success')
-      setToastMessage('Enrollment Done successfully')
+      setToastMessage('Registratin Done successfully')
       setShowToast(true)
     }).catch((error) => {
       setShow(false)
       setVariant('danger')
-      setToastMessage('Somethings went')
+      setToastMessage('Somethings went wrong')
       setShowToast(true)
     });
     resetForm()
@@ -404,23 +404,18 @@ function OurCourses() {
                             )}
                           </div>
                           <br />
-                          {/* <Button
-                   className="buttonscreen"
-                   variant=""
-                   style={{ width: "210px", height: "40px" }}
-                   type="submit"
-                 >
-                   Join Our Telegram Group
-                 </Button> */}
                           <br />
+                          <div className="registration-btn" >
                           <Link to={`/course/${course.title.toLowerCase().replace(/\s+/g, '-')}`}>
                             <Button size='sm' type="button" variant="">
                               Know More <FaArrowRightLong />
                             </Button>
                           </Link>
-                          <Button type="button" className="registerBtn" variant="" onClick={handleShow} >
-                            Register<FaArrowRightLong />
+                          <Button type="button"  size="sm" variant="" onClick={handleShow} >
+                            Register
+                            {/* <FaArrowRightLong /> */}
                           </Button>
+                          </div>
                         </div>
                       </Card>
                     ))}
@@ -440,65 +435,129 @@ function OurCourses() {
         </Container>
 
       </div>
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose}  >
         <Modal.Header closeButton>
-          <Modal.Title>Registration Form</Modal.Title>
+          <Modal.Title className="registration-heading" >Registration Form</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <section class="container">
-            <form action="#" class="form" onSubmit={EnrollData}>
-              <div class="column">
-                <div class="input-box">
-                  <label>First Name</label>
-                  <input type="text" name="fname" value={fname} onChange={handleInputChange} onBlur={handleBlur} placeholder="Enter first name" required />
-                  {!errors.fname && <small className="helper-text">Ex:john</small>}
-                  {errors.fname && <small className="error" style={{ color: 'red' }} >{errors.fname}</small>}
-                </div>
-                <div class="input-box">
-                  <label>Last Name</label>
-                  <input type="text" name="lname" value={lname} onChange={handleInputChange} onBlur={handleBlur} placeholder="Enter last name" required />
-                  {!errors.lname && <small className="helper-text">Ex:Doe</small>}
-                  {errors.lname && <small className="error" style={{ color: 'red' }} >{errors.lname}</small>}
-                </div>
-              </div>
-              <div class="input-box">
-                <label>Email Address</label>
-                <input type="text" name="email" value={email} onChange={handleInputChange} onBlur={handleBlur} placeholder="Enter email address" required />
-                {!errors.email && <small className="helper-text">Ex:youremail@gmail.com</small>}
-                {errors.email && <small className="error" style={{ color: 'red' }} >{errors.email}</small>}
-              </div>
+          {/* Wrapping the form in a scrollable container */}
+          <div style={{ maxHeight: '500px', overflowY: 'auto', paddingRight: '15px' }}>
+            <Form onSubmit={EnrollData}>
+              <Form.Group className="mb-3" controlId="formFname">
+                <Form.Label className= "registration-label" >First Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="fname"
+                  value={fname}
+                  onChange={handleInputChange}
+                  onBlur={handleBlur}
+                  placeholder="Enter first name"
+                  isInvalid={!!errors.fname}
+                  required
+                />
+                <Form.Text className="text-muted">
+                  e.g., John.
+                </Form.Text>
+                <Form.Control.Feedback type="invalid">{errors.fname}</Form.Control.Feedback>
+              </Form.Group>
 
-              <div class="input-box">
-                <label>Phone Number</label>
-                <input type="text" name="mobile" value={mobile} onChange={handleInputChange} onBlur={handleBlur} placeholder="Enter phone number" required />
-                {!errors.mobile && <small className="helper-text">Ex:9999999999.</small>}
-                {errors.mobile && <small className="error" style={{ color: 'red' }}>{errors.mobile}</small>}
-              </div>
-              <div class="column">
+              <Form.Group className="mb-3" controlId="formLname">
+                <Form.Label className= "registration-label" >Last Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="lname"
+                  value={lname}
+                  onChange={handleInputChange}
+                  onBlur={handleBlur}
+                  placeholder="Enter last name"
+                  isInvalid={!!errors.lname}
+                  required
+                />
+                <Form.Text className="text-muted">
+                  e.g., Doe.
+                </Form.Text>
+                <Form.Control.Feedback type="invalid">{errors.lname}</Form.Control.Feedback>
+              </Form.Group>
 
+              <Form.Group className="mb-3" controlId="formEmail">
+                <Form.Label className= "registration-label" >Email</Form.Label>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  value={email}
+                  onChange={handleInputChange}
+                  onBlur={handleBlur}
+                  placeholder="Enter email"
+                  isInvalid={!!errors.email}
+                  required
+                />
+                <Form.Text className="text-muted">
+                  e.g., John@gmail.com.
+                </Form.Text>
+                <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
+              </Form.Group>
 
+              <Form.Group className="mb-3" controlId="formMobile">
+                <Form.Label className= "registration-label" >Mobile</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="mobile"
+                  value={mobile}
+                  onChange={handleInputChange}
+                  onBlur={handleBlur}
+                  placeholder="Enter mobile number"
+                  isInvalid={!!errors.mobile}
+                  required
+                />
+                <Form.Text className="text-muted">
+                  e.g., 9999999999.
+                </Form.Text>
+                <Form.Control.Feedback type="invalid">{errors.mobile}</Form.Control.Feedback>
+              </Form.Group>
 
+              <Form.Group className="mb-3" controlId="formCourse">
+                <Form.Label className= "registration-label" >Course</Form.Label>
+                <Form.Control
+                  as="select"
+                  name="course"
+                  value={course}
+                  onChange={handleInputChange}
+                  onBlur={handleBlur}
+                  isInvalid={!!errors.course}
+                  required
+                >
+                  <option value="">Select Course</option>
+                  {filterBatch?.map((data, index) => (
+                    <option key={index} value={data.title}>{data.title}</option>
+                  ))}
+                </Form.Control>
+                <Form.Control.Feedback type="invalid">{errors.course}</Form.Control.Feedback>
+              </Form.Group>
 
-                <div class="select-box">
-                  <select name="course" value={course} onChange={handleInputChange} >
-                    <option hidden>Select course</option>
-                    {filterBatch?.map((data, index) => (
-                      <option key={index} value={data.title}>{data.title}</option>
-                    ))}
+              <Form.Group className="mb-3" controlId="formMode">
+                <Form.Label className= "registration-label" >Training Mode</Form.Label>
+                <Form.Control
+                  as="select"
+                  name="mode"
+                  value={mode}
+                  onChange={handleInputChange}
+                  onBlur={handleBlur}
+                  isInvalid={!!errors.mode}
+                  required
+                >
+                  <option value="">Select Mode</option>
+                  <option value="Online">Online</option>
+                  <option value="Offline">Offline</option>
+                </Form.Control>
+                
+                <Form.Control.Feedback type="invalid">{errors.mode}</Form.Control.Feedback>
+              </Form.Group>
 
-                  </select>
-                </div>
-                <div class="select-box">
-                  <select name="mode" value={mode} onChange={handleInputChange}  >
-                    <option hidden>Mode of Training</option>
-                    <option value='online'>Online</option>
-                    <option value='offline'>Offline</option>
-                  </select>
-                </div>
-              </div>
-              <Button type="submit" disabled={isButtonDisabled} >Submit</Button>
-            </form>
-          </section>
+              <Button variant="primary" size="sm" type="submit" disabled={isButtonDisabled}>
+                Submit
+              </Button>
+            </Form>
+          </div>
         </Modal.Body>
       </Modal>
       <Toast
