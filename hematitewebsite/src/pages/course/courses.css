@@ -198,6 +198,13 @@
     align-items:start !important;
     font-size: 14px;
   }
+  .know-more-btn{
+    font-size: 13px !important;
+    }
+
+    .register-btn{
+      font-size: 13px !important;
+    }
 }
 
 @media only screen and (min-width: 319px) and (max-width: 413px) {
@@ -205,9 +212,6 @@
     font-size: 18px;
     font-weight: 700;
   }
-  .registerBtn {
-    margin-top: 50px !important;
-}
   /* .applyinghover Button {
     margin-top: -30px;
   } */
@@ -377,9 +381,7 @@
   /* .applyinghover Button {
     margin-top: -30px;
   } */
-  .registerBtn {
-    margin-top: 50px !important;
-}
+
 
   .courseOriginalPrice {
     font-size: 12px;
@@ -453,3 +455,4 @@
 .register-btn{
   margin-left: 10px;
 }
+
