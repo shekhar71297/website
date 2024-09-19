@@ -169,6 +169,8 @@
 
     .p2 {
         font-size: 24px;
+        margin: 2rem 0px !important;
+        margin-left: 125px !important ;
     }
 
 }

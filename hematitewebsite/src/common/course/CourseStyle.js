@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const CourseStyle = ({ course, onRegisterClick, show }) => {
   const { title, registrationStart, cardimg, month, price, upcomingbatch, } = course;
   const navigate = useNavigate();
-  
+
   const handleKnowMoreClick = () => {
     navigate(`/course/${title.toLowerCase().replace(/\s+/g, '-')}`);
   };
@@ -56,7 +56,7 @@ const CourseStyle = ({ course, onRegisterClick, show }) => {
         </div>
         <br />
         <div className="registration-btn">
-          <Button type="button"onClick={handleKnowMoreClick}>
+          <Button type="button"onClick={handleKnowMoreClick} className='know-more-btn'>
             Know More <FaArrowRightLong />
           </Button>
           {upcomingbatch && show && (
