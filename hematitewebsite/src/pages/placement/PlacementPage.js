@@ -44,7 +44,7 @@ function PlacementPage() {
                 <Card className='placement_Cards' >
                   <Slider {...settings}>
                     {data?.placedstudents?.map((val, index) =>
-                      <div className='studimg'>
+                      <div className='studimg' key={index} >
                         <img src={val.img} alt={val.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
                         {/* <div className='stdnames'>
                           <strong className='studentName'>{val.name}</strong>
@@ -94,8 +94,8 @@ function PlacementPage() {
                 </Col>
                 <Col lg={6} className='firstColumn'>
                   {
-                    val?.placementPhotos && val?.placementPhotos.map((photo) => (
-                      <div className='images' style={{ marginBottom: "20px" }}>
+                    val?.placementPhotos && val?.placementPhotos.map((photo,index) => (
+                      <div className='images' style={{ marginBottom: "20px" }} key={index} >
                         <img src={photo} alt='placement' style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '5px' }} />
                       </div>
                     ))
@@ -118,7 +118,7 @@ function PlacementPage() {
             <Row style={{ margin: 'auto' }}>
               {data?.placementHighlightCounter?.map((data, index) => (
                 <>
-                  <Col lg={4} md={4} sm={6}>
+                  <Col lg={4} md={4} sm={6}  key={index} >
                     <div className='align_center_div'>
                       <BsBuildings style={{color:'white',fontSize:'40px',marginBottom:'3px'}} />
                       <h2 className='placementCounter'>{data.companyVisited}</h2>

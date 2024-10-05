@@ -39,7 +39,7 @@ function IconBar() {
     <div>
 			<div className="icon-bar">
 				{socialLinks.map((link) => (
-					<a key={link.href} href={link.href} className={link.className}>
+					<a key={link.href} href={link.href} target="blank" className={link.className}>
 						<FontAwesomeIcon icon={link.icon} />
 					</a>
 				))}

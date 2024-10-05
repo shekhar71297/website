@@ -119,36 +119,7 @@ function HomePage() {
             }
           </Carousel>
         ))}
-        {/* <Container>
-          {data?.HomePage?.map((val, index) => (
-            <Row>
-              <Col sm={6} md={6} >
-                <div className='home-content'>
-                  <p className='home-title' >{val.title}</p>
-                  <div className='home-tagline' >
-                    <span className='home-tagline1'>{val.tagline1}</span>
-                    <span className='home-tagline2' >{val.tagline2}</span>
-                    <span className='home-tagline2' >{val.tagline3}</span>
-                  </div>
-                  <div className="enroll-button">
-                    <Button size='sm' className="btn" onClick={navigateToContact}>
-                      ENROLL NOW
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col sm={6} md={6} >
-                <div className="home-banner-image">
-                  <img
-                    src={val.bannerImgurl}
-                    alt="HomeImage"
-                    className="home-image"
-                  />
-                </div>
-              </Col>
-            </Row>
-          ))}
-        </Container> */}
+        
       </div>
 
       {/* About Us Section */}
@@ -182,23 +153,12 @@ function HomePage() {
           ))}
         </div>
       </Container>
-      {/* <div className='direction-img reveal fade-bottom' >
-        { data?.direction?.map((val)=>(
-          <img src={val.img} alt='direction-right' className='drt-img' />
-        )) }
-
-      </div> */}
+     
 
       {/* Courses Section */}
       <div className='course-section' >
         <OurCourses />
       </div>
-
-      {/* <div className='direction-img2 reveal fade-bottom' >
-        { data?.direction?.map((val)=>(
-          <img src={val.img1} alt='direction-left' className='drt-img' />
-        )) }
-      </div> */}
       {/* Slider Section */}
       <div className='slider-section  '>
         <Container >

@@ -24,10 +24,10 @@ function ServicePage() {
 
   return (
     <div>
-      <NavigationBar/>
-      <BackToTop/>
-      <IconBar/>
-      <CustomBreadCrumb pageTitle='Services'/>
+      <NavigationBar />
+      <BackToTop />
+      <IconBar />
+      <CustomBreadCrumb pageTitle='Services' />
       <Container>
         <div className="service-container">
           <div className="heading2">
@@ -36,10 +36,10 @@ function ServicePage() {
           <Row>
             {data?.services?.map((service, index) => (
               <Col lg={4} md={12} sm={12}>
-                <div className="card-container">
+                <div className="card-container" key={index}>
 
 
-                  <Card className="main-card" key={index}>
+                  <Card className="main-card" >
                     <Card.Body>
 
                       <div className='serviceicon'>
@@ -60,7 +60,7 @@ function ServicePage() {
           </Row>
         </div>
       </Container>
-<FooterPage/>
+      <FooterPage />
 
     </div>
   )

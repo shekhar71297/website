@@ -1,9 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { Row, Card, Container, Col, Button } from "react-bootstrap";
-import { MdLibraryBooks } from "react-icons/md";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { FaRupeeSign } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Row, Container, Col,} from "react-bootstrap";
 // import Footer from "./Footer";
 import NavigationBar from "../../common/navbar/NavigationBar";
 import BackToTop from "../../common/backTotop/BackToTop";
