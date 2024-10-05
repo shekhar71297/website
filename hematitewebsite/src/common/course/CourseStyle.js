@@ -4,6 +4,8 @@ import { MdLibraryBooks } from 'react-icons/md';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaRupeeSign } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import '../../pages/course/courses.css'
+
 
 const CourseStyle = ({ course, onRegisterClick, show }) => {
   const { title, registrationStart, cardimg, month, price, upcomingbatch, } = course;

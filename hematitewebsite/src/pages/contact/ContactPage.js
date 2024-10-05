@@ -190,12 +190,12 @@ function ContactPage() {
       setAlertTitle('Email Sent Successfully');
       setAlertMessage('Thank you for your enquiry. We will get back to you shortly.');
       setModalShow(true);
-      console.log(response, "Email success");
+      // console.log(response, "Email success");
     }).catch((error) => {
       setAlertTitle("Email Not Sent");
       setAlertMessage('There was an issue sending your email. Please try again later.');
       setModalShow(true);
-      console.error('Error sending email:', error);
+      // console.error('Error sending email:', error);
     });
     resetForm();
   };
@@ -272,7 +272,7 @@ function ContactPage() {
                         />
                         {!errors.fname && (
                           <Form.Text className="text-muted">
-                            Ex: Jhon
+                            e.g., Jhon
                           </Form.Text>
                         )}
                         <Form.Control.Feedback type="invalid">
@@ -296,7 +296,7 @@ function ContactPage() {
                         />
                         {!errors.lname && (
                           <Form.Text className="text-muted">
-                            Ex: Doe
+                            e.g., Doe
                           </Form.Text>
                         )}
                         <Form.Control.Feedback type="invalid">
@@ -321,7 +321,7 @@ function ContactPage() {
                         />
                         {!errors.email && (
                           <Form.Text className="text-muted">
-                            Ex: name@gmail.com
+                           e.g., name@gmail.com
                           </Form.Text>
                         )}
                         <Form.Control.Feedback type="invalid">
@@ -344,7 +344,7 @@ function ContactPage() {
                         />
                         {!errors.mobile && (
                           <Form.Text className="text-muted">
-                            Ex: 9999999999
+                            e.g., 9999999999
                           </Form.Text>
                         )}
                         <Form.Control.Feedback type="invalid">

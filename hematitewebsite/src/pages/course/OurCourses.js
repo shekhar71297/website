@@ -11,6 +11,7 @@ import "./courses.css";
 import '../../common/ScrollAnimation/scroll.css'
 import { Post } from "../../services/HttpService";
 import { urls } from "../../util/Constant";
+import CourseStyle from "../../common/course/CourseStyle";
 
 function OurCourses() {
   const [show, setShow] = useState(false);
@@ -180,7 +181,8 @@ function OurCourses() {
       email: email,
       mobile: mobile,
       course: course,
-      mode: mode
+      mode: mode,
+      status:'Pending'
     }).then((response) => {
       console.log(response, "Email success");
       setShow(false)
@@ -230,88 +232,14 @@ function OurCourses() {
                   {slicedata &&
                     slicedata.length > 0 &&
                     slicedata.map((course, index) => (
-                      <Card className="card-adjustment" key={index}>
-                        <Card.Body>
-                          <Card.Img src={course.cardimg} fluid />
-                          <h6 className="course-duration-wrapper">
-                            <MdLibraryBooks /> {course.month}
-                          </h6>
-                          <hr />
-                          <div id="course-price" >
-                            {course.price.discount ? (
-                              <div className="course-discounted-price">
-                                <span className="courseOfferPrice"><FaRupeeSign /> {course.price.offerprice}
-                                </span>
-                                <span>Original Price: <FaRupeeSign /><del>{course.price.originalprice}</del></span>
-                              </div>
-                            ) : (
-                              <span className="courseOfferPrice">
-                                <FaRupeeSign /> {course.price.originalprice}
-                              </span>
-                            )}
-                          </div>
-                        </Card.Body>
-                        <div className="applyinghover">
-                          <Card.Title className="text-alignment">
-
-                            {course.title}
-                          </Card.Title>
-                          <br />
-                          <h6 className="course-duration">
-
-                            <MdLibraryBooks /> {course.month}
-                          </h6>
-                          <br />
-                          <div>
-                            {course?.price?.discount && (
-                              <div>
-                                <span className="hovercourseOfferPrice">
-                                  <FaRupeeSign />
-                                  {course?.price?.offerprice}
-                                </span>
-
-                                <b
-                                  className="hovercoursePriceHeading"
-
-                                >
-                                  Original Price
-                                </b>
-                                <span
-                                  className="hovercourseOriginalPrice"
-
-                                >
-
-                                  <FaRupeeSign />
-                                  {course?.price?.originalprice}
-                                </span>
-                              </div>
-                            )}
-                            {!course?.price?.discount && (
-                              <span className="hovercourseOfferPrice">
-                                <FaRupeeSign />
-                                {course?.price?.originalprice}
-                              </span>
-                            )}
-                          </div>
-                          <br />
-                          {/* <Button
-                    className="buttonscreen"
-                    variant=""
-                    style={{ width: "210px", height: "40px" }}
-                    type="submit"
-                  >
-                    Join Our Telegram Group
-                  </Button> */}
-                          <br />
-
-
-                          <Link to={`/course/${course.title.toLowerCase().replace(/\s+/g, '-')}`}>
-                            <Button size='sm' type="button" variant="">
-                              Know More <FaArrowRightLong />
-                            </Button>
-                          </Link>
-                        </div>
-                      </Card>
+                      <Col key={index} xs={12} sm={6} md={6} lg={4}>
+                      <CourseStyle
+                        course={course}
+                        onRegisterClick={handleShow}
+                        show={false}
+                      />
+                      <br />
+                    </Col>
                     ))}
                 </Slider>
               </div>
@@ -325,6 +253,7 @@ function OurCourses() {
         </Container>
       </div>
       {/* Upcoming Courses in Home Page */}
+     
       <div className="upcomingcourse-body   ">
         <Container>
           <Row>
@@ -337,88 +266,17 @@ function OurCourses() {
                   {sliceupcomingbatch &&
                     sliceupcomingbatch.length > 0 &&
                     sliceupcomingbatch.map((course, index) => (
-                      <Card className="card-adjustment" key={index}>
-                        <Card.Body>
-                          <div className="registration-text">
-                            Registration start from {course.registrationStart}
-                          </div>
-                          <hr />
-                          <Card.Img src={course.cardimg} className="img-fluid" />
-                          <h6 className="course-duration-wrapper">
-                            <MdLibraryBooks /> {course.month}
-                          </h6>
-                          <hr />
-                          <div>
-                            {course.price.discount ? (
-                              <div className="course-discounted-price">
-                                <span className="courseOfferPrice"><FaRupeeSign /> {course.price.offerprice}
-                                </span>
-                                <span>Original Price: <FaRupeeSign /><del>{course.price.originalprice}</del></span>
-                              </div>
-                            ) : (
-                              <div className="price-wrapper">
-                                <span className="courseOfferPrice">
-                                  <FaRupeeSign /> {course.price.originalprice}
-                                </span>
-                              </div>
-                            )}
-                          </div>
-                        </Card.Body>
-                        <div className="applyinghover">
-                          <Card.Title className="text-alignment">
-                            {course.title}
-                          </Card.Title>
-                          <br />
-                          <h6 className="course-duration">
-                            <MdLibraryBooks /> {course.month}
-                          </h6>
-                          <br />
-                          <div>
-                            {course.price.discount && (
-                              <div>
-                                <span className="hovercourseOfferPrice">
-                                  <FaRupeeSign />
-                                  {course.price.offerprice}
-                                </span>
-
-                                <b
-                                  className="hovercoursePriceHeading"
-
-                                >
-                                  Original Price
-                                </b>
-                                <span
-                                  className="hovercourseOriginalPrice"
-
-                                >
-                                  <FaRupeeSign />
-                                  {course.price.originalprice}
-                                </span>
-                              </div>
-                            )}
-                            {!course.price.discount && (
-                              <span className="hovercourseOfferPrice">
-                                <FaRupeeSign />
-                                {course.price.originalprice}
-                              </span>
-                            )}
-                          </div>
-                          <br />
-                          <br />
-                          <div className="registration-btn" >
-                          <Link to={`/course/${course.title.toLowerCase().replace(/\s+/g, '-')}`}>
-                            <Button size='sm' type="button" variant="">
-                              Know More <FaArrowRightLong />
-                            </Button>
-                          </Link>
-                          <Button type="button"  size="sm" variant="" onClick={handleShow} >
-                            Register
-                            {/* <FaArrowRightLong /> */}
-                          </Button>
-                          </div>
-                        </div>
-                      </Card>
-                    ))}
+                    
+                        <Col key={index} xs={12} sm={6} md={6} lg={4}>
+                        <CourseStyle
+                          course={course}
+                          onRegisterClick={handleShow}
+                          show={true}
+                        />
+                        <br />
+                      </Col>
+                      ))}
+                  
                 </Slider>
               </div>
               <div className="d-flex justify-content-center">
@@ -434,7 +292,7 @@ function OurCourses() {
           </Row>
         </Container>
 
-      </div>
+      </div> 
       <Modal show={show} onHide={handleClose}  >
         <Modal.Header closeButton>
           <Modal.Title className="registration-heading" >Registration Form</Modal.Title>

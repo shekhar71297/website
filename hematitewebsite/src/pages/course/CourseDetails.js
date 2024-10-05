@@ -51,58 +51,6 @@ function CourseDetails() {
               <div className="tab-content" id="myTabContent">
                 <Card className="course-content-space">
                   <div className="course-content-space">
-                    {/* <div>
-                      {filterBatch?.courseDetail?.introduction.map(
-                        (intro, index) => (
-                          <div key={index}>
-                            <div className="detail-content-heading">
-                              {intro?.title}
-                            </div>
-                            <div className="detail-content-subheading">
-                              {intro?.description}
-                            </div>
-                          </div>
-                        )
-                      )}
-                    </div>
-
-                    <Card.Text>
-                      <div className="detail-content-heading">Objectives</div>
-                      {filterBatch?.courseDetail?.objective.map(
-                        (obj, index) => (
-                          <ul key={index}>
-                            {obj.contents.map((content, i) => (
-                              <li className="detail-content-subheading" key={i}>
-                                {content}
-                              </li>
-                            ))}
-                          </ul>
-                        )
-                      )}
-                    </Card.Text>
-
-                    <Card.Text>
-                      <div className="course-intro-heading">Syllabus</div>
-                      {filterBatch?.courseDetail?.syllabus.map(
-                        (syllabus, index) => (
-                          <div key={index}>
-                            <div className="detail-content-heading">
-                              {syllabus.title}
-                            </div>
-                            <ul>
-                              {syllabus?.contents?.map((content, i) => (
-                                <li
-                                  className="detail-content-subheading"
-                                  key={i}
-                                >
-                                  {content}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )
-                      )}
-                    </Card.Text> */}
 
                     <Card.Text>
                       <div className="detail-content-heading">

@@ -73,7 +73,7 @@ function AboutPage() {
           <Row>
             <Col sm={12} lg={6} >
               {data?.aboutUsImages?.map((data, index) => (
-                <div className="aboutUsImage">
+                <div className="aboutUsImage"  key={index} >
                   <img
                     src={data.imageUrl}
                     alt="img1"
@@ -86,7 +86,7 @@ function AboutPage() {
 
             <Col sm={12} lg={6}>
               {data?.aboutPage?.map((data, index) => (
-                <div className="aboutUsContent">
+                <div className="aboutUsContent" key={index}>
 
                   {/* <span className="aboutUsHeading">{data.heading1}</span> */}
                   {/* <p className="aboutUsHeading">{data.heading1}</p> */}
@@ -115,8 +115,8 @@ function AboutPage() {
       <div className="mission_Container ">
         <Container >
           {data?.aboutUsHeadings?.map((data, index) => (
-            <div>
-              <p className="mission_heading">{data.heading2}</p>
+            <div key={index}>
+              <p className="mission_heading"  >{data.heading2}</p>
             </div>
           ))}
           <Row>
@@ -125,6 +125,7 @@ function AboutPage() {
                 <div
                   className="mission_card"
                   style={{ backgroundColor: `${data.bgcolour}` }}
+                  key={index}
                 >
                   <div className="inner">
                     <div >
@@ -202,14 +203,14 @@ function AboutPage() {
 
           {data?.aboutUsHeadings?.map((data, index) => (
             <div>
-              <p className="infrastructure_heading">{data.heading5}</p>
+              <p className="infrastructure_heading" key={index} >{data.heading5}</p>
             </div>
           ))}
           <div className="image_Carousel">
             <Slider {...settings}>
               {data?.infrastructure?.map((data, index) => (
                 <div>
-                  <div className="infrastructure_Images">
+                  <div className="infrastructure_Images"  key={index}>
                     <img
                       src={data.imageUrl}
                       alt="aboutimage"

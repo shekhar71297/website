@@ -30,7 +30,7 @@ import axios from "axios";
 export const axiosHttp = axios.create({
     baseURL: window.location.hostname.includes('localhost')
         ? 'http://127.0.0.1:8000'
-        : 'http://quiz-be.hematitecorp.com'
+        : 'http://quiz-api.hematitecorp.com'
 });
 
 // create intercepter for request

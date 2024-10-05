@@ -1,10 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Row, Card, Container, Col, Button, Form } from "react-bootstrap";
-import { MdLibraryBooks } from "react-icons/md";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { FaRupeeSign } from "react-icons/fa";
+import { Row, Container, Col, Button, Form } from "react-bootstrap";
 import Modal from 'react-bootstrap/Modal';
-import { Link } from "react-router-dom";
 import NavigationBar from "../../common/navbar/NavigationBar";
 import BackToTop from "../../common/backTotop/BackToTop";
 import { WebContext } from "../../App";
@@ -146,6 +142,7 @@ function AllUpcomingCourse() {
       mobile: mobile,
       course: course,
       mode: mode,
+      status:'Pending'
     }).then((response) => {
       // console.log(response, "Email success");
       setShow(false)
